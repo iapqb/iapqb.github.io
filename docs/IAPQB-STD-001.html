@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IAPQB-STD-001 AI 실무역량 프레임워크 (v0.9 공개초안) — IAPQB</title>
+<meta name="description" content="생성형 AI를 업무에 사용하는 실무자의 역량을 7개 도메인으로 정의한 공개초안. 2026년 8월 31일까지 공개 의견수렴.">
+<style>
+:root{--ink:#1a1f2e;--line:#d8d4c8;--accent:#8a6d3b;--bg:#faf8f3;}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 "Noto Sans KR","Apple SD Gothic Neo",sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:48px 24px 80px}
+a.back{color:var(--accent);text-decoration:none;font-size:14px}
+h1{font-family:"Noto Serif KR",serif;font-size:26px;line-height:1.4;margin:18px 0 6px;letter-spacing:-.3px}
+.docno{color:var(--accent);font-weight:700;font-size:14px;letter-spacing:1.5px}
+table.meta{width:100%;border-collapse:collapse;margin:18px 0 30px;font-size:14px}
+table.meta td{border:1px solid var(--line);padding:8px 12px}
+table.meta td.k{background:#f1ede3;font-weight:700;width:18%;text-align:center}
+h2{font-size:18px;margin:34px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+h3{font-size:16px;margin:26px 0 6px;color:#3d3427}
+p.art{margin:14px 0}p.art b{color:#3d3427}
+table.dom{width:100%;border-collapse:collapse;font-size:14px;margin:14px 0 4px}
+table.dom td,table.dom th{border:1px solid var(--line);padding:8px 12px;text-align:left}table.dom th:first-child{width:12%;text-align:center;white-space:nowrap}
+table.dom th{background:#f1ede3}
+table.dom td:first-child{width:12%;text-align:center;font-weight:700;color:var(--accent)}
+.cta{margin:30px 0;padding:20px 22px;border:1px solid var(--accent);background:#fff}
+.cta h4{margin:0 0 8px;font-size:16px}
+.cta p{margin:8px 0;font-size:14.5px}
+.cta a{color:var(--accent);font-weight:700}
+.foot{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:#7a7466;font-size:12.5px}
+@media print{.back,.cta{display:none}body{background:#fff}}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">&larr; IAPQB 국제AI실무자격검정원</a>
+<div style="margin-top:26px" class="docno">IAPQB-STD-001</div>
+<h1>AI 실무역량 프레임워크</h1>
+<table class="meta"><tr><td class="k">문서번호</td><td>IAPQB-STD-001</td></tr><tr><td class="k">버전</td><td>v0.9 (공개초안 · Public Comment Draft)</td></tr><tr><td class="k">상태</td><td>공개 의견수렴 중 (2026-07-23 ~ 2026-08-31)</td></tr><tr><td class="k">발행</td><td>IAPQB (International AI Practitioner Qualification Board · 국제AI실무자격검정원)</td></tr><tr><td class="k">의견 제출</td><td>contact@iapqb.org — 제출된 의견은 검토 결과와 함께 공개</td></tr><tr><td class="k">차기 버전</td><td>v1.0 — 의견수렴 반영 후 확정 발행, 이후 연 1회 정기 개정</td></tr></table>
+<div class="cta">
+<h4>의견을 받습니다 — 2026년 8월 31일까지</h4>
+<p>이 문서는 확정 전 공개초안입니다. 제출된 의견은 제출자 성명·소속과 검토 결과를 함께 v1.0에 공개하며, 반영하지 않은 의견은 반영하지 않은 이유를 적습니다. 익명 제출도 받습니다.</p>
+<p>전문을 읽지 않고 한 줄만 주셔도 됩니다. D1~D7에 빠진 역량이 있는지, L2와 L1 두 단계 구분이 실제 채용·배치와 맞는지, 검증(D5)을 중심에 둔 배치가 과한지 — 이 중 하나만으로도 충분합니다.</p>
+<p>제출: <a href="mailto:contact@iapqb.org?subject=%5BIAPQB-STD-001%20v0.9%5D%20%EC%9D%98%EA%B2%AC%20%EC%A0%9C%EC%B6%9C">contact@iapqb.org</a> &nbsp;·&nbsp; <a href="../IAPQB-STD-001_v0.9.md">원문(markdown) 내려받기</a></p>
+</div>
+<h2>1. 목적과 적용 범위</h2>
+<p class="art">본 표준은 직무에서 생성형 AI를 사용하는 실무자가 갖추어야 할 역량을 정의한다. 특정 제품·모델·산업에 종속되지 않으며, AI를 업무에 도입하는 모든 직군에 적용된다. 본 표준은 IAPQB 자격검정(AIP 등급 체계)의 검정기준의 근거 문서이며, 조직의 AI 교육 설계·채용 요건 정의에도 참조될 수 있다.</p>
+<p class="art">본 표준이 다루지 않는 것: 모델 개발·학습(ML 엔지니어링) 역량, 특정 벤더 제품의 조작법. 본 표준은 &quot;AI를 만드는 역량&quot;이 아니라 &quot;AI로 일하고 그 결과에 책임지는 역량&quot;을 다룬다.</p>
+<h2>2. 설계 원칙</h2>
+<p class="art">첫째, 공개. 평가되는 모든 역량과 채점 기준은 응시 전에 공개된다. 둘째, 실기. 역량은 지식 보유가 아니라 수행으로 증명된다 — 모든 등급은 실제 산출물 또는 수행 과정 평가를 포함한다. 셋째, 검증 중심. AI 산출물을 신뢰하는 능력이 아니라 의심하고 확인하는 능력을 역량의 중심에 둔다(D5). AI 도입 사고의 대부분은 생성 단계가 아니라 무검증 사용 단계에서 발생하기 때문이다. 넷째, 정직. 본 표준과 이에 근거한 자격은 민간자격이며, 그 성격과 한계를 모든 지면에 표시한다.</p>
+<h2>3. 역량 모델 개요</h2>
+<p class="art">역량은 7개 도메인(D1~D7)으로 구성되며, 각 도메인은 2개 등급의 수행지표를 가진다. L2(Associate)는 감독·정해진 절차 하의 수행, L1(Practitioner)은 절차의 설계·구축과 타인 산출물의 검토까지를 포함한다.</p>
+<table class="dom"><tr><th>도메인</th><th>명칭</th><th>한 줄 정의</th></tr>
+<tr><td>D1</td><td>AI 리터러시 · 모델 이해</td><td>도구의 원리와 한계를 알고 목적에 맞게 선택한다</td></tr>
+<tr><td>D2</td><td>프롬프트 · 컨텍스트 설계</td><td>과업을 구조화해 재현 가능한 결과를 얻는다</td></tr>
+<tr><td>D3</td><td>데이터 · 문서 처리</td><td>실무 문서를 AI로 변환하되 손실·왜곡을 관리한다</td></tr>
+<tr><td>D4</td><td>자동화 · 에이전트 구축</td><td>반복 업무를 자동화하고 실패 지점을 통제한다</td></tr>
+<tr><td>D5</td><td>검증 · 사실확인 · 품질</td><td>산출물의 사실성·근거·재현성을 절차로 검증한다</td></tr>
+<tr><td>D6</td><td>보안 · 저작권 · 컴플라이언스</td><td>정보 경계와 법규 안에서 AI를 운용한다</td></tr>
+<tr><td>D7</td><td>업무 통합 · 성과 측정</td><td>도입 효과를 측정 가능한 형태로 보고한다</td></tr>
+</table>
+<h2>4. 도메인별 정의와 수행지표</h2>
+<h3>D1. AI 리터러시 · 모델 이해</h3>
+<p class="art">생성형 AI의 확률적 동작 특성과 그로부터 오는 한계(환각, 지식 시점, 편향, 비결정성)를 이해하고, 과업 특성에 맞는 도구·모델을 선택한다.</p>
+<p class="art">L2 지표: 환각·지식 시점 한계를 설명하고 실제 사례에서 식별한다 · 과업 유형(생성/요약/추출/판단)에 따라 도구를 구분 선택한다 · AI 사용이 부적절한 과업(법적 판단, 최신 사실 단정 등)을 식별한다.</p>
+<p class="art">L1 지표: 모델·도구 선택 기준을 조직 지침 형태로 문서화한다 · 신규 도구를 평가하는 파일럿 절차를 설계한다 · 비용(토큰·구독)과 품질의 균형점을 산정한다.</p>
+<h3>D2. 프롬프트 · 컨텍스트 설계</h3>
+<p class="art">과업을 명확한 지시·맥락·제약·예시로 구조화하여, 다른 사람이 실행해도 유사한 품질이 나오는 재현 가능한 지시문을 만든다.</p>
+<p class="art">L2 지표: 역할·맥락·출력형식·제약을 포함한 구조화 지시문을 작성한다 · 결과 불량 시 지시문의 결함을 진단하고 개선한다 · 예시(퓨샷) 제공으로 출력 품질을 제어한다.</p>
+<p class="art">L1 지표: 반복 업무용 지시문 템플릿을 설계해 조직에 배포한다 · 긴 문서·다단계 과업의 컨텍스트 전략(분할·요약·참조)을 설계한다 · 지시문의 버전과 변경 이력을 관리한다.</p>
+<h3>D3. 데이터 · 문서 처리</h3>
+<p class="art">실무 문서(보고서·표·기록·이메일)를 AI로 요약·변환·구조화하되, 그 과정에서 발생하는 정보 손실·의미 왜곡·수치 오류를 관리한다.</p>
+<p class="art">L2 지표: 문서 요약에서 원문 대조로 누락·왜곡을 점검한다 · 표·수치 데이터 처리 시 합계·단위를 재검산한다 · 비정형 문서를 지정 구조(표·서식)로 변환한다.</p>
+<p class="art">L1 지표: 대량 문서 일괄 처리의 품질 샘플링 기준을 설계한다 · 원문-산출물 추적성(어느 부분이 어디서 왔는가)을 유지하는 작업 방식을 수립한다 · 처리 불가·저신뢰 케이스의 예외 처리 규칙을 정의한다.</p>
+<h3>D4. 자동화 · 에이전트 구축</h3>
+<p class="art">반복 업무를 워크플로·에이전트로 자동화하고, 자동화가 실패하는 지점(예외 입력, 오판, 무한 반복)을 설계 단계에서 예측·통제한다.</p>
+<p class="art">L2 지표: 정형 반복 업무를 단계 분해하여 자동화 적합성을 판정한다 · 기성 도구로 단순 워크플로를 구성·운영한다 · 자동화 결과물을 수동 검수하는 체크포인트를 둔다.</p>
+<p class="art">L1 지표: 예외 입력·실패 시 중단(fail-safe) 로직을 포함한 워크플로를 설계한다 · 자동화의 오류율을 측정하고 허용 기준을 설정한다 · 사람 승인 게이트(human-in-the-loop)가 필요한 단계를 판별해 배치한다.</p>
+<h3>D5. 검증 · 사실확인 · 품질 (중심 도메인)</h3>
+<p class="art">AI 산출물의 사실성·근거·재현성을 검증하는 절차를 수립하고 그 수행을 기록한다. 본 표준은 이 도메인을 다른 도메인과 대등한 항목이 아니라 모든 도메인을 관통하는 중심으로 정의한다.</p>
+<p class="art">L2 지표: 산출물의 사실 주장에 대해 근거 출처를 요구·확인한다 · 확정 사실과 미검증 추정을 구분해 표시한다 · 수치·이름·날짜 등 고위험 항목의 원본 대조를 수행한다.</p>
+<p class="art">L1 지표: 업무 유형별 검증 절차(무엇을·어떻게·어디까지)를 설계·문서화한다 · 검증 수행 기록을 남겨 제3자가 재확인할 수 있게 한다 · 타인의 AI 산출물을 검토하고 결함을 지적하는 리뷰를 수행한다 · 검증 없이 통과되기 쉬운 실패 유형(그럴듯한 오답)의 목록을 조직 차원에서 누적·갱신한다.</p>
+<h3>D6. 보안 · 저작권 · 컴플라이언스</h3>
+<p class="art">개인정보·영업비밀·저작권의 경계를 식별하고, 조직 정책과 관련 법규(개인정보보호법, 저작권법, 산업별 규제) 안에서 AI를 운용한다.</p>
+<p class="art">L2 지표: 프롬프트에 입력해서는 안 되는 정보 유형을 식별한다 · AI 산출물의 저작권·이용조건 한계를 설명한다 · 조직의 AI 사용 정책을 준수하여 작업한다.</p>
+<p class="art">L1 지표: 부서·업무 단위 AI 사용 가이드라인을 작성한다 · 데이터 반출입 경로(입력·로그·학습 활용 여부)를 평가해 도구를 승인·차단한다 · 규제 산업의 문서·기록 요건과 AI 사용의 충돌 지점을 식별하고 대응 절차를 만든다.</p>
+<h3>D7. 업무 통합 · 성과 측정</h3>
+<p class="art">AI 활용을 일회성 시연이 아니라 업무 프로세스에 통합하고, 절감 시간·품질 변화·오류율을 측정 가능한 형태로 기록·보고한다.</p>
+<p class="art">L2 지표: 자신의 업무에서 AI 적용 전후의 소요 시간을 측정·비교한다 · AI 활용 산출물임을 조직 규칙에 따라 표시한다 · 적용 실패 사례를 기록하고 원인을 구분한다(도구 한계/설계 결함/검증 부재).</p>
+<p class="art">L1 지표: 팀 단위 도입의 효과 지표(시간·품질·비용)를 설계하고 측정한다 · 도입 확대·중단의 의사결정 기준을 수립한다 · 성과와 리스크를 경영진에 보고 가능한 형태로 종합한다.</p>
+<h2>5. 평가 방식 원칙</h2>
+<p class="art">본 표준에 근거한 검정은 다음 원칙을 따른다. 모든 등급은 실기 요소를 포함한다 — L2는 감독 하 실습 과제, L1은 실제 산출물 제출과 그 검증 기록의 심사. 채점은 사전 공개된 루브릭(IAPQB-STD-002, 제정 예정)에 의해서만 이루어진다. 응시자 본인확인 방식과 부정행위 처리 절차는 응시 약관(IAPQB-POL-001)에 명문화한다. 불복 시 이의신청 절차를 두며, 그 절차는 ISO/IEC 17024(자격인증기관 일반 요구사항)의 공정성 원칙을 참조하여 설계한다.</p>
+<h2>6. 유지 관리</h2>
+<p class="art">본 표준은 연 1회 정기 개정하며, AI 도구 환경의 급변을 반영하기 위해 필요시 수시 개정한다. 모든 개정은 공개 의견수렴을 거치고, 버전·개정 사유·의견 반영 결과를 문서 이력으로 공개한다. 구 버전 기준으로 취득한 자격의 효력과 갱신 요건은 IAPQB-GOV-001(제정 예정)에서 정한다.</p>
+<div class="foot">
+본 문서는 v0.9 공개초안으로 확정 전이며 효력이 없습니다. IAPQB의 자격은 「자격기본법」에 따른 민간자격으로 국가공인 자격이 아니며, 한국직업능력연구원에 등록을 신청한 상태입니다(2026-08-10 신청). 검정은 아직 시행하지 않았습니다.<br>
+국제AI실무자격검정원(IAPQB) · contact@iapqb.org · iapqb.org
+</div></div></body></html>
