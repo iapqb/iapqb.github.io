@@ -1,0 +1,14 @@
+rows_total	183147
+registration_numbers_total	23068
+ai_matched_qualifications	107
+with_2024_row_examined	50
+with_2024_row_reported_zero	5
+no_2024_row	52
+candidates_total	25416
+passers_total	15708
+overall_pass_rate_pct	61.8
+under_100_candidates	34
+band_100%	20
+band_90-99%	13
+band_70-90%	13
+band_<70%	4
