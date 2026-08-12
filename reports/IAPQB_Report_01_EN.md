@@ -14,9 +14,9 @@
 
 **Findings.** Of 107 AI-related qualifications, 50 held an examination with at least one candidate in 2024, 5 filed a nil return, and 52 filed nothing. Across the 50, 25,416 people sat and 15,708 passed. **Twenty qualifications passed every candidate who sat.** Thirty-four of the 50 had fewer than 100 candidates, and the three largest accounted for 78% of all candidates. No issuing body published its own pass rate; every rate reported here was computed from the raw file.
 
-A systematic review of AI literacy instruments identified 16 scales, of which **13 are self-report and 3 are performance-based**. None had been tested for cross-cultural validity or measurement error. Across several fields, performance-based and self-report measures of the same construct correlate at or near zero, and only the performance-based measures predict outcomes.
+A systematic review of AI literacy instruments identified 16 scales, of which **13 are self-report and 3 are performance-based**, and none had been tested for cross-cultural validity or measurement error (Lintner, 2024). In a study that applied both kinds of measure to the same sample of 288 teachers, the objective and self-reported factors correlated between **r = .07 and r = .24**, and the authors conclude that the two cannot be used interchangeably (Zhang et al., 2026).
 
-**Interpretation.** The obligation and the measurement are misaligned. Regulation asks whether staff can work competently with AI; the instruments available mostly ask whether staff believe they can, and belief does not predict performance. Meanwhile the qualification market that would ordinarily supply proof is not publishing the one figure that would let a buyer judge it. A qualification that passes every candidate is not distinguishing between them, and at present a buyer cannot tell which qualifications those are without recomputing the figure from government data.
+**Interpretation.** The obligation and the measurement are misaligned. Regulation asks whether staff can work competently with AI; the instruments available mostly ask whether staff believe they can, and the two scores are weakly enough related that one cannot stand in for the other. Meanwhile the qualification market that would ordinarily supply proof is not publishing the one figure that would let a buyer judge it. A qualification that passes every candidate is not distinguishing between them, and at present a buyer cannot tell which qualifications those are without recomputing the figure from government data.
 
 **Recommendations.** Issuing bodies should publish candidate numbers and pass rates for each examination cycle. Regulators and auditors should treat self-report instruments as insufficient evidence of AI literacy on their own. Where performance-based assessment is used, the criteria and scoring rubric should be published before the examination, and assessment records should state what was assessed, against which published criterion, and by whom.
 
@@ -70,7 +70,17 @@ None of this makes the obligation unmeetable. It makes the current default insuf
 
 The market strand covers one country and one year. The keyword list used to identify AI-related qualifications is an operational definition and a different list yields a different count. The underlying figures are self-reported by issuing bodies, so non-filing and misfiling cannot be distinguished from the file alone. Pass rate is computed within a single calendar year and does not track candidates across a year boundary.
 
-The measurement strand is a reading of published reviews and primary studies, not a new systematic review. The zero-correlation finding between self-report and performance is drawn from adjacent fields. **No study has yet measured that correlation for AI competence specifically**, and until one does, its magnitude in this domain is an inference rather than a measurement. Producing that measurement requires an examining body that holds both kinds of score for the same people, which is a study this report's author is positioned to run and therefore cannot treat as an independent finding.
+The measurement strand is a reading of published reviews and primary studies, not a new systematic review. The one direct comparison cited here is a single sample of 288 teachers in one education system, so **the size of the gap between self-report and performance is established for that population and not for working professionals in general**. A wider estimate requires an examining body that holds both kinds of score for the same people, which is a study this report's author is positioned to run and therefore cannot treat as an independent finding.
+
+## References
+
+Lintner, T. (2024). A systematic review of AI literacy scales. *npj Science of Learning*, 9(1), 50. https://doi.org/10.1038/s41539-024-00264-4
+
+Zhang, S., Xiao, R., Botelho, A. F., Liao, G., Chiu, T. K. F., Stamper, J., & Koedinger, K. R. (2026). How to assess AI literacy: Misalignment between self-reported and objective-based measures. *Proceedings of LAK26: 16th International Learning Analytics and Knowledge Conference*. https://doi.org/10.1145/3785022.3785088
+
+Korea Research Institute for Vocational Education and Training. (2025). *Registered private qualifications: 2024 examination records* [Data set]. Public data release.
+
+European Commission. (2025). *AI literacy — questions and answers*. Directorate-General for Communications Networks, Content and Technology.
 
 ---
 
