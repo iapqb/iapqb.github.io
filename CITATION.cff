@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+title: >-
+  AI-related private qualifications in South Korea:
+  2024 examination records
+message: >-
+  If you use this dataset, please cite it as below.
+type: dataset
+authors:
+  - name: International AI Practitioner Qualification Board
+    website: https://iapqb.org
+    country: KR
+abstract: >-
+  Candidate and pass counts for AI-related private qualifications in
+  South Korea in 2024, aggregated per qualification from the official
+  KRIVET release (183,147 rows, 23,068 registration numbers). Of 107
+  qualifications matched on name, 50 held an examination with at least
+  one candidate, 5 filed a nil return, and 52 filed nothing. Across the
+  50, there were 25,416 candidates and 15,708 passes, and 20
+  qualifications passed every candidate who sat. No issuing body in this
+  market published its own pass rate at the time of compilation; the
+  rates here are computed from the raw government file. The aggregation
+  script is included so that every figure can be reproduced from the
+  public source.
+keywords:
+  - AI literacy
+  - artificial intelligence
+  - certification
+  - private qualifications
+  - pass rate
+  - South Korea
+  - open data
+repository-code: https://github.com/iapqb/iapqb.github.io
+url: https://iapqb.org
+date-released: '2026-08-12'
+version: '1.0'
+license: CC-BY-4.0
