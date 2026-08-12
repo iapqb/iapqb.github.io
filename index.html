@@ -102,6 +102,27 @@
   .docard .dgrid i{font-style:normal;font-family:var(--serif);font-size:10.5px;text-align:center;padding:5px 0;border:1px solid #ead9c9;color:var(--orange-2);border-radius:2px}
   .docard .dgrid i.on{background:var(--orange);color:#fff;border-color:var(--orange)}
   .docard .df{padding:11px 17px;background:#fdf4ed;font-size:11px;color:var(--orange-2);border-top:1px solid #f3e2d3}
+  .chk{width:100%;max-width:330px;border:1px solid #e2d9cf;border-radius:5px;overflow:hidden;background:#fff;box-shadow:0 6px 24px rgba(58,35,23,.11);text-align:left}
+  .chk .ch{background:var(--orange);color:#fff;padding:14px 18px}
+  .chk .ch b{display:block;font-family:var(--serif);font-size:16.5px}
+  .chk .ch span{display:block;font-size:11.6px;margin-top:4px;color:#ffe3d1;line-height:1.45}
+  .chk .cb{padding:4px 18px 12px}
+  .chk .q{padding:12px 0;border-bottom:1px solid #f2ece6}
+  .chk .q:last-child{border-bottom:0}
+  .chk .qt{font-size:12.8px;line-height:1.55;color:var(--ink)}
+  .chk .qt em{font-style:normal;font-weight:700;color:var(--orange-2);margin-right:3px}
+  .chk .bt{display:flex;gap:7px;margin-top:8px}
+  .chk .bt button{flex:1;padding:7px 0;font-size:12.3px;font-weight:700;font-family:var(--sans);border:1px solid #ddd3c8;background:#fff;color:var(--steel);border-radius:3px;cursor:pointer}
+  .chk .bt button.on{background:var(--orange);border-color:var(--orange);color:#fff}
+  .chk .bt button.no.on{background:#efe7df;border-color:#d8ccc0;color:var(--dark)}
+  .chk .res{display:none;padding:15px 18px;background:#fdf4ed;border-top:1px solid #f3e2d3}
+  .chk .res.on{display:block}
+  .chk .lv{font-family:var(--serif);font-size:15.5px;font-weight:700;color:var(--orange-2)}
+  .chk .ds{font-size:12.2px;line-height:1.62;color:var(--steel);margin-top:6px}
+  .chk .gap{margin-top:11px;font-size:11.6px;line-height:1.6;color:var(--steel);border-left:2px solid var(--orange);padding:3px 0 3px 10px}
+  .chk .gap b{color:var(--ink)}
+  .chk .cta{display:inline-block;margin-top:13px;font-size:12px;font-weight:700;color:var(--orange-2);border-bottom:1px solid var(--orange)}
+  .chk .priv{padding:9px 18px;font-size:10.8px;color:var(--muted);border-top:1px solid #f2ece6;line-height:1.5}
 
   /* pillars strip */
   .pillars{background:var(--orange);color:#ffe6d5;padding:0}
@@ -251,19 +272,20 @@
         </div>
       </div>
       <div class="sealcol">
-        <a class="docard" href="docs/IAPQB-STD-001.html">
-          <div class="dh">
-            <div class="dnum">IAPQB-STD-001</div>
-            <div class="dti">AI 실무역량 프레임워크</div>
+        <div class="chk">
+          <div class="ch"><b>30초 자가 점검</b><span>지금 어느 층에서 일하고 계신지 세 문항으로 확인합니다</span></div>
+          <div class="cb">
+            <div class="q"><div class="qt"><em>&#9312;</em>AI가 만든 결과물을 남에게 넘기기 전에, <b>무엇을 어떻게 확인했는지 기록</b>하십니까?</div>
+              <div class="bt"><button type="button" onclick="iapqbPick(this,0,1)">하고 있다</button><button type="button" class="no" onclick="iapqbPick(this,0,0)">아직</button></div></div>
+            <div class="q"><div class="qt"><em>&#9313;</em>같은 작업을 다른 사람이 해도 같은 품질이 나오도록 <b>절차를 문서로</b> 만들어 두셨습니까?</div>
+              <div class="bt"><button type="button" onclick="iapqbPick(this,1,1)">하고 있다</button><button type="button" class="no" onclick="iapqbPick(this,1,0)">아직</button></div></div>
+            <div class="q"><div class="qt"><em>&#9314;</em>AI로 줄어든 시간이나 달라진 품질을 <b>숫자로 보고</b>한 적이 있습니까?</div>
+              <div class="bt"><button type="button" onclick="iapqbPick(this,2,1)">하고 있다</button><button type="button" class="no" onclick="iapqbPick(this,2,0)">아직</button></div></div>
           </div>
-          <div class="db">
-            <div class="dr"><b>버전</b><span>v0.9 공개초안</span></div>
-            <div class="dr"><b>상태</b><span>공개 의견수렴 중</span></div>
-            <div class="dr"><b>기간</b><span>2026-07-23 ~ 08-31</span></div>
-            <div class="dgrid"><i>D1</i><i>D2</i><i>D3</i><i>D4</i><i class="on">D5</i><i>D6</i><i>D7</i></div>
-          </div>
-          <div class="df">D5 검증·사실확인·품질 = 중심 도메인</div>
-        </a>
+          <div class="res" id="chkres"><div class="lv" id="chklv"></div><div class="ds" id="chkds"></div><div id="chkgaps"></div>
+            <a class="cta" href="#signup">전체 21문항 자가진단 안내받기 &rarr;</a></div>
+          <div class="priv">결과는 이 브라우저에서만 계산되며 어디에도 저장하거나 전송하지 않습니다.</div>
+        </div>
       </div>
     </div>
   </div>
@@ -487,6 +509,36 @@
 </footer>
 
 <script>
+  // 30초 자가 점검. 전송 없음, 브라우저 안에서만 계산한다.
+  var IAPQB_A = {};
+  var IAPQB_G = [
+    {t:'기록이', d:'D5 검증·사실확인', w:'문제는 AI가 틀린다는 게 아니라, 틀렸을 때 어디서 틀렸는지 되짚을 수 없다는 것입니다. 검증 기록이 없으면 그 결과물은 아무도 책임질 수 없습니다.'},
+    {t:'절차가', d:'D4 자동화·에이전트 구축', w:'한 사람의 감으로 잘 나오는 것은 역량이 아니라 운입니다. 절차가 문서로 있어야 조직의 역량으로 넘어갑니다.'},
+    {t:'측정이', d:'D7 업무 통합·성과 측정', w:'효과를 재지 않으면 다음 예산이 안 나오고 도입은 거기서 멈춥니다. 측정은 도입의 마지막이 아니라 조건입니다.'}
+  ];
+  function iapqbPick(b, i, v){
+    var q = b.parentNode.parentNode;
+    var bs = q.querySelectorAll('button');
+    for (var j=0;j<bs.length;j++) bs[j].classList.remove('on');
+    b.classList.add('on'); IAPQB_A[i] = v; iapqbScore();
+  }
+  function iapqbScore(){
+    var k = Object.keys(IAPQB_A); if (k.length < 3) return;
+    var n = 0; for (var j=0;j<k.length;j++) n += IAPQB_A[k[j]];
+    var lv = document.getElementById('chklv'), ds = document.getElementById('chkds'), gp = document.getElementById('chkgaps');
+    if (n === 0){ lv.textContent='0 / 3 · 도구는 쓰지만 구조는 아직';
+      ds.innerHTML='AI를 업무에 쓰고 계시지만 그 결과에 책임질 근거는 아직 없습니다. 셋 중 <b>기록</b>부터가 가장 빠릅니다.'; }
+    else if (n === 1){ lv.textContent='1 / 3 · 한 축만 서 있습니다';
+      ds.innerHTML='하나는 하고 계십니다. 나머지 둘이 없으면 그 하나도 개인 습관에 머물고 조직 역량으로 넘어가지 않습니다.'; }
+    else if (n === 2){ lv.textContent='2 / 3 · 절반을 넘었습니다';
+      ds.innerHTML='실무 기준을 거의 갖추셨습니다. 남은 하나가 대개 확산을 막습니다.'; }
+    else { lv.textContent='3 / 3 · 이미 기준을 갖고 일하십니다';
+      ds.innerHTML='세 축이 다 서 있습니다. 이 단계에 필요한 건 배우는 것이 아니라 <b>증명</b>입니다. AIP-Practitioner는 만들어 온 결과물과 그 검증 기록으로 평가합니다.'; }
+    var h = '';
+    for (var i=0;i<3;i++){ if (IAPQB_A[i] === 0) h += '<div class="gap"><b>' + IAPQB_G[i].t + ' 비어 있습니다 · ' + IAPQB_G[i].d + '</b><br>' + IAPQB_G[i].w + '</div>'; }
+    gp.innerHTML = h;
+    document.getElementById('chkres').classList.add('on');
+  }
   // 자격번호 조회. 발급 전이므로 레지스트리는 비어 있음(정직 동작). 발급 개시 시 registry.json 연동.
   function iapqbVerify(e){
     e.preventDefault();
