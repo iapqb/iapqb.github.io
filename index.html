@@ -89,6 +89,19 @@
   .hero .quick div{font-size:13px;color:var(--muted)}
   .hero .quick b{display:block;font-family:var(--serif);color:var(--dark);font-size:16.5px;margin-bottom:2px}
   .sealcol{display:grid;place-items:center}
+  .docard{display:block;width:100%;max-width:300px;border:1px solid #e2d9cf;border-radius:4px;overflow:hidden;background:#fff;box-shadow:0 6px 22px rgba(58,35,23,.10);transition:box-shadow .18s,transform .18s}
+  .docard:hover{box-shadow:0 12px 32px rgba(58,35,23,.17);transform:translateY(-2px)}
+  .docard .dh{background:var(--orange);color:#fff;padding:15px 17px}
+  .docard .dnum{font-family:var(--serif);font-size:11.5px;letter-spacing:.14em}
+  .docard .dti{font-family:var(--serif);font-size:17px;font-weight:700;margin-top:5px;line-height:1.32}
+  .docard .db{padding:15px 17px}
+  .docard .dr{display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-bottom:1px solid #f0eae3}
+  .docard .dr b{color:var(--ink);font-weight:700}
+  .docard .dr span{color:var(--muted)}
+  .docard .dgrid{margin-top:12px;display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+  .docard .dgrid i{font-style:normal;font-family:var(--serif);font-size:10.5px;text-align:center;padding:5px 0;border:1px solid #ead9c9;color:var(--orange-2);border-radius:2px}
+  .docard .dgrid i.on{background:var(--orange);color:#fff;border-color:var(--orange)}
+  .docard .df{padding:11px 17px;background:#fdf4ed;font-size:11px;color:var(--orange-2);border-top:1px solid #f3e2d3}
 
   /* pillars strip */
   .pillars{background:var(--orange);color:#ffe6d5;padding:0}
@@ -238,24 +251,19 @@
         </div>
       </div>
       <div class="sealcol">
-        <svg width="240" height="240" viewBox="0 0 200 200" aria-label="IAPQB 인장">
-          <circle cx="100" cy="100" r="96" fill="#f37021"/>
-          <g stroke="#fff" stroke-width="5.4" stroke-linecap="round">
-            <line x1="100" y1="12" x2="100" y2="28"/><line x1="190" y1="100" x2="174" y2="100"/>
-            <line x1="100" y1="188" x2="100" y2="172"/><line x1="10" y1="100" x2="26" y2="100"/>
-          </g>
-          <g stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8">
-            <line x1="163" y1="37" x2="153" y2="47"/><line x1="163" y1="163" x2="153" y2="153"/>
-            <line x1="37" y1="163" x2="47" y2="153"/><line x1="37" y1="37" x2="47" y2="47"/>
-          </g>
-          <circle cx="100" cy="100" r="74" fill="none" stroke="#fff" stroke-width="5"/>
-          <g transform="translate(45,22) scale(1.06)">
-            <path d="M44.5 25 L55.5 25 L73.5 58 L68 68 L32 68 L26.5 58 Z" fill="none" stroke="#fff" stroke-width="7.4" stroke-linejoin="round"/>
-            <path d="M47.4 42.5 L52.6 42.5 L61.2 57.5 L58.6 62 L41.4 62 L38.8 57.5 Z" fill="#fff"/>
-          </g>
-          <text x="100" y="142" text-anchor="middle" font-family="Georgia,serif" font-size="19" fill="#fff" font-weight="bold" letter-spacing="4">IAPQB</text>
-          <text x="100" y="156" text-anchor="middle" font-family="Georgia,serif" font-size="7.6" fill="#ffdcc4" letter-spacing="2.4">EST · 2026</text>
-        </svg>
+        <a class="docard" href="docs/IAPQB-STD-001.html">
+          <div class="dh">
+            <div class="dnum">IAPQB-STD-001</div>
+            <div class="dti">AI 실무역량 프레임워크</div>
+          </div>
+          <div class="db">
+            <div class="dr"><b>버전</b><span>v0.9 공개초안</span></div>
+            <div class="dr"><b>상태</b><span>공개 의견수렴 중</span></div>
+            <div class="dr"><b>기간</b><span>2026-07-23 ~ 08-31</span></div>
+            <div class="dgrid"><i>D1</i><i>D2</i><i>D3</i><i>D4</i><i class="on">D5</i><i>D6</i><i>D7</i></div>
+          </div>
+          <div class="df">D5 검증·사실확인·품질 = 중심 도메인</div>
+        </a>
       </div>
     </div>
   </div>
