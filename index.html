@@ -242,6 +242,24 @@
   footer a:hover{color:#fff}
   .legal{margin-top:38px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14);color:#8f8780;font-size:12px;line-height:1.8}
   .ph{color:#968e87}
+
+.dstat{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:6px}
+.dstat div{border:1px solid var(--line);background:#fff;padding:14px 16px}
+.dstat b{display:block;font-family:var(--serif);font-size:26px;color:var(--orange-2);line-height:1.2}
+.dstat span{font-size:12.5px;color:#7a6d62}
+.qchips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.qchips button{border:1px solid var(--line);background:#fff;color:var(--ink);font-size:12.5px;padding:6px 12px;cursor:pointer;font-family:inherit}
+.qchips button:hover{border-color:var(--orange);color:var(--orange-2)}
+.qres{margin-top:16px;max-height:460px;overflow:auto}
+.qres table{width:100%;border-collapse:collapse;font-size:13.5px}
+.qres th{background:#faf5ee;text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);position:sticky;top:0}
+.qres td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.qres td.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.qres .hi{color:var(--orange-2);font-weight:700}
+.qres .zz{color:#9a8f85;font-size:12px}
+.qres .org{color:#7a6d62;font-size:12px;display:block;margin-top:2px}
+@media(max-width:760px){.dstat{grid-template-columns:repeat(2,1fr)}}
+
 </style>
 </head>
 <body>
@@ -263,7 +281,7 @@
       <a href="#about">기관 소개</a>
       <a href="#framework">역량 프레임워크</a>
       <a href="#cert">자격검정</a>
-      <a href="#verify">자격 확인</a>
+      <a href="#verify">자격 확인</a><a href="#data">자격 데이터</a>
       <a href="#docs">기준·규정</a>
       <a href="#faq">FAQ</a>
       <a href="#news">뉴스룸</a>
@@ -442,11 +460,43 @@
     </div>
   </section>
 
+
+  <!-- MARKET DATA -->
+  <section id="data">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow"><i class="secno">§5</i>Market Data</span>
+        <h2>2024년 AI 자격 조회</h2>
+        <p class="lead">국내에 등록된 AI 관련 민간자격 107개의 2024년 검정 실적입니다. 정부 공개 원자료에서 집계했고, 합격률은 발급기관이 공개한 값이 아니라 응시자수와 합격자수로 계산한 값입니다. <b>취득을 검토 중인 자격이 있다면 이름을 넣어 보십시오.</b></p>
+      </div>
+
+      <div class="dstat" id="dstat"></div>
+
+      <div class="verify" style="margin-top:22px">
+        <form class="form" onsubmit="return qSearch(event)">
+          <input id="qq" placeholder="자격명 또는 발급기관 (예: 프롬프트, 지도사)" aria-label="자격 검색">
+          <button class="btn primary" type="submit">조회</button>
+        </form>
+        <div class="qchips">
+          <button type="button" onclick="qPreset('perfect')">합격률 100%</button>
+          <button type="button" onclick="qPreset('big')">응시자 많은 순</button>
+          <button type="button" onclick="qPreset('small')">응시자 100명 미만</button>
+          <button type="button" onclick="qPreset('none')">실적 미신고</button>
+        </div>
+        <div id="qres" class="qres"></div>
+      </div>
+
+      <p class="muted" style="font-size:12.5px;margin-top:16px">출처: 한국직업능력연구원 민간자격 취득현황 공개분(2024년). 집계 스크립트와 원자료는 <a href="https://github.com/iapqb/iapqb.github.io/tree/main/data" style="color:var(--orange-2)">공개 저장소</a>에 함께 둡니다. 같은 스크립트를 돌리면 같은 숫자가 나옵니다.<br>
+      &ldquo;실적 미신고&rdquo;는 그 해에 자료를 제출하지 않았다는 뜻이며, 시험을 열지 않았다는 뜻으로 단정할 수 없습니다. 자격명으로 대조했으므로 동명이칭이 있으면 결과가 달라질 수 있습니다.<br>
+      <b>이 표에 IAPQB는 없습니다.</b> 본원은 아직 검정을 시행하지 않았습니다.</p>
+    </div>
+  </section>
+
   <!-- DOCS -->
   <section id="docs">
     <div class="wrap">
       <div class="sec-head">
-        <span class="eyebrow"><i class="secno">§5</i>Standards &amp; Governance</span>
+        <span class="eyebrow"><i class="secno">§6</i>Standards &amp; Governance</span>
         <h2>기준·규정 문서 등기부</h2>
         <p class="lead">모든 기준과 규정은 문서번호, 버전, 상태와 함께 관리하고 있습니다. 제정과 개정 이력은 공개합니다.</p>
       </div>
@@ -468,7 +518,7 @@
   <section id="faq">
     <div class="wrap">
       <div class="sec-head">
-        <span class="eyebrow"><i class="secno">&sect;6</i>Questions</span>
+        <span class="eyebrow"><i class="secno">§7</i>Questions</span>
         <h2>자주 묻는 질문</h2>
         <p class="lead">답할 수 있는 것만 적었습니다. 정해지지 않은 항목은 그대로 두고, 확정되면 이 자리에서 안내드리겠습니다.</p>
       </div>
@@ -497,7 +547,7 @@
   <section id="news" style="background:var(--paper-2)">
     <div class="wrap">
       <div class="sec-head">
-        <span class="eyebrow"><i class="secno">§7</i>Newsroom</span>
+        <span class="eyebrow"><i class="secno">§8</i>Newsroom</span>
         <h2>공지 · AI 실무 동향</h2>
       </div>
       <div class="notice-list">
@@ -512,7 +562,7 @@
       <div class="newsgrid" id="feed">
         <div class="nitem"><span class="src">EU</span><h4>AI Act 제4조, 8월 2일부터 집행 시작</h4><p>제공자와 배포자는 직원의 AI 리터러시를 보장해야 합니다. 2026년 8월 2일부터 각국 시장감시당국이 감독과 집행을 시작했습니다. 무엇이 충족 증거인지는 조문에 없습니다.</p><div class="d">EU AI Act Art.4 · 2025-02-02 적용 · 2026-08-02 집행</div></div>
         <div class="nitem"><span class="src">일본</span><h4>AI 기본계획 5년 1조 엔</h4><p>2025년 12월 내각 통과. 보편적 AI 리터러시 교육과 재직자 재교육이 핵심 축으로 들어갔습니다. 대학 인증 체계는 590개교에서 연 50만 명 규모로 이미 운영 중입니다.</p><div class="d">일본 내각 · 2025-12</div></div>
-        <div class="nitem"><span class="src">국내</span><h4>2024년 AI 자격 50개 집계</h4><p>실제로 시험을 연 자격만 세면 50개이고 응시자는 25,416명입니다. 이 가운데 합격률이 100%인 자격이 20개입니다.</p><div class="d">한국직업능력연구원 원자료 · 2026-08-12 집계</div></div>
+        <div class="nitem"><span class="src">국내</span><h4>2024년 AI 자격 50개 집계</h4><p>실제로 시험을 연 자격만 세면 50개이고 응시자는 25,416명입니다. 이 가운데 합격률이 100%인 자격이 20개입니다.</p><div class="d">한국직업능력연구원 원자료 · 2026-08-12 집계 · <a href="#data" style="color:var(--orange-2)">107개 전건 조회하기 →</a></div></div>
       </div>
     </div>
   </section>
@@ -640,6 +690,62 @@
         el.appendChild(a);
       });
     }).catch(function(){});
+
+  // 2024 AI 자격 조회
+  var QD=null;
+  function qFmt(n){return n==null?'—':n.toLocaleString('ko-KR');}
+  function qRender(list,note){
+    var el=document.getElementById('qres');
+    if(!list.length){el.innerHTML='<p class="muted" style="padding:14px 2px">해당하는 자격이 없습니다. 다른 이름으로 찾아보십시오.</p>';return;}
+    var h='<table><tr><th>자격명</th><th style="width:16%;text-align:right">응시</th><th style="width:16%;text-align:right">합격</th><th style="width:18%;text-align:right">합격률</th></tr>';
+    list.forEach(function(x){
+      var st = x.s==='examined' ? (x.pr==null?'—':(x.pr===100?'<span class="hi">100%</span>':x.pr+'%'))
+             : (x.s==='reported_zero' ? '<span class="zz">실적 0 신고</span>' : '<span class="zz">실적 미신고</span>');
+      h+='<tr><td>'+x.n+'<span class="org">'+x.o+'</span></td>'
+        +'<td class="num">'+(x.s==='examined'?qFmt(x.c):'—')+'</td>'
+        +'<td class="num">'+(x.s==='examined'?qFmt(x.p):'—')+'</td>'
+        +'<td class="num">'+st+'</td></tr>';
+    });
+    h+='</table>';
+    el.innerHTML='<p class="muted" style="margin:0 0 8px;font-size:12.5px">'+note+' · '+list.length+'건</p>'+h;
+  }
+  function qLoad(cb){
+    if(QD){cb();return;}
+    fetch('quals2024.json').then(function(r){return r.json();}).then(function(d){
+      QD=d;
+      var m=d.meta,ds=document.getElementById('dstat');
+      if(ds)ds.innerHTML=
+        '<div><b>'+m.total+'</b><span>등록된 AI 관련 자격</span></div>'+
+        '<div><b>'+m.examined+'</b><span>2024년에 시험을 연 자격</span></div>'+
+        '<div><b>'+m.candidates.toLocaleString('ko-KR')+'</b><span>총 응시자</span></div>'+
+        '<div><b>'+m.perfect+'</b><span>합격률 100%인 자격</span></div>';
+      cb();
+    }).catch(function(){document.getElementById('qres').innerHTML='<p class="muted">데이터를 불러오지 못했습니다.</p>';});
+  }
+  function qSearch(e){
+    if(e)e.preventDefault();
+    qLoad(function(){
+      var q=(document.getElementById('qq').value||'').trim();
+      if(!q){qPreset('big');return;}
+      var k=q.replace(/\s/g,'').toLowerCase();
+      var r=QD.rows.filter(function(x){return (x.n+x.o).replace(/\s/g,'').toLowerCase().indexOf(k)>-1;});
+      r.sort(function(a,b){return (b.c||0)-(a.c||0);});
+      qRender(r,'&ldquo;'+q+'&rdquo; 조회 결과');
+    });
+    return false;
+  }
+  function qPreset(kind){
+    qLoad(function(){
+      var r=QD.rows.slice(),note='';
+      if(kind==='perfect'){r=r.filter(function(x){return x.s==='examined'&&x.pr===100;});r.sort(function(a,b){return (b.c||0)-(a.c||0);});note='2024년 응시자 전원이 합격한 자격';}
+      else if(kind==='small'){r=r.filter(function(x){return x.s==='examined'&&(x.c||0)<100;});r.sort(function(a,b){return (b.c||0)-(a.c||0);});note='응시자 100명 미만';}
+      else if(kind==='none'){r=r.filter(function(x){return x.s!=='examined';});note='2024년 검정 실적을 신고하지 않았거나 0으로 신고한 자격';}
+      else {r=r.filter(function(x){return x.s==='examined';});r.sort(function(a,b){return (b.c||0)-(a.c||0);});note='응시자 많은 순';}
+      qRender(r,note);
+    });
+  }
+  if(document.getElementById('qres')) qPreset('big');
+
 </script>
 </body>
 </html>
