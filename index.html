@@ -260,6 +260,18 @@
 .qres .org{color:#7a6d62;font-size:12px;display:block;margin-top:2px}
 @media(max-width:760px){.dstat{grid-template-columns:repeat(2,1fr)}}
 
+
+.chkask{display:none;margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+.chkask.on{display:block}
+.askq{margin-bottom:10px}
+.askq>span{display:block;font-size:12.5px;color:#6d6058;margin-bottom:6px}
+.askq>span i{font-style:normal;font-size:11px;color:#a3968b;margin-left:4px}
+.askb{display:flex;flex-wrap:wrap;gap:6px}
+.askb button{border:1px solid var(--line);background:#fff;color:var(--ink);font-size:12.5px;padding:5px 11px;cursor:pointer;font-family:inherit}
+.askb button:hover{border-color:var(--orange)}
+.askb button.on{background:var(--orange);border-color:var(--orange);color:#fff}
+.askn{font-size:11.5px;color:#9a8f85;line-height:1.6;margin:10px 0 0}
+.askr{font-size:12.5px;color:var(--orange-2);margin:10px 0 0}
 </style>
 </head>
 <body>
@@ -321,6 +333,7 @@
               <div class="bt"><button type="button" onclick="iapqbPick(this,2,1)">하고 있다</button><button type="button" class="no" onclick="iapqbPick(this,2,0)">아직</button></div></div>
           </div>
           <div class="res" id="chkres"><div class="lv" id="chklv"></div><div class="ds" id="chkds"></div><div id="chkgaps"></div>
+            <div id="chkask" class="chkask"></div>
             <a class="cta" href="#signup">전체 21문항 자가진단 안내받기 &rarr;</a></div>
           <div class="priv">답과 결과는 이 화면 안에서만 계산합니다. 저장하거나 서버로 보내지 않습니다.</div>
         </div>
@@ -653,6 +666,49 @@
     for (var i=0;i<3;i++){ if (IAPQB_A[i] === 0) h += '<div class="gap"><b>' + IAPQB_G[i].t + ' 비어 있습니다 · ' + IAPQB_G[i].d + '</b><br>' + IAPQB_G[i].w + '</div>'; }
     gp.innerHTML = h;
     document.getElementById('chkres').classList.add('on');
+    iapqbSend('score', {a0:IAPQB_A[0], a1:IAPQB_A[1], a2:IAPQB_A[2], n:n});
+    iapqbAsk();
+  }
+
+  // 익명 집계 전송. 개인 식별자 없음. 엔드포인트 연결 전에는 무동작.
+  function iapqbSend(ev, data){
+    try{
+      var ref='';
+      try{ ref = document.referrer ? new URL(document.referrer).hostname : 'direct'; }catch(e){ ref='direct'; }
+      var d = new Date(), day = d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);
+      var payload = Object.assign({d:day, ref:ref}, data);
+      if (window.zaraz && zaraz.track) { zaraz.track('chk_'+ev, payload); }
+      else if (window.__IAPQB_DEBUG) { console.log('[iapqb]', ev, payload); }
+    }catch(e){}
+  }
+
+  // 점수를 보여준 뒤에 맥락을 묻는다. 선택이며, 답하지 않아도 점수는 이미 집계된다.
+  var IAPQB_CTX = {};
+  function iapqbAsk(){
+    var box = document.getElementById('chkask');
+    if (!box || box.dataset.done) return;
+    box.innerHTML =
+      '<div class="askq"><span>지금 어느 쪽에 가까우십니까? <i>선택</i></span><div class="askb">'
+      + ['재직 중','구직 중','학생','그 외'].map(function(t,i){
+          return '<button type="button" onclick="iapqbCtx(this,0,'+i+')">'+t+'</button>';}).join('')
+      + '</div></div>'
+      + '<div class="askq"><span>하시는 일에 가장 가까운 것은? <i>선택</i></span><div class="askb">'
+      + ['기획·영업','개발·데이터','디자인·콘텐츠','제조·품질','교육·연구','그 외'].map(function(t,i){
+          return '<button type="button" onclick="iapqbCtx(this,1,'+i+')">'+t+'</button>';}).join('')
+      + '</div></div>'
+      + '<p class="askn">응답은 점수와 선택하신 분류만 익명으로 집계합니다. 이름·연락처·기기 정보는 수집하지 않고, 누가 무엇을 골랐는지는 저장하지 않습니다. 집계 결과는 공개 지수와 조직 진단의 기준값으로 씁니다.</p>';
+    box.classList.add('on');
+  }
+  function iapqbCtx(b, k, v){
+    var g = b.parentNode.querySelectorAll('button');
+    for (var j=0;j<g.length;j++) g[j].classList.remove('on');
+    b.classList.add('on'); IAPQB_CTX[k] = v;
+    iapqbSend('ctx', {k:k, v:v, n:Object.keys(IAPQB_A).reduce(function(t,x){return t+IAPQB_A[x];},0)});
+    if (IAPQB_CTX[0]!=null && IAPQB_CTX[1]!=null){
+      var n=document.querySelector('#chkask .askn');
+      if(n && !n.dataset.p){ n.dataset.p=1;
+        n.insertAdjacentHTML('beforebegin','<p class="askr">감사합니다. 같은 조건의 응답이 300건을 넘으면 이 자리에서 비교 결과를 보여 드립니다. <b>지금은 표본이 부족해 백분위를 표시하지 않습니다.</b></p>'); }
+    }
   }
   // 자격번호 조회. 발급 전이므로 레지스트리는 비어 있음(정직 동작). 발급 개시 시 registry.json 연동.
   function iapqbVerify(e){
