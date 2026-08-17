@@ -694,15 +694,16 @@
     iapqbAsk();
   }
 
-  // 익명 집계 전송. 개인 식별자 없음. 엔드포인트 연결 전에는 무동작.
+  // 익명 집계 전송. 개인 식별자 없음. 저장 항목은 POL-001 제10조의2 제2항에 적힌 것뿐이다.
+  var IAPQB_EP = 'https://chk.iapqb.workers.dev/';
   function iapqbSend(ev, data){
     try{
       var ref='';
       try{ ref = document.referrer ? new URL(document.referrer).hostname : 'direct'; }catch(e){ ref='direct'; }
       var d = new Date(), day = d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);
-      var payload = Object.assign({d:day, ref:ref}, data);
-      if (window.zaraz && zaraz.track) { zaraz.track('chk_'+ev, payload); }
-      else if (window.__IAPQB_DEBUG) { console.log('[iapqb]', ev, payload); }
+      var body = JSON.stringify(Object.assign({e:ev, d:day, ref:ref}, data));
+      if (navigator.sendBeacon) { navigator.sendBeacon(IAPQB_EP, new Blob([body],{type:'text/plain;charset=UTF-8'})); }
+      else { fetch(IAPQB_EP,{method:'POST',headers:{'Content-Type':'application/json'},body:body,keepalive:true}).catch(function(){}); }
     }catch(e){}
   }
 
@@ -727,10 +728,12 @@
     var g = b.parentNode.querySelectorAll('button');
     for (var j=0;j<g.length;j++) g[j].classList.remove('on');
     b.classList.add('on'); IAPQB_CTX[k] = v;
-    iapqbSend('ctx', {k:k, v:v, n:Object.keys(IAPQB_A).reduce(function(t,x){return t+IAPQB_A[x];},0)});
     if (IAPQB_CTX[0]!=null && IAPQB_CTX[1]!=null){
       var n=document.querySelector('#chkask .askn');
       if(n && !n.dataset.p){ n.dataset.p=1;
+        iapqbSend('full', {a0:IAPQB_A[0], a1:IAPQB_A[1], a2:IAPQB_A[2],
+          n:Object.keys(IAPQB_A).reduce(function(t,x){return t+IAPQB_A[x];},0),
+          st:IAPQB_CTX[0], job:IAPQB_CTX[1]});
         n.insertAdjacentHTML('beforebegin','<p class="askr">집계는 <b>100건 단위</b>로 이 자리에 공개합니다. 높게 나오든 낮게 나오든 그대로 냅니다.</p>'); }
     }
   }
