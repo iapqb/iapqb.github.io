@@ -5,7 +5,7 @@
 | 문서번호 | IAPQB-STD-001 |
 | 버전 | v0.9 (공개초안 · Public Comment Draft) |
 | 상태 | 공개 의견수렴 중 (2026-07-23 ~ 2026-08-31) |
-| 발행 | IAPQB (International AI Practitioner Qualification Board · 국제AI실무자격검정원) |
+| 발행 | IAPQB (International AI Practice Qualification Board · 국제AI실무자격검정원) |
 | 의견 제출 | contact@iapqb.org — 제출된 의견은 검토 결과와 함께 공개 |
 | 차기 버전 | v1.0 — 의견수렴 반영 후 확정 발행, 이후 연 1회 정기 개정 |
 
