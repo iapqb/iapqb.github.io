@@ -1,6 +1,6 @@
 # Mandated but unmeasured: AI literacy obligations and the evidence available to satisfy them
 
-**IAPQB Report 01** · International AI Practitioner Qualification Board · 12 August 2026
+**IAPQB Report 01** · International AI Practice Qualification Board · 12 August 2026
 
 *This is a working report. It has not been peer reviewed. All underlying data and the aggregation script are published alongside it.*
 

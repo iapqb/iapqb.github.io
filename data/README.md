@@ -68,7 +68,7 @@ IAPQB is preparing to enter this market as an examining body. It has held no exa
 
 ## How to cite
 
-> International AI Practitioner Qualification Board (2026). *AI-related private qualifications in South Korea: 2024 examination records.* IAPQB Open Data Release 01.
+> International AI Practice Qualification Board (2026). *AI-related private qualifications in South Korea: 2024 examination records.* IAPQB Open Data Release 01.
 
 ---
 
