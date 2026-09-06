@@ -4,12 +4,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IAPQB — 국제AI실무자격검정원 · AI 실무역량의 공개 검정 표준</title>
-<meta name="description" content="IAPQB(International AI Practice Qualification Board)는 AI 실무역량 프레임워크(IAPQB-STD-001)를 공개하고 실기 중심 자격검정을 준비하는 독립 민간 검정기관입니다.">
-<meta property="og:title" content="IAPQB — AI 실무역량의 공개 검정 표준">
-<meta property="og:description" content="공개 프레임워크 · 실기 중심 검정 · 공개 루브릭. AI 실무역량 프레임워크 v0.9 공개 의견수렴 중.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://cdn.jsdelivr.net https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://chk.iapqb.workers.dev https://cloudflareinsights.com; form-action 'self'; frame-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f37021">
+<meta name="color-scheme" content="light">
+<title>IAPQB — 국제AI실무자격검정원 · AI 실무역량 공개 표준</title>
+<meta name="description" content="IAPQB(International AI Practice Qualification Board)는 AI 실무역량 프레임워크(IAPQB-STD-001)와 채점 기준표를 공개 초안으로 발행하는 독립 표준화 기구입니다. 현재 어떠한 자격도 발급하지 않으며 검정을 시행하지 않습니다.">
+<meta property="og:title" content="IAPQB — AI 실무역량 공개 표준">
+<meta property="og:description" content="AI 실무역량 프레임워크 IAPQB-STD-001 v0.9 공개 초안. 평가 기준과 채점 기준표를 공개하고 의견을 받습니다.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://iapqb.org">
+<meta property="og:url" content="https://iapqb.org/">
+<meta property="og:site_name" content="IAPQB">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://iapqb.org/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="IAPQB — AI 실무역량 공개 표준">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IAPQB — AI 실무역량 공개 표준">
+<meta name="twitter:description" content="AI 실무역량 프레임워크 IAPQB-STD-001 v0.9 공개 초안.">
+<meta name="twitter:image" content="https://iapqb.org/og.png">
+<link rel="canonical" href="https://iapqb.org/">
 <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="23" fill="%23f37021"/><path d="M44.5 25 L55.5 25 L73.5 58 L68 68 L32 68 L26.5 58 Z" fill="none" stroke="%23ffffff" stroke-width="7.6" stroke-linejoin="round"/><path d="M47.4 42.5 L52.6 42.5 L61.2 57.5 L58.6 62 L41.4 62 L38.8 57.5 Z" fill="%23ffffff"/></svg>'>
 <script type="application/ld+json">
 {
@@ -18,11 +33,11 @@
   "alternateName":"국제AI실무자격검정원",
   "url":"https://iapqb.org","email":"contact@iapqb.org",
   "foundingDate":"2026",
-  "description":"AI 실무역량 프레임워크를 공개하고 실기 중심 자격검정을 운영하는 독립 민간 검정기관 (등록 신청 중)"
+  "description":"AI 실무역량 프레임워크와 채점 기준표를 공개 초안으로 발행하는 독립 표준화 기구"
 }
 </script>
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" integrity="sha384-GIdEBaqGN9mNkDkMkzMHW8EKUqtpPIe/sLj1X7DIrnc9uPtLROJgmuDlh+3rBw0j" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@500;700;800&display=swap">
 <style>
@@ -37,6 +52,9 @@
     --mono:Georgia,"Times New Roman",serif;
     --sans:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Malgun Gothic",sans-serif;
   }
+  .skiplink{position:absolute;left:-9999px;top:0;z-index:999;background:var(--orange);color:#fff;padding:10px 16px;border-radius:0 0 4px 0;font-weight:700;text-decoration:none}
+  .skiplink:focus{left:0}
+  :where(a,button,summary,[tabindex]):focus-visible{outline:2px solid var(--orange);outline-offset:2px}
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{margin:0;background:#fdf6ef;color:var(--ink);font-family:var(--sans);
@@ -299,10 +317,12 @@
 </head>
 <body>
 
+<a class="skiplink" href="#top">본문 바로가기</a>
+
 <div class="util">
   <div class="wrap">
     <span>IAPQB · International AI Practice Qualification Board</span>
-    <span class="r"><a href="#en">EN</a><a href="mailto:contact@iapqb.org">contact@iapqb.org</a><span class="hl">등록 신청 중</span></span>
+    <span class="r"><a href="#en">EN</a><a href="mailto:contact@iapqb.org">contact@iapqb.org</a><span class="hl">표준 공개초안</span></span>
   </div>
 </div>
 
@@ -315,8 +335,8 @@
     <nav class="links">
       <a href="#about">기관 소개</a>
       <a href="#framework">역량 프레임워크</a>
-      <a href="#cert">자격검정</a>
-      <a href="#verify">자격 확인</a><a href="#data">자격 데이터</a>
+      <a href="#cert">평가 체계 표준</a>
+      <a href="#verify">진위 확인</a><a href="#data">자격 데이터</a>
       <a href="#docs">기준·규정</a>
       <a href="#faq">FAQ</a>
       <a href="#news">뉴스룸</a>
@@ -333,7 +353,7 @@
       <div>
         <span class="chip">IAPQB-STD-001 · AI 실무역량 프레임워크 v0.9 공개 의견수렴</span>
         <h1>AI를 쓸 줄 아는 것과<br>업무에 책임지고 쓰는 것은 다릅니다.</h1>
-        <p class="sub">검정기준과 채점 루브릭은 응시 전에 공개됩니다. 공개된 기준 밖으로는 평가하지 않습니다. AI 실무역량을 실기로 검정하는 민간 기관이고, 아직 첫 회차를 열지 않았습니다.</p>
+        <p class="sub">평가 기준과 채점 루브릭을 먼저 공개하고, 공개된 기준 밖으로는 평가하지 않는다는 원칙 위에 표준을 씁니다. <b>AI 실무역량 프레임워크를 공개 초안으로 발행하는 표준화 기구이며, 현재 어떠한 검정도 시행하지 않습니다.</b></p>
         <div class="btns">
           <a class="btn primary" href="#framework">프레임워크 v0.9 보기</a>
           <a class="btn accent" href="#signup">사전관심 등록</a>
@@ -437,35 +457,35 @@
     <div class="wrap">
       <div class="sec-head">
         <span class="eyebrow"><i class="secno">§3</i>Certification</span>
-        <h2>자격검정 체계 <span class="tagline tag-prep" style="vertical-align:middle">민간자격 · 등록 신청 중(2026-08-10 신청)</span></h2>
-        <p class="muted" style="font-size:13px;margin:6px 0 0">등록 신청한 자격명은 <b>IAPQBCertifiedAppliedAI</b>이며 등급은 Foundation · Associate · Professional · Strategist의 네 단계입니다. 등록이 완료되기 전까지는 이 명칭도 확정이 아닙니다.</p>
+        <h2>평가 체계 표준 <span class="tagline tag-prep" style="vertical-align:middle">공개초안 · 의견수렴 중</span></h2>
+        <p class="muted" style="font-size:13px;margin:6px 0 0">이 표준이 정의하는 숙련도 단계는 Foundation · Associate · Professional · Strategist의 네 단계입니다. <b>본원은 현재 검정을 시행하지 않으며</b>, 아래는 평가 설계의 공개 초안입니다.</p>
         <p class="lead" style="margin-top:12px"><b>처음 보시는 분께.</b> 인공지능이 사람이 일일이 적던 것을 확률로 대신하면서 생기는 두 가지 실패(<b>무난화</b>와 <b>맥락 붕괴</b>), 이 자격이 재는 것이 그 둘을 조율하는 능력이라는 것, 등급마다 실제로 무엇을 해야 하는지, 분야에 따라 갈라지는 <b>트랙</b>까지 한 페이지에 정리해 두었습니다. → <a href="guide/iapqb-certified-applied-ai.html" style="color:var(--orange-2);border-bottom:1px solid var(--orange)"><b>IAPQBCertifiedAppliedAI — 이 자격은 무엇을 증명하는가</b></a></p>
-        <p class="lead">프레임워크 v1.0 확정 후 아래 체계로 시작합니다. 앞의 세 등급은 채점 기준표를 기계적으로 적용할 수 있는 형식으로만 출제해 <b>자동 채점</b>하고, <b>사람이 읽는 채점은 최상위 Strategist 하나에만 둡니다.</b> 채점 기준표는 어느 등급이든 응시 전에 공개합니다.</p>
+        <p class="lead">아래는 표준이 정의하는 평가 설계의 공개 초안입니다. 앞의 세 단계는 채점 기준표를 기계적으로 적용할 수 있는 형식으로만 출제해 <b>자동 채점</b>하고, <b>사람이 읽는 채점은 최상위 Strategist 하나에만 둡니다.</b> 채점 기준표는 어느 등급이든 응시 전에 공개합니다.</p>
         <p class="lead" style="margin-top:10px"><b>공개 방침.</b> 회차별 응시자 수와 합격자 수는 있는 그대로 냅니다. <b>합격률은 누적 응시자가 미리 정해 둔 기준을 넘은 뒤부터 냅니다.</b> 응시자가 몇십 명일 때의 비율은 난이도가 아니라 그 회차에 누가 왔는지를 보여줄 뿐이고, 그런 숫자를 투명성이라고 부르면 읽는 쪽이 잘못 판단하게 됩니다. 기준과 그때까지의 원자료는 함께 공개합니다. 회차별 실제 과제는 시행일까지 공개하지 않습니다. 미리 알려지면 대신 만들어 주는 산업이 붙습니다.</p>
         <p class="lead" style="margin-top:10px"><b>무료 자가진단(Readiness Check)에는 증서가 없습니다.</b> 같은 사람에게 자기보고와 수행 평가를 모두 적용한 연구에서 두 점수의 상관은 r=.07~.24였고, 연구진은 둘을 바꿔 쓸 수 없다고 결론지었습니다. 수행을 대신하지 못하는 점수로 증서를 주는 것은 측정으로 성립하지 않습니다. 진단은 영역별 결과 보고서로만 제공하고, 증서는 검정에 합격한 경우에만 발급합니다.</p>
       </div>
       <table class="cert">
         <tr><th style="width:24%">등급</th><th style="width:30%">대상</th><th>평가 방식</th><th style="width:14%">상태</th></tr>
         <tr>
-          <td><b>Foundation</b><br><span class="muted" style="font-size:12px">IAPQBCertifiedAppliedAI</span></td>
+          <td><b>Foundation</b></td>
           <td>AI 도구를 업무에 처음 쓰는 모든 직군</td>
           <td>필기 30문항 50분(D1·D2·D6). 자동 채점</td>
           <td><span class="tagline tag-prep">설계 중</span></td>
         </tr>
         <tr>
-          <td><b>Associate</b><br><span class="muted" style="font-size:12px">IAPQBCertifiedAppliedAI</span></td>
+          <td><b>Associate</b></td>
           <td>AI를 업무에 실제로 적용하는 실무자</td>
           <td>필기 40문항 60분 + 실기 2과제 90분(D1·D2·D5·D6). 자동 채점</td>
           <td><span class="tagline tag-prep">설계 중</span></td>
         </tr>
         <tr>
-          <td><b>Professional</b><br><span class="muted" style="font-size:12px">IAPQBCertifiedAppliedAI</span></td>
+          <td><b>Professional</b></td>
           <td>자동화를 설계하고 검증 체계를 운영하는 실무자</td>
           <td>실기 3과제 120분(D3·D4·D5·D7). 자동 채점</td>
           <td><span class="tagline tag-prep">설계 중</span></td>
         </tr>
         <tr>
-          <td><b>Strategist</b><br><span class="muted" style="font-size:12px">IAPQBCertifiedAppliedAI</span></td>
+          <td><b>Strategist</b></td>
           <td>조직의 AI 도입을 기획하고 판단하는 위치</td>
           <td>서술형 2과제 180분. <b>시험 시작 시 산업 현장 시나리오를 무작위로 배정</b>하고, 그 안에서 무엇을 할지는 응시자가 정합니다. <b>절감액 또는 증가액을 금액으로 산출하고 그 계산 근거를 대야 하며</b>, 제약에 비추어 실현 가능성을 논증하고 검증 계획을 함께 제시합니다. 사람이 읽고 채점합니다</td>
           <td><span class="tagline tag-prep">설계 중</span></td>
@@ -477,12 +497,11 @@
           <td><span class="tagline tag-prep">개발 착수</span></td>
         </tr>
       </table>
-      <p class="muted" style="font-size:13px;margin:12px 0 0">응시자격 — Foundation과 Associate는 제한이 없습니다. Professional은 Associate 취득자 또는 이에 상당하는 실무 경험을 증빙한 사람, Strategist는 Professional 취득자로 한정합니다. 등급별 응시료는 규정에 44,000원 · 66,000원 · 99,000원 · 176,000원으로 정해 두었고, 자격증 발급비는 따로 받지 않습니다. <b>등록이 완료되기 전에는 어느 것도 받지 않습니다.</b></p>
+      <p class="muted" style="font-size:13px;margin:12px 0 0">응시자격 — Foundation과 Associate는 제한이 없습니다. Professional은 Associate 취득자 또는 이에 상당하는 실무 경험을 증빙한 사람, Strategist는 Professional 취득자로 한정합니다. <b>본원은 현재 어떠한 수수료도 책정·공개하지 않습니다.</b></p>
       <div class="notice" role="note" style="margin-top:26px">
-        <strong>자격 표시 안내 (자격기본법 준수)</strong>
-        <div class="row"><span class="k">자격 성격</span><span>본 자격은 「자격기본법」에 따른 <b>민간자격</b>으로, 국가공인 자격이 아닙니다. 국가자격·국가공인 민간자격과 동일한 효력을 갖지 않습니다.</span></div>
-        <div class="row"><span class="k">등록번호</span><span class="ph">준비 중. 한국직업능력연구원 민간자격 등록 절차 완료 후 게재</span></div>
-        <div class="row"><span class="k">비용 정책</span><span>등록이 끝나기 전까지 <b>아무 비용도 받지 않습니다.</b> 등록 후에는 모든 수수료를 이 페이지에 숫자로 적습니다.</span></div>
+        <strong>현재 상태</strong>
+        <div class="row"><span class="k">시행 여부</span><span><b>본원은 자격을 발급하지 않고 검정을 시행하지 않습니다.</b> 이 페이지의 단계·평가 방식은 공개 논의를 위한 표준 초안이며 확정된 것이 아닙니다.</span></div>
+        <div class="row"><span class="k">수수료</span><span>책정된 수수료가 없으며 어떠한 금전도 수취하지 않습니다.</span></div>
       </div>
     </div>
   </section>
@@ -493,9 +512,9 @@
       <div class="grid2" style="align-items:start">
         <div class="sec-head" style="margin:0">
           <span class="eyebrow"><i class="secno">§4</i>Credential Verification</span>
-          <h2>자격 확인</h2>
-          <p class="lead">발급된 자격에는 고유 번호가 붙습니다. 아래에 번호를 넣으면 누구나 진위를 확인하실 수 있습니다. <b>여기서 확인되지 않는 자격증은 IAPQB 발급본이 아닙니다.</b></p>
-          <p class="idspec">자격번호 형식: <code>IAPQB-YYYY-000000</code> · 발급 개시 후 디지털 배지(Open Badges 호환) 병행 발급 예정</p>
+          <h2>증서 진위 확인 규격</h2>
+          <p class="lead"><b>현재 발급된 증서는 없습니다.</b> 아래는 증서가 발급될 경우 누구나 진위를 확인할 수 있도록 설계한 조회 규격이며, 지금은 조회 대상이 존재하지 않습니다.</p>
+          <p class="idspec">번호 형식 규격: <code>IAPQB-YYYY-000000</code> · 상태 4종(유효 200 / 만료 200 / 보류 200 / 폐기 410 / 미존재 404) · W3C Bitstring Status List 호환 설계</p>
         </div>
         <div class="verify">
           <b style="font-family:var(--serif);color:var(--dark)">자격번호 조회</b>
@@ -504,7 +523,7 @@
             <button class="btn primary" type="submit">확인</button>
           </form>
           <div class="res" id="vres"></div>
-          <p class="muted" style="font-size:12px;margin:14px 0 0">현재 등록된 자격 0건 · 첫 발급과 동시에 조회 기능이 열립니다.</p>
+          <p class="muted" style="font-size:12px;margin:14px 0 0">현재 조회 대상 0건 · 아래는 증서가 발급될 경우를 위해 설계해 둔 규격입니다.</p>
         </div>
       </div>
     </div>
@@ -555,14 +574,14 @@
         <tr><th style="width:16%">문서번호</th><th>문서명</th><th style="width:12%">버전</th><th style="width:14%">상태</th></tr>
         <tr><td>IAPQB-STD-001</td><td><a href="standards/IAPQB-STD-001_v1.1.md">AI 실무역량 프레임워크</a> <span class="muted" style="font-size:12px">— 트랙 구조(T1 품질 · T2 피지컬 AI)</span></td><td>v1.1 초안</td><td><span class="st pub">공개 의견수렴</span></td></tr>
         <tr><td>IAPQB-STD-001</td><td><a href="docs/IAPQB-STD-001.html">AI 실무역량 프레임워크 (직전 판)</a></td><td>v0.9</td><td><span class="st pub">공개</span></td></tr>
-        <tr><td>IAPQB-STD-002</td><td><a href="docs/IAPQB-STD-002.html">검정기준 및 채점 기준표</a> <span class="muted" style="font-size:12px">— 과목–영역 대응표 · 등급별 루브릭 · <a href="standards/IAPQB-STD-002_v2.2.md" style="color:inherit">원문(markdown)</a></span></td><td>v2.2</td><td><span class="st pub">공개</span></td></tr>
-        <tr><td>IAPQB-STD-003</td><td>교육과정 표준 (IAPQBCertifiedAppliedAI — Associate)</td><td>v1.1</td><td><span class="st prep">등록 심사 중</span></td></tr>
-        <tr><td>IAPQB-GOV-001</td><td>기관 운영·공정성 규정</td><td>v1.0</td><td><span class="st prep">등록 심사 중</span></td></tr>
-        <tr><td>IAPQB-GOV-002</td><td>자격의 관리·운영에 관한 규정</td><td>v2.0</td><td><span class="st prep">등록 심사 중</span></td></tr>
+        <tr><td>IAPQB-STD-002</td><td><a href="docs/IAPQB-STD-002.html">평가기준 및 채점 기준표</a> <span class="muted" style="font-size:12px">— 과목–영역 대응표 · 등급별 루브릭 · <a href="standards/IAPQB-STD-002_v2.2.md" style="color:inherit">원문(markdown)</a></span></td><td>v2.2</td><td><span class="st pub">공개</span></td></tr>
+        <tr><td>IAPQB-STD-003</td><td>학습목표 매핑 지침 <span class="muted" style="font-size:12px">— 제3자 교육기관 참조용, 본원은 교육과정을 운영하지 않음</span></td><td>v1.1</td><td><span class="st prep">내부 검토</span></td></tr>
+        <tr><td>IAPQB-GOV-001</td><td>기관 운영·공정성 규정</td><td>v1.0</td><td><span class="st prep">내부 검토</span></td></tr>
+        <tr><td>IAPQB-GOV-002</td><td>자격의 관리·운영에 관한 규정</td><td>v2.0</td><td><span class="st prep">내부 검토</span></td></tr>
         <tr><td>IAPQB-POL-001</td><td><a href="docs/IAPQB-POL-001.html">수수료·환불·개인정보 정책</a></td><td>v1.3</td><td><span class="st pub">공개</span></td></tr>
         <tr><td>IAPQB-POL-002</td><td><a href="docs/IAPQB-POL-002.html">응시 약관</a></td><td>v1.2</td><td><span class="st pub">공개</span></td></tr>
       </table>
-      <p class="muted" style="font-size:12.5px;margin-top:16px">"등록 심사 중"은 2026년 8월 10일 한국직업능력연구원에 제출한 상태를 말합니다. 심사 결과가 나오면 전문을 이 자리에 게시합니다.<br>응시 약관과 수수료 정책은 지금 전문을 볼 수 있습니다. 두 문서 모두 첫 회차 시행일부터 효력이 생깁니다.</p>
+      <p class="muted" style="font-size:12.5px;margin-top:16px">"내부 검토"는 아직 공개하지 않은 초안을 말합니다. 확정되면 전문을 이 자리에 게시합니다.<br><b>공개된 문서는 전부 초안이며 현재 효력이 없습니다.</b></p>
     </div>
   </section>
 
@@ -572,15 +591,13 @@
       <div class="sec-head">
         <span class="eyebrow"><i class="secno">§7</i>Questions</span>
         <h2>자주 묻는 질문</h2>
-        <p class="lead">답할 수 있는 것만 적었습니다. 정해지지 않은 항목은 그대로 두고, 확정되면 이 자리에서 안내드리겠습니다.</p>
+        <p class="lead">답할 수 있는 것만 적었습니다. 표준 초안 단계라 정해지지 않은 항목은 정해지지 않았다고 그대로 적었습니다.</p>
       </div>
       <div class="faq">
         <details><summary>국가공인 자격인가요?</summary><div class="a">아닙니다. 「자격기본법」에 따른 <b>민간자격</b>이며, 국가자격이나 국가공인 민간자격과 같은 효력을 갖지 않습니다. 이 내용은 증서와 모든 안내 지면에 함께 표시하고 있습니다.</div></details>
-        <details><summary>지금 응시할 수 있나요?</summary><div class="a">아직 열지 않았습니다.<br><br>2026년 8월 10일에 등록을 신청해 현재 심사 중입니다. 등록이 끝나고 프레임워크 v1.0이 확정되면 첫 회차 일정을 안내드립니다. <b>등록 전까지는 어떤 비용도 받지 않습니다.</b></div></details>
-        <details><summary>이 자격이 취업에 도움이 되나요?</summary><div class="a">아직 발급된 자격이 없어서 채용에서 어떻게 읽힐지는 말씀드릴 수 없습니다. 지금 드릴 수 있는 것은 <b>절차에 대한 약속</b>입니다. 무엇을 평가하는지 응시 전에 공개하고, 회차마다 응시자수와 합격률을 내고, 합격자가 무엇을 만들어 통과했는지를 동의를 받아 공개합니다. 그 기록이 쌓이면 읽는 분이 직접 판단할 재료가 생깁니다.</div></details>
+        <details><summary>지금 시험을 볼 수 있나요?</summary><div class="a">본원은 검정을 시행하지 않습니다.<br><br>지금 공개하고 있는 것은 역량 프레임워크와 채점 기준표의 <b>초안</b>이고, 의견수렴 중입니다. 시행 여부와 일정은 정해진 바가 없습니다.</div></details>
         <details><summary>다른 AI 자격과 무엇이 다른가요?</summary><div class="a">저희가 정한 것은 두 가지입니다. <b>채점 기준표를 응시 전에 공개하고 그 기준 밖으로는 평가하지 않습니다.</b> 그리고 <b>회차마다 응시자수와 합격률을 냅니다.</b> 시장 전체가 어떤 상태인지는 저희가 정부 원자료로 집계해 <a href="https://github.com/iapqb/iapqb.github.io/tree/main/data" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">데이터와 스크립트를 공개</a>해 두었으니, 비교는 그 숫자로 직접 하시는 편이 정확합니다.</div></details>
         <details><summary>무료 자가진단을 받으면 증서가 나오나요?</summary><div class="a">나오지 않습니다. <b>같은 사람에게 자기보고 척도와 수행 평가를 모두 적용한 연구에서 두 점수의 상관은 r=.07~.24로 나왔고, 연구진은 둘을 바꿔 쓸 수 없다고 결론지었습니다.</b> 수행을 대신하지 못하는 점수로 증서를 만들면 그 증서가 무엇을 증명하는지 저희도 설명할 수 없습니다. 진단은 어느 영역이 비어 있는지 보는 용도이고, 증서는 검정에 합격한 경우에만 발급합니다.</div></details>
-        <details><summary>응시료는 얼마인가요?</summary><div class="a">Foundation 44,000원, Associate 66,000원, Professional 99,000원, Strategist 176,000원으로 규정에 정해 두었습니다. 자격증 발급비는 응시료에 포함되어 있어 따로 받지 않습니다. <b>등록 완료 후 확정해 이 페이지에 숫자로 게시할 예정입니다.</b> 등록 전에는 받지 않습니다.</div></details>
         <details><summary>응시 자격에 제한이 있나요?</summary><div class="a">Foundation과 Associate는 제한이 없습니다. Professional은 Associate 취득 또는 그에 상당하는 실무 경험 증빙이 필요합니다. Strategist는 Professional 취득자만 응시할 수 있고 회차별 정원이 있습니다. 선착순이 아니라 제출 서류로 선발합니다. 기획서 하나를 읽는 데 한 시간 이상이 들고 규정상 채점자 외 1인의 검토를 거치게 되어 있어서, <b>정원은 그 한계를 그대로 옮긴 숫자입니다.</b></div></details>
         <details><summary>합격률을 정말 공개하나요?</summary><div class="a">응시자 수와 합격자 수는 회차마다 그대로 냅니다. <b>비율은 누적 응시자가 미리 공약한 기준을 넘은 뒤부터 냅니다.</b> 응시자가 몇십 명인 회차의 합격률은 난이도가 아니라 그 회차에 누가 왔는지를 보여줄 뿐이고, 그것을 투명성이라 부르면 읽는 쪽이 잘못 판단합니다. 기준은 미리 적어 두고 그때까지의 원자료는 함께 공개합니다. 해외 자격기관 여섯 곳을 확인해 보니 다섯 곳이 합격률을 내지 않았고, 내는 한 곳은 회당 응시자가 2만 명대였습니다.</div></details>
         <details><summary>교육이나 강의도 하시나요?</summary><div class="a">하지 않습니다. 같은 곳이 가르치고 평가하면 평가의 독립성을 지키기 어렵다고 보기 때문입니다. <b>대신 프레임워크를 누구나 쓸 수 있게 공개합니다.</b> 이 표준으로 교육과정을 만드는 것은 별도 허락 없이 가능하고, 표기 규칙은 v1.0과 함께 안내합니다.</div></details>
@@ -588,7 +605,7 @@
         <details><summary>결과는 언제 나오나요?</summary><div class="a">자동 채점하는 세 등급은 시험이 끝나면 바로 점수가 화면에 뜨고, 공식 성적은 5영업일 이내에 발표합니다. 사람이 읽는 Strategist만 45일 이내입니다.<br><br> 기한을 못 지키게 되면 기한이 끝나기 전에 지연 사실과 새 발표일을 올립니다. 같은 등급에서 두 회차 연속으로 넘기면 그 회차 응시자 전원에게 응시료를 전액 환불합니다.<br><br><b>매 회차의 실제 소요일수는 결과와 함께 공개합니다.</b> 약속한 날짜를 지켰는지 응시자가 직접 볼 수 있어야 한다고 봤습니다. <a href="docs/IAPQB-POL-002.html#a11" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">응시 약관 제11조</a></div></details>
         <details><summary>실기에서 AI를 써도 되나요?</summary><div class="a">써도 됩니다. 대신 무엇을 어떻게 썼는지 함께 내야 합니다.<br><br>필기 중에는 생성형 AI를 포함한 외부 도구를 쓸 수 없습니다. 실기는 다릅니다. 사용한 도구의 이름과 버전, 주요 프롬프트, 산출물 중 AI가 만든 부분을 사용 기록으로 제출하시면 됩니다.<br><br><b>AI를 썼다는 사실 자체는 감점하지 않습니다.</b> AI 실무역량을 재는 시험에서 AI 사용을 막는 것은 앞뒤가 맞지 않습니다. 평가하는 것은 도구를 썼는지가 아니라 그 산출물을 검증할 수 있는지입니다. 사용 기록을 내지 않거나 사실과 다르게 내면 부정행위로 봅니다. <a href="docs/IAPQB-POL-002.html" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">응시 약관 제13조·제14조</a></div></details>
         <details><summary>채점은 사람이 하나요, AI가 하나요?</summary><div class="a">서술형과 실기는 사람이 채점합니다.<br><br>선택형과 단답형은 자동으로 채점합니다. 서술형 문항과 실기 산출물은 사람이 공개된 루브릭을 적용해 채점하고, 채점자 외 1인이 검토합니다. <b>채점자의 판단을 인공지능으로 대체하지 않습니다.</b><br><br>이 방식은 처리량에 상한을 만듭니다. 그래서 회차별 정원을 두고, 정원과 실제 채점 소요일수를 함께 공개합니다.</div></details>
-        <details><summary>결과에 이의가 있으면 어떻게 하나요?</summary><div class="a">결과 발표일부터 14일 이내에 신청하실 수 있습니다.<br><br>선택형과 단답형은 채점 처리 오류만 다루며, 답안 대조 결과를 7일 이내에 회신합니다. 서술형과 실기는 공개 루브릭을 잘못 적용했는지만 다룹니다. 평가자의 판단 자체는 이의신청 대상이 아닙니다. 재채점은 처음 채점에 참여하지 않은 평가자가 맡고, 14일 이내에 회신합니다.<br><br>재채점 수수료는 20,000원이고 이의가 받아들여지면 전액 돌려드립니다. <b>재채점 결과 점수가 낮아지더라도 처음 점수를 적용합니다.</b> <a href="docs/IAPQB-POL-002.html" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">응시 약관 제19조</a></div></details>
+        <details><summary>결과에 이의가 있으면 어떻게 하나요?</summary><div class="a">결과 발표일부터 14일 이내에 신청하실 수 있습니다.<br><br>선택형과 단답형은 채점 처리 오류만 다루며, 답안 대조 결과를 7일 이내에 회신합니다. 서술형과 실기는 공개 루브릭을 잘못 적용했는지만 다룹니다. 평가자의 판단 자체는 이의신청 대상이 아닙니다. 재채점은 처음 채점에 참여하지 않은 평가자가 맡고, 14일 이내에 회신합니다.<br><br>재채점에는 실비 성격의 수수료를 두되 이의가 받아들여지면 전액 돌려주는 것으로 규정 초안에 적어 두었습니다. <b>재채점 결과 점수가 낮아지더라도 처음 점수를 적용합니다.</b> <a href="docs/IAPQB-POL-002.html" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">응시 약관 제19조</a></div></details>
         <details><summary>회사 업무로 만든 걸 실기 산출물로 내도 되나요?</summary><div class="a">식별 정보를 지우고, 회사 동의를 받으셨다는 사실을 함께 내시면 됩니다.<br><br>제3자의 영업비밀이나 개인정보가 들어간 산출물은 받지 않습니다. 이를 어긴 제출물은 채점하지 않고 해당 회차 응시를 무효로 합니다.<br><br>제출물의 저작권은 응시자에게 있습니다. 본원은 채점, 검토, 이의신청 처리, 부정행위 조사에만 씁니다. 공개하려면 따로 서면 동의를 받고, <b>동의는 언제든지 철회하실 수 있습니다.</b> <a href="docs/IAPQB-POL-002.html" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">응시 약관 제15조·제16조</a></div></details>
         <details><summary>문의는 어디로 하나요?</summary><div class="a">표준 초안에 대한 의견은 공개 저장소에 남겨 주세요. 기록이 그대로 남고 검토 결과도 같은 자리에 붙습니다. <b>contact@iapqb.org</b>로 보내 주세요.<br><br>표준 초안에 대한 의견은 <a href="https://github.com/iapqb/iapqb.github.io/issues" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">공개 저장소</a>에 남기셔도 됩니다. 그 자리에는 기록이 그대로 남고 검토 결과도 같은 자리에 붙습니다. 공개를 원하지 않으시면 메일로 보내 주세요.</div></details>
       </div>
@@ -607,7 +624,6 @@
         <div class="n"><span class="date">2026-08-12</span><span class="cat">자료</span><span><b>2024년 AI 자격 실측 집계</b>. 공공데이터포털 원자료 183,147행을 직접 집계했습니다. 시험을 연 AI 자격 50개, 응시 25,416명, 합격률 100%인 자격 20개. 집계 결과와 재현 스크립트를 <a href="https://github.com/iapqb/iapqb.github.io/tree/main/data" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">공개</a>했고, 전체 분석은 스코어카드 제1호로 발행합니다.</span></div>
         <div class="n"><span class="date">2026-08-13</span><span class="cat">공고</span><span><b>STD-001 공개 의견수렴을 9월 30일까지 연장</b>. 8월 12일까지 도메인 메일에 MX 레코드가 없어 contact@iapqb.org로 온 메일이 도착하지 않았습니다. 8월 13일 복구했습니다. 그 기간에 의견을 보내신 분은 다시 보내 주시기 바랍니다. 접수된 의견이 없는 상태에서 마감하면 그 결과를 해석할 수 없다고 판단해 연장합니다.</span></div>
         <div class="n"><span class="date">2026-08-12</span><span class="cat">방침</span><span><b>무료 자가진단에 증서를 발급하지 않기로 확정</b>. 같은 사람에게 두 방식을 모두 적용한 연구에서 자기보고와 수행 점수의 상관은 r=.07~.24였습니다. 수행을 대신하지 못하는 점수로 증서를 주는 것은 측정으로 성립하지 않습니다.</span></div>
-        <div class="n"><span class="date">2026-08-10</span><span class="cat">등록</span><span><b>민간자격 등록 신청</b>. 한국직업능력연구원에 신청했고 현재 심사 중입니다. 등록번호는 완료 후 이 자리에 게재합니다.</span></div>
         <div class="n"><span class="date">2026-07-23</span><span class="cat">표준</span><span><b>AI 실무역량 프레임워크(IAPQB-STD-001) v0.9 공개초안 발행</b>. 2026-08-31까지 누구나 의견을 제출할 수 있습니다.</span></div>
       </div>
       <h3 style="font-size:17px;color:var(--dark);margin-bottom:16px">AI 실무 동향 브리핑 <span class="muted" style="font-family:var(--sans);font-size:12px;font-weight:400">(자동 수집, 출처 원문 링크 제공)</span></h3>
@@ -626,7 +642,7 @@
       <h2 style="margin-top:10px">Article 4 requires AI literacy. The Act does not say what counts as evidence.</h2>
       <p style="margin-top:18px">The EU AI Act, Article 4, requires providers and deployers to ensure a sufficient level of AI literacy among their staff. The obligation has applied since 2 February 2025. National market surveillance authorities began supervising and enforcing it on 2 August 2026. The Act does not state what evidence satisfies it.</p>
       <p style="margin-top:14px">IAPQB publishes a competency framework, <b>IAPQB-STD-001</b>. Assessment criteria and scoring rubrics are released before each examination. An assessment record states the criterion applied and who applied it.</p>
-      <p style="margin-top:14px">IAPQB has held no examination. Its credentials will be private qualifications under the Korean Framework Act on Qualifications. They are not state-accredited, and no regulator recognises them as evidence of Article 4 compliance. Draft v0.9 is open for public comment until 30 September 2026.</p>
+      <p style="margin-top:14px">IAPQB holds no examination and issues no credential. It publishes a competency standard as a public draft. Nothing on this site is state-accredited, and no regulator recognises this work as evidence of Article 4 compliance. Draft v0.9 is open for public comment until 30 September 2026.</p>
       <p style="margin-top:14px"><b>Report 01</b> sets out what the obligation asks for and what evidence exists to meet it. It publishes the full 2024 examination record of one national qualification market, together with the script that produced every figure in it.</p>
       <p style="margin-top:16px"><a href="https://github.com/iapqb/iapqb.github.io/blob/main/reports/IAPQB_Report_01_EN.md">Report 01 (working paper)</a> &nbsp;·&nbsp; <a href="docs/IAPQB-STD-001.html">Read the framework</a> &nbsp;·&nbsp; <a href="https://github.com/iapqb/iapqb.github.io/tree/main/data">Data and script</a> &nbsp;·&nbsp; <a href="mailto:contact@iapqb.org">contact@iapqb.org</a></p>
     </div>
@@ -636,11 +652,11 @@
   <section id="signup">
     <div class="wrap">
       <div class="signup">
-        <span class="eyebrow">Stay Informed</span>
-        <h2>첫 회차가 열리면 알려 드립니다</h2>
-        <p>접수는 아직 열지 않았습니다. 표준이 확정되고 첫 회차 일정이 잡히면 한 번만 안내드립니다. <b>안내가 끝나면 주소는 지웁니다.</b> 그 외의 목적으로는 쓰지 않습니다.</p>
-        <p style="margin-top:18px"><a class="btn accent" href="mailto:contact@iapqb.org?subject=%5BIAPQB%5D%20%EC%B2%AB%20%ED%9A%8C%EC%B0%A8%20%EC%95%88%EB%82%B4%20%EC%8B%A0%EC%B2%AD&body=%EC%9D%B4%20%EB%A9%94%EC%9D%BC%EC%9D%84%20%EA%B7%B8%EB%8C%80%EB%A1%9C%20%EB%B3%B4%EB%82%B4%EC%8B%9C%EB%A9%B4%20%EB%90%A9%EB%8B%88%EB%8B%A4.">메일로 신청</a></p>
-        <p class="consent" id="signup-msg">회차 공고와 표준 개정은 <a href="https://github.com/iapqb/iapqb.github.io" style="color:var(--orange-2)">공개 저장소</a>에도 올립니다. 메일을 남기지 않고 그쪽을 구독하셔도 같은 알림을 받으실 수 있습니다.</p>
+        <span class="eyebrow">Public Comment</span>
+        <h2>표준 초안에 의견을 주십시오</h2>
+        <p><b>IAPQB-STD-001 v0.9 공개 의견수렴이 2026년 9월 30일까지 열려 있습니다.</b> 능력 영역의 구분, 수행지표의 문장, 채점 루브릭의 적용 가능성 — 어느 것이든 좋습니다. <b>제출된 의견은 검토 결과와 함께 공개합니다.</b> 반영하지 않기로 한 의견도 그 이유를 적어 같이 올립니다.</p>
+        <p style="margin-top:18px"><a class="btn accent" href="mailto:contact@iapqb.org?subject=%5BIAPQB-STD-001%20v0.9%5D%20%EC%9D%98%EA%B2%AC%20%EC%A0%9C%EC%B6%9C">의견 제출</a></p>
+        <p class="consent" id="signup-msg">표준 개정과 문서 변경은 <a href="https://github.com/iapqb/iapqb.github.io" style="color:var(--orange-2)">공개 저장소</a>에 그대로 올라갑니다. 이슈로 남기셔도 같은 창구입니다.</p>
       </div>
     </div>
   </section>
@@ -662,14 +678,14 @@
       </div>
       <div>
         <h5>자격</h5>
-        <ul><li><a href="#cert">검정 체계</a></li><li><a href="#verify">자격 확인</a></li><li><span class="ph">응시 접수 (준비 중)</span></li><li><span class="ph">수수료 공개 (준비 중)</span></li></ul>
+        <ul><li><a href="#cert">평가 체계 표준</a></li><li><a href="#verify">진위 확인 규격</a></li><li><a href="#data">2024년 시장 데이터</a></li><li><a href="#signup">의견 제출</a></li></ul>
       </div>
     </div>
     <div class="legal">
-      <a href="#cert">자격 표시 안내</a> · <a href="docs/IAPQB-POL-002.html">응시 약관</a> · <a href="docs/IAPQB-POL-001.html">수수료·환불·개인정보 정책</a><br>
-      IAPQB(International AI Practice Qualification Board · 국제AI실무자격검정원). AI 실무역량 검정 준비 기관<br>
-      사업자등록번호: 743-22-02693 · 대표: 이승원 · 주소: (28124) 충북 청주시 청원구 오창읍 오창중앙로 32, 212동 802호 · <span class="ph">통신판매업 신고번호: 신고 예정</span><br>
-      본 기관의 자격은 「자격기본법」에 따른 민간자격으로 국가공인 자격이 아니며, 한국직업능력연구원 등록 완료 전까지 응시료·발급비를 수취하지 않습니다. 등록번호는 등록 절차 완료 후 이 자리에 게재합니다. 본 기관은 정부·공공기관이 아닙니다.<br>
+      <a href="#cert">현재 상태</a> · <a href="docs/IAPQB-POL-002.html">평가 시행 규정(초안)</a> · <a href="docs/IAPQB-POL-001.html">수수료·환불·개인정보 정책(초안)</a><br>
+      IAPQB(International AI Practice Qualification Board · 국제AI실무자격검정원). AI 실무역량 표준화 기구<br>
+      사업자등록번호: 743-22-02693 · 대표: 이승원 · 문의: <a href="mailto:contact@iapqb.org">contact@iapqb.org</a><br>
+      <b>본 기관은 현재 어떠한 자격도 발급하지 않으며 검정을 시행하지 않습니다.</b> 이 사이트의 문서는 공개 논의를 위한 표준 초안이며, 자격의 취득을 권유하거나 응시를 안내하는 자료가 아닙니다. 본 기관은 정부·공공기관이 아닙니다.<br>
       접속 통계는 Cloudflare Web Analytics로 집계합니다. 쿠키를 사용하지 않고 개별 방문자를 추적하지 않습니다(<a href="docs/IAPQB-POL-001.html#a10-4">POL-001</a> 제10조의4).<br>
       © 2026 IAPQB. All rights reserved.
     </div>
