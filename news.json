@@ -1,5 +1,173 @@
 [
  {
+  "date": "2026-10-16",
+  "title": "\"우리 아이들은 실험용 쥐가 아니다\"…AI 활용의 덫",
+  "source": "지디넷코리아",
+  "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBBM3d6MmJXY0xUZWtrNUI0X09lZHhEaHpZc1NtekdXRzkxUi1sODdSV1d2bWtHQTF1T3NmVVNYZUVIanItTk9rRlRhUlRxaVVlUVlMUUVB?oc=5",
+  "summary": "\"우리 아이들은 실험용 쥐가 아니다\"…AI 활용의 덫 지디넷코리아"
+ },
+ {
+  "date": "2026-10-13",
+  "title": "[단독] \"AI 오남용 막자\"…'인공서원'으로 뭉친 서울대",
+  "source": "한국경제",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwNmdCb2ZsWlgxaEZmRHdMaEtLcnF5TU5OY3VjdHBRYW92ZnRBRTh4M05hc3lGVFEwUDBLb2VLR2o3VkRjOThUUFBKSTBoQVRra1M2WlowT0pEZw?oc=5",
+  "summary": "[단독] \"AI 오남용 막자\"…'인공서원'으로 뭉친 서울대 한국경제"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "한국부동산원, 인공지능 경영시스템 국제표준 인증 획득",
+  "source": "연합뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAzcDFDU3VOeGpEbWpyZGtDVm9rbzhYbjRMUUs4aFFkRjJ4ZjNqLVlDRzRjZmdLYjFQVWZlQXhaOEZiQWRUZmZ3Q2xpZExsVzdoZTJlM09YenFoRnPSAWBBVV95cUxNX2c2X054VFFDdWZPbU9sY2lJdmd3ZlRiZElMR0tJT25PU3JhWGdzOVdrOFQ4allVOUdaSWdfaDFfaU1fWkdQVGtLY2pqbkMtVkxSRzAyZXRVM1RFdkVVNUw?oc=5",
+  "summary": "한국부동산원, 인공지능 경영시스템 국제표준 인증 획득 연합뉴스"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "워시 “금리결정 예단 안 해…인공지능이 세계경제 상방 요인”",
+  "source": "KBS 뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9IbXJlSi0tTmMydGFZcDdKM0JBcm96Qmdvckw3azhDYlVjR0dTRENia1E4QVdVZ2FiSXNPM1ZsMjI0bi1pa3NCYng0aGFubzZVLXAybTQwTDFrMGs?oc=5",
+  "summary": "워시 “금리결정 예단 안 해…인공지능이 세계경제 상방 요인” KBS 뉴스"
+ },
+ {
+  "date": "2026-10-15",
+  "title": "‘인공지능 대신 슈퍼지능 써라’…미 압박에 IMF 회원국들 ‘떨떠름’",
+  "source": "한겨레",
+  "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1GSlNtOFRNb0p6ZHYydU1NWm1ieEdPZG5aV0EzeEpGUHF4OW5oOWRidEdVYVhIVkFjTWZWaVNtQzN0aS16SnoxOUVkNi10M3VjTF9RM1VKc2lwTHEtT29WekxfenpjcGlLTWxPQ29Kdw?oc=5",
+  "summary": "‘인공지능 대신 슈퍼지능 써라’…미 압박에 IMF 회원국들 ‘떨떠름’ 한겨레"
+ },
+ {
+  "date": "2026-10-15",
+  "title": "젠슨 황 “안전하지 않은 AI 개발사에 칩 공급 중단할 수도”",
+  "source": "경향신문",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VN2x6Tkx5bmhfeXlLOUVpYnJHclF6dGl5Ri1aSXRGSlpENmh5M3dPZGxrd0JXT3ozNnZyalNEcDh0LWNDQTc3VWFZOVFVV2ZoWHR4WDhWVXFaQdIBX0FVX3lxTE9jU1ZXSzRvQWFxQklQWFV6bnpMbEZFbk5jQXR3U3pHSlo5MnhMby1kQUxXVkpvME9NT0RHenY5WjZmM0dkeGRMZmRpdWtFZEdCR0Mya0o2ajY5cWpLSmE0?oc=5",
+  "summary": "젠슨 황 “안전하지 않은 AI 개발사에 칩 공급 중단할 수도” 경향신문"
+ },
+ {
+  "date": "2026-10-15",
+  "title": "\"AI 투자할 돈, 계속 빌릴 수 있나\"…K증시 세게 때린 '빚투' 불안",
+  "source": "한국경제",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IXzJxVWFqVzJwc2pMT1pHU2M5clowWXBZSTJROUp0TFl4YU9QQWVkdUpJNlotU1R5T1l6Qm1EYU1yX2tDelA2TEpXMXVBeXN3ZHQ3YXc4SVdSZw?oc=5",
+  "summary": "\"AI 투자할 돈, 계속 빌릴 수 있나\"…K증시 세게 때린 '빚투' 불안 한국경제"
+ },
+ {
+  "date": "2026-10-15",
+  "title": "“빅테크, AI 투자금 반도 못 건져”… ‘투자 절벽’ 오면 반도체 치명상",
+  "source": "조선일보",
+  "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPM0JFa180QVUySi1CMHJwczA4Qk9WU1RTVWRMZ0ZPcnRQWGdVUnNsVzRIc1VTVkZGNTIxb1Bramh4Mmh0T0d2eW1rYlNvUDBFXzBmVjNYeXpGZ19qbUNBdnIwM1pBMlpzNlN3UmJXZjd3YWpGNnZXUm1QTHRWMHVfMVZ6dU9neWdOTExB?oc=5",
+  "summary": "“빅테크, AI 투자금 반도 못 건져”… ‘투자 절벽’ 오면 반도체 치명상 조선일보"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "“AI가 만들었다고 저작권 없다?”... 필리핀, 인간 창작성이 기준",
+  "source": "특허뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1hQjJFa0hmRVVENzZELV9LVlo1Q0xZR2Q0SmlpZDhwUkI5aE9WLUM5NEFvWF94ZzJEV1l6SDNFR0ROM1JhOC01Uw?oc=5",
+  "summary": "“AI가 만들었다고 저작권 없다?”... 필리핀, 인간 창작성이 기준 특허뉴스"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "[딸깍! 누가 만들었나] “AI가 부른 노래에 울컥”···멜론 3위까지 오른 ‘머무르’ 단독 인터뷰",
+  "source": "경향신문",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qMnBRbnVkQlhGOXpDa3ZrVE9RTDdhNE14V1F6X2M5Zm9sZ213MTlSSHRxdWlNaXkwZzV6X2VKbjVaYk9NcHQxS1gzd1lNdWF6blV1Y1lVR2t6QdIBX0FVX3lxTE1SREFLeVFHVFk5SGZJcFZVTkZNbTJhYXVSVXpPaWpQNFBVd0V3SWhwWVNkR3VmdHFJZUFoaHNzRW10V21YMW1ISFo1WVV5aVJJdFBRSlZDYmttb1BNdXh3?oc=5",
+  "summary": "[딸깍! 누가 만들었나] “AI가 부른 노래에 울컥”···멜론 3위까지 오른 ‘머무르’ 단독 인터뷰 경향신문"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "출판계, AI 저작권 보호 촉구 연명 운동 확산",
+  "source": "https://www.2news.co.kr/",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1OSUtHYVM4d1MxQnVnd1IwYTUxM0lUNnRQR3o1Z3JqQlU3TTYzY25VYkVsQlpqdG1nUi10YzJCVlE4QUtSY3lOeFJCX2JTcld6cVlvWU1yRDJjVlNCOFNndXdXRzJ5eUZi?oc=5",
+  "summary": "출판계, AI 저작권 보호 촉구 연명 운동 확산 https://www.2news.co.kr/"
+ },
+ {
+  "date": "2026-10-14",
+  "title": "AI가 번역한 작품에도 저작권이 있을까… 남형두 교수, ‘번역과 저작권’ 출간",
+  "source": "법률신문",
+  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9wMXB3aXY1V2Jobnl5VzlpTHQwRlh1UFlycWNsa2hhYmtKOEI4bmo3SGNwRWhsUzhiazJXNF9LQ09uamF6UDZmdTZpX21kdUpqd0ZwbWVYSXRhVm5qU19FVVFPR2Y4M2dVU2hObnYyRlVSd9IBckFVX3lxTE9wMXB3aXY1V2Jobnl5VzlpTHQwRlh1UFlycWNsa2hhYmtKOEI4bmo3SGNwRWhsUzhiazJXNF9LQ09uamF6UDZmdTZpX21kdUpqd0ZwbWVYSXRhVm5qU19FVVFPR2Y4M2dVU2hObnYyRlVSdw?oc=5",
+  "summary": "AI가 번역한 작품에도 저작권이 있을까… 남형두 교수, ‘번역과 저작권’ 출간 법률신문"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "국립저작권박물관, 추억의 코미디 ‘웃으면 복이와요’ AI로 재현",
+  "source": "단디뉴스",
+  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBkSmhCMjRQRlFTMU9ncFI0VTFNd2FiNFc2cE0tVHNjNzRIX0lrSk1HR3ZlcVpaaFNIUFBpNllFSHhiaFdkSHZ6WHg0ejV0dmxpUjZZelFZS1lsTDhqVGZpSC15Q0MzeDVRRU9N?oc=5",
+  "summary": "국립저작권박물관, 추억의 코미디 ‘웃으면 복이와요’ AI로 재현 단디뉴스"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "美 대학 교과서 저자들, 오픈AI·MS 상대 집단소송…’AI가 교과서 시장 잠식’ 주장",
+  "source": "IPDaily",
+  "link": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxOWDRkVzVqd2RxSDhqenpTZEJLa2dQaExNeU1pdTh4RGEzY2pHLXE0S01yQ2dzV1EwVnc5WGVHNGdkeG04dHV0SVRYQ2R1RDZ4THBUb1M3dVg3c25pMHZHZnNUSUUxdmJOb05jZlpEbS1aakt3ZWhya3MwQnRVRHNqbHQwSkd2QnN4ZVdSVlBQdUJOU0NoUGdkcC1IRWFWaC1ySWlYS0c4My14TlpJZlVZZUhqbTE5WEN1bVZyWUw4Vzdpb1hsR0RETV9FYUhhVUVFY2c3M01Eby1mTkFkbldSUWswYWdyYlNaUzhmTUpSZ1pwSkpCQkZBQVVjLWtRcW5zQjVXYWZCS1Vmb3IxVnBFQzBROFVsNEZoeDNfUGZqLXlsQUVaSWw5dzZfWjJ1a1NkVlhaR09oMDhjRm0teDI4QVUtbnVoZ2FVc0hGZWJicWNNZWs?oc=5",
+  "summary": "美 대학 교과서 저자들, 오픈AI·MS 상대 집단소송…’AI가 교과서 시장 잠식’ 주장 IPDaily"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "국립저작권박물관, AI 재현 코미디 대본 행사 ‘김수한무가 돌아왔다! with AI’",
+  "source": "경남뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA4eGdoTjRDZExoQkgtSHIwR3JPUENjaS1TQUNNaWMtREpXT2xIcnpDYllKYjUzcHU5V0ZiU1FlRXQ1RklZa2JrS0ZLNVVJSTBfWFVhQVRNeFFGVDFjd180THFCeEFZTlRB?oc=5",
+  "summary": "국립저작권박물관, AI 재현 코미디 대본 행사 ‘김수한무가 돌아왔다! with AI’ 경남뉴스"
+ },
+ {
+  "date": "2026-10-15",
+  "title": "앤트로픽, 한강 작가 책까지 불법 다운...커지는 AI 저작권 침해 우려 [글로벌 모닝 브리핑]",
+  "source": "서울경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9hcVM3LVVvbnF0dFoycUdTeUlyNENrWmpNMS1TUjJjNW5SN3hPT1JCc1Y5WkJyUC0ydnJOZkx0X2d0aTlLcjJ6WURrbUFWOG5lemfSAVNBVV95cUxOQVU4MWwyUWE5UWpBZm5rekE2R3BUU2FmcEI2VTJla0VTeWdwcFhoY3dTUFFDRXRqblhEclZrdExST0djSnFCbTVJakc5UUFXOGh2cw?oc=5",
+  "summary": "앤트로픽, 한강 작가 책까지 불법 다운...커지는 AI 저작권 침해 우려 [글로벌 모닝 브리핑] 서울경제"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "부산시, 데이터·AI 활용해 행정업무 개선… 우수과제 6건 발표",
+  "source": "국토일보",
+  "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1yR3docFJWV3FxemFWYVhLMUFIUFVUdm1zaXVpNUg4QzZuSGp6QVI4dGtyZFdKTFZHZFVYY1hkQklKRTVpblloUTlheHgyQnk0dWZPRU0zTUZQQVVlek5iWlE0NA?oc=5",
+  "summary": "부산시, 데이터·AI 활용해 행정업무 개선… 우수과제 6건 발표 국토일보"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "세종연구원, 시민들 AI 활용 역량 높인다",
+  "source": "대전일보",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE15aFpKUktFeTFST2ZOUDVzVlcwTG9aay1CUmRCQXc2WHZ5ZFQyRGNtNkw2aHhhb0pUY3cyOGNkSThrbjVGbG5LWmszVmFOamtyTXZ0VXFVdWFYMDBUaGktZUF1OWhKM1QxcmFnYWY0UWd3YmPSAXNBVV95cUxNeWhaSlJLRXkxUk9mTlA1c1ZXMExvWmstQlJkQkF3Nlh2eWRUMkRjbTZMNmh4YW9KVGN3MjhjZEk4a241RmxuS1prM1ZhTmprck12dFVxVXVhWDAwVGhpLWVBdTloSjNUMXJhZ2FmNFFnd2Jj?oc=5",
+  "summary": "세종연구원, 시민들 AI 활용 역량 높인다 대전일보"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "예보, 생성형 AI 도입 본격화…대국민 서비스 늘린다",
+  "source": "주간한국",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE12ZmFSclZ1OFVPRkRpanBpTzloVGp3V1lhMHlQbElsWGROT3ZOQl9NT2o5QTZhWVQtamh1N24zWWdzSUpiZi1kUjEyV0pMczByRGRtVmdFV3RLQ1Y0c1lIMFhOT2FzZmNscU5hWjdUb1TSAXRBVV95cUxNSVpTTGRQYTljdlZnTlZJSE1zaTJhSjJzMExzNzRrZEVnNEgyWk14UXhqX1Y2NlEwNUxkOVBZZUF2eERSenVaLXg2VDZib2hRc19RRmlHSFhfdUhoaVdRTVFDM25PMDQxRVBHM25jYU14LWk5dw?oc=5",
+  "summary": "예보, 생성형 AI 도입 본격화…대국민 서비스 늘린다 주간한국"
+ },
+ {
+  "date": "2026-10-15",
+  "title": "\"인공지능, 행정 문제 해결\"…부산시 데이터·AI 활용 경진대회",
+  "source": "연합뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0ySWtVOVhENHRoZ0V6WkxaTlZVTkhoc1BGQ3FkOFMzeDVTczRBazJydHBUUnNzMlNXdzhDQVRhYm1YVTVYRTF6MzBURTdOV3gyUkxnR1JpcF81b0HSAWBBVV95cUxQaHNnX29pTVRFMmdMQ1R0MWF0WjVZT0RWdnFvNWFCVFFyWXdSX2tTU3JScjIwU2JxVDNlTVN6Y0xVZ0d2RmljZ1dENWNhRDEzQUNBU2Z4b3V6WHJudXc1dko?oc=5",
+  "summary": "\"인공지능, 행정 문제 해결\"…부산시 데이터·AI 활용 경진대회 연합뉴스"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "일본 HR기업 75%가 생성형 AI 사용…한중일, ‘사람 대체’보다 업무 재설계",
+  "source": "동아일보",
+  "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1oUkJ4MHVQWUNGX0FId3hadTJVMjcxaVB6am8zdTV0LTAtOTZGRGU4bEFQQWRkbWhLdHg0akRXVFpxZW02RDRKRDlMSWNlZnhySWJFYmQtMl81cTVBaW5kUTBPSVU3Z9IBZkFVX3lxTE1oUkJ4MHVQWUNGX0FId3hadTJVMjcxaVB6am8zdTV0LTAtOTZGRGU4bEFQQWRkbWhLdHg0akRXVFpxZW02RDRKRDlMSWNlZnhySWJFYmQtMl81cTVBaW5kUTBPSVU3Zw?oc=5",
+  "summary": "일본 HR기업 75%가 생성형 AI 사용…한중일, ‘사람 대체’보다 업무 재설계 동아일보"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "부산시, 데이터로 행정문제 해결… 「제3회 데이터·AI 활용 경진대회」 개최",
+  "source": "세계환경신문",
+  "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4yUXBwd21PWVlYR2ZfQk1uQVRLWVI4NTlCOVBmaWg5dHJuUThYZmQ5ZFdTa1lLYy1hVVA4WWdQMzdLdlpCMGFMQjJaY0RtS3Q5VWR5WmJtRTZmT00tNHlj?oc=5",
+  "summary": "부산시, 데이터로 행정문제 해결… 「제3회 데이터·AI 활용 경진대회」 개최 세계환경신문"
+ },
+ {
+  "date": "2026-10-16",
+  "title": "[AX Pick] 영업부터 내부 업무까지…생보사 AI 활용 확대",
+  "source": "라이센스뉴스",
+  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9UYS0zX1hEQ1VjSGpXcUF5bEVwYTYxb1l1Ui16QkR4WUhEQ2dQVjcwdFE2ZTc4TnNZa0J1N0VnV29JNDVPVjczSmswWmlPY25ndHYwNGlYX0Z0UTd2NTFicUFrQXBWeEFCTzZ3?oc=5",
+  "summary": "[AX Pick] 영업부터 내부 업무까지…생보사 AI 활용 확대 라이센스뉴스"
+ },
+ {
+  "date": "2026-10-13",
+  "title": "청년 취업자 5명 중 1명 AI 업무 활용…51%가 '검색·문서'",
+  "source": "데이터솜",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1CTGNfVnl2WkRqRDZyM0FmM1NwcnJlWjVlVjc2UU9WNW5ZVFNXb2lPbTNGd2JQODZWZ2tkaXl5LVZ1N1BTakdDRzRSV3FRS2pBVE9mQ0M2ODJyT2dfWFE2cUI5blN6dTFWLXZ5M9IBcEFVX3lxTE42ZWtUa2ZLdGZPcWlCZlZIQm1qZFZYbGFsNEd4dGVhd3JqakNlOGcxMU9WMFhMelhKMDU5YlVMWE5ldDlxTzI0cmczTHd2dnRaRVl3VXFYUF9USm5hWXIybS16ZzJKb3lDYTRlOFlCR2Y?oc=5",
+  "summary": "청년 취업자 5명 중 1명 AI 업무 활용…51%가 '검색·문서' 데이터솜"
+ },
+ {
   "date": "2026-10-14",
   "title": "\"군대에서도 내 AI 비서 쓴다\"…'모두의 AI' 3사, 장병 AI 제안",
   "source": "지디넷코리아",
@@ -250,173 +418,5 @@
   "source": "위키트리",
   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5FdHBjQXB5NTYzeGZ1MHBnMU1mZXMtQ1RCeVRlNVNaZlE1X2hzYkthWGtDdm5kMURPWHoyc0djXzZDSFRaaEV3T1JaNDc5UnNJalhWUXRB?oc=5",
   "summary": "수노 AI곡 ‘The Adult I Dreamed Of’, 멜론 3위인데 AI 표기는 없다 위키트리"
- },
- {
-  "date": "2026-10-13",
-  "title": "생성형 AI 저작권 분쟁 확산... 빅테크, 학습 데이터 확보 전략 바뀐다",
-  "source": "테크데일리",
-  "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE50Y093aHhXdno3RmIzM3dNM2ZYOVhLUExNaHZ1R2VENEswaWN6TFlvN3FnMHk1dFJiQ0ZWRURJajJwb1NfZkhEcGprNjJrTnlZWHUwWjVfS0pBaHc4ZGlTX1NLZnh4M3RZaVdZemhB0gFyQVVfeXFMTWFUcHdHWlZ2VnFnWllOalEzM0xYakRtM2IzdFdpUEJOY2MzMl9PZHBUX2I3SEpidVBKZkpjQ3I0LU5aUXp6SDNJWTgtanJnUmwzcE4tZWJJblFMN1lYZFFiY2pMVENhb2NtX0N5aHFPdE9n?oc=5",
-  "summary": "생성형 AI 저작권 분쟁 확산... 빅테크, 학습 데이터 확보 전략 바뀐다 테크데일리"
- },
- {
-  "date": "2026-10-13",
-  "title": "AI는 누구의 창작물을 먹고 자라는가?",
-  "source": "패션포스트",
-  "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1xVVpfMndCdmRkU0wxd0NkWjR5b0VMa3JKbGNMXzNmV3E0M05ab2RVUmJDWjFFUEdHTjktbDdEX2Z2QnQweHppdFQ5cnZISG1DTE9yTl9kNV9ubWgxd1plcTc5emdSRXZGQnRjLUFvWmlnNklKUWc?oc=5",
-  "summary": "AI는 누구의 창작물을 먹고 자라는가? 패션포스트"
- },
- {
-  "date": "2026-10-12",
-  "title": "AI로 복제한 어도비 무료 대안 '아트크래프트' 등장…저작권 논란",
-  "source": "AI타임스",
-  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLa3JKWWVNQmpscnZoT3BzOHhuSUhscmFKTkFCNWdZLUd2WC13QnFZOTVDYWh5NjZ1UXFTb1ZJUFI3TjRsamJGVmRqSzhHdTlTVm55SU9udkpGSDJ0T2dtRHlKYnE0NG8tRWc?oc=5",
-  "summary": "AI로 복제한 어도비 무료 대안 '아트크래프트' 등장…저작권 논란 AI타임스"
- },
- {
-  "date": "2026-10-15",
-  "title": "순천교육지원청, 학교장 AI·디지털 활용 역량 강화 직무연수",
-  "source": "호남교육신문",
-  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9jMXhfZ19UaVZwUFZDNFJLN3RDTGRkVW1WS1NZV1U3UUNoN2gzX3RrUGZVN3VxWHdYSXVJOTM0VkZXS2ZvYW9aVFQzOE4wcVN4T3N0UGUyUFNfbjdEay11cUstQlF0YXpfUlJZZA?oc=5",
-  "summary": "순천교육지원청, 학교장 AI·디지털 활용 역량 강화 직무연수 호남교육신문"
- },
- {
-  "date": "2026-10-15",
-  "title": "\"인공지능, 행정 문제 해결\"…부산시 데이터·AI 활용 경진대회",
-  "source": "연합뉴스",
-  "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0ySWtVOVhENHRoZ0V6WkxaTlZVTkhoc1BGQ3FkOFMzeDVTczRBazJydHBUUnNzMlNXdzhDQVRhYm1YVTVYRTF6MzBURTdOV3gyUkxnR1JpcF81b0HSAWBBVV95cUxQaHNnX29pTVRFMmdMQ1R0MWF0WjVZT0RWdnFvNWFCVFFyWXdSX2tTU3JScjIwU2JxVDNlTVN6Y0xVZ0d2RmljZ1dENWNhRDEzQUNBU2Z4b3V6WHJudXc1dko?oc=5",
-  "summary": "\"인공지능, 행정 문제 해결\"…부산시 데이터·AI 활용 경진대회 연합뉴스"
- },
- {
-  "date": "2026-10-15",
-  "title": "포항상의, 생성형 AI 활용 SNS 홍보 실무교육 실시",
-  "source": "페로타임즈",
-  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YQm5YdXVKNU9YVnhIVEVIWTBKTkphZTVpdXVwaDF0VG95eWJWbldndHVqbjk0XzBsZHJmZzcyMjdhWnFnTzFjU2dCcUJVdjJhYTlrY3NwQUZqT3EzZlJ2dF9iWkxnNjhUT2ZPYQ?oc=5",
-  "summary": "포항상의, 생성형 AI 활용 SNS 홍보 실무교육 실시 페로타임즈"
- },
- {
-  "date": "2026-10-15",
-  "title": "이미지 제작부터 업무자동화까지… 세종연구원, 시민 대상 AI 실전 교육 운영",
-  "source": "SNS 타임즈",
-  "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVS1fQmUzM3FWX255MHpmbzF0VzIxY1FEZXRXbjc3ZFk1U1pZS0kyUVJMdXc0TXJfYU9ySW9RbFFGazZTeFRaRGN5LVFVblEtTGJMcEZXQ0FpZDNoSHI1ZXVsQmhGMGtqWTdUYlY4YnRIM0xVZ1hyRkdERndNTUVYd0VwR0ZnT213eU9lSWRTd25fNkUwcEloS2piQ3AyeUsyMS1QNXMzMVRHczBBUTItNTRETmF2WE1KX3YzejVB?oc=5",
-  "summary": "이미지 제작부터 업무자동화까지… 세종연구원, 시민 대상 AI 실전 교육 운영 SNS 타임즈"
- },
- {
-  "date": "2026-10-13",
-  "title": "청년 취업자 5명 중 1명 AI 업무 활용…51%가 '검색·문서'",
-  "source": "데이터솜",
-  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1CTGNfVnl2WkRqRDZyM0FmM1NwcnJlWjVlVjc2UU9WNW5ZVFNXb2lPbTNGd2JQODZWZ2tkaXl5LVZ1N1BTakdDRzRSV3FRS2pBVE9mQ0M2ODJyT2dfWFE2cUI5blN6dTFWLXZ5M9IBcEFVX3lxTE42ZWtUa2ZLdGZPcWlCZlZIQm1qZFZYbGFsNEd4dGVhd3JqakNlOGcxMU9WMFhMelhKMDU5YlVMWE5ldDlxTzI0cmczTHd2dnRaRVl3VXFYUF9USm5hWXIybS16ZzJKb3lDYTRlOFlCR2Y?oc=5",
-  "summary": "청년 취업자 5명 중 1명 AI 업무 활용…51%가 '검색·문서' 데이터솜"
- },
- {
-  "date": "2026-10-15",
-  "title": "중소기업 연구원들도 AI 활용 능력 ↑…호서대 실무교육",
-  "source": "충청시사신문",
-  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE95Z0V0ekp6YjdrWGR5WGlwTk80UTdyZF9ES0tHazRIMlJtRk0weFpDOVAzZ1JxUFdjdUoyNk1GX21fQTZHVG9rdmFiNExGbGNoUjQ3TzZzMWJKVUkta1g1MnRrRGlwLTNiTnVz?oc=5",
-  "summary": "중소기업 연구원들도 AI 활용 능력 ↑…호서대 실무교육 충청시사신문"
- },
- {
-  "date": "2026-10-15",
-  "title": "롯데·GS·LGD, ‘생성형 AI 검문소' 세운다",
-  "source": "디일렉",
-  "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBON1NfOVRncTBqTFZYcmk2ZFQ5MkhCcEpTb0hQNTZuVEtsTk9MdnFJb2EyeDlZOEpKZEJ3cjlBNGFwclJLRXVrZGNCbFA3cjJNNjVqdU9JamU2UlVRdThyUkFXeGZIQQ?oc=5",
-  "summary": "롯데·GS·LGD, ‘생성형 AI 검문소' 세운다 디일렉"
- },
- {
-  "date": "2026-10-15",
-  "title": "증권사 경쟁, ‘화면’에서 ‘AI’로 옮겨간다…한투증권의 전망",
-  "source": "바이라인네트워크",
-  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1reVRKcmlLejlKV2ZsTmQxNmFjMkt5Z01kVlBMZFp1TzZQS2pQMW5hYm5UZkNCcXlqaWxieVR4dlRYUGJCRmNLN3l3X0VoLVU?oc=5",
-  "summary": "증권사 경쟁, ‘화면’에서 ‘AI’로 옮겨간다…한투증권의 전망 바이라인네트워크"
- },
- {
-  "date": "2026-10-15",
-  "title": "부산시, 데이터로 행정문제 해결… '제3회 데이터·AI 활용 경진대회' 개최",
-  "source": "누리일보",
-  "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE90MVRhRWFyYURScml4QmIxeW5Eb01yUjlBZ0ZDOUN3eFhRbTQ2Ui1lMTB3WXZ4Uk9ieFFENmhEbDNrNUZ1VWtvM1BtaTdvUDduVktqTWx2dGpNMG5H?oc=5",
-  "summary": "부산시, 데이터로 행정문제 해결… '제3회 데이터·AI 활용 경진대회' 개최 누리일보"
- },
- {
-  "date": "2026-10-15",
-  "title": "AI 의인화 괜찮나…\"AI도 보호해야\" vs \"사람처럼 대하면 위험\"",
-  "source": "지디넷코리아",
-  "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HV3lJdWFZVUhvTGpNVnNrcjhLak1fM2FfRU02Tlp3bmYteHlRZEFzWlk1ZDJLOW9DZk8zT3lhbzFONUd3bkFPVWZCZlg2OG1qcTc4aUpn?oc=5",
-  "summary": "AI 의인화 괜찮나…\"AI도 보호해야\" vs \"사람처럼 대하면 위험\" 지디넷코리아"
- },
- {
-  "date": "2026-10-13",
-  "title": "[단독] 인공지능 공부하겠다더니‥입시에서부터 AI안경 쓰고 부정행위",
-  "source": "MBC 뉴스",
-  "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9vVUhYNm9sUVV5cE1FZlVteExVLTh0WmY5UjZvQmloTWtnNUp0NDFpQzc3c2d2TzZadTV5NnlpTXJOaFMybEo1TGdqajVqWjk5WkZqS1JRdkpBUUJlM1dFWmZBOWtQRUp6Qms2Q3lDSENhX2VfSXRfMtIBeEFVX3lxTFA5Ul82NThxUXlLMC1WWjJEQUVzSUN2VWcyZXU4Rk9RTjFBN1JkMllTcUlyZlZxM29kT0phYzA0eGhDcktyNmFDcHg2UnFVejZrQ1c3cHpCcUtYM3NZbUhsc25uWGxKRnIwanl0TTlBTGtkaFJkOHJzSg?oc=5",
-  "summary": "[단독] 인공지능 공부하겠다더니‥입시에서부터 AI안경 쓰고 부정행위 MBC 뉴스"
- },
- {
-  "date": "2026-10-15",
-  "title": "누구에겐 ‘눈과 귀’, 누구에겐 ‘감시 카메라’…AI 안경 피해 방지책 절실",
-  "source": "한겨레",
-  "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5NU0wwMVByQTExaGhoWVY3cXluZG9qd0ItaG5HdlpvYWVMd2RXWXlIeVJmVm9RdHBrdF9JMTNUZGFzU3BENFJaVTR6UUs2TldGNmdHU1o5TWo4RnlMU3l4QUxTNA?oc=5",
-  "summary": "누구에겐 ‘눈과 귀’, 누구에겐 ‘감시 카메라’…AI 안경 피해 방지책 절실 한겨레"
- },
- {
-  "date": "2026-10-15",
-  "title": "수능서 ‘AI 안경’ 착용하면 내년 응시도 못해…소지만 해도 시험무효",
-  "source": "매일경제",
-  "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1FMHNyOXRpSkY1dFdSTGlfV1ZTMG5ldmY1UkN4NFlsM1JIaTFzQkZsenVPVkRrNU5JZE9kb2JiSkt1NVMxVjUwRWh4U3NfVlg2d2hIdg?oc=5",
-  "summary": "수능서 ‘AI 안경’ 착용하면 내년 응시도 못해…소지만 해도 시험무효 매일경제"
- },
- {
-  "date": "2026-10-15",
-  "title": "美 뉴욕 증시서 인공지능株 하락 - 조선비즈",
-  "source": "Chosunbiz",
-  "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQV2hMMVMzX18zZ1lNaTVYcEFCUmc2TlZHb2cyc25KVC1YamRhYXV4dW1jVzJtTTVCVEhrNFNQczd5WlJsaFNEYlM5XzVsamMzTlY3YXNTbFFqTXBEb2txSHNXcXZVdy1jd1lBSng1WERORmJObXVYeXpsQ09RakZPYTNTZ2NGTVRUWWNDamJUWW9mTkxjMEt0ZUhHTEQtZ9IBsgFBVV95cUxQUmJCckVpSHdqUGNyUDFrVTN3Y0x5THZMWHVNa29udEtQb2NPYl9PRFRxdXdsREtKOXctMGZvZ25tNUgtOVYwWEoxSzkwYnp5X2FHdVE4RjBmS0tvc2VLcU83ODhndUx4U25VLXBzTldJWlV1YXh6ZEhCRVlWZDVyZE1temZwR2tMTHJIRS0yTHY5M2dIQnc4bTBoMTV6TWdIckxETE85Y1k1bUxQcWoyemtB?oc=5",
-  "summary": "美 뉴욕 증시서 인공지능株 하락 - 조선비즈 Chosunbiz"
- },
- {
-  "date": "2026-10-15",
-  "title": "창원서 인공지능·제조 미래 한자리서 만나",
-  "source": "경남매일",
-  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vcHZEZUIyaDBfWTRfai1SRk13bWtDWW11Z3ZoX3NsRlFNWVBHMi1zSnJLWlpwY3VSemozY0xvckJYOEZPU2Y1bkptQnNRQlo4NFZiZEtCcWNjQTA5SFlCdmVhQmNpd09ZRXc?oc=5",
-  "summary": "창원서 인공지능·제조 미래 한자리서 만나 경남매일"
- },
- {
-  "date": "2026-10-15",
-  "title": "[HBR 인사이트]AI에 맡긴 혁신, 아이디어 닮아가고 현장 멀어진다",
-  "source": "동아일보",
-  "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE94azdtX3A5SmNwY3NVQzdQOFptaHQwaUJKSHZwV2N0RTNib2d2WURicW5TeXZ2VERxNFJqQ19JUXlJYXFSTkZoTmVCTHA0amhTSHN2cWpRcHZGdjJlQWZwY19qS3hwTnRzNkdKLTF1U3FYcnpPNkHSAWZBVV95cUxQOXRkNGVzOW01N1hqUEsyejBlRkNrSlU0MW5EWnFrZTg0TU5LT29mY0wySnE2UlRlQklXOVk3ZVJ5aDhRV2ZlX1NZcHA5SXhrekNXZ2VHVDFjOUVFNTJpT0lCSnU2YkE?oc=5",
-  "summary": "[HBR 인사이트]AI에 맡긴 혁신, 아이디어 닮아가고 현장 멀어진다 동아일보"
- },
- {
-  "date": "2026-10-15",
-  "title": "\"AI 투자할 돈, 계속 빌릴 수 있나\"…K증시 세게 때린 '빚투' 불안",
-  "source": "한국경제",
-  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IXzJxVWFqVzJwc2pMT1pHU2M5clowWXBZSTJROUp0TFl4YU9QQWVkdUpJNlotU1R5T1l6Qm1EYU1yX2tDelA2TEpXMXVBeXN3ZHQ3YXc4SVdSZw?oc=5",
-  "summary": "\"AI 투자할 돈, 계속 빌릴 수 있나\"…K증시 세게 때린 '빚투' 불안 한국경제"
- },
- {
-  "date": "2026-10-14",
-  "title": "AI가 번역한 작품에도 저작권이 있을까… 남형두 교수, ‘번역과 저작권’ 출간",
-  "source": "법률신문",
-  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9wMXB3aXY1V2Jobnl5VzlpTHQwRlh1UFlycWNsa2hhYmtKOEI4bmo3SGNwRWhsUzhiazJXNF9LQ09uamF6UDZmdTZpX21kdUpqd0ZwbWVYSXRhVm5qU19FVVFPR2Y4M2dVU2hObnYyRlVSd9IBckFVX3lxTE9wMXB3aXY1V2Jobnl5VzlpTHQwRlh1UFlycWNsa2hhYmtKOEI4bmo3SGNwRWhsUzhiazJXNF9LQ09uamF6UDZmdTZpX21kdUpqd0ZwbWVYSXRhVm5qU19FVVFPR2Y4M2dVU2hObnYyRlVSdw?oc=5",
-  "summary": "AI가 번역한 작품에도 저작권이 있을까… 남형두 교수, ‘번역과 저작권’ 출간 법률신문"
- },
- {
-  "date": "2026-10-15",
-  "title": "AI로 만든 ‘딸깍 서적’ 판치는 한국…저작권 보호는 ‘걸음마’",
-  "source": "서울경제",
-  "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9rcERFTkQ3Nl9SYTUwQkRMa3RvSnBXbktsanV0YkRzVXRmdDZoMWJubEl1YkpTQ0R1ZnRRbnFKSV9XZHEtdkhCZzZtYlExMVRodGxr0gFTQVVfeXFMT2twREVORDc2X1JhNTBCRExrdG9KcFduS2xqdXRiRHNVdGZ0NmgxYm5sSXViSlNDRHVmdFFucUpJX1dkcS12SEJnNm1iUTExVGh0bGs?oc=5",
-  "summary": "AI로 만든 ‘딸깍 서적’ 판치는 한국…저작권 보호는 ‘걸음마’ 서울경제"
- },
- {
-  "date": "2026-10-12",
-  "title": "밝히면 손해, 숨기면 이득 ‘이상한 저작권료’…‘AI 음악’ 걸러낼 기준이 없다",
-  "source": "주간경향",
-  "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE80enFHUW4tZFc4NFg1encyeFVpMjJlVU9CZll5MmVfWTVyZ2hOY25rWUNBRzFrcUVMYVp4dGZMYVlPb2twTEl1Vzlia01ZdG43cEZWNVlmVnlzYXhRd3c?oc=5",
-  "summary": "밝히면 손해, 숨기면 이득 ‘이상한 저작권료’…‘AI 음악’ 걸러낼 기준이 없다 주간경향"
- },
- {
-  "date": "2026-10-15",
-  "title": "순천교육지원청, 학교장 AI·디지털 활용 역량 강화 직무연수",
-  "source": "호남교육신문",
-  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9jMXhfZ19UaVZwUFZDNFJLN3RDTGRkVW1WS1NZV1U3UUNoN2gzX3RrUGZVN3VxWHdYSXVJOTM0VkZXS2ZvYW9aVFQzOE4wcVN4T3N0UGUyUFNfbjdEay11cUstQlF0YXpfUlJZZA?oc=5",
-  "summary": "순천교육지원청, 학교장 AI·디지털 활용 역량 강화 직무연수 호남교육신문"
  }
 ]
