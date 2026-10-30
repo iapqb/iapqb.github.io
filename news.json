@@ -1,5 +1,166 @@
 [
  {
+  "date": "2026-10-30",
+  "title": "중국 애지봇, 로봇의 실제 노동량 측정하는 새 지표 제안…피지컬 AI 모델·하드웨어 공개",
+  "source": "인공지능신문",
+  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5hZ0loZlRCRWhuXzNwSVNYdHktRTZaNjFfV2puTFI1WnEyRjhybkZHQ21jRE5qMWZIdEhvaXhiMTl6QVFDTl9YWVExMWdWem1CTVZYd2t2MzFjX24zNFJyS2ExTm85Vjg?oc=5",
+  "summary": "중국 애지봇, 로봇의 실제 노동량 측정하는 새 지표 제안…피지컬 AI 모델·하드웨어 공개 인공지능신문"
+ },
+ {
+  "date": "2026-10-30",
+  "title": "티맵모빌리티-LG전자, '인공지능 정의 차량' 생태계 구축 맞손",
+  "source": "전자신문",
+  "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1VM0F1blpLMzZZRXVtSEZKWllXWkxQUW1wWFlsM08yRkVvVE52aGlMc3ZLR2YzOHYzLTVoSHJQYm1sa19QdnJWeWRCa1FNdw?oc=5",
+  "summary": "티맵모빌리티-LG전자, '인공지능 정의 차량' 생태계 구축 맞손 전자신문"
+ },
+ {
+  "date": "2026-10-30",
+  "title": "[AI픽] AI 도입한 고객센터, 감원보다 충원 많았다",
+  "source": "매일경제 마켓",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA2U3B5N1QwX05BM01lS2wzVkJNdDRJa25BM2VXQWI2MW5YMFhXLUt6XzJBYVFvX0ZwbE0wZG9JS254QzM4MUdDbEtDVHRKX2twUFE?oc=5",
+  "summary": "[AI픽] AI 도입한 고객센터, 감원보다 충원 많았다 매일경제 마켓"
+ },
+ {
+  "date": "2026-10-30",
+  "title": "부산교육청, 전국 첫 ‘피지컬 AI 연구학교’ 5곳 운영",
+  "source": "아시아경제",
+  "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1rWEVZcko2VFdTZ1RjVWdDY0NUOGpLeXdaZjNvV1ZyOEZ0Z2xtYUNKMHhaSU0xdW1Jc1llWk1QblY4NmNpOU01X0VNU2J1WnR5clFRc2M2VWtiNHNlQjlGcQ?oc=5",
+  "summary": "부산교육청, 전국 첫 ‘피지컬 AI 연구학교’ 5곳 운영 아시아경제"
+ },
+ {
+  "date": "2026-10-29",
+  "title": "“AI, 화면 밖으로” 내년 전국 첫 ‘피지컬 AI 연구학교’ 5곳 운영",
+  "source": "서울경제",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5sQzF2U2htVkJ3UFdwWF9TdF9udnZvR0YxUXJNZDY3bnB3aHBZX24wcHpyWnFtQXJ0ckk5SW40OUhoVndtUXZHVURDRVZpU2tQUFHSAVNBVV95cUxNZkI2WW5aSzBpbFp1LVRsM3Rpa3FsWWtDd09uYmlnZ1hReXA5RVptQTRxQjBSVnl1cVVacFZyZ0U2aEpCTXF6ZUVCcXF0aVFFdF9Bbw?oc=5",
+  "summary": "“AI, 화면 밖으로” 내년 전국 첫 ‘피지컬 AI 연구학교’ 5곳 운영 서울경제"
+ },
+ {
+  "date": "2026-10-30",
+  "title": "부산시교육청, 피지컬 AI 교육 추진…5개 연구학교 지정",
+  "source": "연합뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAwZExlemVEeGFDc0pUWWJNcXhEc0JFMVFUZTcwZlZqRHBBenJqU2tsZV9VbHJJMklKNjVmWDQzb0JEYVpCQWxxMjNnSWQ4Qk5oZkIwVWxzYmZHeW_SAWBBVV95cUxQZEJrWlFlYmxPOUdCN05aR0tXRmlUUGlJVEJvR0czVkI2RDlNOWlZTG0xUHhjNlJZN1NjS1RGbEptNDc5cWdBdDZocEhxOXdiU3dCSTVlbWxTUGdVbUx1TVA?oc=5",
+  "summary": "부산시교육청, 피지컬 AI 교육 추진…5개 연구학교 지정 연합뉴스"
+ },
+ {
+  "date": "2026-10-29",
+  "title": "AI 쓴 작곡가, 밝히면 0원 쉬쉬하면 205억",
+  "source": "이데일리",
+  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPLVpEQVYyRWt4RGRVQmZsVHk4TGU1dUNWaGhVN0xUWTBBZ09nTG1YTksxbmpWRWNLOUFoeHlTX0NYdWZjTU90dng0NmNFbzMyUlNGSV81VGhHRUFPREtEa2RJSWxCMWNyYUN3SHBreGdMLWxna2ctODlnN25WU2xMRw?oc=5",
+  "summary": "AI 쓴 작곡가, 밝히면 0원 쉬쉬하면 205억 이데일리"
+ },
+ {
+  "date": "2026-10-30",
+  "title": "[부산소식] 동의대, 'AI 윤리 및 활용정책 가이드' 제정",
+  "source": "연합뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9keHJDRE9LaTdLZ0REM0xqM2tXWkQ0Q2lWa2pWamtIVHNkaV9ESDRrNnRsTXlQQlA4UjN2Y0o3cFUxVlhmX3hFN011cXZ0ZVBkRFNsVXhPYnUtSlnSAWBBVV95cUxPSmphSE9lTG9sWXNTaktoTVE3ZE1HRjBoUmdKbFBhRUFhTDJLT2Y4NFYxT1VTcE5kd29GTXpDdnd5UC16SU9MNFZmRkEzZEdPWnhlbTRQRnNJLWZIRmlWcmY?oc=5",
+  "summary": "[부산소식] 동의대, 'AI 윤리 및 활용정책 가이드' 제정 연합뉴스"
+ },
+ {
+  "date": "2026-10-29",
+  "title": "미국 보수단체들 \"AI 기업의 무분별한 콘텐츠 수집, 언론 생태계·국가안보 위협\"",
+  "source": "파이낸스투데이",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8tdDE2SWlqaE9FTHI4ejJnNVBWSHVOX1ZZdF9BeVJGU3JnQUlKV2x5YllueVVVQXFrYW14Z3hjSWtkTXY2VXE2WWlpNG0zZzhta3hNTjhFQjVQMUlOaHE0UE5UWlBCVmlVcE1YZg?oc=5",
+  "summary": "미국 보수단체들 \"AI 기업의 무분별한 콘텐츠 수집, 언론 생태계·국가안보 위협\" 파이낸스투데이"
+ },
+ {
+  "date": "2026-10-28",
+  "title": "“AI로 만들었어도 저작권 침해 책임은 사람에게”... 中 법원, 무단 AI 만화극 제작에 제동",
+  "source": "특허뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBZQXJTRmlRaDZ2eXZlRVlfWHYyRzZBaWd1U3lpa244QnVYZUUwVk1STjdmOXAwRnl0X3Z6LUVDTUUyMldPQWFfXw?oc=5",
+  "summary": "“AI로 만들었어도 저작권 침해 책임은 사람에게”... 中 법원, 무단 AI 만화극 제작에 제동 특허뉴스"
+ },
+ {
+  "date": "2026-10-29",
+  "title": "AI 저작권부터 공연 암표까지…콘텐츠 분쟁 해법 찾는다",
+  "source": "파이낸셜뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMUm5uLWp0U00yMU40Zkw2WTdESDFBekJCZkYxMGJvV2pZWnN1WXZCMllvYWJkVTg1b1dtMUZoWEpaU0pTb1Ryb1V2dkNrcGpPb25UblJjM0JTUQ?oc=5",
+  "summary": "AI 저작권부터 공연 암표까지…콘텐츠 분쟁 해법 찾는다 파이낸셜뉴스"
+ },
+ {
+  "date": "2026-10-28",
+  "title": "AI 학습 데이터 저작권·암표 거래 갈등 확산…콘텐츠 분쟁 조정 해법 찾는다",
+  "source": "인공지능신문",
+  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBZSUh1WjEySWZtWmhOVkV1RndkQTQzRXBGUVdNckJyeE5vMVVfRFh4Z3dKUnItOTVrcXRTQ1pfSURYUEEtUEJCZHhHN2IwLVV3N3BkaXpwUGpvajRYUkU0TkNibVFxTGM?oc=5",
+  "summary": "AI 학습 데이터 저작권·암표 거래 갈등 확산…콘텐츠 분쟁 조정 해법 찾는다 인공지능신문"
+ },
+ {
+  "date": "2026-10-29",
+  "title": "\"엘비스 노래로 AI 학습시키고 대가는 안 냈다\"…앤스로픽에 545억원 소송",
+  "source": "조선일보",
+  "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOeXpyM0RXVXN0V2lwUkVXMFl2WkVGN2hGN291cTNlTVhLVjVFVzZ1SWRkTHBJUFJpMjBLdVEzUjBCa3RYOTlnWWl1Y3Mtck9fUENIdmRFX1EyS2pMbEpaa0Y4UmRxaGY3NVE4STFYLWRYVVlHdkduVHlxeEdvbFAzUTJrSQ?oc=5",
+  "summary": "\"엘비스 노래로 AI 학습시키고 대가는 안 냈다\"…앤스로픽에 545억원 소송 조선일보"
+ },
+ {
+  "date": "2026-10-29",
+  "title": "AI 학습 저작권과 암표 해법을 논의한다…11월 6일 콘텐츠포럼",
+  "source": "뉴스1",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE01czFfTDVLWTNUaEhWa09hZUpYaUhKel83eUxYNy15ZDhndmNFV2VFQUFieE1QeEd5WVVLcG9GTjBCNkNoOV9Yb01HcUJJQkpDOHRzaHpxZ0hpb0xvN0Q3Q3NsSEt4UkVCckE?oc=5",
+  "summary": "AI 학습 저작권과 암표 해법을 논의한다…11월 6일 콘텐츠포럼 뉴스1"
+ },
+ {
+  "date": "2026-10-27",
+  "title": "국회의원 공동 AI콘텐츠 세미나 개최...창작자 권리·AI 교육·저작권 쟁점 논의",
+  "source": "한국대학신문",
+  "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9YdjloSUtpMjIzSW1CQXJBNk1McWhCX19QS3l1b3poaExUWVhndXB3UW1DUmtQSFlJN2F2VkthMUhsQ0ZmeXMyQlduYkliZ3NJVnh6Z29WcjdVNjBWeWVVX2VnZm9Mdw?oc=5",
+  "summary": "국회의원 공동 AI콘텐츠 세미나 개최...창작자 권리·AI 교육·저작권 쟁점 논의 한국대학신문"
+ },
+ {
+  "date": "2026-10-30",
+  "title": "논산시, 간부 공무원 AI 활용 역량 높인다",
+  "source": "메가충청뉴스",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1LQ3dkQlFRUXJfZEtCdkVxUHhieFFoYkh1VVM0M1Q1VkNzODhJTTBKUEFZRUZwUEl6bF9LdDFKOFNra2w0R0FoeFdhRVFZM1IwYWpUQWM0cVRiejN2RjBYZzZyYzNQcTYzTENtQw?oc=5",
+  "summary": "논산시, 간부 공무원 AI 활용 역량 높인다 메가충청뉴스"
+ },
+ {
+  "date": "2026-10-30",
+  "title": "SW중심대학사업단, 비SW전공 교원 AI·SW 역량 강화",
+  "source": "경남대학교 대표",
+  "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9IVDNWeFppWHgtUF9rc1BtcGpEdGpvT0lFYzVvbl8zOGFoN1ZjRS1wR05FUmkxTjY3VVhaYUJHWnY2Mm9fVng2RFJxYUphV1pDdktmcXFPNElKVk81ZU5VdWRkMnlHX0ZQOXVINGJFOA?oc=5",
+  "summary": "SW중심대학사업단, 비SW전공 교원 AI·SW 역량 강화 경남대학교 대표"
+ },
+ {
+  "date": "2026-10-29",
+  "title": "서울아산병원은 왜 직접 AI 서비스를 개발할까 | 아산인 이야기 | 피플",
+  "source": "서울아산병원 뉴스룸",
+  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAtSnZrejZFdEZfZVpBbVRTVklFNG5NWDdYR1ZtX19CRmRiVlctczFHaW9rbExvZlY2WF83TFVvUTJXRUV4WDFJSGk2RklFLUFZZ1hBNHBWQW5VRXh0MXY5eERXOUx5WVE?oc=5",
+  "summary": "서울아산병원은 왜 직접 AI 서비스를 개발할까 | 아산인 이야기 | 피플 서울아산병원 뉴스룸"
+ },
+ {
+  "date": "2026-10-29",
+  "title": "석유관리원, 현장 · 실무 중심 AI 활용 '업무 혁신' 가속화",
+  "source": "투데이에너지",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5FOURSajhITk5TWTM3OFJxR3pqSTg3SmE1OVJNQTJVTWt1aGtydC1may00VlQxYllVUVhvaGhjODAzczRweVNiRkY4Q3c2UHloTEhQdzRjSDJUX2VwRGpoYkUzdlB1eXhUcFc1Ng?oc=5",
+  "summary": "석유관리원, 현장 · 실무 중심 AI 활용 '업무 혁신' 가속화 투데이에너지"
+ },
+ {
+  "date": "2026-10-30",
+  "title": "리모, 핑거 전사 AX 교육·해커톤 대회까지 성료…기업 AI 업무혁신 모범사례 제시",
+  "source": "피앤피뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9oSmlreEVQUXVyRnlCR3NVV0hJVktOSW9lRkFxOUJpWWlTU05sY2l5b0dnVkxaUmZQX0lKd2xyRlVhOFVfQkJSXzdmTTJUTkYxOUUxOW4wc3lNaEdSNmc?oc=5",
+  "summary": "리모, 핑거 전사 AX 교육·해커톤 대회까지 성료…기업 AI 업무혁신 모범사례 제시 피앤피뉴스"
+ },
+ {
+  "date": "2026-10-29",
+  "title": "“AI로 게임 만들고, 특허업무도 바꾼다”... 한국특허정보원, 직원 59명 참여한 ‘AI 혁신 실험’",
+  "source": "특허뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5qaGsyMXlIWFp2aHBocFFJR0xfRlJZUUxWTGlLY3hhbWdOTGctMGZaQko4emM5YUpBWHYyNm8zdFdfc08yS2kwcA?oc=5",
+  "summary": "“AI로 게임 만들고, 특허업무도 바꾼다”... 한국특허정보원, 직원 59명 참여한 ‘AI 혁신 실험’ 특허뉴스"
+ },
+ {
+  "date": "2026-10-29",
+  "title": "석유관리원, AI 활용 업무개선 시스템 구현 지원",
+  "source": "국토일보",
+  "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1McHlMQWFfcGJnakZHbDhXYUxYanZoMFAwUXRXZkt3eVBwRG1zcmp2bXczNDVKVEZNckVtTHdLeFRfT1JSQWM0c2d3S0oxQ3R2YXdTa3Nka1p1QVNhdFUzcFh5SQ?oc=5",
+  "summary": "석유관리원, AI 활용 업무개선 시스템 구현 지원 국토일보"
+ },
+ {
+  "date": "2026-10-30",
+  "title": "직원 업무시스템 만든다…석유관리원, AI 실전 활용 교육과정 운영",
+  "source": "에너지타임즈",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB4ZzlBSDBYczVVUjBrWEVZMG8yZHlIVWhMa2phdVRmY0ZmdFI2WVphN1V2b2pQVWdxMUZkWUFjN1JmM3JWODU3anVyd3R4ZE9DRDVkQ2xUUHdYckF5cWE5bF9BZ0dCZG92YVhOQw?oc=5",
+  "summary": "직원 업무시스템 만든다…석유관리원, AI 실전 활용 교육과정 운영 에너지타임즈"
+ },
+ {
   "date": "2026-10-29",
   "title": "인공지능이 도로 파임 찾고 살얼음 알린다",
   "source": "제민일보",
@@ -257,166 +418,5 @@
   "source": "연합뉴스",
   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE96YTdlVEtRQTBLOGJmRWR5OS1pQ01FVVlpU0ZNMExGVy1tQ28taHA0b18tS1VmZ2lkTGk1UjdvYjMwc1RaUXJ1b3p3LVpTa2lsOGYzWUtUTGh3ME1ydTNEVNIBYEFVX3lxTE96YTdlVEtRQTBLOGJmRWR5OS1pQ01FVVlpU0ZNMExGVy1tQ28taHA0b18tS1VmZ2lkTGk1UjdvYjMwc1RaUXJ1b3p3LVpTa2lsOGYzWUtUTGh3ME1ydTNEVA?oc=5",
   "summary": "日 \"생성형 AI 학습 방법·데이터 공개하라\" 연합뉴스"
- },
- {
-  "date": "2026-10-27",
-  "title": "무단 학습서 정식 계약으로…AI 음악 저작권 새 국면",
-  "source": "전자신문",
-  "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5PU3FES2NYcUxOSVZ6ZXNpSGcyZHpsRlpZN09jU29Lc2FWZE51LWtQNDRMYzNVT3VQb3h4MGVVWkNTRDdhXzQzZTFabkJuUQ?oc=5",
-  "summary": "무단 학습서 정식 계약으로…AI 음악 저작권 새 국면 전자신문"
- },
- {
-  "date": "2026-10-26",
-  "title": "“AI 학습방법·내용 밝혀달라”…‘지식재산권’ 보호 나선 日 정부",
-  "source": "농민신문",
-  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9qOWttTnhuNVVzeFY3U0hNbkx3NkVjclNOR3hYZ2JlUHdxNDNwSTFNU2JOTlZzUlhOSzZPdmp2RkNSbGh6RWpwb2FWbkhLRzgyRkgxajFEeEtMZw?oc=5",
-  "summary": "“AI 학습방법·내용 밝혀달라”…‘지식재산권’ 보호 나선 日 정부 농민신문"
- },
- {
-  "date": "2026-10-26",
-  "title": "엘비스 노래 274곡 AI 학습에?…앤트로픽 또 저작권 침해 공방",
-  "source": "지디넷코리아",
-  "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ZSVdKVkNEelBNYlBVLTNsOWFkbUtCZEFVNk9HdDJWbm41NkFGbHpWdlhWU2JsbjB6YkV2WjBhM2VCWUd6RldsRk9xa3hjQW1pMUk4ajdR?oc=5",
-  "summary": "엘비스 노래 274곡 AI 학습에?…앤트로픽 또 저작권 침해 공방 지디넷코리아"
- },
- {
-  "date": "2026-10-29",
-  "title": "SK AX, AI로 1800명 면접 평가 6시간 만에 완료…채용도 실무역량 중심으로 바꾼다",
-  "source": "인공지능신문",
-  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MQ2JNS0gzRnpydDNIMTlhSFFIZUVpTFBLTGxfd2FycHFMTUxfY3dpc2JPemtETE1VZnZMWkF5ZUZtdHp5NTU2N1RsNTBNbFdfNV9pdmljYXpzekpNbTlSTHBveG9zMnc?oc=5",
-  "summary": "SK AX, AI로 1800명 면접 평가 6시간 만에 완료…채용도 실무역량 중심으로 바꾼다 인공지능신문"
- },
- {
-  "date": "2026-10-29",
-  "title": "다우기술, 166개 팀 참여 'AI 활용 경진대회' 개최… 현업 AX 확산",
-  "source": "전자신문",
-  "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1WenFZR0hscm1fdXJfa1JhZGNCd1lldl8tUzRUaFJNQ2tQeWwwdE0wazdzdmRUeWlFQUtoQTJRMERrM0duMDF5UURvLS1SZw?oc=5",
-  "summary": "다우기술, 166개 팀 참여 'AI 활용 경진대회' 개최… 현업 AX 확산 전자신문"
- },
- {
-  "date": "2026-10-28",
-  "title": "“코딩 몰라도 AI로 업무 프로그램 만든다”... 지식재산처, ‘바이브 코딩’ 실무교육",
-  "source": "특허뉴스",
-  "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5VejNlX2RpbWoydEpBWVN1TDNrRjIybUtjUjdWa21DcEQ3eC1jVldCdllmOHVvVGd2dVZtdy1PWWhYeXROVndfNA?oc=5",
-  "summary": "“코딩 몰라도 AI로 업무 프로그램 만든다”... 지식재산처, ‘바이브 코딩’ 실무교육 특허뉴스"
- },
- {
-  "date": "2026-10-29",
-  "title": "﻿KT, 생성형 AI 고객센터 고도화…상담 완결률 높이고 업무 효율 개선",
-  "source": "비즈니스리포트",
-  "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5yNG00SzVlWF9PYTh6bTc0WHhsN0F6NnFtMnN6ZWhJUU8ybjZvb0VRRUpmRVpkUUhrUEtYV1JtS3dVb0FBRm5laFBkOG1pSXkyZnBLSDNlbW1HeUI2MHNXazdxS21mVnFDcEpCLWJ6bw?oc=5",
-  "summary": "﻿KT, 생성형 AI 고객센터 고도화…상담 완결률 높이고 업무 효율 개선 비즈니스리포트"
- },
- {
-  "date": "2026-10-28",
-  "title": "[AI프리즘] AI 특유의 문체 없앤다…'휴머나이저' 도구 등장",
-  "source": "연합뉴스",
-  "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1YVFRGcHRhWURQY09Wc08tTWJGc3BCVjFDQkZXNDlSSHYwbVcyQUdhbjlqcFNtN2ZVWFFtVXpwQVhxOXdUNzNCamtjY250Q2R2VnQ5U0ZhVk0wbzlRb2FTTNIBYEFVX3lxTE1YVFRGcHRhWURQY09Wc08tTWJGc3BCVjFDQkZXNDlSSHYwbVcyQUdhbjlqcFNtN2ZVWFFtVXpwQVhxOXdUNzNCamtjY250Q2R2VnQ5U0ZhVk0wbzlRb2FTTA?oc=5",
-  "summary": "[AI프리즘] AI 특유의 문체 없앤다…'휴머나이저' 도구 등장 연합뉴스"
- },
- {
-  "date": "2026-10-28",
-  "title": "기업서 AI 사용 금지해도 77%는 개인 계정 활용",
-  "source": "Chosunbiz",
-  "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVGJjdmhhQi1SWVZ6Vm5XYVR6cWlmR0RqNXBJT2xIei1CQ2t5bFV6LTJtcHh3SUtzQzFWQnUtb0dfcUJXRll4Z0FaTnczeDRwWjJCUFM3ejhGQkw2a1dFR1REUjhpZ1B4VUNvb0x6d3pUaGFfSThhR1BLQnBfZzBFT2lR0gGWAUFVX3lxTFBBeE9kYkVhUHlsTDB6dHh6ZW9VSVNQVTNzTXB0ekgxQncxd2FIUHA2RjZZTTY3VklLSWlXeU5pUVVtbkE0cXNMb0dFd3ZHQ19hbi1sWVMzc0E4WEZ0UkdfQVZCNkxiSmZTNGhMMHBoWUhyWFN0XzAtanRadWdvVnVyaUo4a1YxZjhkdFFJaVJuZEtIRnN5UQ?oc=5",
-  "summary": "기업서 AI 사용 금지해도 77%는 개인 계정 활용 Chosunbiz"
- },
- {
-  "date": "2026-10-27",
-  "title": "하이트진로, AX리더 육성과정 1기 마무리…AI 업무혁신 가속화",
-  "source": "한국세정신문",
-  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1CWnh0VVV3cHdtSmVwTTdjTTd2RWpTZnA3YjRiYTg0N1FEZ1cxWW5WVmR0M0ZqWS1lQUVQUW1hR0xDV0I3aVY5VHlMZnRKT1hsZGluVl9OVUo5UmhuVG5IOVdWbjM?oc=5",
-  "summary": "하이트진로, AX리더 육성과정 1기 마무리…AI 업무혁신 가속화 한국세정신문"
- },
- {
-  "date": "2026-10-27",
-  "title": "경남교육청, 직원들이 직접 개발한 AI 업무 자동화 프로그램 16개 공개",
-  "source": "경남신문",
-  "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE95RElockJRZmVGa0wxSXNPYXlyZ05md0M2RzFOeFl4UlFNSGNpVkd2NFROZWtoLWs5Yktud2lWWUJHa1ZqZ3U2WEhWUFNSdENLa19rdnRLVUF3MHVsN2pza3RFX2tjVVF2T24w?oc=5",
-  "summary": "경남교육청, 직원들이 직접 개발한 AI 업무 자동화 프로그램 16개 공개 경남신문"
- },
- {
-  "date": "2026-10-28",
-  "title": "[2026 K-오픈소스 AX] 과기정통부 “AI 인프라·모델·활용 경쟁력 강화로 3강 도약”",
-  "source": "전자신문",
-  "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5jb200ZzlROHNUZ3RWdWJNay1USnh4Z2dYZDhsRUJtWXVVR2I5R2hBTnQyWFJxdlY0OVpxTy1HcW1vUlU0NHlkU3dNcnVKZw?oc=5",
-  "summary": "[2026 K-오픈소스 AX] 과기정통부 “AI 인프라·모델·활용 경쟁력 강화로 3강 도약” 전자신문"
- },
- {
-  "date": "2026-10-28",
-  "title": "수원시, 팔달구 일원에 피지컬 인공지능(AI) 기술 기반 스마트도시 서비스 구축한다",
-  "source": "연합뉴스",
-  "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1McXdOYzJCazBDT2l2ZWhodmRmNWJselpmSG1Vb095T1hRZEhVSHJJYU12Nlo3MHJkSEpMcFg4djFfY1MtZU1CNHJsZnh3dGo0alZYanlxY0l2bmM?oc=5",
-  "summary": "수원시, 팔달구 일원에 피지컬 인공지능(AI) 기술 기반 스마트도시 서비스 구축한다 연합뉴스"
- },
- {
-  "date": "2026-10-28",
-  "title": "원프레딕트, 대구 제조설비에 AI 적용…고장 예측·공정 개선 추진",
-  "source": "지디넷코리아",
-  "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1xU2w2Slh6Um9hc29uYTBYQ0dzYU90OUJTNXdWSWJPcVN6Ykk0dzBVc1NZNlVRWHBVdUVyWTRfZ3p2d2hzZ2IzTTVkcWVmZDdXR2ZGRlNR?oc=5",
-  "summary": "원프레딕트, 대구 제조설비에 AI 적용…고장 예측·공정 개선 추진 지디넷코리아"
- },
- {
-  "date": "2026-10-28",
-  "title": "(참고) 고용노동부, 인사혁신 경진대회에서 인공지능 행정 혁신사례로 대상 수상",
-  "source": "대한민국 정책브리핑",
-  "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNaGZuNXUtYjFpNVVqS1oteU5jenVrTmZBQlVNYU85bHRKX2NDY3Z4T0FPRmd1V3VKWG5QZnhWdi1VSVpmNDZoem90WkFQY3JSbjhzX0htWEFZMUJzV3g4ZE9OMzk3MUpoNDJnWWl4eGk5RVFSWGo4OEhfakM4dWJHZG5RSmVGOHR4ejcyVEpsVjZvUQ?oc=5",
-  "summary": "(참고) 고용노동부, 인사혁신 경진대회에서 인공지능 행정 혁신사례로 대상 수상 대한민국 정책브리핑"
- },
- {
-  "date": "2026-10-28",
-  "title": "뒷마당서 시작한 앤스로픽 남매... 몸값 2700조원까지 키웠다",
-  "source": "조선일보",
-  "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNGY3R0o4UjlVN1VmX2std2M0VHJIMkhFV0VhUHNnNHdXWTVBYkRCTVloay1UOGRuV042NDVwc2dYdGlic1BESGVHVjhwZzBvcDh5NVpTWnRfT0FlZmtGdEpUcldINV93QnVoODZqN3Zad18tMDZGZXhwN1lySi01UUx1cw?oc=5",
-  "summary": "뒷마당서 시작한 앤스로픽 남매... 몸값 2700조원까지 키웠다 조선일보"
- },
- {
-  "date": "2026-10-28",
-  "title": "한국고용정보원, 공공기관 인공지능(AI)혁신성과대회 혁신챌린지 우수상 수상",
-  "source": "서울Pn",
-  "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE00T3Y2QXJWLVZFak1Bb2tkRW1oQ21PSm1teU5pMl8xcUlES3FfSmlSeVlZR3ZVSkk1STR6dmdNSmlCV1Z1enNGaEhPNUtNbW1fdXVWUzhwZTZ5YlM4MlJaendB?oc=5",
-  "summary": "한국고용정보원, 공공기관 인공지능(AI)혁신성과대회 혁신챌린지 우수상 수상 서울Pn"
- },
- {
-  "date": "2026-10-28",
-  "title": "환경공단, 직원이 개발한 AI로 업무 혁신…‘AI 혁신상’ 수상",
-  "source": "전기신문",
-  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0xZmpvTHB1YnkwcHdHVXhhODV1NmdpY0ltMWRmRURiRmRoM00zQi1JbXJYdDhzZmtvdC1wRTlXSnBoNGNacUJmWVdZaUtOQ0g1MV9OTWlEeGZ0V09DTGh4UU1sV2VnTHFFdTd4WtIBcEFVX3lxTFBUeHJXQWVha0g2NXpHanpGN3R2aEp2UGctNDFJUHR0Yl9YSG5zRzFlbG8xakJBWnNPeHZwRWZoaEx3QVFWbHhmREdZa2tZZGlSM1RGVlZZaTloUXNVVXRKQ2RJWHF3V194V3dEVHJFRUw?oc=5",
-  "summary": "환경공단, 직원이 개발한 AI로 업무 혁신…‘AI 혁신상’ 수상 전기신문"
- },
- {
-  "date": "2026-10-28",
-  "title": "“국산 가스터빈 지능화 성과 인정”…서부발전, 공공기관 인공지능 혁신 대상",
-  "source": "매일경제",
-  "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9NbHlTV3ZaUEkxVVM2R0pwYlNsbGN2RXRtLXhhdEZRVmRyRXVfQjAtNnRvS2oxbjFlQnhHWl9zeGFnam0zMWJIVE1RazVPZGFGNWpZS1l3?oc=5",
-  "summary": "“국산 가스터빈 지능화 성과 인정”…서부발전, 공공기관 인공지능 혁신 대상 매일경제"
- },
- {
-  "date": "2026-10-28",
-  "title": "“AI로 만들었어도 저작권 침해 책임은 사람에게”... 中 법원, 무단 AI 만화극 제작에 제동",
-  "source": "특허뉴스",
-  "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBZQXJTRmlRaDZ2eXZlRVlfWHYyRzZBaWd1U3lpa244QnVYZUUwVk1STjdmOXAwRnl0X3Z6LUVDTUUyMldPQWFfXw?oc=5",
-  "summary": "“AI로 만들었어도 저작권 침해 책임은 사람에게”... 中 법원, 무단 AI 만화극 제작에 제동 특허뉴스"
- },
- {
-  "date": "2026-10-28",
-  "title": "한국출판인회의, 아시아 출판 주간서 AI·저작권 논의",
-  "source": "뉴스1",
-  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9hb2JCR1BFSFpDM29za1dsWDhtSVViX25ySXVKZ3hYYUpwQ2NfMnNXZTVjMDJmajNqTmZYS0tnRXJVSVBMdXVORmtaOWI2UEhGQ3FDdXJGeVBfdw?oc=5",
-  "summary": "한국출판인회의, 아시아 출판 주간서 AI·저작권 논의 뉴스1"
- },
- {
-  "date": "2026-10-28",
-  "title": "[Pocus 심층 분석 기획] AI 소설 범람과 앤트로픽 저작권 소송… 출판 시장을 뒤흔든 공정이용 쟁점",
-  "source": "얼리어답터뉴스",
-  "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5vdU5lX04ydHp3dnFwcW1xLVBNWFJDVkhUaHExN1dJeDE4U3lUTnVRLTNUejFGbTA5VE5lR3RxSDVHZnVTWDV6T2JB?oc=5",
-  "summary": "[Pocus 심층 분석 기획] AI 소설 범람과 앤트로픽 저작권 소송… 출판 시장을 뒤흔든 공정이용 쟁점 얼리어답터뉴스"
- },
- {
-  "date": "2026-10-27",
-  "title": "AI는 누구의 창작물을 먹고 자라는가?",
-  "source": "패션포스트",
-  "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1xVVpfMndCdmRkU0wxd0NkWjR5b0VMa3JKbGNMXzNmV3E0M05ab2RVUmJDWjFFUEdHTjktbDdEX2Z2QnQweHppdFQ5cnZISG1DTE9yTl9kNV9ubWgxd1plcTc5emdSRXZGQnRjLUFvWmlnNklKUWc?oc=5",
-  "summary": "AI는 누구의 창작물을 먹고 자라는가? 패션포스트"
  }
 ]
