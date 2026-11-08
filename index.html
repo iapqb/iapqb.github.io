@@ -4,12 +4,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://cdn.jsdelivr.net https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://chk.iapqb.workers.dev https://cloudflareinsights.com; form-action 'self'; frame-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://cdn.jsdelivr.net https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://chk.iapqb.workers.dev https://cloudflareinsights.com https://wl.iapqb.workers.dev; form-action 'self'; frame-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#f37021">
 <meta name="color-scheme" content="light">
 <title>IAPQB — 국제AI실무자격검정원 · AI 실무역량 공개 표준</title>
-<meta name="description" content="IAPQB는 AI가 만든 산출물을 사람이 어디까지 확인하고 책임질 수 있는가 — 그 기준을 공개 초안으로 발행하는 독립 표준화 기구입니다. 본원은 현재 자격을 발급하지 않고 검정을 시행하지 않습니다.">
+<meta name="description" content="AI 산출물을 사람이 어디까지 확인하고 책임질 수 있는가를 재는 등록민간자격 IAPQBCertifiedAppliedAI(등록번호 2026-008253). 국가공인 자격이 아닙니다.">
 <meta property="og:title" content="IAPQB — AI 실무역량 공개 표준">
 <meta property="og:description" content="채점 기준표를 먼저 공개하고, AI를 쓴 뒤에 무엇을 확인했는지를 봅니다. IAPQB-STD-001 v0.9 공개 초안(의견수렴 2026-09-30 마감).">
 <meta property="og:type" content="website">
@@ -313,6 +313,25 @@
 .askb button.on{background:var(--orange);border-color:var(--orange);color:#fff}
 .askn{font-size:11.5px;color:#9a8f85;line-height:1.6;margin:10px 0 0}
 .askr{font-size:12.5px;color:var(--orange-2);margin:10px 0 0}
+/* 1회차 알림 신청 (_ops/waitlist, 2026-11-06) */
+.wl-box h2{margin-top:10px}
+.wl-form{max-width:600px;margin:22px auto 0;text-align:left}
+.wl-row{display:flex;gap:8px;flex-wrap:wrap}
+.wl-row input[type=email]{flex:1 1 220px;min-width:0;padding:13px 14px;border:1px solid #d9cfbd;border-radius:var(--radius);font:inherit;font-size:15px;background:#fff;color:#1d232b}
+.wl-row select{flex:0 1 200px;min-width:0;padding:12px;border:1px solid #d9cfbd;border-radius:var(--radius);font:inherit;font-size:14px;background:#fff;color:#1d232b}
+.wl-ck{display:flex;gap:9px;align-items:flex-start;margin-top:12px;font-size:12.5px;line-height:1.6;cursor:pointer}
+.wl-ck input{margin-top:4px;flex:none}
+.wl-hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.wl-form p{max-width:none;margin:10px 0 0}
+.wl-msg{font-weight:700}
+.wl-notice{font-size:12.5px;border-left:3px solid var(--orange);padding-left:10px}
+.wl-msg:empty,.wl-notice:empty,.wl-count:empty{display:none}
+.wl-links{font-size:12.5px}
+.wl-links a,.wl-ck a{text-decoration:underline;text-underline-offset:2px;color:var(--orange-2)}
+.en .wl-links a,.en .wl-ck a{color:var(--orange)}
+.wl-en{margin-top:34px;padding-top:26px;border-top:1px solid rgba(127,127,127,.35)}
+.wl-en .wl-form{margin-left:0}
+.wl-small{font-size:12px;opacity:.85;margin-top:12px}
 </style>
 </head>
 <body>
@@ -322,7 +341,7 @@
 <div class="util">
   <div class="wrap">
     <span>IAPQB · International AI Practice Qualification Board</span>
-    <span class="r"><a href="#en">EN</a><a href="mailto:contact@iapqb.org">contact@iapqb.org</a><span class="hl">표준 공개초안</span></span>
+    <span class="r"><a href="#en">EN</a><a href="mailto:contact@iapqb.org">contact@iapqb.org</a><span class="hl">등록민간자격 2026-008253</span></span>
   </div>
 </div>
 
@@ -341,7 +360,7 @@
       <a href="#faq">FAQ</a>
       <a href="#news">뉴스룸</a>
     </nav>
-    <a class="cta" href="#signup">사전관심 등록</a>
+    <a class="cta" href="#signup">1회차 알림 신청</a>
   </div>
 </header>
 
@@ -353,10 +372,10 @@
       <div>
         <span class="chip">IAPQB-STD-001 · AI 실무역량 프레임워크 v0.9 공개 의견수렴(2026-09-30 마감)</span>
         <h1>AI를 쓸 줄 아는 것과<br>업무에 책임지고 쓰는 것은 다릅니다.</h1>
-        <p class="sub">평가 기준과 채점 루브릭을 먼저 공개하고, 공개된 기준 밖으로는 평가하지 않는다는 원칙 위에 표준을 씁니다. <b>AI 실무역량 프레임워크를 공개 초안으로 발행하는 표준화 기구이며, 현재 어떠한 검정도 시행하지 않습니다.</b></p>
+        <p class="sub">평가 기준과 채점 루브릭을 먼저 공개하고, 공개된 기준 밖으로는 평가하지 않는다는 원칙 위에 표준을 씁니다. <b>이 기준으로 검정하는 IAPQBCertifiedAppliedAI는 「자격기본법」에 따라 등록한 민간자격(등록번호 2026-008253)이며, 국가로부터 인정받은 공인자격이 아닙니다. 첫 회차는 시행 30일 전까지 공고합니다.</b></p>
         <div class="btns">
           <a class="btn primary" href="#framework">프레임워크 v0.9 보기</a>
-          <a class="btn accent" href="#signup">사전관심 등록</a>
+          <a class="btn accent" href="#signup">1회차 알림 신청 — 접수 링크 하루 먼저</a>
         </div>
         <div class="quick">
           <div><b>공개 기준</b>검정기준·루브릭 선공개</div>
@@ -378,7 +397,7 @@
           </div>
           <div class="res" id="chkres"><div class="lv" id="chklv"></div><div class="ds" id="chkds"></div><div id="chkgaps"></div>
             <div id="chkask" class="chkask"></div>
-            <a class="cta" href="#signup">전체 21문항 자가진단 안내받기 &rarr;</a></div>
+            <a class="cta" href="#signup">1회차 알림 신청 — 접수 링크 하루 먼저 &rarr;</a></div>
         </div>
       </div>
     </div>
@@ -457,10 +476,10 @@
     <div class="wrap">
       <div class="sec-head">
         <span class="eyebrow"><i class="secno">§3</i>Certification</span>
-        <h2>평가 체계 표준 <span class="tagline tag-prep" style="vertical-align:middle">공개초안 · 의견수렴 마감, 검토 중</span></h2>
-        <p class="muted" style="font-size:13px;margin:6px 0 0">이 표준이 정의하는 숙련도 단계는 Foundation · Associate · Professional · Strategist의 네 단계입니다. <b>본원은 현재 검정을 시행하지 않으며</b>, 아래는 평가 설계의 공개 초안입니다.</p>
+        <h2>평가 체계 표준 <span class="tagline tag-prep" style="vertical-align:middle">등록민간자격 · 등록번호 2026-008253</span></h2>
+        <p class="muted" style="font-size:13px;margin:6px 0 0">등록한 자격명은 <b>IAPQBCertifiedAppliedAI</b>, 등급은 Foundation · Associate · Professional · Strategist의 네 단계입니다. 아래 등급·검정방법은 「자격의 관리·운영에 관한 규정」(IAPQB-GOV-002)으로 정해 2026년 11월 5일 등록한 내용이며, <b>첫 회차는 아직 공고하지 않았습니다.</b></p>
         <p class="lead" style="margin-top:12px"><b>처음 보시는 분께.</b> 인공지능이 사람이 일일이 적던 것을 확률로 대신하면서 생기는 두 가지 실패(<b>무난화</b>와 <b>맥락 붕괴</b>), 이 자격이 재는 것이 그 둘을 조율하는 능력이라는 것, 등급마다 실제로 무엇을 해야 하는지, 분야에 따라 갈라지는 <b>트랙</b>까지 한 페이지에 정리해 두었습니다. → <a href="guide/iapqb-certified-applied-ai.html" style="color:var(--orange-2);border-bottom:1px solid var(--orange)"><b>IAPQBCertifiedAppliedAI — 이 자격은 무엇을 증명하는가</b></a></p>
-        <p class="lead">아래는 표준이 정의하는 평가 설계의 공개 초안입니다. 앞의 세 단계는 채점 기준표를 기계적으로 적용할 수 있는 형식으로만 출제해 <b>자동 채점</b>하고, <b>사람이 읽는 채점은 최상위 Strategist 하나에만 둡니다.</b> 채점 기준표는 어느 등급이든 응시 전에 공개합니다. <b>어느 등급이든 가장 높은 배점은 「산출물을 검증할 수 있는가」에 둡니다.</b></p>
+        <p class="lead">앞의 세 단계는 채점 기준표를 기계적으로 적용할 수 있는 형식으로만 출제해 <b>자동 채점</b>하고, <b>사람이 읽는 채점은 최상위 Strategist 하나에만 둡니다.</b> 채점 기준표는 어느 등급이든 응시 전에 공개합니다. <b>어느 등급이든 가장 높은 배점은 「산출물을 검증할 수 있는가」에 둡니다.</b></p>
         <p class="lead" style="margin-top:10px"><b>공개 방침.</b> 회차별 응시자 수와 합격자 수는 있는 그대로 냅니다. <b>합격률은 <b>등급별 누적 응시자가 100명에 이른 뒤부터 냅니다(IAPQB-STD-002 제21조 제2항).</b></b> 응시자가 몇십 명일 때의 비율은 난이도가 아니라 그 회차에 누가 왔는지를 보여줄 뿐이고, 그런 숫자를 투명성이라고 부르면 읽는 쪽이 잘못 판단하게 됩니다. 기준과 그때까지의 원자료는 함께 공개합니다. 회차별 실제 과제는 시행일까지 공개하지 않습니다. 미리 알려지면 대신 만들어 주는 산업이 붙습니다.</p>
         <p class="lead" style="margin-top:10px"><b>무료 자가진단(Readiness Check)에는 증서가 없습니다.</b> 같은 AI 역량을 자기보고 척도와 객관 측정으로 <b>같은 사람에게 모두 적용한 연구</b>(N=514, Markus·Carolus·Wienrich 2025, <i>Computers and Education: AI</i>)에서 <b>두 점수의 상관은 r=.04(p=.42)로 사실상 무상관</b>이었습니다. 같은 연구에서 객관 측정끼리의 상관은 r=.58이었습니다. 연구진 결론은 <b>「주관적 AI 리터러시와 객관적 AI 리터러시는 별개 구성개념」</b>입니다. 수행을 대신하지 못하는 점수로 증서를 주는 것은 측정으로 성립하지 않습니다. 진단은 영역별 결과 보고서로만 제공하고, 증서는 검정에 합격한 경우에만 발급합니다.</p>
       </div>
@@ -470,25 +489,25 @@
           <td><b>Foundation</b></td>
           <td>AI 도구를 업무에 처음 쓰는 모든 직군</td>
           <td>필기 30문항 50분(D1·D2·D6). 자동 채점</td>
-          <td><span class="tagline tag-prep">설계 중</span></td>
+          <td><span class="tagline tag-prep">등록</span></td>
         </tr>
         <tr>
           <td><b>Associate</b></td>
           <td>AI를 업무에 실제로 적용하는 실무자</td>
           <td>필기 40문항 60분 + 실기 2과제 90분(D1·D2·D5·D6). 자동 채점</td>
-          <td><span class="tagline tag-prep">설계 중</span></td>
+          <td><span class="tagline tag-prep">등록</span></td>
         </tr>
         <tr>
           <td><b>Professional</b></td>
           <td>자동화를 설계하고 검증 체계를 운영하는 실무자</td>
           <td>실기 3과제 120분(D3·D4·D5·D7). 자동 채점</td>
-          <td><span class="tagline tag-prep">설계 중</span></td>
+          <td><span class="tagline tag-prep">등록</span></td>
         </tr>
         <tr>
           <td><b>Strategist</b></td>
           <td>조직의 AI 도입을 기획하고 판단하는 위치</td>
           <td>서술형 2과제 180분. <b>시험 시작 시 산업 현장 시나리오를 무작위로 배정</b>하고, 그 안에서 무엇을 할지는 응시자가 정합니다. <b>절감액 또는 증가액을 금액으로 산출하고 그 계산 근거를 대야 하며</b>, 제약에 비추어 실현 가능성을 논증하고 검증 계획을 함께 제시합니다. 사람이 읽고 채점합니다</td>
-          <td><span class="tagline tag-prep">설계 중</span></td>
+          <td><span class="tagline tag-prep">등록</span></td>
         </tr>
         <tr>
           <td><b>산업 트랙 모듈</b><br><span class="muted" style="font-size:12px">Industry Modules</span></td>
@@ -497,11 +516,16 @@
           <td><span class="tagline tag-prep">개발 착수</span></td>
         </tr>
       </table>
-      <p class="muted" style="font-size:13px;margin:12px 0 0">응시자격 — Foundation과 Associate는 제한이 없습니다. Professional은 Associate 취득자 또는 이에 상당하는 실무 경험을 증빙한 사람, Strategist는 Professional 취득자로 한정합니다. <b>본원은 현재 어떠한 수수료도 받지 않습니다.</b></p>
+      <p class="muted" style="font-size:13px;margin:12px 0 0">응시자격 — Foundation과 Associate는 제한이 없습니다. Professional은 Associate 취득자 또는 이에 상당하는 실무 경험을 증빙한 사람, Strategist는 Professional 취득자로 한정합니다. 응시료는 Foundation 44,000원 · Associate 66,000원 · Professional 99,000원 · Strategist 176,000원(부가가치세 포함)이며 자격증 발급비는 응시료에 포함되어 따로 받지 않습니다(IAPQB-GOV-002 [별표 1]).</p>
       <div class="notice" role="note" style="margin-top:26px">
-        <strong>현재 상태</strong>
-        <div class="row"><span class="k">시행 여부</span><span><b>본원은 자격을 발급하지 않고 검정을 시행하지 않습니다.</b> 이 페이지의 단계·평가 방식은 공개 논의를 위한 표준 초안이며 확정된 것이 아닙니다.</span></div>
-        <div class="row"><span class="k">수수료</span><span>어떠한 금전도 수취하지 않습니다(IAPQB-POL-001 제2조).</span></div>
+        <strong>자격 표시 사항</strong>
+        <div class="row"><span class="k">종목·등급</span><span>IAPQBCertifiedAppliedAI — Foundation · Associate · Professional · Strategist</span></div>
+        <div class="row"><span class="k">자격의 종류</span><span>등록민간자격</span></div>
+        <div class="row"><span class="k">등록번호</span><span>2026-008253 (2026-11-05 등록)</span></div>
+        <div class="row"><span class="k">관리·운영기관</span><span>국제AI실무자격검정원 · 대표 이승원 · 소재지 (28124) 충청북도 청주시 청원구 오창읍 오창중앙로 32 · 전자우편 contact@iapqb.org</span></div>
+        <div class="row"><span class="k">비용</span><span>응시료 Foundation 44,000원 · Associate 66,000원 · Professional 99,000원 · Strategist 176,000원(부가가치세 포함). 자격증 발급비는 응시료에 포함되어 따로 받지 않고, 그 밖의 비용은 없습니다. 총비용은 응시한 등급의 응시료와 같습니다.</span></div>
+        <div class="row"><span class="k">환불</span><span>접수기간 내 또는 검정일 7일 전까지 취소하면 전액, 검정일 3일 전까지 취소하면 100분의 50을 환불하고 그 뒤에는 환불하지 않습니다. 본원 귀책으로 검정이 취소·연기되면 전액 환불하거나 다음 회차로 이월합니다(IAPQB-GOV-002 제27조).</span></div>
+        <div class="row"><span class="k">고지</span><span><b>이 자격은 자격기본법 규정에 따라 등록한 민간자격으로, 국가로부터 인정받은 공인자격이 아닙니다.</b></span></div>
       </div>
     </div>
   </section>
@@ -574,15 +598,15 @@
         <tr><th style="width:16%">문서번호</th><th>문서명</th><th style="width:12%">버전</th><th style="width:14%">상태</th></tr>
         <tr><td>IAPQB-STD-001</td><td><a href="standards/IAPQB-STD-001_v1.1.md">AI 실무역량 프레임워크</a> <span class="muted" style="font-size:12px">— 트랙 구조(T1 품질 · T2 피지컬 AI)</span></td><td>v1.1 초안</td><td><span class="st pub">의견수렴 마감 · 검토 중</span></td></tr>
         <tr><td>IAPQB-STD-001</td><td><a href="docs/IAPQB-STD-001.html">AI 실무역량 프레임워크 (직전 판)</a></td><td>v0.9</td><td><span class="st pub">공개</span></td></tr>
-        <tr><td>IAPQB-STD-002</td><td><a href="docs/IAPQB-STD-002.html">평가기준 및 채점 기준표</a> <span class="muted" style="font-size:12px">— 과목–영역 대응표 · 등급별 루브릭 · <a href="standards/IAPQB-STD-002_v2.2.md" style="color:inherit">원문(markdown)</a></span></td><td>v2.2</td><td><span class="st pub">공개</span></td></tr>
+        <tr><td>IAPQB-STD-002</td><td><a href="docs/IAPQB-STD-002.html">평가기준 및 채점 기준표</a> <span class="muted" style="font-size:12px">— 과목–영역 대응표 · 등급별 루브릭 · <a href="standards/IAPQB-STD-002_v2.2.md" style="color:inherit">원문(markdown)</a></span></td><td>v2.2</td><td><span class="st pub">시행</span></td></tr>
         <tr><td>IAPQB-STD-003</td><td>학습목표 매핑 지침 <span class="muted" style="font-size:12px">— 제3자 교육기관 참조용, 본원은 교육과정을 운영하지 않음</span></td><td>v1.1</td><td><span class="st prep">내부 검토</span></td></tr>
         <tr><td>IAPQB-GOV-001</td><td>기관 운영·공정성 규정</td><td>v1.1</td><td><span class="st prep">내부 검토</span></td></tr>
         <tr><td>IAPQB-GOV-002</td><td>자격의 관리·운영에 관한 규정</td><td>v2.0</td><td><span class="st prep">내부 검토</span></td></tr>
         <tr><td>IAPQB-GOV-002</td><td><a href="docs/IAPQB-GOV002-amendment-v2.1.html">자격의 관리·운영에 관한 규정 — 개정안</a> <span class="muted" style="font-size:12px">— 의견수렴 2026-11-02 ~ 2026-11-16</span></td><td>v2.1안</td><td><span class="st pub">개정안 의견수렴</span></td></tr>
-        <tr><td>IAPQB-POL-001</td><td><a href="docs/IAPQB-POL-001.html">수수료·환불·개인정보 정책</a></td><td>v1.6</td><td><span class="st pub">공개</span></td></tr>
+        <tr><td>IAPQB-POL-001</td><td><a href="docs/IAPQB-POL-001.html">수수료·환불·개인정보 정책</a></td><td>v1.7</td><td><span class="st pub">공개</span></td></tr>
         <tr><td>IAPQB-POL-002</td><td><a href="docs/IAPQB-POL-002.html">응시 약관</a></td><td>v1.5</td><td><span class="st pub">공개</span></td></tr>
       </table>
-      <p class="muted" style="font-size:12.5px;margin-top:16px">"내부 검토"는 아직 공개하지 않은 초안을 말합니다. 확정되면 전문을 이 자리에 게시합니다.<br><b>공개된 문서는 전부 초안이며 현재 효력이 없습니다.</b></p>
+      <p class="muted" style="font-size:12.5px;margin-top:16px">"내부 검토"는 아직 공개하지 않은 초안을 말합니다.<br><b>IAPQB-GOV-002와 IAPQB-STD-002는 민간자격 등록일(2026-11-05)부터 효력이 있습니다.</b> 응시 약관(IAPQB-POL-002)은 첫 회차 검정 공고일부터 시행하며, 수수료·환불·개인정보 정책(IAPQB-POL-001)과 함께 GOV-002와 같은 내용으로 맞추어 두었습니다. 내용이 다른 경우 GOV-002에 따릅니다. IAPQB-STD-001은 공개 초안입니다.</p>
     </div>
   </section>
 
@@ -592,17 +616,17 @@
       <div class="sec-head">
         <span class="eyebrow"><i class="secno">§7</i>Questions</span>
         <h2>자주 묻는 질문</h2>
-        <p class="lead">답할 수 있는 것만 적었습니다. 표준 초안 단계라 정해지지 않은 항목은 정해지지 않았다고 그대로 적었습니다.</p>
+        <p class="lead">답할 수 있는 것만 적었습니다. 정해지지 않은 항목은 정해지지 않았다고 그대로 적었습니다.</p>
       </div>
       <div class="faq">
         <details><summary>국가공인 자격인가요?</summary><div class="a">아닙니다. <b>국가자격도 국가공인 민간자격도 아니며</b>, 그와 같은 효력을 갖지 않습니다.</div></details>
-        <details><summary>지금 시험을 볼 수 있나요?</summary><div class="a">본원은 검정을 시행하지 않습니다.<br><br>지금 공개하고 있는 것은 역량 프레임워크와 채점 기준표의 <b>초안</b>이고, 의견수렴을 마치고 검토 중입니다. 시행 여부와 일정은 정해진 바가 없습니다.</div></details>
+        <details><summary>지금 시험을 볼 수 있나요?</summary><div class="a">아직 첫 회차를 공고하지 않았습니다.<br><br>IAPQBCertifiedAppliedAI는 2026년 11월 5일 「자격기본법」에 따른 민간자격으로 등록되었습니다(등록번호 2026-008253). 첫 회차의 일시·접수기간·수수료·유의사항은 <b>시행 30일 전까지</b> 이 사이트에 공고합니다(IAPQB-GOV-002 제18조 제1항).</div></details>
         <details><summary>다른 AI 자격과 무엇이 다른가요?</summary><div class="a">저희가 정한 것은 두 가지입니다. <b>채점 기준표를 응시 전에 공개하고 그 기준 밖으로는 평가하지 않습니다.</b> 그리고 <b>회차마다 등급별 응시자 수와 합격자 수를 내고, 합격률은 등급별 누적 응시자가 100명에 이른 뒤부터 냅니다</b>(IAPQB-STD-002 제21조). 시장 전체가 어떤 상태인지는 저희가 정부 원자료로 집계해 <a href="https://github.com/iapqb/iapqb.github.io/tree/main/data" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">데이터와 스크립트를 공개</a>해 두었으니, 비교는 그 숫자로 직접 하시는 편이 정확합니다.</div></details>
         <details><summary>AI가 다 해주는 시대에 이런 자격이 무슨 의미가 있나요?</summary><div class="a"><b>AI가 산출물을 싸게 만들수록, 값이 붙는 것은 그 산출물에 누가 어디까지 책임지는가입니다.</b><br><br>초안을 만드는 일은 이미 도구가 합니다. 남는 일은 그 결과가 맞는지 확인하고, 무엇을 근거로 그렇게 판단했는지 남기고, 틀렸을 때 누가 책임지는지가 분명한 상태로 넘기는 것입니다. <b>이 자격이 재는 것은 도구를 다루는 손재주가 아니라 그 뒤에 남는 일입니다.</b><br><br>그래서 저희 평가 설계는 산출물 검증 과목에 가장 높은 배점을 둡니다. 그리고 실기와 서술형에서는 AI 사용을 금지하지 않고, 필기에서 쓸 수 있는 범위는 회차별 시행계획으로 정해 공고합니다 — <b>실무에서 AI를 쓰는 능력은 실기와 서술형에서 잽니다.</b></div></details><details><summary>무료 자가진단을 받으면 증서가 나오나요?</summary><div class="a">나오지 않습니다. <b>같은 사람에AI 역량을 자기보고 척도와 객관 측정으로 같은 사람에게 모두 적용한 연구(N=514)에서 <b>두 점수의 상관은 r=.04(p=.42)로 사실상 무상관</b>이었습니다. 연구진 결론은 「주관적 AI 리터러시와 객관적 AI 리터러시는 별개 구성개념」입니다.</b> 수행을 대신하지 못하는 점수로 증서를 만들면 그 증서가 무엇을 증명하는지 저희도 설명할 수 없습니다. 진단은 어느 영역이 비어 있는지 보는 용도이고, 증서는 검정에 합격한 경우에만 발급합니다.</div></details>
         <details><summary>응시 자격에 제한이 있나요?</summary><div class="a">Foundation과 Associate는 제한이 없습니다. Professional은 Associate 취득 또는 그에 상당하는 실무 경험 증빙이 필요합니다. Strategist는 Professional 취득자만 응시할 수 있고 회차별 정원이 있습니다. 정원을 넘으면 접수한 순서에 따라 마감합니다. 기획서 하나를 읽는 데 한 시간 이상이 들고, 규정상 그 회차의 채점에 관여하지 않은 1인이 다시 검토하게 되어 있어서, <b>정원은 그 한계를 그대로 옮긴 숫자입니다.</b></div></details>
         <details><summary>합격률을 정말 공개하나요?</summary><div class="a">응시자 수와 합격자 수는 회차마다 그대로 냅니다. <b>비율은 <b>등급별 누적 응시자가 100명에 이른 뒤부터 냅니다</b>(IAPQB-STD-002 제21조 제2항).</b> 응시자가 몇십 명인 회차의 합격률은 난이도가 아니라 그 회차에 누가 왔는지를 보여줄 뿐이고, 그것을 투명성이라 부르면 읽는 쪽이 잘못 판단합니다. 기준은 미리 적어 두고 그때까지의 원자료는 함께 공개합니다. 해외 자격기관 여섯 곳을 확인해 보니 다섯 곳이 합격률을 내지 않았고, 내는 한 곳은 회당 응시자가 2만 명대였습니다.</div></details>
         <details><summary>교육이나 강의도 하시나요?</summary><div class="a">하지 않습니다. 같은 곳이 가르치고 평가하면 평가의 독립성을 지키기 어렵다고 보기 때문입니다. <b>대신 프레임워크를 누구나 쓸 수 있게 공개합니다.</b> 이 표준으로 교육과정을 만드는 것은 별도 허락 없이 가능하고, 표기 규칙은 v1.0과 함께 안내합니다.</div></details>
-        <details><summary>자격에 유효기간이 있나요?</summary><div class="a">아직 정하지 않았습니다. AI 도구가 빠르게 바뀌므로 기한을 두는 쪽이 맞다고 보고 있고, 다만 갱신이 수입 구조가 되지 않도록 설계해야 한다고 봅니다. <b>확정 후 그 이유와 함께 규정에 적고 이 자리에 안내드리겠습니다.</b></div></details>
+        <details><summary>자격에 유효기간이 있나요?</summary><div class="a">발급일부터 3년입니다(IAPQB-GOV-002 제23조 제1항). 보수교육 이수 또는 갱신 평가 합격으로 갱신할 수 있습니다(같은 조 제2항). 갱신이 수입 구조가 되지 않도록 설계해야 한다고 보며, 갱신 방식은 정해지는 대로 그 이유와 함께 공고합니다.</div></details>
         <details><summary>결과는 언제 나오나요?</summary><div class="a">자동 채점하는 세 등급은 시험이 끝나면 바로 점수가 화면에 뜨고, 공식 성적은 5영업일 이내에 발표합니다. 사람이 읽는 Strategist만 45일 이내입니다.<br><br> 기한을 못 지키게 되면 기한이 끝나기 전에 지연 사실과 새 발표일을 올립니다. 같은 등급에서 두 회차 연속으로 넘기면 그 회차 응시자 전원에게 응시료를 전액 환불합니다.<br><br><b>매 회차의 실제 소요일수는 결과와 함께 공개합니다.</b> 약속한 날짜를 지켰는지 응시자가 직접 볼 수 있어야 한다고 봤습니다. <a href="docs/IAPQB-POL-002.html#a11" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">응시 약관 제11조</a></div></details>
         <details><summary>실기에서 AI를 써도 되나요?</summary><div class="a">써도 됩니다. 대신 무엇을 어떻게 썼는지 함께 내야 합니다.<br><br>필기에서 AI 도구를 쓸 수 있는 범위는 회차별 시행계획으로 정해 공고합니다. 실기는 다릅니다. 사용한 도구의 이름과 버전, 주요 프롬프트, 산출물 중 AI가 만든 부분을 사용 기록으로 제출하시면 됩니다.<br><br><b>AI를 썼다는 사실 자체는 감점하지 않습니다.</b> AI 실무역량을 재는 시험에서 AI 사용을 막는 것은 앞뒤가 맞지 않습니다. 평가하는 것은 도구를 썼는지가 아니라 그 산출물을 검증할 수 있는지입니다.<br><br><b>그리고 사용 기록 자체는 채점하지 않습니다.</b> 사용 기록은 부정행위 조사 자료로만 씁니다. 응시자가 스스로 적어 낸 내용은 저희가 정확한지 확인할 수 없고, <b>확인할 수 없는 자기보고를 점수의 근거로 삼지 않는다는 것이 저희 원칙</b>이기 때문입니다. 채점하는 것은 산출물 안에 실제로 남은 검증의 흔적입니다. 다만 사용 기록을 내지 않거나 사실과 다르게 내면 부정행위로 봅니다. <a href="docs/IAPQB-POL-002.html" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">응시 약관 제13조·제14조</a></div></details>
         <details><summary>시험 볼 때 얼굴을 촬영하나요?</summary><div class="a">촬영하지 않습니다. <b>신분증 이미지도, 얼굴 영상도, 화면 녹화물도 저장하지 않습니다.</b><br><br>신분 확인은 실시간 대조로만 하고, 남기는 것은 「확인이 끝났다」는 사실과 그 시각뿐입니다. 신분증은 주민등록번호 같은 고유식별번호를 가린 채로 보여 주시면 됩니다. 얼굴을 자동으로 대조하는 기술도 쓰지 않습니다. 그 기술을 쓰는 순간 얼굴이 <b>생체인식정보</b>가 되어 민감정보로 다뤄야 하기 때문입니다.<br><br>실시간 합성 영상이 소비자용 그래픽카드에서 돌아가는 시대에 카메라 영상은 더 이상 「이 사람이 직접 풀었다」의 증거가 아닙니다. 판별력은 주지 못하면서 응시자의 개인정보 부담과 저희의 유출 책임만 늘립니다. 그래서 촬영하지 않습니다. <b>대리 응시와 부정행위는 실시간 신분 대조와 검정 시스템 기록으로 판정합니다.</b> Strategist는 시험을 시작할 때 시나리오를 무작위로 배정하고, 모든 등급에서 산출물 안에 실제로 남은 검증의 흔적을 채점합니다.<br><br><b>수집하지 않은 정보는 유출되지 않습니다.</b> 저희가 개인정보 안전조치로 가장 먼저 적는 것이 「수집을 최소로 설계한다」인 이유입니다. <a href="docs/IAPQB-POL-002.html#a6" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">응시 약관 제6조·제7조</a> · <a href="docs/IAPQB-POL-001.html#a9-3" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">POL-001 제7조·제9조의3</a></div></details>
@@ -622,6 +646,8 @@
         <h2>공지 · AI 실무 동향</h2>
       </div>
       <div class="notice-list">
+        <div class="n"><span class="date">2026-11-08</span><span class="cat">안내</span><span><b>1회차 알림 신청을 받습니다</b>. 1회차(2027년 4월 예정) 접수가 열리면 공개 접수 하루 전에 우선 접수 링크를 보냅니다. 이와 함께 수수료·환불·개인정보 정책 v1.7(제10조의6 알림 신청)을 공고하고 공고일부터 시행합니다. <a href="#notify" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">알림 신청</a> · <a href="docs/IAPQB-POL-001.html#a10-6" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">정책 v1.7 보기</a></span></div>
+        <div class="n"><span class="date">2026-11-05</span><span class="cat">등록</span><span><b>IAPQBCertifiedAppliedAI 민간자격 등록</b>. 「자격기본법」에 따라 등록되었습니다(등록번호 2026-008253). 이 자격은 자격기본법 규정에 따라 등록한 민간자격으로, 국가로부터 인정받은 공인자격이 아닙니다. 첫 회차 일정은 시행 30일 전까지 공고합니다.</span></div>
         <div class="n"><span class="date">2026-11-02</span><span class="cat">공고</span><span><b>「자격의 관리·운영에 관한 규정」(IAPQB-GOV-002) 개정안 사전 공개 · 의견수렴 2026-11-02 ~ 2026-11-16</b>. 응시자 본인 확인 방식·공개 문서의 표시 문구·실무 경험 증빙 서류의 처리에 관한 개정안입니다. 의견은 contact@iapqb.org 또는 공개 저장소로 받습니다. <a href="docs/IAPQB-GOV002-amendment-v2.1.html" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">개정안 보기</a></span></div>
         <div class="n"><span class="date">2026-08-12</span><span class="cat">보고서</span><span><b>Report 01 발행 — Mandated but unmeasured</b>. AI 리터러시를 법이 요구하기 시작했는데 그것을 증명할 측정 수단이 무엇인지 정해지지 않았습니다. 시장 실측과 측정 문헌을 함께 놓고 권고 세 가지를 냈습니다. 영문, 동료심사 전 작업 보고서입니다. <a href="https://github.com/iapqb/iapqb.github.io/blob/main/reports/IAPQB_Report_01_EN.md" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">보기</a></span></div>
         <div class="n"><span class="date">2026-08-12</span><span class="cat">자료</span><span><b>2024년 AI 자격 실측 집계</b>. 공공데이터포털 원자료 183,147행을 직접 집계했습니다. 시험을 연 AI 자격 50개, 응시 25,416명, 합격률 100%인 자격 20개. 집계 결과와 재현 스크립트를 <a href="https://github.com/iapqb/iapqb.github.io/tree/main/data" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">공개</a>했고, 전체 분석은 스코어카드 제1호로 발행합니다.</span></div>
@@ -645,16 +671,59 @@
       <h2 style="margin-top:10px">Article 4 requires AI literacy. The Act does not say what counts as evidence.</h2>
       <p style="margin-top:18px">The EU AI Act, Article 4, requires providers and deployers to ensure a sufficient level of AI literacy among their staff. The obligation has applied since 2 February 2025. National market surveillance authorities began supervising and enforcing it on 2 August 2026. The Act does not state what evidence satisfies it.</p>
       <p style="margin-top:14px">IAPQB publishes a competency framework, <b>IAPQB-STD-001</b>. Assessment criteria and scoring rubrics are released before each examination. An assessment record states the criterion applied and who applied it.</p>
-      <p style="margin-top:14px">IAPQB holds no examination and issues no credential. It publishes a competency standard as a public draft. Nothing on this site is state-accredited, and no regulator recognises this work as evidence of Article 4 compliance. The public comment period for draft v0.9 closed on 30 September 2026.</p>
+      <p style="margin-top:14px">IAPQB is a private organization in Korea. IAPQBCertifiedAppliedAI is a registered private qualification under Korea's Framework Act on Qualifications (registration no. 2026-008253). It is not a national qualification or a government-accredited private qualification. IAPQB is not a government body, a national examination board or a university. The first examination has not been announced yet. IAPQB-STD-001 remains a public draft, and no regulator recognises this work as evidence of Article 4 compliance.</p>
       <p style="margin-top:14px"><b>Report 01</b> sets out what the obligation asks for and what evidence exists to meet it. It publishes the full 2024 examination record of one national qualification market, together with the script that produced every figure in it.</p>
       <p style="margin-top:16px"><a href="https://github.com/iapqb/iapqb.github.io/blob/main/reports/IAPQB_Report_01_EN.md">Report 01 (working paper)</a> &nbsp;·&nbsp; <a href="docs/IAPQB-STD-001.html">Read the framework</a> &nbsp;·&nbsp; <a href="https://github.com/iapqb/iapqb.github.io/tree/main/data">Data and script</a> &nbsp;·&nbsp; <a href="mailto:contact@iapqb.org">contact@iapqb.org</a></p>
+      <div class="wl-en" id="notify-en">
+        <h3>Get notified for the first session (planned for April 2027)</h3>
+        <p style="margin-top:12px">Using AI no longer sets anyone apart; checking what it produced, and standing behind it, does. Every grade of IAPQBCertifiedAppliedAI gives its highest weight to one question: can you verify what AI produced? The credential does not guarantee any job or hiring outcome.</p>
+        <p style="margin-top:12px">The exact date, the fee and how to register will be announced at least 30 days before the exam. That announcement will also say whether you can sit it from outside Korea, and in which language. People on this list get a <b>priority registration link one day before public registration opens</b>; priority registration opens at the same time for everyone on the list. Candidate and pass numbers are published for every session as they are. If you pass, you can put your credential number and the lookup link (iapqb.org/#verify) on your CV or LinkedIn profile, and anyone can check it there.</p>
+        <form class="wl-form" data-lang="en" data-ep="https://wl.iapqb.workers.dev" hidden>
+          <div class="wl-row">
+            <input type="email" name="email" required maxlength="254" autocomplete="email" placeholder="Email address" aria-label="Email address">
+            <select name="grade" aria-label="Grade of interest"><option value="U">Grade: not sure yet</option><option value="F">Foundation</option><option value="A">Associate</option><option value="P">Professional</option></select>
+            <button class="btn accent" type="submit">Get the priority link</button>
+          </div>
+          <input type="text" name="website" class="wl-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label class="wl-ck"><input type="checkbox" name="pi"><span><b>[Required] Consent to the collection and use of personal data</b> — items: email address, grade of interest, language (of this form; we email you in it) · purpose: to send the first-session priority registration link · kept until 30 days after first-session registration closes, or until 31 December 2027 if registration has not opened by then (deleted at once if you cancel) · you may refuse, but then we cannot send the link · you must be 14 or older. Details, processors and overseas transfer: <a href="docs/IAPQB-POL-001.html#a10-6">IAPQB-POL-001 Art. 10-6, 9-2, 9-4</a> (in Korean)</span></label>
+          <p class="wl-msg" role="status" aria-live="polite"></p>
+          <p class="wl-notice" aria-live="polite"></p>
+          <p class="wl-count"></p>
+          <p class="wl-links"><a href="#notify-en" data-leave="all">Cancel the sign-up for this address</a></p>
+        </form>
+        <noscript><p>The form needs JavaScript.</p></noscript>
+        <p class="wl-small">The server encrypts your email with IAPQB's public key the moment it arrives and never stores it in readable form; only IAPQB's office computer can decrypt the stored copy. We do not send advertising emails. Operated by 국제AI실무자격검정원 (IAPQB). Fees, refunds and contact details are in the <a href="#cert">qualification disclosure</a> (in Korean). IAPQBCertifiedAppliedAI is a private qualification registered under the Framework Act on Qualifications of the Republic of Korea (registration no. 2026-008253). It is not a national qualification or a government-accredited private qualification.</p>
+      </div>
     </div>
   </section>
 
   <!-- SIGNUP -->
   <section id="signup">
     <div class="wrap">
-      <div class="signup">
+      <div class="signup wl-box" id="notify">
+        <span class="eyebrow">1회차 알림 신청 · 2027년 4월 예정</span>
+        <h2>AI가 낸 결과, 확인하고 책임질 수 있습니까</h2>
+        <p>자기소개서를 생성형 AI로 쓴 것이 확인되면 감점(42.2%)하거나 불합격(23.2%) 처리하겠다는 기업이 65.4%였습니다(고용노동부·한국고용정보원 「2023년 하반기 기업 채용동향 조사」, 2024년 3월 발표, 매출액 상위 500대 기업 중 315곳 응답). AI 서류평가 솔루션 업체 무하유는 자사 솔루션으로 2025년에 검사한 자기소개서의 64.4%가 AI 작성 의심으로 분류됐다고 밝혔습니다(「2026 AI 채용 트렌드 리포트」).</p>
+        <p>AI를 썼느냐보다 <b>AI가 낸 결과를 확인하고 책임질 수 있느냐</b>가 남습니다. IAPQBCertifiedAppliedAI는 어느 등급이든 가장 높은 배점을 「산출물을 검증할 수 있는가」에 둡니다. 이 자격이 AI 작성 의심을 없애 주지는 않습니다. 보여 주는 것은 AI 결과를 검증할 수 있다는 기록입니다.</p>
+        <p><b>1회차는 2027년 4월 예정입니다.</b> 확정 날짜와 접수 방법은 시행 30일 전까지 공고합니다. 알림을 신청하시면 <b>공개 접수 하루 전에 우선 접수 링크</b>를 보내 드립니다(우선 접수는 신청하신 분 모두에게 같은 시각에 열립니다). 자동 채점 점수는 시험이 끝나는 즉시 화면에 나오고, 공식 성적은 마지막 시험일부터 5영업일 안에 발표합니다(응시 약관 IAPQB-POL-002 제11조, 첫 회차 공고일부터 시행).</p>
+        <p>회차별 응시자·합격자 수를 있는 그대로 공개하므로, 1회차 합격자는 이 자격의 첫 숫자로 남습니다. 이력서와 LinkedIn에는 자격번호와 조회 주소(iapqb.org/#verify)만 적으면, 읽는 사람이 번호 하나로 그 자리에서 확인합니다.</p>
+        <form class="wl-form" data-lang="ko" data-ep="https://wl.iapqb.workers.dev" hidden>
+          <div class="wl-row">
+            <input type="email" name="email" required maxlength="254" autocomplete="email" placeholder="이메일 주소" aria-label="이메일 주소">
+            <select name="grade" aria-label="관심 등급"><option value="U">관심 등급: 아직 모름</option><option value="F">Foundation</option><option value="A">Associate</option><option value="P">Professional</option></select>
+            <button class="btn accent" type="submit">우선 링크 받기</button>
+          </div>
+          <input type="text" name="website" class="wl-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label class="wl-ck"><input type="checkbox" name="pi"><span><b>[필수] 개인정보 수집·이용 동의</b> — 수집 항목: 이메일 주소, 관심 등급, 언어 · 목적: 1회차의 접수 개시 알림(우선 접수 링크) · 보유 기간: 1회차의 접수 마감일부터 30일까지, 2027년 12월 31일까지 1회차의 접수가 열리지 않으면 그날 파기(취소하면 바로 삭제) · 동의를 거부할 수 있으며, 거부하면 알림을 받을 수 없습니다 · 만 14세 미만은 신청할 수 없습니다. 위탁·국외 이전과 자세한 내용: <a href="docs/IAPQB-POL-001.html#a10-6">IAPQB-POL-001 제10조의6·제9조의2·제9조의4</a></span></label>
+          <p class="wl-msg" role="status" aria-live="polite"></p>
+          <p class="wl-notice" aria-live="polite"></p>
+          <p class="wl-count"></p>
+          <p class="wl-links"><a href="#notify" data-leave="all">이 주소로 한 신청 취소</a></p>
+        </form>
+        <noscript><p>신청 양식은 JavaScript가 켜져 있어야 동작합니다.</p></noscript>
+        <p class="consent">이메일은 서버가 받는 즉시 본원 공개키로 암호화하며 원문은 어디에도 저장하지 않습니다. 저장된 값은 본원 관리용 PC에서만 열 수 있습니다. 광고 메일은 보내지 않습니다.<br>IAPQBCertifiedAppliedAI · 등록민간자격 · 등록번호 2026-008253 · 관리·운영기관 국제AI실무자격검정원 · 이 자격은 자격기본법 규정에 따라 등록한 민간자격으로, 국가로부터 인정받은 공인자격이 아닙니다. 응시료·환불·연락처는 <a href="#cert">자격 표시 사항</a>에 있습니다.</p>
+      </div>
+      <div class="signup" id="comment" style="margin-top:20px">
         <span class="eyebrow">Public Comment</span>
         <h2>표준 초안에 의견을 주십시오</h2>
         <p><b>IAPQB-STD-001 v0.9 공개 의견수렴은 2026년 9월 30일에 마감했습니다. 그 뒤에 오는 의견도 받아 다음 개정 때 검토합니다.</b> 능력 영역의 구분, 수행지표의 문장, 채점 루브릭의 적용 가능성 — 어느 것이든 좋습니다. <b>제출된 의견은 검토 결과와 함께 공개합니다.</b> 반영하지 않기로 한 의견도 그 이유를 적어 같이 올립니다.</p>
@@ -681,14 +750,14 @@
       </div>
       <div>
         <h5>자격</h5>
-        <ul><li><a href="#cert">평가 체계 표준</a></li><li><a href="#verify">진위 확인 규격</a></li><li><a href="#data">2024년 시장 데이터</a></li><li><a href="#signup">의견 제출</a></li></ul>
+        <ul><li><a href="#cert">평가 체계 표준</a></li><li><a href="#verify">진위 확인 규격</a></li><li><a href="#data">2024년 시장 데이터</a></li><li><a href="#comment">의견 제출</a></li></ul>
       </div>
     </div>
     <div class="legal">
-      <a href="#cert">현재 상태</a> · <a href="docs/IAPQB-POL-002.html">평가 시행 규정(초안)</a> · <a href="docs/IAPQB-POL-001.html">수수료·환불·개인정보 정책(초안)</a><br>
-      IAPQB(International AI Practice Qualification Board · 국제AI실무자격검정원). AI 실무역량 표준화 기구<br>
-      사업자등록번호: 743-22-02693 · 대표: 이승원 · 문의: <a href="mailto:contact@iapqb.org">contact@iapqb.org</a><br>
-      <b>본 기관은 현재 어떠한 자격도 발급하지 않으며 검정을 시행하지 않습니다.</b> 이 사이트의 문서는 공개 논의를 위한 표준 초안이며, 자격의 취득을 권유하거나 응시를 안내하는 자료가 아닙니다. 본 기관은 정부·공공기관이 아닙니다.<br>
+      <a href="#cert">자격 표시 사항</a> · <a href="docs/IAPQB-POL-002.html">응시 약관(초안)</a> · <a href="docs/IAPQB-POL-001.html">수수료·환불·개인정보 정책(초안)</a><br>
+      IAPQB(International AI Practice Qualification Board · 국제AI실무자격검정원). 등록민간자격 IAPQBCertifiedAppliedAI 관리·운영기관<br>
+      사업자등록번호: 743-22-02693 · 대표: 이승원 · 소재지: (28124) 충청북도 청주시 청원구 오창읍 오창중앙로 32 · 전자우편: <a href="mailto:contact@iapqb.org">contact@iapqb.org</a><br>
+      <b>이 자격은 자격기본법 규정에 따라 등록한 민간자격으로, 국가로부터 인정받은 공인자격이 아닙니다.</b> 종목: IAPQBCertifiedAppliedAI · 등록번호: 2026-008253 · 비용과 환불: <a href="#cert">자격 표시 사항</a>. 본 기관은 정부·공공기관이 아닙니다.<br>
       접속 통계는 Cloudflare Web Analytics로 집계합니다. 쿠키를 사용하지 않고 개별 방문자를 추적하지 않습니다(<a href="docs/IAPQB-POL-001.html#a10-4">POL-001</a> 제10조의4).<br>
       © 2026 IAPQB. All rights reserved.
     </div>
@@ -784,13 +853,6 @@
     r.textContent = '조회 결과: 해당 번호로 등록된 자격이 없습니다. (검정 개시 전이라 발급된 자격이 아직 없습니다)';
     return false;
   }
-  // 사전관심 등록. 수신 창구가 열릴 때까지 이메일을 받지 않는다.
-  function iapqbNotify(e){
-    e.preventDefault();
-    var msg = document.getElementById('signup-msg');
-    msg.textContent = '아직 이메일을 받지 않습니다. 받아 둘 곳이 준비되지 않은 상태에서 주소를 모으지 않습니다. 공개 저장소를 구독하시면 같은 공지를 받으실 수 있습니다.';
-    return false;
-  }
   // AI 동향 자동 피드. news.json이 있으면 렌더(깃허브 액션이 하루 3회 갱신)
   fetch('news.json?ts=' + new Date().getTime())
     .then(function(r){ return r.ok ? r.json() : []; })
@@ -866,5 +928,80 @@
 
 </script>
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "26d625bc684c48c39fdc482134c9a3e3"}'></script>
+<script>
+/* IAPQB 1회차 알림 신청 — _ops/waitlist/notify_script.js */
+// IAPQB 1회차 알림 신청 — 페이지 안의 모든 form.wl-form(ko·en)을 처리한다. 2026-11-06 작성 · 2026-11-08 R-18 반영(순번·광고 동의 없음)
+(function () {
+  var forms = document.querySelectorAll('form.wl-form');
+  if (!forms.length) return;
+  var epf = document.querySelector('form.wl-form[data-ep]');   // 문서 순서상 영문 양식(#en)이 먼저 나온다 — data-ep가 있는 양식에서 읽는다
+  var EP = (epf && epf.getAttribute('data-ep')) || 'https://wl.iapqb.workers.dev';
+  var SENDER = { ko: '국제AI실무자격검정원(IAPQB)', en: 'IAPQB (국제AI실무자격검정원, Republic of Korea)' };
+  var MON = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  function dateText(d, L) {
+    var p = String(d || '').split('-'); if (p.length !== 3) return d;
+    return L === 'en' ? (+p[2]) + ' ' + MON[+p[1] - 1] + ' ' + p[0] : p[0] + '년 ' + (+p[1]) + '월 ' + (+p[2]) + '일';
+  }
+  var T = {
+    ko: {
+      ok: '알림 신청을 받았습니다. 1회차의 접수가 열리면 공개 접수 하루 전에 우선 접수 링크를 이 주소로 보내 드립니다(보내는 곳 contact@iapqb.org). 확인 메일은 따로 보내지 않습니다.',
+      email: '이메일 주소를 확인해 주세요.',
+      consent: '[필수] 개인정보 수집·이용에 동의하셔야 알림을 보낼 수 있습니다.',
+      rate: '같은 네트워크(학교·회사 와이파이 등)에서 신청이 몰렸습니다. 휴대폰 데이터로 하시거나 {m}분 뒤에 다시 해 주세요.',
+      closed: '1회차 우선 안내 신청은 마감했습니다. 접수 일정은 공고를 확인해 주세요.',
+      err: '지금은 신청을 받지 못했습니다. 잠시 뒤 다시 시도해 주세요. 장애가 길어지면 사이트 공지로 알립니다.',
+      left: '[처리 결과] {d} · 요청한 주소({e})의 1회차 알림 신청을 처리했습니다. 이 주소로 된 신청이 있었다면 지웠습니다. 주소가 다르면 다시 넣어 주세요.',
+      count: '지금까지 {n}명이 1회차 알림을 신청했습니다.'
+    },
+    en: {
+      ok: 'Thank you. When registration for the first session opens, we will email the priority registration link to this address one day before public registration (from contact@iapqb.org). We do not send a confirmation email.',
+      email: 'Please check the email address.',
+      consent: 'We need your consent to the collection and use of your personal data to send the notice.',
+      rate: 'Too many sign-ups from the same network (school or office Wi-Fi). Please use mobile data or try again in {m} minutes.',
+      closed: 'Sign-up for the first-session notice is closed. Please check the official announcement.',
+      err: 'We could not take your sign-up right now. Please try again later.',
+      left: '[Result] {d} · The sign-up for the address you entered ({e}) has been processed. If it was on the list, it has been deleted. If the address was different, please enter it again.',
+      count: '{n} people have signed up for the first-session notice so far.'
+    }
+  };
+  function post(path, body) {
+    return fetch(EP + path, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+      .then(function (r) { return r.json().then(function (j) { return { s: r.status, j: j }; }); });
+  }
+  Array.prototype.forEach.call(forms, function (f) {
+    f.hidden = false;   // JavaScript가 없으면 양식을 숨겨 둔다(주소가 URL로 새지 않게)
+    var L = f.getAttribute('data-lang') === 'en' ? 'en' : 'ko', M = T[L];
+    var msg = f.querySelector('.wl-msg'), note = f.querySelector('.wl-notice'), btn = f.querySelector('button[type=submit]');
+    function say(s, j) { msg.textContent = s ? s.replace('{m}', Math.max(1, Math.ceil(((j && j.retry_after) || 600) / 60))) : ''; }
+    f.addEventListener('submit', function (e) {
+      e.preventDefault(); note.textContent = '';
+      var b = { email: f.email.value, grade: f.grade.value, lang: L, pi: f.pi.checked, website: f.website.value };
+      if (!b.pi) return say(M.consent);
+      btn.disabled = true;
+      post('/join', b).then(function (x) {
+        if (x.j.ok) return say(M.ok);
+        say(M[x.j.error] || M.err, x.j);
+      }).catch(function () { say(M.err); }).then(function () { btn.disabled = false; });
+    });
+    Array.prototype.forEach.call(f.querySelectorAll('[data-leave]'), function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault(); say(''); note.textContent = '';
+        var addr = String(f.email.value || '').trim();
+        post('/leave', { email: addr }).then(function (x) {
+          if (x.j.ok) { f.pi.checked = false; note.textContent = M.left.replace('{d}', dateText(x.j.day, L)).replace('{e}', addr); return; }
+          say(M[x.j.error] || M.err, x.j);
+        }).catch(function () { say(M.err); });
+      });
+    });
+  });
+  fetch(EP + '/count').then(function (r) { return r.json(); }).then(function (j) {
+    if (!j.ok || !j.total) return;
+    Array.prototype.forEach.call(document.querySelectorAll('.wl-count'), function (el) {
+      var L = el.closest('form') && el.closest('form').getAttribute('data-lang') === 'en' ? 'en' : 'ko';
+      el.textContent = T[L].count.replace('{n}', j.total.toLocaleString(L === 'en' ? 'en-US' : 'ko-KR'));
+    });
+  }).catch(function () {});
+})();
+</script>
 </body>
 </html>
