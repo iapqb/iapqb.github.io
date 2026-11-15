@@ -639,7 +639,6 @@
         </form>
         <p class="muted" style="margin:0 0 10px;font-size:13.5px">이 데이터로 정리한 <a href="guide/ai-cert-compare.html" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">AI 자격증 비교: 어떤 걸 골라야 하나</a>도 함께 보실 수 있습니다.</p>
         <div class="qchips">
-          <button type="button" onclick="qPreset('perfect')">합격률 100%</button>
           <button type="button" onclick="qPreset('big')">응시자 많은 순</button>
           <button type="button" onclick="qPreset('small')">응시자 100명 미만</button>
           <button type="button" onclick="qPreset('none')">실적 미신고</button>
@@ -722,7 +721,7 @@
         <div class="n"><span class="date">2026-11-05</span><span class="cat">등록</span><span><b>IAPQBCertifiedAppliedAI 민간자격 등록</b>. 「자격기본법」에 따라 등록되었습니다(등록번호 2026-008253). 이 자격은 자격기본법 규정에 따라 등록한 민간자격으로, 국가로부터 인정받은 공인자격이 아닙니다. 첫 회차 일정은 시행 30일 전까지 공고합니다.</span></div>
         <div class="n"><span class="date">2026-11-02</span><span class="cat">공고</span><span><b>「자격의 관리·운영에 관한 규정」(IAPQB-GOV-002) 개정안 사전 공개 · 의견수렴 2026-11-02 ~ 2026-11-16</b>. 응시자 본인 확인 방식·공개 문서의 표시 문구·실무 경험 증빙 서류의 처리에 관한 개정안입니다. 의견은 contact@iapqb.org 또는 공개 저장소로 받습니다. <a href="docs/IAPQB-GOV002-amendment-v2.1.html" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">개정안 보기</a></span></div>
         <div class="n"><span class="date">2026-08-12</span><span class="cat">보고서</span><span><b>Report 01 「Mandated but unmeasured」 발행</b>. AI 리터러시를 법이 요구하기 시작했는데 그것을 증명할 측정 수단이 무엇인지 정해지지 않았습니다. 시장 실측과 측정 문헌을 함께 놓고 권고 두 가지를 냈습니다. 영문, 동료심사 전 작업 보고서입니다. <a href="https://github.com/iapqb/iapqb.github.io/blob/main/reports/IAPQB_Report_01_EN.md" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">보기</a></span></div>
-        <div class="n"><span class="date">2026-08-12</span><span class="cat">자료</span><span><b>2024년 AI 자격 실측 집계</b>. 공공데이터포털 원자료 183,147행을 직접 집계했습니다. 시험을 연 AI 자격 50개, 응시 25,416명, 합격률 100%인 자격 20개. 집계 결과와 재현 스크립트를 <a href="https://github.com/iapqb/iapqb.github.io/tree/main/data" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">공개</a>했고, 전체 분석은 스코어카드 제1호로 발행합니다.</span></div>
+        <div class="n"><span class="date">2026-08-12</span><span class="cat">자료</span><span><b>2024년 AI 자격 실측 집계</b>. 공공데이터포털 원자료 183,147행을 직접 집계했습니다. 시험을 연 AI 자격 50개, 응시 25,416명. 집계 결과와 재현 스크립트를 <a href="https://github.com/iapqb/iapqb.github.io/tree/main/data" style="color:var(--orange-2);border-bottom:1px solid var(--orange)">공개</a>했고, 전체 분석은 스코어카드 제1호로 발행합니다.</span></div>
         <div class="n"><span class="date">2026-08-13</span><span class="cat">공고</span><span><b>STD-001 공개 의견수렴을 9월 30일까지 연장</b>. 8월 12일까지 도메인 메일에 MX 레코드가 없어 contact@iapqb.org로 온 메일이 도착하지 않았습니다. 8월 13일 복구했습니다. 그 기간에 의견을 보내신 분은 다시 보내 주시기 바랍니다. 접수된 의견이 없는 상태에서 마감하면 그 결과를 해석할 수 없다고 판단해 연장합니다.</span></div>
         <div class="n"><span class="date">2026-08-12</span><span class="cat">방침</span><span><b>무료 자가진단에 증서를 발급하지 않기로 확정</b>. 같은 사람에게 두 방식을 모두 적용한 연구(N=514)에서 자기보고와 객관 측정의 상관은 <b>r=.04로 사실상 무상관</b>이었습니다. 수행을 대신하지 못하는 점수로 증서를 주는 것은 측정으로 성립하지 않습니다.</span></div>
         <div class="n"><span class="date">2026-07-23</span><span class="cat">표준</span><span><b>AI 실무역량 프레임워크(IAPQB-STD-001) v0.9 공개초안 발행</b>. 2026-08-31까지 누구나 의견을 제출할 수 있습니다.</span></div>
@@ -969,8 +968,7 @@
       if(ds)ds.innerHTML=
         '<div><b>'+m.total+'</b><span>등록된 AI 관련 자격</span></div>'+
         '<div><b>'+m.examined+'</b><span>2024년에 시험을 연 자격</span></div>'+
-        '<div><b>'+m.candidates.toLocaleString('ko-KR')+'</b><span>총 응시자</span></div>'+
-        '<div><b>'+m.perfect+'</b><span>합격률 100%인 자격</span></div>';
+        '<div><b>'+m.candidates.toLocaleString('ko-KR')+'</b><span>총 응시자</span></div>';
       cb();
     }).catch(function(){document.getElementById('qres').innerHTML='<p class="muted">데이터를 불러오지 못했습니다.</p>';});
   }
