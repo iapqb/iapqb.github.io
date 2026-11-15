@@ -1,0 +1,563 @@
+<!DOCTYPE html><html lang="es" dir="ltr"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://cdn.jsdelivr.net https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://pt.iapqb.workers.dev https://wl.iapqb.workers.dev https://cloudflareinsights.com; form-action 'self'; frame-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f37021">
+<meta name="color-scheme" content="light">
+<title>Prueba práctica de IA gratis, cualquier IA permitida · 10 preguntas · IAPQB</title>
+<meta name="description" content="Diez preguntas en unos 12 minutos, hechas con los seis formatos de corrección automática del examen IAPQB. Usa ChatGPT o cualquier IA; algunas preguntas solo salen bien si revisas su respuesta. Sin registro, puntaje al instante.">
+<link rel="canonical" href="https://iapqb.org/es/practice/">
+<link rel="alternate" hreflang="ko" href="https://iapqb.org/practice/">
+<link rel="alternate" hreflang="en" href="https://iapqb.org/en/practice/">
+<link rel="alternate" hreflang="hi" href="https://iapqb.org/hi/practice/">
+<link rel="alternate" hreflang="fr" href="https://iapqb.org/fr/practice/">
+<link rel="alternate" hreflang="ar" href="https://iapqb.org/ar/practice/">
+<link rel="alternate" hreflang="pt" href="https://iapqb.org/pt/practice/">
+<link rel="alternate" hreflang="es" href="https://iapqb.org/es/practice/">
+<link rel="alternate" hreflang="x-default" href="https://iapqb.org/en/practice/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="IAPQB">
+<meta property="og:title" content="Prueba práctica de IA: deja ChatGPT abierto">
+<meta property="og:description" content="Diez preguntas en unos 12 minutos, hechas con los seis formatos de corrección automática del examen IAPQB. Usa ChatGPT o cualquier IA; algunas preguntas solo salen bien si revisas su respuesta. Sin registro, puntaje al instante.">
+<meta property="og:url" content="https://iapqb.org/es/practice/">
+<meta property="og:image" content="https://iapqb.org/es/practice/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23f37021'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' font-weight='700' fill='%23fff' text-anchor='middle'%3EIA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" integrity="sha384-GIdEBaqGN9mNkDkMkzMHW8EKUqtpPIe/sLj1X7DIrnc9uPtLROJgmuDlh+3rBw0j" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<style>
+:root{--ink:#1c1512;--dark:#3a2317;--steel:#5c4f45;--muted:#8d8177;--line:#ece5dc;--line-2:#ded4c8;--orange:#f37021;--orange-2:#c9530f;--orange-pale:#fdeee2;--ok:#1e6e46;--ok-bg:#e8f4ec;--bad:#a8321e;--bad-bg:#fbeae6;--cream:#fdf6ef;--r:6px;
+--sans:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Malgun Gothic",sans-serif;--serif:Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.68;-webkit-font-smoothing:antialiased;}
+a{color:var(--orange-2)}
+:where(a,button,select,input,summary,[tabindex]):focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+.top{background:#fff;border-bottom:2px solid var(--orange)}
+.top .w{max-width:760px;margin:0 auto;padding:8px 16px;display:flex;justify-content:space-between;align-items:center;gap:6px 12px}
+.brand{font-family:Georgia,"Times New Roman",serif;font-weight:700;letter-spacing:.05em;color:var(--dark);text-decoration:none;font-size:18px}
+.langs{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:2px 10px;font-size:13px;min-width:0}
+.langs a{color:var(--steel);text-decoration:none}.langs a[aria-current]{color:var(--orange-2);font-weight:700}
+main{max-width:760px;margin:0 auto;padding:18px 16px 36px}
+.card{background:#fff;border:1px solid var(--line-2);border-radius:var(--r);padding:22px 18px;box-shadow:0 2px 12px rgba(58,35,23,.05);margin-bottom:16px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--orange-2);margin:0}
+h1,h2,h3{font-family:var(--serif);color:var(--dark);line-height:1.32;margin:0}
+h1{font-size:clamp(28px,7vw,40px);margin:8px 0 10px}
+h2{font-size:clamp(19px,4.6vw,23px);margin:0 0 10px}
+h3{font-size:17px;margin:0 0 8px}
+.lead{font-size:17px;color:var(--steel);margin:0 0 12px}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px;padding:0;list-style:none}
+.facts li{background:var(--orange-pale);color:var(--orange-2);border-radius:999px;padding:4px 12px;font-size:13.5px;font-weight:700}
+.vs{border-inline-start:4px solid var(--orange);background:var(--orange-pale);padding:10px 12px;border-radius:4px;font-weight:700;margin:0 0 16px}
+.small{font-size:12.8px;color:var(--muted);margin:14px 0 0}
+.muted{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:12px 24px;border-radius:var(--r);font:inherit;font-weight:700;font-size:16.5px;border:1px solid var(--orange);background:var(--orange);color:#fff;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--orange-2);border-color:var(--orange-2)}
+.btn.ghost{background:#fff;color:var(--orange-2)}.btn.ghost:hover{background:var(--orange-pale)}
+.btn.wide{width:100%}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.btns .btn{flex:1 1 140px;min-height:46px;font-size:15px;padding:10px 14px}
+.fldlabel{font-weight:700;font-size:14.5px;margin:16px 0 6px;color:var(--dark)}
+label.fld{display:block;margin:16px 0 0}
+label.fld>span{display:block;font-weight:700;font-size:14.5px;margin-bottom:6px;color:var(--dark)}
+select{width:100%;min-width:0;padding:12px 12px;border:1px solid var(--line-2);border-radius:var(--r);background:#fff;font:inherit;font-size:15.5px;color:var(--ink)}
+.opt{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:start;border:1px solid var(--line-2);background:#fff;border-radius:var(--r);padding:12px 14px;margin:8px 0 0;font:inherit;font-size:15.5px;color:var(--ink);cursor:pointer;line-height:1.55}
+.opt .lt{flex:none;display:inline-grid;place-items:center;min-width:26px;height:26px;border-radius:50%;border:1px solid var(--line-2);font-size:13px;color:var(--steel);font-weight:700}
+.opt[aria-pressed=true],.opt[aria-checked=true]{border-color:var(--orange);background:var(--orange-pale);box-shadow:inset 3px 0 0 var(--orange)}
+.opt[aria-pressed=true] .lt,.opt[aria-checked=true] .lt{background:var(--orange);border-color:var(--orange);color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line-2);background:#fff;border-radius:999px;padding:8px 14px;font:inherit;font-size:14.5px;cursor:pointer;color:var(--ink)}
+.chip[aria-checked=true]{border-color:var(--orange);background:var(--orange-pale);color:var(--orange-2);font-weight:700}
+.warn{color:var(--bad);font-weight:700;margin:12px 0 0;min-height:1em}
+.warn:empty{display:none}
+.qhead{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:12.8px;margin-bottom:8px}
+.prog{font-weight:700;color:var(--dark)}
+.dom{color:var(--steel);background:#f6efe7;border-radius:4px;padding:2px 8px}
+.aib{color:var(--ok);background:var(--ok-bg);border-radius:4px;padding:2px 8px;font-weight:700}
+.bar{height:4px;background:var(--line);border-radius:4px;margin:0 0 16px;overflow:hidden}.bar i{display:block;height:100%;background:var(--orange)}
+.stem{font-family:var(--sans);font-size:17px;font-weight:700;line-height:1.6;color:var(--ink);margin-bottom:12px}
+.hint{font-size:13.5px;color:var(--steel);background:#f8f3ee;border-radius:4px;padding:8px 10px;margin:12px 0 4px}
+.tw{overflow-x:auto;margin:6px 0 4px}
+table.d{border-collapse:collapse;width:100%;font-size:14.5px;background:#fff}
+table.d caption{caption-side:top;text-align:start;font-size:13px;color:var(--muted);padding-bottom:4px}
+table.d th,table.d td{border:1px solid var(--line-2);padding:7px 9px;text-align:start;vertical-align:top}
+table.d th{background:#f6efe7;font-weight:700}
+table.d td.n{text-align:end;font-variant-numeric:tabular-nums}
+table.d tr.tot td{font-weight:700;background:#fbf7f2}
+pre.code{background:#2b211c;color:#f8efe6;padding:12px 14px;border-radius:6px;overflow-x:auto;font-size:13.2px;line-height:1.55;margin:6px 0 4px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+ol.tix{margin:6px 0 4px;padding-inline-start:26px;font-size:15px}
+ol.tix li{padding:3px 0;border-bottom:1px dashed var(--line)}
+.ord{display:flex;align-items:center;gap:10px;border:1px solid var(--line-2);border-radius:var(--r);padding:10px 10px 10px 12px;margin:8px 0 0;background:#fff}
+.ord .lt{flex:none;min-width:26px;height:26px;border-radius:50%;background:var(--dark);color:#fff;display:inline-grid;place-items:center;font-size:13px;font-weight:700}
+.ord .ot{flex:1 1 auto;min-width:0;font-size:15px}
+.ord .mv{display:flex;flex-direction:column;gap:4px;flex:none}
+.ar{width:40px;height:34px;border:1px solid var(--line-2);border-radius:4px;background:#fff;cursor:pointer;font-size:13px;color:var(--dark)}
+.ar:disabled{opacity:.3;cursor:default}
+.mt{margin:12px 0 0}.mt .ml{display:block;font-weight:700;font-size:15px;margin-bottom:6px}
+.nrow{display:flex;gap:10px;align-items:center;margin-top:8px}
+input.num{flex:1 1 auto;min-width:0;max-width:280px;padding:13px 14px;border:1px solid var(--line-2);border-radius:var(--r);font:inherit;font-size:18px;font-variant-numeric:tabular-nums}
+.unit{font-weight:700;color:var(--steel)}
+.navrow{display:flex;justify-content:flex-end;margin-top:20px}
+.navrow .btn{min-width:160px}
+.score{display:flex;align-items:baseline;gap:6px;margin:4px 0 2px}
+.score b{font-family:var(--sans);font-size:64px;line-height:1;color:var(--dark);font-weight:800;font-variant-numeric:tabular-nums}
+.score span{font-size:22px;color:var(--orange-2);font-weight:700}
+.band{font-weight:800;color:var(--orange-2);font-size:18px;margin:6px 0 2px}
+.pct{font-size:14px;color:var(--steel);margin:8px 0 0}
+.dbar{display:grid;grid-template-columns:minmax(0,1fr) 64px;gap:4px 10px;align-items:center;margin:8px 0;font-size:14px}
+.dbar .t{min-width:0;overflow-wrap:anywhere}
+.dbar .v{text-align:end;font-variant-numeric:tabular-nums;color:var(--steel)}
+.dbar .g{grid-column:1 / -1;height:7px;background:var(--line);border-radius:4px;overflow:hidden}.dbar .g i{display:block;height:100%;background:var(--orange)}
+.msg{border-top:1px solid var(--line);padding:12px 0 0;margin:12px 0 0;font-size:15px}
+.msg:first-of-type{border-top:0;padding-top:0}
+.msg .s{font-size:12.5px;color:var(--muted);margin-top:4px}
+.msg .s a{color:var(--muted)}
+details.rv{border-top:1px solid var(--line);padding:10px 0}
+details.rv summary{cursor:pointer;font-weight:700;font-size:15px;list-style-position:outside}
+details.rv .ok{color:var(--ok)}details.rv .no{color:var(--bad)}
+details.rv .rb{font-size:14.2px;margin-top:8px}
+details.rv .rb p{margin:6px 0}
+details.rv .rb .k{font-weight:700;color:var(--dark)}
+details.rv ol{margin:4px 0;padding-inline-start:22px}
+.wl-row{display:flex;gap:8px;flex-wrap:wrap}
+.wl-row input[type=email]{flex:1 1 220px;min-width:0;padding:13px 14px;border:1px solid var(--line-2);border-radius:var(--r);font:inherit;font-size:15.5px;background:#fff}
+.wl-row select{flex:1 1 180px;width:auto}
+.wl-row .btn{flex:1 1 180px}
+.wl-ck{display:flex;gap:9px;align-items:flex-start;margin-top:12px;font-size:12.5px;line-height:1.6;cursor:pointer}
+.wl-ck input{margin-top:4px;flex:none}
+.wl-ck a,.wl-links a{color:var(--orange-2);text-decoration:underline;text-underline-offset:2px}
+.wl-hp{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;border:0!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;clip-path:inset(50%)!important;white-space:nowrap!important}
+.wl-msg{font-weight:700;margin:10px 0 0}.wl-msg:empty,.wl-notice:empty{display:none}
+.wl-notice{font-size:12.5px;border-inline-start:3px solid var(--orange);padding-inline-start:10px;margin:10px 0 0}
+.wl-links{font-size:12.5px;margin:10px 0 0}
+.toast{font-size:13px;color:var(--ok);font-weight:700;margin:8px 0 0;min-height:1em}
+h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus{outline:none}
+html[lang=hi] .eyebrow{letter-spacing:0;text-transform:none;font-size:13px}
+[dir=rtl] .opt[aria-pressed=true],[dir=rtl] .opt[aria-checked=true]{box-shadow:inset -3px 0 0 var(--orange)}
+.score{direction:ltr;justify-content:flex-end}[dir=ltr] .score{justify-content:flex-start}
+footer{max-width:760px;margin:0 auto;padding:0 16px 40px;font-size:12px;color:var(--muted);line-height:1.6}
+footer p{margin:6px 0}
+@media(max-width:420px){.card{padding:18px 14px}.score b{font-size:56px}.navrow .btn{width:100%}}
+</style>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "26d625bc684c48c39fdc482134c9a3e3"}'></script>
+</head><body>
+<header class="top"><div class="w"><a class="brand" href="https://iapqb.org/es/" aria-label="Inicio IAPQB">IAPQB</a><nav class="langs" aria-label="Language"><a href="/practice/" lang="ko">한국어</a> <a href="/en/practice/" lang="en">English</a> <a href="/hi/practice/" lang="hi">हिन्दी</a> <a href="/fr/practice/" lang="fr">Français</a> <a href="/ar/practice/" lang="ar">العربية</a> <a href="/pt/practice/" lang="pt">Português</a> <a href="/es/practice/" lang="es" aria-current="page">Español</a></nav></div></header>
+<main id="app" aria-live="polite"><noscript><p class="card">Esta prueba necesita JavaScript.</p></noscript></main>
+<footer><p>IAPQBCertifiedAppliedAI es una calificación privada registrada según la Ley Marco de Calificaciones de la República de Corea (registro n.º 2026-008253). No es una calificación nacional ni una calificación privada acreditada por el gobierno.</p>
+<p>Responsable: 국제AI실무자격검정원 (International AI Practice Qualification Board) · Representante: Lee Seung-won · Registro empresarial 743-22-02693 · Tel. +82-10-8107-8254 · contact@iapqb.org</p>
+<p>Tarifas (KRW, con impuesto y certificado incluidos, sin otros cargos): Foundation 44,000 · Associate 66,000 · Professional 99,000 · Strategist 176,000. Reembolso: los grados a demanda se reembolsan completos si se cancelan antes de empezar. Reglas completas: iapqb.org/en/apply.html</p></footer>
+<script id="pt-data" type="application/json">{"lang":"es","v":2,"ep":"https://pt.iapqb.workers.dev","wlep":"https://wl.iapqb.workers.dev","url":"https://iapqb.org/es/practice/","ui":{"locale":"es-419","defcc":"mx","title":"Prueba práctica de IA gratis, cualquier IA permitida · 10 preguntas · IAPQB","desc":"Diez preguntas en unos 12 minutos, hechas con los seis formatos de corrección automática del examen IAPQB. Usa ChatGPT o cualquier IA; algunas preguntas solo salen bien si revisas su respuesta. Sin registro, puntaje al instante.","og_title":"Prueba práctica de IA: deja ChatGPT abierto","og_sub":"10 preguntas · unos 12 minutos · puntaje al instante","eyebrow":"IAPQB · prueba práctica","h1":"Prueba práctica de IA en el trabajo","lead":"Deja ChatGPT o cualquier IA abierta mientras respondes. Algunas preguntas solo salen bien si revisas lo que te da la IA.","facts":["10 preguntas","Unos 12 minutos","Sin registro","Puntaje al instante"],"vs":"Un amigo sacó {s}/100 en la ruta {t}. Te tocan las mismas preguntas.","vs_res":"Tu amigo sacó {s}/100.","note":"Las preguntas usan los seis formatos de corrección automática del examen oficial (IAPQB-STD-002, art. 9). El certificado llega al aprobar el examen oficial, cuyas tareas prácticas permiten cualquier IA generativa (IAPQB-POL-002, art. 14).","start":"Empezar","p_h":"¿Para qué te estás preparando?","p_sub":"La ruta define las preguntas. El lugar donde quieres trabajar ajusta la página de resultados.","f_cc":"Dónde vives","f_tr":"Ruta profesional","f_tg":"Dónde quieres trabajar","f_si":"Tu situación","f_ge":"Género (opcional)","pick":"Elige","privacy":"Las respuestas se cuentan de forma anónima (IAPQB-POL-001, art. 10-2). No guardamos nombre, contacto, dirección IP, cookies ni datos del dispositivo. Como nada une una respuesta contigo, no podemos encontrar y borrar una respuesta concreta después.","go":"Empezar las preguntas","need_tr":"Elige primero una ruta profesional.","ai":"Cualquier IA permitida","of":"{i} de {n}","next":"Siguiente","finish":"Ver mi puntaje","skip_note":"Puedes dejar una pregunta en blanco. Vale 0.","choose_n":"Elige {n}.","err_rule":"Marca cada frase falsa o sin respaldo. Cada marca correcta +5, cada marca equivocada −5. Esta pregunta no baja de 0.","order_hint":"Usa las flechas para poner los pasos en orden.","up":"Subir","down":"Bajar","match_hint":"Elige la pareja correcta para cada línea. Cada pareja correcta vale 2.5.","num_ph":"Solo números","tol":"Error permitido: {t}","res_h":"Tu resultado","res_track":"Ruta {t}","bands":[[85,"Fuerte","Revisaste el trabajo de la IA donde importaba."],[70,"Bien","Algunos descuidos. La revisión de abajo muestra qué comprobaciones saltaste."],[50,"Casi","La mayoría de los fallos vienen de comprobaciones saltadas. La revisión muestra dónde."],[0,"Todavía no","Abre la revisión y luego prueba otra ruta. Cada ruta tiene sus propias tareas."]],"pct":"Entre el {p}% mejor de {n} personas de esta ruta (al {d}).","pct_wait":"Mostraremos tu posición cuando 100 personas terminen esta ruta (IAPQB-POL-001, art. 10-3).","dom_h":"Por área","seg_h":"Según dónde quieres trabajar","src":"Fuente","off_h":"El examen oficial","off_p":"Este puntaje es de práctica. El examen oficial Foundation tiene 30 preguntas en 50 minutos y se aprueba con 60 de 100. Associate tiene 40 preguntas escritas en 60 minutos y dos tareas prácticas en 90 minutos, con cualquier IA generativa permitida. Si apruebas, recibes un número de certificado que cualquiera puede verificar en iapqb.org/#verify.","wl_h":"Recibir el enlace de inscripción anticipada","wl_note":"El formulario está en inglés, y el correo llegará en inglés.","share_h":"Comparte tu puntaje","share_txt":"Saqué {s}/100 en la prueba práctica de IA de IAPQB (ruta {t}). ChatGPT está permitido, y aun así algunas preguntas salen mal si no revisas su respuesta. Pruébala:","sh":{"native":"Compartir","wa":"WhatsApp","li":"LinkedIn","tg":"Telegram","copy":"Copiar enlace","img":"Guardar imagen"},"share_order":["native","wa","li","tg","copy","img"],"copied":"Copiado.","card_title":"Prueba práctica de IA","card_ai":"Cualquier IA permitida · 10 preguntas","card_url":"iapqb.org/es/practice","again":"Probar otra ruta","rev_h":"Revisa tus respuestas","rev_you":"Tu respuesta","rev_key":"Respuesta correcta","rev_basis":"Fundamento","rev_pts":"{p} / 10","blank":"(en blanco)","names":"Los nombres de empresas describen las rutas de contratación que eligen los candidatos. IAPQB no tiene relación con ninguna de ellas.","noscript":"Esta prueba necesita JavaScript.","home":"Inicio IAPQB","foot":["IAPQBCertifiedAppliedAI es una calificación privada registrada según la Ley Marco de Calificaciones de la República de Corea (registro n.º 2026-008253). No es una calificación nacional ni una calificación privada acreditada por el gobierno.","Responsable: 국제AI실무자격검정원 (International AI Practice Qualification Board) · Representante: Lee Seung-won · Registro empresarial 743-22-02693 · Tel. +82-10-8107-8254 · contact@iapqb.org","Tarifas (KRW, con impuesto y certificado incluidos, sin otros cargos): Foundation 44,000 · Associate 66,000 · Professional 99,000 · Strategist 176,000. Reembolso: los grados a demanda se reembolsan completos si se cancelan antes de empezar. Reglas completas: iapqb.org/en/apply.html"],"lang":"es"},"doms":{"D1":"Alfabetización en IA","D2":"Diseño de prompts y contexto","D3":"Procesamiento de datos y documentos","D5":"Verificación y calidad","D6":"Seguridad, derechos de autor y cumplimiento","D7":"Integración al trabajo y medición"},"domOrder":["D1","D2","D3","D5","D6","D7"],"tracks":{"it":{"l":"Software y TI","s":"Software y TI"},"data":{"l":"Datos y análisis","s":"Datos y análisis"},"biz":{"l":"Negocios y oficina (RR. HH., finanzas, operaciones)","s":"Negocios y oficina"},"mkt":{"l":"Marketing, ventas y contenido","s":"Marketing y contenido"},"sup":{"l":"Atención al cliente y operaciones","s":"Atención al cliente"}},"regions":[["in","India"],["ng","Nigeria"],["ke","Kenia"],["za","Sudáfrica"],["eg","Egipto"],["gh","Ghana"],["et","Etiopía"],["tz","Tanzania"],["ug","Uganda"],["ma","Marruecos"],["oaf","Otro país de África"],["pk","Pakistán"],["bd","Bangladés"],["ph","Filipinas"],["id","Indonesia"],["vn","Vietnam"],["kr","Corea del Sur"],["gulf","Países del Golfo"],["ome","Otro país de Oriente Medio"],["gb","Reino Unido"],["eu","Unión Europea"],["oeu","Otro país de Europa"],["us","Estados Unidos"],["br","Brasil"],["mx","México"],["oam","Otro país de América"],["ot","Otro lugar"]],"ccgrp":{"in":"in","kr":"kr"},"targets":{"in":[["its","Servicios de TI (TCS, Infosys, Wipro, HCLTech, Accenture y otras)"],["gcc","Centro global de capacidades (GCC)"],["prod","Empresa de producto o big tech"],["start","Startup"],["gov","Sector público"],["nontech","Empresa no tecnológica (banca, farmacéutica, consumo…)"],["free","Freelance o trabajo remoto"],["und","Aún no lo decido"]],"kr":[["kbig","Gran grupo coreano"],["kpub","Empresa pública coreana"],["kfin","Banco o financiera"],["kit","Empresa de TI o startup"],["kfor","Empresa extranjera en Corea"],["kmid","Empresa mediana o pequeña"],["kfree","Freelance o negocio propio"],["und","Aún no lo decido"]],"ot":[["mnc","Empresa global o multinacional"],["big","Gran empresa local"],["start","Startup"],["gov","Sector público"],["free","Freelance o trabajo remoto"],["und","Aún no lo decido"]]},"sits":[["stu","Estudiante"],["grad","Recién egresado, buscando primer empleo"],["work","Trabajando y con ganas de cambiar"],["back","Volviendo tras una pausa laboral"]],"genders":[["w","Mujer"],["m","Hombre"],["x","Prefiero no decirlo"]],"msgs":{"ot.mnc":["Las multinacionales contratan más allá de las fronteras. Si apruebas el examen oficial, recibes un número de certificado que cualquiera puede verificar en iapqb.org/#verify.",[]],"ot.big":["Las grandes empresas están llevando herramientas de IA al trabajo de oficina. Las rutas Negocios y Datos usan ese tipo de tareas.",[]],"ot.start":["Las startups suelen preguntar qué has construido. Prepárate para mostrar algo hecho con IA y explicar cómo lo revisaste.",[]],"ot.gov":["El empleo público puntúa las calificaciones que fijan sus reglas, así que empieza por ahí. En las pruebas y entrevistas, un trabajo hecho con IA te distingue.",[]],"ot.free":["En las plataformas de freelance el cliente no puede probarte antes de contratarte. Un número de certificado verificable en iapqb.org es una forma de demostrarlo.",[]],"ot.und":["¿Aún no lo decides? Prueba otra ruta. Cada una tiene sus propias tareas, y comparar tus puntajes te orienta.",[]],"back.ot":["¿Vuelves después de una pausa? En la entrevista, mostrar lo que haces hoy con herramientas de IA responde directo a la pregunta sobre la pausa.",[]],"cc.ng":["El programa nigeriano 3MTT había formado a más de 135,000 personas hasta enero de 2026, con unos 1.8 millones en espera. Con tanta gente con el mismo certificado, un trabajo hecho con IA y revisado es lo que te distingue.",[["Tech Africa News, 20 ene. 2026","https://techafricanews.com/2026/01/20/nigerias-3mtt-programme-trains-over-135000-citizens-enters-scale-up-phase/"]]],"cc.ke":["La economía de trabajos por encargo en línea sostiene a más de 1.5 millones de trabajadores en Kenia (Ipsos, marzo de 2026). Los clientes en línea eligen a quien tiene trabajo que pueden revisar.",[["The Star, 25 mar. 2026","https://www.the-star.co.ke/news/2026-03-25-kenya-gig-economy-grows-as-youth-turn-to-digital-jobs"]]],"cc.za":["El desempleo en Sudáfrica llegó al 33.7% en el tercer trimestre de 2026, 8.6 millones de personas. Finanzas es de los pocos sectores que sumaron empleos (132,000 más en un año).",[["Nairametrics, 10 nov. 2026","https://nairametrics.com/2026/11/10/south-africas-unemployment-rate-rises-to-33-7-in-q3-jobless-population-hits-8-6-million/"]]],"cc.eg":["Egipto apunta a 6,000 millones de dólares en exportaciones de servicios digitales tercerizados en 2026, y sus programas de talento se centran en IA, nube y ciberseguridad.",[["MEA Tech Watch, 2 jun. 2026","https://meatechwatch.com/2026/06/02/egypt-targets-6-billion-in-outsourcing-exports-in-2026-as-digital-services-sector-expands/"]]],"cc.gh":["El programa One Million Coders de Ghana apunta a 100,000 empleos digitales en sus dos primeros años y ya reunió 10,000 anotadores de datos (octubre de 2026).",[["Ghana News Agency, 13 oct. 2026","https://gna.org.gh/2026/10/one-million-coders-initiative-to-create-100000-jobs-within-two-years/"]]],"cc.pk":["2.37 millones de freelancers paquistaníes ganaron 557 millones de dólares del exterior entre julio y diciembre de 2025, un 58% más que un año antes.",[["MEA Tech Watch, 26 feb. 2026","https://meatechwatch.com/2026/02/26/how-2-37-million-pakistani-freelancers-earned-557-million-in-six-months/"]]],"cc.ph":["La industria IT-BPM de Filipinas prevé cerca de 2 millones de empleos en 2026, y la demanda pasa del centro de llamadas al análisis y a tareas apoyadas por IA.",[["SunStar, 5 ene. 2026","https://www.sunstar.com.ph/cebu/it-bpm-eyes-42b-exports-near-2-million-jobs-in-2026"]]]},"items":[{"id":"C1","g":"common","f":"err","d":"D5","v":{"GL":{"k":[3,4],"t":{"q":"Una IA resumió esta tabla. Marca cada frase falsa o que la tabla no respalda.","data":{"type":"table","cap":"Pedidos por región, julio a septiembre de 2026","head":["Región","Pedidos"],"rows":[["Norte","1,240"],["Sur","1,610"],["Este","860"],["Oeste","1,290"],["Total","5,000"]],"num":[1],"total":true},"opts":["El Sur tuvo más pedidos, 1,610.","Norte y Oeste juntos suman un poco más de la mitad de los pedidos.","Los 860 pedidos del Este son cerca del 17% del total.","El Oeste creció 12% frente al trimestre anterior.","El Oeste tuvo menos pedidos que el Norte."],"ex":"La 4 no tiene respaldo: la tabla no trae cifras del trimestre anterior. La 5 es falsa: el Oeste (1,290) tuvo más que el Norte (1,240). La 2 es correcta (2,530 de 5,000, o 50.6%) y la 3 también (860 ÷ 5,000 = 17.2%).","basis":"IAPQB-STD-001 D5 (contrastar el resultado de la IA con su fuente)"}}}},{"id":"C2","g":"common","f":"multi","d":"D6","v":{"GL":{"k":[1,3],"t":{"q":"En el trabajo, ¿cuáles dos de estas cosas puedes pegar en un chatbot de IA público y gratuito sin romper una política habitual de la empresa ni una ley de protección de datos?","opts":["Una lista de clientes con nombres y teléfonos","Un comunicado que tu empresa ya publicó en su sitio","Las cifras trimestrales de tu equipo antes de anunciarse","Una duda de fórmula de hoja de cálculo con datos inventados","El CV de un candidato, para que la IA arregle el formato"],"ex":"B ya es público y D no tiene datos reales. A y E son datos personales: el RGPD europeo, la LFPDPPP mexicana, la NDPA 2023 de Nigeria o la POPIA sudafricana los atan a la finalidad para la que se recogieron, y un chatbot público no es esa finalidad. C es confidencial hasta el anuncio.","basis":"RGPD art. 5(1)(b) limitación de la finalidad; LFPDPPP (México); NDPA 2023; POPIA; IAPQB-STD-001 D6"}}},"n":2},{"id":"C3","g":"common","f":"single","d":"D2","v":{"GL":{"k":2,"t":{"q":"Tienes que clasificar 40 quejas de clientes, y un colega debe llegar al mismo resultado la próxima semana. ¿Qué prompt lo logra mejor?","opts":["\"Resume estas quejas.\"","\"Agrupa estas quejas en categorías y dime los temas principales.\"","\"Pon cada queja en exactamente una de estas categorías: Entrega, Pago, Calidad del producto, Reembolso, Otro. Si cabe en dos, usa la primera en este orden. Entrega una tabla con número de queja y categoría, y luego el total por categoría.\"","\"Eres un analista de clase mundial. Piensa a fondo y haz el mejor resumen posible de estas quejas.\""],"ex":"C fija las categorías, la regla de desempate y el formato, así que dos personas obtienen resultados comparables. A, B y D dejan las categorías al modelo, y pueden cambiar de una vez a otra.","basis":"IAPQB-STD-001 D2 (estructurar la tarea con restricciones para un resultado reproducible)"}}}},{"id":"C4","g":"common","f":"single","d":"D1","v":{"GL":{"k":0,"t":{"q":"Le preguntas a una IA la tasa de interés de referencia actual del banco central de tu país. Responde con un número y una fecha, muy segura. ¿Qué haces antes de usarlo en un informe?","opts":["Verificarlo en el sitio oficial del banco central y anotar la fecha de la consulta, porque el modelo puede estar desactualizado y sonar seguro","Usarlo. Los modelos de IA se actualizan cada día.","Preguntarle otra vez a la misma IA para confirmar.","Preguntarle a una segunda IA. Si las dos coinciden, es correcto."],"ex":"Los modelos aprenden con datos hasta una fecha de corte y pueden dar con seguridad cifras viejas o inventadas. Volver a preguntar, o preguntarle a otro modelo, no verifica nada. La fuente oficial sí.","basis":"IAPQB-STD-001 D1 (límites de la IA generativa: alucinación, vigencia) y D5"}}}},{"id":"C5","g":"common","f":"num","d":"D7","v":{"GL":{"k":8,"t":{"q":"Tu equipo escribe 120 borradores de respuesta a clientes por semana. A mano, cada uno toma 9 minutos. Con IA, redactar toma 2 minutos y revisar 3 minutos por respuesta. ¿Cuántas horas ahorra el equipo por semana?","unit":"horas","ex":"A mano: 120 × 9 = 1,080 minutos. Con IA: 120 × (2 + 3) = 600 minutos. Ahorro: 480 minutos, o sea 8 horas. Olvidar el tiempo de revisión da 14 horas e infla el ahorro.","basis":"IAPQB-STD-001 D7 (informar el tiempo ahorrado de forma medible)"}}},"tol":0},{"id":"IT1","g":"it","f":"num","d":"D5","v":{"GL":{"k":2.5,"t":{"q":"Una IA escribió esta función para devolver el promedio de los números positivos de una lista. ¿Qué devuelve en realidad avg_positive([4, -2, 0, 6])?","data":{"type":"code","code":"def avg_positive(xs):\n    total = 0\n    for x in xs:\n        if x > 0:\n            total += x\n    return total / len(xs)"},"unit":"","ex":"Suma solo 4 y 6 (total 10) pero divide entre el largo de toda la lista (4), así que devuelve 2.5. Lo buscado era 5.0. El nombre de la función esconde el error; ejecutar el código o leerlo línea por línea lo muestra.","basis":"IAPQB-STD-001 D5 (verificar el resultado de la IA ejecutándolo o rastreándolo)"}}},"tol":0},{"id":"IT2","g":"it","f":"single","d":"D6","v":{"GL":{"k":1,"t":{"q":"Un asistente de código sugirió el código de abajo. ¿Qué debes corregir antes de hacer commit?","data":{"type":"code","code":"import requests\n\nAPI_KEY = \"sk_live_51H8xQ2...\"   # la clave completa está en el archivo\n\ndef get_orders():\n    r = requests.get(\"https://api.example.com/orders\",\n                     headers={\"Authorization\": \"Bearer \" + API_KEY})\n    return r.json()"},"opts":["El nombre de la función debería ser más claro","Una clave de API real está escrita en código que irá al repositorio","No tiene comentarios","Debería usar otra biblioteca HTTP"],"ex":"Un secreto en el código queda en el historial del repositorio y lo lee cualquiera con acceso, aunque borres la línea. Carga la clave desde una variable de entorno o un gestor de secretos, y cámbiala si ya se subió.","basis":"CWE-798 (credenciales fijas en el código); IAPQB-STD-001 D6"}}}},{"id":"IT3","g":"it","f":"order","d":"D5","v":{"GL":{"k":null,"t":{"q":"Ordena los pasos para corregir con seguridad una prueba que falla, con ayuda de IA.","opts":["Reproducir la falla y guardar la salida de error","Darle a la IA la prueba que falla, el error y la función, y pedir el arreglo más pequeño","Leer el cambio línea por línea y comprobar que no toca otro comportamiento","Correr toda la suite de pruebas","Hacer commit con un mensaje que diga qué cambió y por qué"],"ex":"Sin reproducir la falla no sabes si el arreglo funcionó, y sin la suite completa no sabes qué más rompió.","basis":"IAPQB-STD-001 D5"}}}},{"id":"IT4","g":"it","f":"num","d":"D3","v":{"GL":{"k":2,"t":{"q":"Una IA escribió esta consulta: SELECT COUNT(*) FROM orders WHERE status = 'shipped'; La tabla tiene las seis filas de abajo. Suponiendo comparación exacta, que distingue mayúsculas y cuenta el espacio final, ¿qué devuelve la consulta?","data":{"type":"table","cap":"orders","head":["id","status"],"rows":[["1","\"shipped\""],["2","\"Shipped\""],["3","\"shipped \" (espacio al final)"],["4","\"cancelled\""],["5","\"shipped\""],["6","\"SHIPPED\""]]},"unit":"","ex":"Solo las filas 1 y 5 coinciden exactamente. Las filas 2 y 6 difieren en mayúsculas y la fila 3 tiene un espacio final. Si se buscaban todos los pedidos enviados, la consulta deja fuera 3: limpia los datos o compara LOWER(TRIM(status)).","basis":"IAPQB-STD-001 D3 (controlar pérdidas y distorsiones al procesar datos)"}}},"tol":0},{"id":"IT5","g":"it","f":"match","d":"D1","v":{"GL":{"k":null,"t":{"q":"Relaciona cada tarea con la mejor manera de usar IA en ella.","L":["Encontrar cuáles de 2,000 líneas de log contienen 'timeout'","Entender un mensaje de error desconocido","Obtener el tipo de cambio del día para un informe","Escribir un primer borrador de README"],"R":["Usar una búsqueda o un script; no fiarse de una respuesta de chat","Pedir a la IA que lo explique y confirmar en la documentación oficial","Usar una fuente de datos en vivo; la memoria del modelo está desactualizada","Dejar que la IA redacte y luego editar y verificar cada dato"],"ex":"Contar con exactitud en muchas líneas es tarea de una búsqueda o de código. Explicar es buen uso de la IA si confirmas. Una cifra del día pide una fuente del día. Un borrador sirve una vez revisado.","basis":"IAPQB-STD-001 D1 (elegir la herramienta adecuada al objetivo)"}}}},{"id":"DA1","g":"data","f":"num","d":"D3","v":{"GL":{"k":4000,"t":{"q":"Esta exportación lista las facturas de una semana. ¿Cuál es el ingreso total, contando cada factura una sola vez?","data":{"type":"table","cap":"Facturas, semana 46","head":["Factura","Región","Monto (US$)"],"rows":[["INV-101","Norte","1,250"],["INV-102","Sur","800"],["INV-103","Norte","450"],["INV-102","Sur","800"],["INV-104","Este","1,500"],["Total","","4,800"]],"num":[2],"total":true},"unit":"US$","ex":"INV-102 aparece dos veces y la última fila es un total. 1,250 + 800 + 450 + 1,500 = 4,000. Sumar todas las filas da 9,600, y sumar las facturas sin quitar la duplicada da 4,800.","basis":"IAPQB-STD-001 D3, D5"}}},"tol":0},{"id":"DA2","g":"data","f":"single","d":"D5","v":{"GL":{"k":2,"t":{"q":"El pie de un gráfico escrito por IA dice: \"Las ventas se duplicaron de enero a junio.\" Los datos: enero US$ 20,000, junio US$ 36,000. ¿Qué pie es correcto?","opts":["Las ventas se duplicaron de enero a junio","Las ventas subieron 36% de enero a junio","Las ventas subieron 80% de enero a junio","Las ventas subieron 180% de enero a junio"],"ex":"36,000 ÷ 20,000 = 1.8, una subida del 80%. Para duplicarse harían falta US$ 40,000.","basis":"IAPQB-STD-001 D5"}}}},{"id":"DA3","g":"data","f":"multi","d":"D3","v":{"GL":{"k":[0,2],"t":{"q":"Le pediste a una IA que limpiara un archivo de clientes. En tus registros las fechas se escriben día/mes/año. ¿Qué dos cambios debes revisar a mano antes de confiar en el resultado?","opts":["Juntó 'García, M.' y 'M García' en un solo cliente","Pasó los encabezados de columna a minúsculas","Convirtió la fecha '05/06/2026' en '2026-05-06'","Borró filas vacías al final del archivo"],"ex":"A puede juntar a dos personas distintas. C leyó la fecha como mes/día; en tus registros 05/06/2026 es el 5 de junio de 2026, así que lo correcto es 2026-06-05. B y D no cambian ningún valor.","basis":"IAPQB-STD-001 D3 (controlar pérdidas y distorsiones al transformar datos)"}}},"n":2},{"id":"DA4","g":"data","f":"single","d":"D6","v":{"GL":{"k":3,"t":{"q":"Tu jefe te pide subir toda la base de clientes (nombres, teléfonos, historial de compras) a una herramienta de IA gratuita para encontrar patrones de abandono. ¿Qué haces primero?","opts":["Subirla. La herramienta borra los datos después del chat.","Subir la mitad del archivo para reducir el riesgo","Preguntarle a la herramienta si es seguro","Quitar o enmascarar nombres y teléfonos, o usar una herramienta de IA que la empresa aprobó para datos personales"],"ex":"Los patrones de abandono no necesitan nombres ni teléfonos. Enmascararlos, o usar una herramienta aprobada con contrato, mantiene el análisis y quita el riesgo. La promesa de una herramienta gratuita en un chat no es un contrato con tu empresa.","basis":"Medidas de seguridad de las leyes de datos (p. ej., RGPD art. 32, POPIA art. 19, NDPA 2023); IAPQB-STD-001 D6"}}}},{"id":"DA5","g":"data","f":"num","d":"D7","v":{"GL":{"k":66,"t":{"q":"Preparar un tablero mensual tomaba 6 horas a mano. Con un script apoyado por IA, correrlo y revisarlo toma 30 minutos. ¿Cuántas horas se ahorran en 12 meses?","unit":"horas","ex":"(6 − 0.5) × 12 = 66 horas.","basis":"IAPQB-STD-001 D7"}}},"tol":0},{"id":"BZ1","g":"biz","f":"num","d":"D5","v":{"GL":{"k":1150,"t":{"q":"Una IA redactó la factura de un servicio de US$ 1,000 antes de impuestos, con impuesto al valor agregado del 15%. Escribió \"Total a pagar: US$ 1,100\". ¿Cuál debería ser el total?","unit":"US$","ex":"1,000 × 1.15 = 1,150. El borrador sumó 10%.","basis":"IAPQB-STD-001 D5 (revisar cifras en borradores de IA)"}}},"tol":0},{"id":"BZ2","g":"biz","f":"single","d":"D6","v":{"GL":{"k":2,"t":{"q":"Usas IA para preseleccionar 300 CV para un puesto de operaciones. ¿Qué instrucción crea un riesgo legal?","opts":["Ordenar por las habilidades requeridas y los años de experiencia de la vacante","Marcar los CV sin la certificación exigida","Preferir candidatos hombres porque el puesto implica viajar","Resumir los dos últimos puestos de cada candidato"],"ex":"La discriminación por sexo en la contratación está prohibida por el Convenio 111 de la OIT y por las leyes laborales de la mayoría de los países. Una IA que sigue esta instrucción automatiza la discriminación; no la vuelve legal.","basis":"Convenio 111 de la OIT sobre la discriminación (empleo y ocupación), 1958; leyes laborales nacionales; IAPQB-STD-001 D6"}}}},{"id":"BZ3","g":"biz","f":"match","d":"D2","v":{"GL":{"k":null,"t":{"q":"Relaciona cada tarea de oficina con lo que debes darle a la IA para que no adivine.","L":["Resumir la política de vacaciones para el personal","Conciliar dos listas de gastos","Redactar la minuta de una reunión","Traducir al inglés el correo de un proveedor"],"R":["El texto real de la política","Las dos listas y la clave que las une, como el número de factura","Las notas o la transcripción, más el formato: decisiones, responsables, fechas","Los términos que no se traducen, como los nombres de productos"],"ex":"Sin la fuente, la IA llena los huecos con reglas, filas o nombres que solo parecen correctos.","basis":"IAPQB-STD-001 D2"}}}},{"id":"BZ4","g":"biz","f":"err","d":"D5","v":{"GL":{"k":[0,4],"t":{"q":"Tus notas: reunión el miércoles 18 de noviembre de 2026 a las 3 p. m.; precio US$ 5,400 al mes; contrato de 12 meses; contacto Lucía Hernández. Una IA redactó el correo de abajo. Marca cada frase falsa o que tus notas no respaldan.","opts":["Como acordamos, nuestra reunión es el martes 18 de noviembre de 2026 a las 3 p. m.","El precio es de US$ 5,400 al mes.","El contrato dura 12 meses.","Puse en copia a Lucía Hernández, que será tu contacto.","Nuestro director general confirmó que somos líderes del mercado en la región."],"ex":"El 18 de noviembre de 2026 es miércoles, así que la 1 se equivoca de día. La 5 es una afirmación que tus notas no respaldan. La 2, la 3 y la 4 coinciden con las notas.","basis":"IAPQB-STD-001 D5"}}}},{"id":"BZ5","g":"biz","f":"num","d":"D7","v":{"GL":{"k":216,"t":{"q":"Conciliar facturas y pagos tomaba 25 horas al mes. Con la conciliación por IA y la revisión de excepciones toma 7. Si una hora de tu trabajo le cuesta US$ 12 a la empresa, ¿cuánto se ahorra al mes?","unit":"US$","ex":"(25 − 7) × 12 = 216.","basis":"IAPQB-STD-001 D7"}}},"tol":0},{"id":"MK1","g":"mkt","f":"multi","d":"D6","v":{"GL":{"k":[1,3],"t":{"q":"Una IA escribió estas frases para el anuncio de una app de recargas. ¿Qué dos romperían las reglas de publicidad si no se quitan o se respaldan con pruebas?","opts":["Disponible para Android y iPhone","100% de cashback garantizado en cada recarga","Descárgala gratis en la tienda de apps","La app de recargas n.º 1 del país"],"ex":"Las promesas absolutas y el \"n.º 1\" piden pruebas que se puedan mostrar cuando las soliciten. El Código de la CCI y la mayoría de las leyes de protección al consumidor tratan una afirmación sin prueba como engañosa. A y C son hechos simples.","basis":"Código de Publicidad de la Cámara de Comercio Internacional (veracidad, comprobación); leyes nacionales de protección al consumidor; IAPQB-STD-001 D6"}}},"n":2},{"id":"MK2","g":"mkt","f":"num","d":"D7","v":{"GL":{"k":25,"t":{"q":"Una campaña logró 40,000 impresiones, 800 clics y 24 registros, y costó US$ 600. ¿Cuál es el costo por registro?","unit":"US$","ex":"600 ÷ 24 = 25. Dividir entre los clics da 0.75, que es el costo por clic.","basis":"IAPQB-STD-001 D7"}}},"tol":0},{"id":"MK3","g":"mkt","f":"single","d":"D6","v":{"GL":{"k":0,"t":{"q":"Hiciste un cartel con una herramienta de imágenes de IA. ¿Cuál es el paso más seguro antes de publicarlo para un cliente?","opts":["Leer los términos de uso comercial de la herramienta y evitar prompts que nombren artistas vivos, marcas o personajes","Dar por hecho que las imágenes de IA siempre son libres","Agregar el logo de una marca conocida para que se vea profesional","Usar lo que devuelva la herramienta, porque la pagaste"],"ex":"Los derechos de uso comercial dependen de los términos de la herramienta, y una imagen que imita una marca, un personaje o la obra de un artista vivo puede infringir derechos de autor o una marca.","basis":"Convenio de Berna; leyes nacionales de derechos de autor y marcas; IAPQB-STD-001 D6"}}}},{"id":"MK4","g":"mkt","f":"err","d":"D5","v":{"GL":{"k":[1,4],"t":{"q":"Ficha técnica: batería de 5,000 mAh; peso 189 g; cargador de 33 W en la caja; garantía de 1 año; colores negro, azul y verde. Marca cada frase de la descripción escrita por la IA que sea falsa o no tenga respaldo.","opts":["Gran batería de 5,000 mAh.","Pesa solo 169 g.","Incluye cargador de 33 W en la caja.","Disponible en tres colores.","Garantía de 2 años."],"ex":"El peso es 189 g y la garantía es de 1 año. Un dato técnico falso en un anuncio es una afirmación engañosa de la que la marca debe responder.","basis":"IAPQB-STD-001 D5"}}}},{"id":"MK5","g":"mkt","f":"order","d":"D2","v":{"GL":{"k":null,"t":{"q":"Ordena los pasos para publicar un texto publicitario escrito por IA.","opts":["Reunir los datos del producto y las afirmaciones permitidas","Pedir a la IA tres versiones con límite de palabras y un tono","Contrastar cada afirmación de la versión elegida con los datos","Conseguir la aprobación del responsable del producto","Publicar y medir los resultados"],"ex":"Los datos van primero para que la IA no los invente, y cada afirmación se revisa antes de cualquier aprobación.","basis":"IAPQB-STD-001 D2, D5"}}}},{"id":"SP1","g":"sup","f":"single","d":"D5","v":{"GL":{"k":3,"t":{"q":"Política: reembolso dentro de 7 días tras la entrega si el producto no se usó; después de 7 días, solo crédito en tienda; las tarjetas de regalo nunca se reembolsan. Un cliente escribe: \"Recibí mis audífonos hace 10 días y no los he usado. Quiero el reembolso a mi tarjeta.\" La IA redactó: \"Claro, haremos el reembolso a tu tarjeta en 5 a 7 días hábiles.\" ¿Qué debes enviar?","opts":["El borrador de la IA tal cual","El reembolso, porque el producto no se usó","Una negativa a cualquier reembolso o crédito, porque pasaron 7 días","Una oferta de crédito en tienda, porque ya pasó el plazo de reembolso de 7 días"],"ex":"El borrador rompe la política, y C niega algo que la política permite. Después de 7 días, la política da crédito en tienda.","basis":"IAPQB-STD-001 D5 (contrastar el resultado de la IA con el documento de referencia)"}}}},{"id":"SP2","g":"sup","f":"err","d":"D6","v":{"GL":{"k":[1,3],"t":{"q":"Una IA resumió un ticket de soporte para publicarlo en un canal de toda la empresa. Marca cada frase que no debe publicarse ahí.","opts":["El cliente reportó un retraso en la entrega del pedido A-2291.","Celular del cliente: +52 55 5555 0142.","El retraso se debió a una falla en el centro de distribución de Monterrey.","Verificado con el número de identificación nacional del cliente HEGL900101MDFRRC09.","Se resolvió con un crédito de US$ 2."],"ex":"Un teléfono y un número de identificación nacional son datos personales que un canal de toda la empresa no necesita. Las leyes de datos piden guardar solo lo que cada finalidad requiere.","basis":"Minimización de datos (p. ej., RGPD art. 5(1)(c), LFPDPPP, NDPA 2023); IAPQB-STD-001 D6"}}}},{"id":"SP3","g":"sup","f":"num","d":"D3","v":{"GL":{"k":4,"t":{"q":"Cuenta los tickets sobre problemas de pago. \"Pago\" significa que el dinero no pasó bien al pagar o se cobró mal. Las preguntas de reembolso son otra categoría.","data":{"type":"list","items":["Pagué por transferencia, me descontaron pero el pedido sale sin pagar","El repartidor nunca llegó","Todavía no me llega el reembolso","Me rechazaron la tarjeta dos veces al pagar","Llegó la talla equivocada","Ya pagué, ya me cobraron y el pedido no se confirma","¿Cómo cambio mi dirección?","Me cobraron dos veces el mismo pedido","La caja llegó golpeada","¿El reembolso llega a mi billetera digital o a mi banco?"]},"unit":"","ex":"1, 4, 6 y 8 son problemas de pago. 3 y 10 son reembolsos.","basis":"IAPQB-STD-001 D3"}}},"tol":0},{"id":"SP4","g":"sup","f":"match","d":"D2","v":{"GL":{"k":null,"t":{"q":"Relaciona cada tarea de soporte con lo que la IA necesita de ti.","L":["Responder a un cliente enojado","Resumir una semana de tickets","Responder una queja escrita en suajili","Escribir una nueva respuesta de preguntas frecuentes"],"R":["La política, los datos del pedido y el tono que quieres","La exportación de tickets y las categorías a usar","Primero una traducción literal, revisada antes de responder","El texto fuente aprobado, para que la IA no invente reglas"],"ex":"Cada pareja le da a la IA los datos que de otro modo adivinaría.","basis":"IAPQB-STD-001 D2"}}}},{"id":"SP5","g":"sup","f":"num","d":"D7","v":{"GL":{"k":150,"t":{"q":"El tiempo medio de atención era de 8 minutos por ticket. Con borradores de IA es de 5 minutos. El equipo atiende 3,000 tickets al mes. ¿Cuántas horas ahorra al mes?","unit":"horas","ex":"3 minutos × 3,000 = 9,000 minutos, o sea 150 horas.","basis":"IAPQB-STD-001 D7"}}},"tol":0}],"wl":{"lang":"en","ph":"Email address","grade_label":"Grade of interest","grades":[["U","Grade: not sure yet"],["F","Foundation"],["A","Associate"],["P","Professional"]],"btn":"Get the priority link","consent":"<b>[Required] Consent to the collection and use of personal data<\/b> · items: email address, grade of interest, language (of this form; we email you in it) · purpose: to send the first-session priority registration link · kept until 30 days after first-session registration closes, or until 31 December 2027 if registration has not opened by then (deleted at once if you cancel) · you may refuse, but then we cannot send the link · you must be 14 or older. Details, processors and overseas transfer: <a href=\"https://iapqb.org/en/docs/IAPQB-POL-001.html#a10-6\">IAPQB-POL-001 Art. 10-6, 9-2, 9-4<\/a>","leave":"Cancel the sign-up for this address","small":"The server encrypts your email with IAPQB's public key the moment it arrives and never stores it in readable form. We do not send advertising emails. People on this list get the priority registration link one day before public registration opens. The start date is announced at least 30 days before the first exam.","msg":{"ok":"Thank you. When registration for the first session opens, we will email the priority registration link to this address one day before public registration (from contact@iapqb.org). We do not send a confirmation email.","email":"Please check the email address.","consent":"We need your consent to the collection and use of your personal data to send the notice.","rate":"Too many sign-ups from the same network (school or office Wi-Fi). Please use mobile data or try again in {m} minutes.","closed":"Sign-up for the first-session notice is closed. Please check the official announcement.","err":"We could not take your sign-up right now. Please try again later.","left":"[Result] {d} · The sign-up for the address you entered ({e}) has been processed. If it was on the list, it has been deleted."}},"cardFont":"\"Pretendard Variable\", sans-serif","varmap":{"default":"GL"},"rtl":false}</script>
+<script>
+(function () {
+'use strict';
+var D = JSON.parse(document.getElementById('pt-data').textContent);
+var U = D.ui, EP = D.ep, app = document.getElementById('app');
+var Q; try { Q = new URLSearchParams(location.search); } catch (e) { Q = { get: function () { return null; } }; }
+var S = { p: { cc: U.defcc, tr: '', tg: 'und', si: '-', ge: '-' }, seq: [], ans: {}, i: 0, t0: 0, vs: null, r: '', sent: false };
+(function () {
+  var t = Q.get('t'); if (t && D.tracks[t]) S.p.tr = t;
+  var v = parseInt(Q.get('vs'), 10); if (!isNaN(v) && v >= 0 && v <= 100) S.vs = v;
+  S.r = String(Q.get('r') || '').replace(/[^a-z]/g, '').slice(0, 8);
+})();
+function h(tag, a, kids) {
+  var e = document.createElement(tag);
+  if (a) for (var k in a) {
+    var v = a[k]; if (v == null || v === false) continue;
+    if (k === 'text') e.textContent = v; else if (k === 'html') e.innerHTML = v;
+    else if (k.slice(0, 2) === 'on') e.addEventListener(k.slice(2), v); else e.setAttribute(k, v === true ? '' : v);
+  }
+  if (kids != null) (Array.isArray(kids) ? kids : [kids]).forEach(function (c) { if (c == null || c === false) return; e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
+  return e;
+}
+function fmt(s, o) { return String(s).replace(/\{(\w+)\}/g, function (m, k) { return o[k] != null ? o[k] : m; }); }
+function nf(n) { try { return Number(n).toLocaleString(U.locale); } catch (e) { return String(n); } }
+function show(node) {
+  app.innerHTML = ''; app.appendChild(node); window.scrollTo(0, 0);
+  var f = app.querySelector('h1,h2'); if (f) { f.setAttribute('tabindex', '-1'); try { f.focus({ preventScroll: true }); } catch (e) {} }
+}
+function seeded(id) { var x = 7; for (var i = 0; i < id.length; i++) x = (x * 31 + id.charCodeAt(i)) >>> 0; return function () { x = (Math.imul(x, 1664525) + 1013904223) >>> 0; return x / 4294967296; }; }
+function shuffled(n, id) {
+  var a = [], i; for (i = 0; i < n; i++) a.push(i);
+  var r = seeded(id); for (var j = n - 1; j > 0; j--) { var k = Math.floor(r() * (j + 1)), t = a[j]; a[j] = a[k]; a[k] = t; }
+  if (n > 1 && a.every(function (v, i2) { return v === i2; })) { var t2 = a[0]; a[0] = a[1]; a[1] = t2; }
+  return a;
+}
+var LET = 'ABCDEFG';
+function trName(c, short) { var t = D.tracks[c]; return t ? (short ? t.s : t.l) : ''; }
+
+function intro() {
+  var c = h('section', { class: 'card' }, [
+    h('p', { class: 'eyebrow', text: U.eyebrow }), h('h1', { text: U.h1 }), h('p', { class: 'lead', text: U.lead }),
+    h('ul', { class: 'facts' }, U.facts.map(function (f) { return h('li', { text: f }); }))
+  ]);
+  if (S.vs != null && S.p.tr) c.appendChild(h('p', { class: 'vs', text: fmt(U.vs, { s: S.vs, t: trName(S.p.tr, true) }) }));
+  c.appendChild(h('button', { class: 'btn wide', type: 'button', onclick: profile, text: U.start }));
+  c.appendChild(h('p', { class: 'small', text: U.note }));
+  show(c);
+}
+
+function selField(name, label, opts, val, onchange) {
+  var s = h('select', { id: 'f-' + name, name: name });
+  s.appendChild(h('option', { value: '', text: U.pick }));
+  opts.forEach(function (o) { var op = h('option', { value: o[0], text: o[1] }); if (o[0] === val) op.selected = true; s.appendChild(op); });
+  s.addEventListener('change', function () { onchange(s.value); });
+  return h('label', { class: 'fld', for: 'f-' + name }, [h('span', { text: label }), s]);
+}
+function profile() {
+  var c = h('section', { class: 'card' });
+  var msg = h('p', { class: 'warn', role: 'alert' });
+  var trBox = h('div', { role: 'radiogroup', 'aria-label': U.f_tr });
+  Object.keys(D.tracks).forEach(function (code) {
+    var b = h('button', { type: 'button', class: 'opt', role: 'radio', 'aria-checked': String(S.p.tr === code), onclick: function () {
+      S.p.tr = code; Array.prototype.forEach.call(trBox.children, function (x) { x.setAttribute('aria-checked', String(x === b)); }); msg.textContent = '';
+    } }, [h('span', { text: D.tracks[code].l })]);
+    trBox.appendChild(b);
+  });
+  var tgBox = h('div');
+  function drawTg() {
+    tgBox.innerHTML = '';
+    var g = D.ccgrp[S.p.cc] || 'ot', list = D.targets[g];
+    if (!list.some(function (o) { return o[0] === S.p.tg; })) S.p.tg = 'und';
+    tgBox.appendChild(selField('tg', U.f_tg, list, S.p.tg === 'und' ? '' : S.p.tg, function (v) { S.p.tg = v || 'und'; }));
+  }
+  var geBox = h('div', { class: 'chips', role: 'radiogroup', 'aria-label': U.f_ge });
+  D.genders.forEach(function (o) {
+    var b = h('button', { type: 'button', class: 'chip', role: 'radio', 'aria-checked': String(S.p.ge === o[0]), text: o[1], onclick: function () {
+      S.p.ge = (S.p.ge === o[0]) ? '-' : o[0];
+      Array.prototype.forEach.call(geBox.children, function (x) { x.setAttribute('aria-checked', 'false'); });
+      if (S.p.ge !== '-') b.setAttribute('aria-checked', 'true');
+    } });
+    geBox.appendChild(b);
+  });
+  c.appendChild(h('h2', { text: U.p_h }));
+  c.appendChild(h('p', { class: 'muted', text: U.p_sub }));
+  c.appendChild(h('div', { class: 'fldlabel', text: U.f_tr })); c.appendChild(trBox);
+  c.appendChild(selField('cc', U.f_cc, D.regions, S.p.cc, function (v) { S.p.cc = v || U.defcc; drawTg(); }));
+  drawTg(); c.appendChild(tgBox);
+  c.appendChild(selField('si', U.f_si, D.sits, S.p.si === '-' ? '' : S.p.si, function (v) { S.p.si = v || '-'; }));
+  c.appendChild(h('div', { class: 'fldlabel', text: U.f_ge })); c.appendChild(geBox);
+  c.appendChild(msg);
+  c.appendChild(h('div', { class: 'navrow' }, h('button', { class: 'btn wide', type: 'button', text: U.go, onclick: function () { if (!S.p.tr) { msg.textContent = U.need_tr; return; } begin(); } })));
+  c.appendChild(h('p', { class: 'small', text: U.privacy }));
+  show(c);
+}
+
+function begin() {
+  var cm = D.items.filter(function (x) { return x.g === 'common'; });
+  var tk = D.items.filter(function (x) { return x.g === S.p.tr; });
+  var vr = (D.varmap && (D.varmap[S.p.cc] || D.varmap['default'])) || 'GL';
+  S.seq = [cm[2], tk[0], cm[0], tk[1], cm[1], tk[2], cm[3], tk[3], cm[4], tk[4]].map(function (x) {
+    var vv = x.v[vr] || x.v[Object.keys(x.v)[0]];
+    return { id: x.id, g: x.g, f: x.f, d: x.d, tol: x.tol, n: x.n, k: vv.k, t: vv.t };
+  });
+  S.var = vr;
+  S.ans = {}; S.i = 0; S.t0 = Date.now(); S.sent = false;
+  item();
+}
+function dataBlock(d) {
+  if (!d) return null;
+  if (d.type === 'table') {
+    var t = h('table', { class: 'd' });
+    if (d.cap) t.appendChild(h('caption', { text: d.cap }));
+    t.appendChild(h('thead', null, h('tr', null, d.head.map(function (x) { return h('th', { scope: 'col', text: x }); }))));
+    var tb = h('tbody');
+    d.rows.forEach(function (r, ri) {
+      tb.appendChild(h('tr', (d.total && ri === d.rows.length - 1) ? { class: 'tot' } : null, r.map(function (x, ci) { return h('td', { text: x, class: (d.num && d.num.indexOf(ci) >= 0) ? 'n' : null }); })));
+    });
+    t.appendChild(tb); return h('div', { class: 'tw' }, t);
+  }
+  if (d.type === 'code') return h('pre', { class: 'code', dir: 'ltr', tabindex: '0' }, h('code', { text: d.code }));
+  if (d.type === 'list') return h('ol', { class: 'tix' }, d.items.map(function (x) { return h('li', { text: x }); }));
+  return null;
+}
+function item() {
+  var it = S.seq[S.i], T = it.t, a = S.ans[it.id], last = S.i === S.seq.length - 1;
+  var c = h('section', { class: 'card' });
+  c.appendChild(h('div', { class: 'qhead' }, [h('span', { class: 'prog', text: fmt(U.of, { i: S.i + 1, n: S.seq.length }) }), h('span', { class: 'dom', text: it.d + ' · ' + D.doms[it.d] }), h('span', { class: 'aib', text: U.ai })]));
+  c.appendChild(h('div', { class: 'bar', 'aria-hidden': 'true' }, h('i', { style: 'width:' + Math.round(100 * S.i / S.seq.length) + '%' })));
+  c.appendChild(h('h2', { class: 'stem', text: T.q }));
+  var db = dataBlock(T.data); if (db) c.appendChild(db);
+  var body = h('div');
+  if (it.f === 'single') {
+    T.opts.forEach(function (o, k) {
+      body.appendChild(h('button', { type: 'button', class: 'opt', 'aria-pressed': String(a === k), onclick: function () {
+        S.ans[it.id] = k; Array.prototype.forEach.call(body.children, function (x, j) { x.setAttribute('aria-pressed', String(j === k)); });
+      } }, [h('b', { class: 'lt', text: LET[k] }), h('span', { text: o })]));
+    });
+  } else if (it.f === 'multi' || it.f === 'err') {
+    var cur = (a || []).slice();
+    c.appendChild(h('p', { class: 'hint', text: it.f === 'err' ? U.err_rule : fmt(U.choose_n, { n: it.n }) }));
+    T.opts.forEach(function (o, k) {
+      var b = h('button', { type: 'button', class: 'opt', 'aria-pressed': String(cur.indexOf(k) >= 0), onclick: function () {
+        var p = cur.indexOf(k); if (p >= 0) cur.splice(p, 1); else cur.push(k); cur.sort(function (x, y) { return x - y; });
+        S.ans[it.id] = cur.slice(); b.setAttribute('aria-pressed', String(cur.indexOf(k) >= 0));
+      } }, [h('b', { class: 'lt', text: it.f === 'err' ? String(k + 1) : LET[k] }), h('span', { text: o })]);
+      body.appendChild(b);
+    });
+  } else if (it.f === 'order') {
+    var ord = a ? a.slice() : shuffled(T.opts.length, it.id); S.ans[it.id] = ord.slice();
+    c.appendChild(h('p', { class: 'hint', text: U.order_hint }));
+    var drawOrd = function () {
+      body.innerHTML = '';
+      ord.forEach(function (si, pos) {
+        body.appendChild(h('div', { class: 'ord' }, [
+          h('b', { class: 'lt', text: String(pos + 1) }), h('span', { class: 'ot', text: T.opts[si] }),
+          h('span', { class: 'mv' }, [
+            h('button', { type: 'button', class: 'ar', 'aria-label': U.up, disabled: pos === 0, text: '▲', onclick: function () { var t = ord[pos - 1]; ord[pos - 1] = ord[pos]; ord[pos] = t; S.ans[it.id] = ord.slice(); drawOrd(); } }),
+            h('button', { type: 'button', class: 'ar', 'aria-label': U.down, disabled: pos === ord.length - 1, text: '▼', onclick: function () { var t = ord[pos + 1]; ord[pos + 1] = ord[pos]; ord[pos] = t; S.ans[it.id] = ord.slice(); drawOrd(); } })
+          ])
+        ]));
+      });
+    };
+    drawOrd();
+  } else if (it.f === 'match') {
+    var rs = shuffled(T.R.length, it.id + 'm'), m = a ? a.slice() : T.L.map(function () { return -1; }); S.ans[it.id] = m.slice();
+    c.appendChild(h('p', { class: 'hint', text: U.match_hint }));
+    T.L.forEach(function (l, li) {
+      var s = h('select', { id: it.id + '-' + li });
+      s.appendChild(h('option', { value: '-1', text: U.pick }));
+      rs.forEach(function (ri) { var op = h('option', { value: String(ri), text: T.R[ri] }); if (m[li] === ri) op.selected = true; s.appendChild(op); });
+      s.addEventListener('change', function () { m[li] = parseInt(s.value, 10); S.ans[it.id] = m.slice(); });
+      body.appendChild(h('div', { class: 'mt' }, [h('label', { class: 'ml', for: it.id + '-' + li, text: (li + 1) + '. ' + l }), s]));
+    });
+  } else if (it.f === 'num') {
+    var inp = h('input', { type: 'text', inputmode: 'decimal', autocomplete: 'off', class: 'num', placeholder: U.num_ph, 'aria-label': U.num_ph });
+    inp.value = a || '';
+    inp.addEventListener('input', function () { S.ans[it.id] = inp.value.slice(0, 24); });
+    inp.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); go(); } });
+    body.appendChild(h('div', { class: 'nrow' }, [inp, T.unit ? h('span', { class: 'unit', text: T.unit }) : null]));
+    body.appendChild(h('p', { class: 'hint', text: fmt(U.tol, { t: String(it.tol) }) }));
+  }
+  c.appendChild(body);
+  function go() { if (last) result(); else { S.i++; item(); } }
+  c.appendChild(h('div', { class: 'navrow' }, h('button', { class: 'btn', type: 'button', text: last ? U.finish : U.next, onclick: go })));
+  if (S.i === 0) c.appendChild(h('p', { class: 'small', text: U.skip_note }));
+  show(c);
+}
+
+var DEVA = '०१२३४५६७८९';
+function parseNum(s) {
+  if (s == null) return null;
+  s = String(s).replace(/[०-९]/g, function (d) { return String(DEVA.indexOf(d)); })
+    .replace(/[٠-٩]/g, function (d) { return String(d.charCodeAt(0) - 0x660); })
+    .replace(/[۰-۹]/g, function (d) { return String(d.charCodeAt(0) - 0x6F0); })
+    .replace(/[\s\u00a0\u202f]/g, '').replace(/٫/g, '.');
+  if (/^-?\d+,\d{1,2}$/.test(s)) s = s.replace(',', '.');   // 2,5 처럼 소수점 쉼표(프랑스어·포르투갈어·스페인어)
+  s = s.replace(/(\d+(?:\.\d+)?)\s*만/g, function (m0, n) { return String(Math.round(parseFloat(n) * 10000)); });
+  s = s.replace(/[\s,₹원$]/g, '').replace(/[^0-9.\-]/g, '');
+  if (!/^-?\d*\.?\d+$/.test(s)) return null;
+  return parseFloat(s);
+}
+function parseNumAlt(s) {   // 4.000 · 1.150,5 처럼 점이 천 단위인 표기(포르투갈어·스페인어 일부)
+  if (s == null) return null;
+  s = String(s).replace(/[\s\u00a0\u202f]/g, '').replace(/[₹원$]|US\$/g, '');
+  if (!/^-?\d{1,3}(\.\d{3})+(,\d+)?$/.test(s)) return null;
+  return parseFloat(s.replace(/\./g, '').replace(',', '.'));
+}
+function pts(it, a) {
+  if (a == null) return 0;
+  if (it.f === 'single') return a === it.k ? 10 : 0;
+  if (it.f === 'multi') return (a.length === it.k.length && it.k.every(function (x) { return a.indexOf(x) >= 0; })) ? 10 : 0;
+  if (it.f === 'err') { var c = 0, w = 0; a.forEach(function (x) { if (it.k.indexOf(x) >= 0) c++; else w++; }); return Math.max(0, Math.min(10, 5 * c - 5 * w)); }
+  if (it.f === 'order') return a.every(function (v, i) { return v === i; }) ? 10 : 0;
+  if (it.f === 'match') { var s = 0; a.forEach(function (v, i) { if (v === i) s += 2.5; }); return s; }
+  if (it.f === 'num') { return [parseNum(a), parseNumAlt(a)].some(function (x) { return x != null && Math.abs(x - it.k) <= it.tol + 1e-9; }) ? 10 : 0; }
+  return 0;
+}
+function enc(it, a) {
+  if (a == null) return '';
+  if (it.f === 'single') return String(a);
+  if (it.f === 'num') { var x = parseNum(a); return x == null ? (String(a).trim() ? 'x' : '') : String(x).slice(0, 16); }
+  if (it.f === 'match') return a.map(function (v) { return v < 0 ? '-' : String(v); }).join(',');
+  return a.join(',');
+}
+function refHost() {
+  var ref = '-';
+  try { if (document.referrer) { var hn = new URL(document.referrer).hostname.toLowerCase(); if (hn && hn !== 'iapqb.org' && hn !== 'www.iapqb.org') ref = hn.slice(0, 64); } } catch (e) {}
+  if (ref === '-' && S.r) ref = 'r:' + S.r;
+  return ref;
+}
+function send(sc) {
+  if (S.sent) return; S.sent = true;
+  var a = {}; S.seq.forEach(function (it) { a[it.id] = enc(it, S.ans[it.id]); });
+  var body = { v: D.v, lang: D.lang, cc: S.p.cc, tr: S.p.tr, tg: S.p.tg, si: S.p.si, ge: S.p.ge, sc: sc, a: a, ref: refHost(), el: Math.round((Date.now() - S.t0) / 1000), website: '' };
+  try { fetch(EP + '/r', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body), keepalive: true }).catch(function () {}); } catch (e) {}
+}
+function shareUrl(sc, ch) { return D.url + '?t=' + S.p.tr + '&vs=' + sc + '&r=' + ch; }
+
+function msgBlock(key) {
+  var m = D.msgs[key]; if (!m) return null;
+  var src = (m[1] || []).map(function (s2, i) { return [i ? ' · ' : '', h('a', { href: s2[1], rel: 'noopener', target: '_blank', text: s2[0] })]; });
+  var sline = src.length ? h('div', { class: 's' }, [U.src + ': '].concat([].concat.apply([], src))) : null;
+  return h('div', { class: 'msg' }, [h('div', { text: m[0] }), sline]);
+}
+function ansText(it, a, isKey) {
+  var T = it.t;
+  if (!isKey && (a == null || (Array.isArray(a) && !a.length) || a === '')) return [U.blank];
+  if (it.f === 'single') return [LET[a] + '. ' + T.opts[a]];
+  if (it.f === 'multi') return [a.map(function (k) { return LET[k] + '. ' + T.opts[k]; }).join(' / ')];
+  if (it.f === 'err') return [a.map(function (k) { return String(k + 1); }).join(', ')];
+  if (it.f === 'num') return [isKey ? nf(it.k) + (T.unit ? ' ' + T.unit : '') : String(a) + (T.unit ? ' ' + T.unit : '')];
+  if (it.f === 'order') return [h('ol', null, a.map(function (k) { return h('li', { text: T.opts[k] }); }))];
+  if (it.f === 'match') return [h('ol', null, T.L.map(function (l, i) { var v = a[i]; return h('li', { text: l + ' → ' + (v >= 0 ? T.R[v] : U.blank) }); }))];
+  return [''];
+}
+function keyOf(it) {
+  if (it.f === 'order') return it.t.opts.map(function (x, i) { return i; });
+  if (it.f === 'match') return it.t.L.map(function (x, i) { return i; });
+  return it.k;
+}
+function card(sc, band) {
+  var fontsReady = (document.fonts && document.fonts.load) ? Promise.all([document.fonts.load('800 200px ' + D.cardFont), document.fonts.load('700 48px ' + D.cardFont)]).catch(function () {}) : Promise.resolve();
+  return fontsReady.then(function () {
+    var cv = document.createElement('canvas'); cv.width = 1080; cv.height = 1080;
+    var x = cv.getContext('2d'), F = D.cardFont, RT = !!D.rtl, X0 = RT ? 996 : 84;
+    if (RT) { x.direction = 'rtl'; x.textAlign = 'right'; }
+    x.fillStyle = '#fdf6ef'; x.fillRect(0, 0, 1080, 1080);
+    x.fillStyle = '#f37021'; x.fillRect(0, 0, 1080, 22);
+    x.fillStyle = '#3a2317'; x.font = '700 48px Georgia, serif'; x.fillText('IAPQB', 84, 132);
+    x.fillStyle = '#8d8177'; x.font = '600 36px ' + F; x.fillText(U.card_title, X0, 192);
+    var s = String(sc); x.direction = 'ltr'; x.textAlign = 'left'; x.fillStyle = '#3a2317'; x.font = '800 300px ' + F; x.fillText(s, 70, 540);
+    var w = x.measureText(s).width; x.fillStyle = '#c9530f'; x.font = '700 92px ' + F; x.fillText('/100', 70 + w + 18, 540);
+    if (RT) { x.direction = 'rtl'; x.textAlign = 'right'; }
+    x.fillStyle = '#3a2317'; x.font = '700 54px ' + F; x.fillText(trName(S.p.tr, true), X0, 660);
+    x.fillStyle = '#c9530f'; x.font = '800 50px ' + F; x.fillText(band[1], X0, 750);
+    x.fillStyle = '#5c4f45'; x.font = '500 38px ' + F; x.fillText(U.card_ai, X0, 900);
+    x.direction = 'ltr'; x.textAlign = 'left'; x.fillStyle = '#3a2317'; x.font = '700 42px ' + F; x.fillText(U.card_url, 84, 990);
+    return new Promise(function (res) { cv.toBlob(function (b) { res(b); }, 'image/png'); });
+  });
+}
+function wlForm(W) {
+  var f = h('form', { class: 'wl-form', novalidate: true });
+  var em = h('input', { type: 'email', name: 'email', required: true, maxlength: '254', autocomplete: 'email', placeholder: W.ph, 'aria-label': W.ph });
+  var gr = h('select', { name: 'grade', 'aria-label': W.grade_label }, W.grades.map(function (g) { return h('option', { value: g[0], text: g[1] }); }));
+  var bt = h('button', { class: 'btn', type: 'submit', text: W.btn });
+  var hp = h('input', { type: 'text', name: 'website', class: 'wl-hp', tabindex: '-1', autocomplete: 'off', 'aria-hidden': 'true' });
+  var ck = h('input', { type: 'checkbox', name: 'pi' });
+  var msg = h('p', { class: 'wl-msg', role: 'status', 'aria-live': 'polite' }), note = h('p', { class: 'wl-notice', 'aria-live': 'polite' });
+  var lv = h('a', { href: '#', text: W.leave });
+  f.appendChild(h('div', { class: 'wl-row' }, [em, gr, bt])); f.appendChild(hp);
+  f.appendChild(h('label', { class: 'wl-ck' }, [ck, h('span', { html: W.consent })]));
+  f.appendChild(msg); f.appendChild(note); f.appendChild(h('p', { class: 'wl-links' }, lv));
+  function say(s, j) { msg.textContent = s ? s.replace('{m}', Math.max(1, Math.ceil(((j && j.retry_after) || 600) / 60))) : ''; }
+  function post(path, body) { return fetch(D.wlep + path, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }).then(function (r) { return r.json(); }); }
+  f.addEventListener('submit', function (e) {
+    e.preventDefault(); note.textContent = '';
+    var b = { email: em.value, grade: gr.value, lang: W.lang, pi: ck.checked, website: hp.value };
+    if (!b.pi) return say(W.msg.consent);
+    bt.disabled = true;
+    post('/join', b).then(function (j) { if (j.ok) return say(W.msg.ok); say(W.msg[j.error] || W.msg.err, j); })
+      .catch(function () { say(W.msg.err); }).then(function () { bt.disabled = false; });
+  });
+  lv.addEventListener('click', function (e) {
+    e.preventDefault(); say(''); note.textContent = '';
+    var addr = String(em.value || '').trim();
+    post('/leave', { email: addr }).then(function (j) { if (j.ok) { ck.checked = false; note.textContent = W.msg.left.replace('{d}', j.day).replace('{e}', addr); return; } say(W.msg[j.error] || W.msg.err, j); })
+      .catch(function () { say(W.msg.err); });
+  });
+  return f;
+}
+function result() {
+  var tot = 0, dom = {}, dmax = {};
+  S.seq.forEach(function (it) { var p = pts(it, S.ans[it.id]); it._p = p; tot += p; dom[it.d] = (dom[it.d] || 0) + p; dmax[it.d] = (dmax[it.d] || 0) + 10; });
+  var sc = Math.round(tot), band = U.bands.filter(function (b) { return sc >= b[0]; })[0];
+  send(sc);
+  var wrap = h('div');
+  var pct = h('p', { class: 'pct', text: '' });
+  var top = h('section', { class: 'card' }, [
+    h('p', { class: 'eyebrow', text: fmt(U.res_track, { t: trName(S.p.tr, false) }) }),
+    h('h1', { text: U.res_h }),
+    h('div', { class: 'score' }, [h('b', { text: String(sc) }), h('span', { text: '/100' })]),
+    h('p', { class: 'band', text: band[1] }), h('p', { text: band[2], style: 'margin:2px 0 0' }),
+    S.vs != null ? h('p', { class: 'pct', text: fmt(U.vs_res, { s: S.vs }) }) : null,
+    pct
+  ]);
+  wrap.appendChild(top);
+  fetch(EP + '/p?tr=' + encodeURIComponent(S.p.tr) + '&sc=' + sc).then(function (r) { return r.json(); }).then(function (j) {
+    pct.textContent = (j && j.ok && j.n100) ? fmt(U.pct, { p: j.top, n: nf(j.n100), d: j.asof }) : U.pct_wait;
+  }).catch(function () { pct.textContent = U.pct_wait; });
+  var dsec = h('section', { class: 'card' }, [h('h2', { text: U.dom_h })]);
+  D.domOrder.forEach(function (d) {
+    if (!dmax[d]) return;
+    var p = dom[d], mx = dmax[d];
+    dsec.appendChild(h('div', { class: 'dbar' }, [h('span', { class: 't', text: d + ' ' + D.doms[d] }), h('span', { class: 'v', text: nf(p) + ' / ' + mx }), h('span', { class: 'g' }, h('i', { style: 'width:' + Math.round(100 * p / mx) + '%' }))]));
+  });
+  wrap.appendChild(dsec);
+  var grp = D.ccgrp[S.p.cc] || 'ot', keys = [grp + '.' + S.p.tg, 'cc.' + S.p.cc];
+  if (S.p.si === 'back' && !(S.p.ge === 'w' && grp === 'kr')) keys.push('back.' + (grp === 'in' || grp === 'kr' ? grp : 'ot'));
+  if (S.p.si === 'mil') keys.push('mil.kr');
+  if (S.p.ge === 'w' && grp === 'in' && S.p.si !== 'work') keys.push('w.in');
+  if (S.p.ge === 'w' && grp === 'kr' && S.p.si === 'back') keys.push('w.back.kr');
+  var ms = keys.map(msgBlock).filter(Boolean);
+  if (ms.length) {
+    var ssec = h('section', { class: 'card' }, [h('h2', { text: U.seg_h })].concat(ms));
+    if (grp === 'in' && S.p.tg === 'its') ssec.appendChild(h('p', { class: 'small', text: U.names }));
+    wrap.appendChild(ssec);
+  }
+  var osec = h('section', { class: 'card' }, [h('h2', { text: U.off_h }), h('p', { text: U.off_p, style: 'margin:0' })]);
+  if (D.wl) {
+    osec.appendChild(h('h3', { text: U.wl_h, style: 'margin-top:18px' }));
+    if (U.wl_note) osec.appendChild(h('p', { class: 'small', text: U.wl_note, style: 'margin:0 0 8px' }));
+    var wf = wlForm(D.wl);
+    var gsel = wf.querySelector('select[name=grade]'); if (gsel) gsel.value = sc >= 70 ? 'A' : 'F';
+    osec.appendChild(wf);
+    osec.appendChild(h('p', { class: 'small', text: D.wl.small }));
+  }
+  wrap.appendChild(osec);
+  var txt = fmt(U.share_txt, { s: sc, t: trName(S.p.tr, true) });
+  var toast = h('p', { class: 'toast', role: 'status', 'aria-live': 'polite' });
+  var blobP = null; function getBlob() { if (!blobP) blobP = card(sc, band); return blobP; }
+  var acts = {
+    native: function () {
+      var url = shareUrl(sc, 'sh');
+      getBlob().then(function (b) {
+        var file = null; try { file = b ? new File([b], 'iapqb-practice.png', { type: 'image/png' }) : null; } catch (e) {}
+        var data = { title: U.h1, text: txt, url: url };
+        if (file && navigator.canShare && navigator.canShare({ files: [file] })) data.files = [file];
+        return navigator.share(data);
+      }).catch(function () {});
+    },
+    wa: function () { window.open('https://wa.me/?text=' + encodeURIComponent(txt + ' ' + shareUrl(sc, 'wa')), '_blank', 'noopener'); },
+    li: function () { window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(shareUrl(sc, 'li')), '_blank', 'noopener'); },
+    tg: function () { window.open('https://t.me/share/url?url=' + encodeURIComponent(shareUrl(sc, 'tg')) + '&text=' + encodeURIComponent(txt), '_blank', 'noopener'); },
+    copy: function () {
+      var s = txt + ' ' + shareUrl(sc, 'cp');
+      var done = function () { toast.textContent = U.copied; };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(s).then(done, function () { fallbackCopy(s); done(); }); else { fallbackCopy(s); done(); }
+    },
+    img: function () {
+      getBlob().then(function (b) { if (!b) return; var u = URL.createObjectURL(b); var a2 = h('a', { href: u, download: 'iapqb-practice-' + sc + '.png' }); document.body.appendChild(a2); a2.click(); setTimeout(function () { URL.revokeObjectURL(u); a2.remove(); }, 1500); });
+    }
+  };
+  function fallbackCopy(s) { var ta = h('textarea', { style: 'position:fixed;left:-9999px' }); ta.value = s; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch (e) {} ta.remove(); }
+  var btns = h('div', { class: 'btns' });
+  U.share_order.forEach(function (k) {
+    if (k === 'native' && !navigator.share) return;
+    btns.appendChild(h('button', { type: 'button', class: k === 'native' ? 'btn' : 'btn ghost', 'data-sh': k, text: U.sh[k], onclick: acts[k] }));
+  });
+  wrap.appendChild(h('section', { class: 'card' }, [h('h2', { text: U.share_h }), btns, toast,
+    h('div', { class: 'navrow', style: 'justify-content:flex-start' }, h('button', { type: 'button', class: 'btn ghost', text: U.again, onclick: function () { S.p.tr = ''; S.vs = null; profile(); } }))]));
+  var rsec = h('section', { class: 'card' }, [h('h2', { text: U.rev_h })]);
+  S.seq.forEach(function (it, n) {
+    var a = S.ans[it.id], full = it._p >= 10;
+    rsec.appendChild(h('details', { class: 'rv' }, [
+      h('summary', null, [(n + 1) + '. ' + it.d + ' · ', h('span', { class: full ? 'ok' : 'no', text: fmt(U.rev_pts, { p: nf(it._p) }) })]),
+      h('div', { class: 'rb' }, [
+        h('p', { text: it.t.q }),
+        h('p', null, [h('span', { class: 'k', text: U.rev_you + ': ' })].concat(ansText(it, a, false))),
+        h('p', null, [h('span', { class: 'k', text: U.rev_key + ': ' })].concat(ansText(it, keyOf(it), true))),
+        h('p', { text: it.t.ex }),
+        h('p', { class: 'small', text: U.rev_basis + ': ' + it.t.basis })
+      ])
+    ]));
+  });
+  wrap.appendChild(rsec);
+  show(wrap);
+}
+intro();
+})();
+</script>
+</body></html>
