@@ -4,7 +4,6 @@
 
 This dataset reports how many people actually sat and passed examinations for AI-related private qualifications in South Korea in 2024, aggregated from the official government release at the level of individual qualifications.
 
-At the time of compilation, no issuing body in this market published its own pass rate. The rates here are computed from the raw government file, not taken from any issuer's disclosure.
 
 ---
 
@@ -30,9 +29,8 @@ Rows with 검정연도 = 2024 were summed per registration number. Where a quali
 
 Of 107 AI-related qualifications, **50 held an examination with at least one candidate** in 2024, 5 filed a nil return, and 52 filed nothing.
 
-Across the 50 that examined, there were **25,416 candidates and 15,708 passes** (61.8%). The three largest account for 78.0% of all candidates. **34 of the 50 had fewer than 100 candidates.**
+Across the 50 that examined, there were **25,416 candidates**. The three largest account for 78.0% of all candidates. **34 of the 50 had fewer than 100 candidates.**
 
-By pass rate: **20 qualifications passed every candidate who sat** (100%), 13 fell between 90 and 99%, 13 between 70 and 90%, and 4 below 70%.
 
 ---
 
@@ -56,7 +54,6 @@ By pass rate: **20 qualifications passed every candidate who sat** (100%), 13 fe
 
 **2025 is excluded.** The file was released in September 2025 and the 2025 rows are largely empty, since results are typically filed in the following year.
 
-**A high pass rate is not by itself evidence of a low standard.** Where only students who completed a full course are permitted to sit, a high rate follows naturally. What can be said is narrower: a qualification that passes every candidate is not being used to distinguish between them.
 
 ---
 
