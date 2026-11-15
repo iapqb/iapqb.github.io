@@ -4,7 +4,7 @@ IAPQB runs **IAPQBCertifiedAppliedAI**, a four-grade qualification (Foundation, 
 
 - Site: https://iapqb.org (Korean original) · https://iapqb.org/en/ (English)
 - For universities and schools: https://iapqb.org/en/institutions.html
-- Research reports: https://iapqb.org/research/
+- Research reports: https://iapqb.org/research/ (sources: https://github.com/iapqb/research, archived on Zenodo, DOI 10.5281/zenodo.24248199)
 - Legal status: a private qualification registered under the Framework Act on Qualifications of the Republic of Korea, registration No. 2026-008253. **It is not a national qualification or a government-accredited private qualification.**
 - Operator: 국제AI실무자격검정원 (International AI Practice Qualification Board), sole proprietorship, business registration No. 743-22-02693 · contact@iapqb.org
 
