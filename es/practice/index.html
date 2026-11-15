@@ -376,9 +376,9 @@ function enc(it, a) {
   return a.join(',');
 }
 function refHost() {
+  if (S.r) return 'r:' + S.r;
   var ref = '-';
   try { if (document.referrer) { var hn = new URL(document.referrer).hostname.toLowerCase(); if (hn && hn !== 'iapqb.org' && hn !== 'www.iapqb.org') ref = hn.slice(0, 64); } } catch (e) {}
-  if (ref === '-' && S.r) ref = 'r:' + S.r;
   return ref;
 }
 function send(sc) {
