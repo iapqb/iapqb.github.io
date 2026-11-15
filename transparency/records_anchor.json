@@ -1,0 +1,7 @@
+{
+ "what": "Head of the IAPQB records hash chain. Each entry hashes one export of IAPQB operating data (sealed or anonymous) or one aggregate of it, and the entry before it. Publishing the head lets anyone later confirm that records shown for an audit existed unchanged at this time. No record content is published.",
+ "scheme": "sha256 over sorted JSON of {seq, ts, source, file, sha_plain, sha_sealed, bytes, prev} plus {kind, enc} when present; genesis prev = 64 zeros",
+ "entries": 5,
+ "head": "449767621dfb20ee7814384f6a9e4626feeea9ac65cb3f66cb894c8e16e2e716",
+ "head_ts": "2026-11-15T06:48:45Z"
+}
