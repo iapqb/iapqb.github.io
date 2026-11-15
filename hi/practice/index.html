@@ -256,7 +256,8 @@ function begin() {
     return { id: x.id, g: x.g, f: x.f, d: x.d, tol: x.tol, n: x.n, k: vv.k, t: vv.t };
   });
   S.var = vr;
-  S.ans = {}; S.i = 0; S.t0 = Date.now(); S.sent = false;
+  S.ans = {}; S.i = 0; S.t0 = Date.now(); S.sent = false; S.tk = '';
+  try { fetch(EP + '/s?tr=' + encodeURIComponent(S.p.tr)).then(function (r) { return r.json(); }).then(function (j) { if (j && j.ok && j.tk) S.tk = j.tk; }).catch(function () {}); } catch (e) {}
   item();
 }
 function dataBlock(d) {
@@ -372,7 +373,7 @@ function pts(it, a) {
 function enc(it, a) {
   if (a == null) return '';
   if (it.f === 'single') return String(a);
-  if (it.f === 'num') { var x = parseNum(a); return x == null ? (String(a).trim() ? 'x' : '') : String(x).slice(0, 16); }
+  if (it.f === 'num') { var x = parseNum(a), y = parseNumAlt(a), ok = function (q) { return q != null && Math.abs(q - it.k) <= it.tol + 1e-9; }, w = ok(x) ? x : (ok(y) ? y : x); return w == null ? (String(a).trim() ? 'x' : '') : String(w).slice(0, 16); }
   if (it.f === 'match') return a.map(function (v) { return v < 0 ? '-' : String(v); }).join(',');
   return a.join(',');
 }
@@ -385,7 +386,8 @@ function refHost() {
 function send(sc) {
   if (S.sent) return; S.sent = true;
   var a = {}; S.seq.forEach(function (it) { a[it.id] = enc(it, S.ans[it.id]); });
-  var body = { v: D.v, lang: D.lang, cc: S.p.cc, tr: S.p.tr, tg: S.p.tg, si: S.p.si, ge: S.p.ge, sc: sc, a: a, ref: refHost(), el: Math.round((Date.now() - S.t0) / 1000), website: '' };
+  var body = { v: D.v, lang: D.lang, cc: S.p.cc, tr: S.p.tr, tg: S.p.tg, si: S.p.si, ge: S.p.ge, sc: sc, a: a, ref: refHost(), el: Math.round((Date.now() - S.t0) / 1000), website: '', tk: S.tk || '' };
+  if (!body.tk) return;
   try { fetch(EP + '/r', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body), keepalive: true }).catch(function () {}); } catch (e) {}
 }
 function shareUrl(sc, ch) { return D.url + '?t=' + S.p.tr + '&vs=' + sc + '&r=' + ch; }
