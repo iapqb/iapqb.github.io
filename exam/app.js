@@ -7,7 +7,9 @@
     sending: 'Sending…', sent: 'We sent a confirmation email. Open the link in it within 24 hours to finish registering. If it does not arrive in a few minutes, check your spam folder.',
     relinkSent: 'If that address has a registration, we have sent a new exam link to it.',
     err: { not_open: 'Registration is not open yet. It opens on 18 December 2026 at 10:00 Korea time for the notification list and on 19 December for everyone.', under14: 'Candidates under 14 cannot register online. Please email contact@iapqb.org.', consent: 'Please tick the required agreements.', birth: 'Please check your date of birth.', bad_request: 'Please check the fields.', rate: 'Too many requests. Please try again in a minute.', mail: 'We could not send the email. Please check the address and try again.', auth: 'This link is not valid any more. Ask for a new link below.', state: 'This step is not available now.', pay_unavailable: 'Payment is not open yet.', checkout: 'The payment page could not be opened. Please try again.', link: 'The link has expired or has already been used. Register again, or ask for a new exam link.', agree: 'Please tick the box to confirm the refund rule.' },
-    st: { email: 'Waiting for email confirmation', elig: 'Waiting for the eligibility check (send your documents to contact@iapqb.org with your registration number)', ready: 'Ready to pay', paid: 'Paid — you can start the exam', started: 'Exam in progress', done: 'Finished', expired: 'Deadline passed', refunded: 'Refunded', void: 'Cancelled' },
+    st: { email: 'Waiting for email confirmation', elig: 'Waiting for the eligibility check (send your documents to contact@iapqb.org with your registration number)', ready: 'Ready to pay', paid: 'Paid — you can start the exam', started: 'Exam in progress', done: 'Finished', expired: 'Deadline passed', refunded: 'Refunded', void: 'Cancelled', cancel_req: 'Cancellation requested — refund in progress' },
+    cBtnReady: 'Cancel registration', cBtnPaid: 'Cancel and get a full refund', cAskReady: 'Cancel this registration? This cannot be undone.',
+    cAskPaid: 'Cancel this registration? We will refund the full fee to your payment method within 3 working days. This cannot be undone.', cYes: 'Cancel registration', cNo: 'Go back', cDone: 'Your cancellation has been received.',
     pay: 'Pay', paying: 'Opening the payment page…', ext: 'Extend once by 90 days', checking: 'Checking your payment…', none: 'No registration is saved on this device. Open the link from your email, or ask for a new one below.', forget: 'Remove from this device', deadline: 'Start by', krw: ' KRW',
     part: { W: 'Written exam', R: 'Practical exam' }, qs: ' questions', mins: ' min',
     pStart: 'Start the exam', pResume: 'Continue the exam', pLeft: function (m) { return 'About ' + m + ' min left'; },
@@ -20,7 +22,9 @@
     sending: '보내는 중…', sent: '확인 메일을 보냈습니다. 24시간 안에 메일의 링크를 눌러야 접수가 끝납니다. 몇 분 안에 오지 않으면 스팸함을 확인해 주세요.',
     relinkSent: '그 주소로 접수한 기록이 있으면 새 「내 응시」 링크를 보냈습니다.',
     err: { not_open: '아직 접수 전입니다. 2026년 12월 18일 10:00(알림 신청자), 19일 10:00(누구나)에 엽니다.', under14: '만 14세 미만은 온라인으로 접수할 수 없습니다. contact@iapqb.org로 문의해 주세요.', consent: '필수 동의 항목에 표시해 주세요.', birth: '생년월일을 확인해 주세요.', bad_request: '입력한 내용을 확인해 주세요.', rate: '요청이 많습니다. 1분 뒤 다시 해 주세요.', mail: '메일을 보내지 못했습니다. 주소를 확인하고 다시 해 주세요.', auth: '이 링크는 더 쓸 수 없습니다. 아래에서 새 링크를 받으세요.', state: '지금은 할 수 없는 단계입니다.', pay_unavailable: '아직 결제를 열지 않았습니다.', checkout: '결제 화면을 열지 못했습니다. 다시 해 주세요.', link: '링크가 만료되었거나 이미 쓰였습니다. 다시 접수하거나 새 「내 응시」 링크를 받으세요.', agree: '환불 기준을 확인했다는 칸에 표시해 주세요.' },
-    st: { email: '전자우편 확인 대기', elig: '응시자격 서류 확인 대기(접수 번호를 적어 contact@iapqb.org로 서류를 보내 주세요)', ready: '결제 대기', paid: '결제 완료 — 응시할 수 있습니다', started: '응시 중', done: '응시 끝', expired: '응시 기한 지남', refunded: '환불됨', void: '취소됨' },
+    st: { email: '전자우편 확인 대기', elig: '응시자격 서류 확인 대기(접수 번호를 적어 contact@iapqb.org로 서류를 보내 주세요)', ready: '결제 대기', paid: '결제 완료 — 응시할 수 있습니다', started: '응시 중', done: '응시 끝', expired: '응시 기한 지남', refunded: '환불됨', void: '취소됨', cancel_req: '취소 요청 — 환불 처리 중' },
+    cBtnReady: '접수 취소', cBtnPaid: '응시 취소(전액 환불)', cAskReady: '접수를 취소할까요? 취소하면 되돌릴 수 없습니다.',
+    cAskPaid: '응시를 취소할까요? 낸 응시료 전액을 3영업일 안에 결제한 수단으로 돌려드립니다. 취소하면 되돌릴 수 없습니다.', cYes: '취소하기', cNo: '돌아가기', cDone: '취소 요청을 받았습니다.',
     pay: '결제하기', paying: '결제 화면을 여는 중…', ext: '한 번 90일 연장', checking: '결제를 확인하는 중…', none: '이 기기에 저장된 접수가 없습니다. 메일의 링크를 열거나 아래에서 새 링크를 받으세요.', forget: '이 기기에서 지우기', deadline: '응시 기한', krw: '원',
     part: { W: '필기', R: '실기' }, qs: '문항', mins: '분',
     pStart: '시험 시작', pResume: '이어서 풀기', pLeft: function (m) { return '남은 시간 약 ' + m + '분'; },
@@ -108,6 +112,8 @@
       $('payBox').hidden = !r.can_pay; $('payBtn').disabled = !agree.checked;
       $('extBtn').hidden = !r.can_extend; $('startNote').hidden = !(r.status === 'paid' || r.status === 'started');
       renderParts(r);
+      $('cancelBox').hidden = !r.can_cancel; $('cancelConfirm').hidden = true;
+      $('cancelBtn').textContent = r.status === 'paid' ? T.cBtnPaid : T.cBtnReady; $('cancelText').textContent = r.status === 'paid' ? T.cAskPaid : T.cAskReady;
       box.hidden = false;
     };
     agree.addEventListener('change', function () { $('payBtn').disabled = !agree.checked; });
@@ -129,5 +135,12 @@
       call('/api/extend', {}, sess).then(function (j) { if (j.ok) render(j.reg); else msg(m, errText(j), true); });
     });
     $('forgetBtn').addEventListener('click', function () { store('iapqb_exam', null); sess = null; box.hidden = true; msg(m, T.none); });
+    $('cancelYes').textContent = T.cYes; $('cancelNo').textContent = T.cNo;
+    $('cancelBtn').addEventListener('click', function () { $('cancelConfirm').hidden = false; });
+    $('cancelNo').addEventListener('click', function () { $('cancelConfirm').hidden = true; });
+    $('cancelYes').addEventListener('click', function () {
+      var b = this; b.disabled = true;
+      call('/api/cancel', { agree: true }, sess).then(function (j) { b.disabled = false; if (j.ok) { render(j.reg); msg(m, T.cDone); } else msg(m, errText(j), true); });
+    });
   }
 })();
