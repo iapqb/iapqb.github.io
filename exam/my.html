@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://exam.iapqb.workers.dev https://cloudflareinsights.com; form-action 'self'; frame-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f37021">
+<meta name="color-scheme" content="light">
+<title>내 응시 | IAPQB</title>
+<meta name="description" content="접수 번호·결제·응시 기한 확인">
+<link rel="canonical" href="https://iapqb.org/exam/my.html">
+<link rel="alternate" hreflang="ko" href="https://iapqb.org/exam/my.html">
+<link rel="alternate" hreflang="en" href="https://iapqb.org/en/exam/my.html">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="23" fill="%23f37021"/><path d="M44.5 25 L55.5 25 L73.5 58 L68 68 L32 68 L26.5 58 Z" fill="none" stroke="%23ffffff" stroke-width="7.6" stroke-linejoin="round"/><path d="M47.4 42.5 L52.6 42.5 L61.2 57.5 L58.6 62 L41.4 62 L38.8 57.5 Z" fill="%23ffffff"/></svg>'>
+<style>
+:root{--ink:#1c1512;--line:#e9e3dc;--line2:#d8ccc0;--accent:#c9530f;--accent2:#f37021;--bg:#fdfbf9;--steel:#5a4a3f;--muted:#8a7f74;}
+:where(a,button,summary,[tabindex]):focus-visible{outline:2px solid var(--accent2);outline-offset:2px;border-radius:2px}
+*{box-sizing:border-box}
+body{margin:0;border-top:4px solid var(--accent2);background:var(--bg);color:var(--ink);font:16px/1.75 "Noto Sans KR","Apple SD Gothic Neo",system-ui,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:40px 22px 80px}
+a{color:var(--accent)}
+.back{font-size:13.5px;text-decoration:none;color:var(--accent)}
+h1{font-family:"Noto Serif KR",serif;font-size:29px;line-height:1.35;margin:20px 0 10px;letter-spacing:-.5px}
+.sub{color:var(--steel);font-size:15px;margin:0 0 6px}
+.updated{color:var(--muted);font-size:13px;margin:0 0 30px}
+h2{font-size:20px;margin:44px 0 12px;padding-bottom:8px;border-bottom:2px solid var(--line);letter-spacing:-.3px}
+p{margin:12px 0}
+ul{padding-left:20px}li{margin:8px 0}
+.key{background:#fff;border:1px solid var(--accent2);border-left:4px solid var(--accent2);padding:16px 20px;margin:20px 0}
+.key p{margin:6px 0}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:16px 0}
+th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:#faf5ee;border-bottom:2px solid var(--line2);font-weight:700;font-size:13.5px}
+td.num,th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.num{color:var(--accent2);font-weight:700}
+.foot{margin-top:52px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;line-height:1.7}
+@media(max-width:640px){.wrap{padding:28px 16px 60px}h1{font-size:23px}h2{font-size:18px}table{font-size:12.5px}th,td{padding:7px 6px}}
+
+form{margin:18px 0}fieldset{border:1px solid var(--line);padding:12px 16px;margin:14px 0;background:#fff}legend{font-weight:700;font-size:14px;padding:0 6px}
+label{display:block;margin:12px 0 4px;font-size:14px;font-weight:600}.opt{font-weight:400;display:flex;gap:8px;align-items:flex-start;margin:8px 0}
+input[type=text],input[type=email],input[type=tel],input[type=date]{width:100%;padding:10px 12px;border:1px solid var(--line2);border-radius:6px;font:inherit;background:#fff}
+button{background:var(--accent2);color:#fff;border:0;border-radius:6px;padding:11px 20px;font:inherit;font-weight:700;cursor:pointer}button:disabled{opacity:.55;cursor:default}
+button.ghost{background:none;color:var(--accent);border:1px solid var(--line2);font-weight:400}
+.msg{background:#fff;border-left:4px solid var(--accent2);padding:12px 16px;margin:16px 0}.msg.bad{border-left-color:#b3261e;color:#7a1a14}
+.muted{color:var(--muted);font-size:13.5px}td.v{font-weight:700}
+</style>
+</head>
+<body><div class="wrap">
+<a class="back" href="./">응시 접수</a>
+<h1>내 응시</h1>
+<p id="myMsg" class="msg" hidden role="status"></p>
+<div id="myBox" hidden><table><tr><th>접수 번호</th><td class="v" id="myId"></td></tr><tr><th>등급</th><td class="v" id="myGrade"></td></tr><tr><th>상태</th><td class="v" id="myStatus"></td></tr><tr><th>응시료</th><td class="v" id="myPrice"></td></tr><tr><th>응시 기한</th><td class="v" id="myDeadline"></td></tr></table>
+<p><button id="payBtn" hidden>결제하기</button> <button id="extBtn" class="ghost" hidden>한 번 90일 연장</button></p>
+<p id="startNote" class="muted" hidden>시험 화면은 2026년 12월 19일에 엽니다. 시험은 첫 문항이 화면에 뜨는 때 시작한 것으로 보며, 그 전에는 언제든지 취소하고 전액 환불받을 수 있습니다(contact@iapqb.org).</p>
+<p><button id="forgetBtn" class="ghost">이 기기에서 지우기</button></p></div>
+<p class="muted">링크를 잃어버렸다면 <a href="./#relink">새 링크 받기</a></p>
+<div class="foot">IAPQBCertifiedAppliedAI는 자격기본법에 따라 등록한 민간자격(등록번호 2026-008253)으로, 국가로부터 인정받은 공인자격이 아닙니다. 국제AI실무자격검정원(IAPQB) · 대표 이승원 · 사업자등록번호 743-22-02693 · contact@iapqb.org · <a href="../docs/IAPQB-POL-002.html">응시 약관</a> · <a href="../docs/IAPQB-POL-001.html">개인정보 처리방침</a> · <a href="../notice/2026-1.html">시행 공고 제2026-1호</a></div>
+</div>
+<script src="app.js" defer></script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "26d625bc684c48c39fdc482134c9a3e3"}'></script>
+</body></html>
