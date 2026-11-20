@@ -42,6 +42,12 @@ button{background:var(--accent2);color:#fff;border:0;border-radius:6px;padding:1
 button.ghost{background:none;color:var(--accent);border:1px solid var(--line2);font-weight:400}
 .msg{background:#fff;border-left:4px solid var(--accent2);padding:12px 16px;margin:16px 0}.msg.bad{border-left-color:#b3261e;color:#7a1a14}
 .muted{color:var(--muted);font-size:13.5px}td.v{font-weight:700}
+a.btn{display:inline-block;background:var(--accent2);color:#fff;border-radius:6px;padding:11px 20px;font-weight:700;text-decoration:none}
+.part{border:1px solid var(--line);background:#fff;padding:12px 16px;margin:12px 0}.part h3{margin:0 0 8px;font-size:16px}p.v{font-weight:700}
+.bar{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);padding:10px 0;font-weight:700;font-size:15px}.bar.warn #timer{color:#b3261e}
+#nav{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.nb{background:#fff;color:var(--accent);border:1px solid var(--line2);border-radius:4px;padding:4px 0;width:38px;font-weight:600;font-size:13px}.nb.on{background:var(--accent2);color:#fff;border-color:var(--accent2)}
+h2.sec{font-size:17px;margin:26px 0 8px;padding-top:8px;border-top:2px solid var(--line)}.q{background:#fff;border:1px solid var(--line);padding:12px 16px;margin:12px 0;scroll-margin-top:56px}.q h3{margin:0 0 6px;font-size:15px}
+.stem{white-space:pre-wrap;margin:0 0 8px;line-height:1.6}#resTable{width:100%;border-collapse:collapse}#resTable td,#resTable th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left}
 </style>
 </head>
 <body><div class="wrap">
@@ -49,8 +55,10 @@ button.ghost{background:none;color:var(--accent);border:1px solid var(--line2);f
 <h1>My exam</h1>
 <p id="myMsg" class="msg" hidden role="status"></p>
 <div id="myBox" hidden><table><tr><th>Registration No.</th><td class="v" id="myId"></td></tr><tr><th>Grade</th><td class="v" id="myGrade"></td></tr><tr><th>Status</th><td class="v" id="myStatus"></td></tr><tr><th>Fee</th><td class="v" id="myPrice"></td></tr><tr><th>Start by</th><td class="v" id="myDeadline"></td></tr></table>
-<p><button id="payBtn" hidden>Pay</button> <button id="extBtn" class="ghost" hidden>Extend once by 90 days</button></p>
-<p id="startNote" class="muted" hidden>The exam screen opens on 19 December 2026. The exam counts as started when the first question appears; until then you can cancel for a full refund (contact@iapqb.org).</p>
+<div id="payBox" hidden><label class="opt"><input type="checkbox" id="payAgree"> <span>I have read the refund rule: before I start the exam (before the first question appears) I can cancel at any time before the deadline for a full refund, and after I start there is no refund even if I stop part way (<a href="../../en/notice/2026-1.html">Notice No. 2026-1</a>, section 6).</span></label><p><button id="payBtn" disabled>Pay</button></p></div>
+<p><button id="extBtn" class="ghost" hidden>Extend once by 90 days</button></p>
+<div id="parts" hidden></div>
+<p id="startNote" class="muted" hidden>The exam counts as started when the first question appears. Until then you can cancel at any time before the deadline for a full refund (email contact@iapqb.org with your registration number).</p>
 <p><button id="forgetBtn" class="ghost">Remove from this device</button></p></div>
 <p class="muted">Lost your link? <a href="./#relink">Get a new one</a></p>
 <div class="foot">IAPQBCertifiedAppliedAI is a private qualification registered under the Framework Act on Qualifications of the Republic of Korea (registration No. 2026-008253). It is not a qualification accredited by the State. 국제AI실무자격검정원 (International AI Practice Qualification Board, IAPQB) · contact@iapqb.org · <a href="../../en/docs/IAPQB-POL-002.html">Examination Terms</a> · <a href="../../en/docs/IAPQB-POL-001.html">Privacy Policy</a> · <a href="../../en/notice/2026-1.html">Notice No. 2026-1</a></div>
