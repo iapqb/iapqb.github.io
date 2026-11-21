@@ -28,7 +28,7 @@
     task: function (i, n, title) { return 'Task ' + i + ' of ' + n + (title ? ' — ' + title : ''); },
     one: 'Choose one', pickN: function (k) { return 'Choose exactly ' + k; }, spotsN: function (k) { return k ? 'There are ' + k + ' error spots' : 'Choose every error spot'; }, nth: function (i) { return 'Step ' + i; }, num: 'Number', blank: '—',
     flag: 'AI use for this question', flags: { none: 'I did not use AI', asis: 'I used the AI answer as it was', edit: 'I changed the AI answer' },
-    logH: 'AI use record (Examination Terms Article 14(2))', logP: 'Write down what you used. This record is kept encrypted, is used only to look into misconduct, and is not used for marking. Do not include anyone’s personal data or your employer’s confidential information.',
+    logH: 'AI use record (Examination Terms Article 14(2))', logP: 'Write down what you used. This record is kept encrypted and is not used for marking. It is used to look into misconduct and, for registrations from 21 December 2026, also to improve questions and for statistics and research that identify no one (Examination Terms Articles 14 and 16). Do not include anyone’s personal data or your employer’s confidential information.',
     tools: 'Tools used', toolNames: { chatgpt: 'ChatGPT', gemini: 'Gemini', claude: 'Claude', copilot: 'Microsoft Copilot', perplexity: 'Perplexity', clova: 'CLOVA X', other: 'Other' }, otherPh: 'Other tool name', noAi: 'I did not use any AI tool',
     ver: 'Model or version (e.g. GPT-5, Gemini 2.5 Pro)', prompts: 'Main prompts (up to 6,000 characters)',
     confirmR: function (u, l) { return (u ? u + ' sub-question(s) are unanswered. ' : '') + (l ? '' : 'Your AI use record is empty — leaving it out can be treated as misconduct (Notice, section 10). ') + 'Submit your answers now? You cannot change them afterwards.'; }, voidNow: 'This paper was cancelled because the time you were disconnected passed 20% of the exam time. You can take the exam again at no extra cost from your exam page.'
@@ -55,7 +55,7 @@
     task: function (i, n, title) { return '과제 ' + i + '/' + n + (title ? ' — ' + title : ''); },
     one: '하나를 고르시오', pickN: function (k) { return '정확히 ' + k + '개를 고르시오'; }, spotsN: function (k) { return k ? '오류 지점은 ' + k + '개입니다' : '오류 지점을 모두 고르시오'; }, nth: function (i) { return i + '번째'; }, num: '숫자', blank: '—',
     flag: '이 소문항의 AI 사용', flags: { none: 'AI 안 씀', asis: 'AI 답을 그대로 씀', edit: 'AI 답을 고쳐 씀' },
-    logH: '사용 기록(응시 약관 제14조 제2항)', logP: '쓴 것을 그대로 적어 주세요. 이 기록은 암호화해 보관하고 부정행위 조사에만 쓰며, 채점에는 반영하지 않습니다. 다른 사람의 개인정보나 회사 기밀은 넣지 마세요.',
+    logH: '사용 기록(응시 약관 제14조 제2항)', logP: '쓴 것을 그대로 적어 주세요. 이 기록은 암호화해 보관하며 채점에는 반영하지 않습니다. 부정행위 조사에 쓰고, 2026년 12월 21일부터 접수한 분의 기록은 문항 개선과 개인을 알아볼 수 없게 처리한 통계·연구에도 씁니다(응시 약관 제14조·제16조). 다른 사람의 개인정보나 회사 기밀은 넣지 마세요.',
     tools: '쓴 도구', toolNames: { chatgpt: 'ChatGPT', gemini: 'Gemini', claude: 'Claude', copilot: 'Microsoft Copilot', perplexity: 'Perplexity', clova: 'CLOVA X', other: '기타' }, otherPh: '기타 도구 이름', noAi: 'AI 도구를 쓰지 않았습니다',
     ver: '모델·버전(예: GPT-5, Gemini 2.5 Pro)', prompts: '주요 프롬프트(6,000자까지)',
     confirmR: function (u, l) { return (u ? '답하지 않은 소문항이 ' + u + '개 있습니다. ' : '') + (l ? '' : '사용 기록이 비어 있습니다 — 내지 않으면 부정행위로 볼 수 있습니다(공고 10.). ') + '지금 제출할까요? 제출하면 답을 바꿀 수 없습니다.'; }, voidNow: '끊긴 시간이 시험 시간의 20%를 넘어 이 시험지는 무효가 되었습니다. 「내 응시」 화면에서 추가 비용 없이 다시 볼 수 있습니다.'
