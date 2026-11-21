@@ -11,7 +11,7 @@
     cBtnReady: 'Cancel registration', cBtnPaid: 'Cancel and get a full refund', cAskReady: 'Cancel this registration? This cannot be undone.',
     cAskPaid: 'Cancel this registration? We will refund the full fee to your payment method within 3 working days. This cannot be undone.', cYes: 'Cancel registration', cNo: 'Go back', cDone: 'Your cancellation has been received.',
     pay: 'Pay', paying: 'Opening the payment page…', ext: 'Extend once by 90 days', checking: 'Checking your payment…', none: 'No registration is saved on this device. Open the link from your email, or ask for a new one below.', forget: 'Remove from this device', deadline: 'Start by', krw: ' KRW',
-    part: { W: 'Written exam', R: 'Practical exam' }, qs: ' questions', mins: ' min',
+    part: { W: 'Written exam', R: 'Practical exam' }, qs: ' questions', tks: ' tasks', mins: ' min',
     pStart: 'Start the exam', pResume: 'Continue the exam', pLeft: function (m) { return 'About ' + m + ' min left'; },
     pOpenAt: 'You can start from 19 December 2026, 10:00 Korea time.', pNotReady: 'The practical exam screen is being prepared. It opens before exams begin on 19 December.',
     pVoid: 'Your previous paper was cancelled because the time you were disconnected passed 20% of the exam time. You can take the exam again at no extra cost.',
@@ -26,7 +26,7 @@
     cBtnReady: '접수 취소', cBtnPaid: '응시 취소(전액 환불)', cAskReady: '접수를 취소할까요? 취소하면 되돌릴 수 없습니다.',
     cAskPaid: '응시를 취소할까요? 낸 응시료 전액을 3영업일 안에 결제한 수단으로 돌려드립니다. 취소하면 되돌릴 수 없습니다.', cYes: '취소하기', cNo: '돌아가기', cDone: '취소 요청을 받았습니다.',
     pay: '결제하기', paying: '결제 화면을 여는 중…', ext: '한 번 90일 연장', checking: '결제를 확인하는 중…', none: '이 기기에 저장된 접수가 없습니다. 메일의 링크를 열거나 아래에서 새 링크를 받으세요.', forget: '이 기기에서 지우기', deadline: '응시 기한', krw: '원',
-    part: { W: '필기', R: '실기' }, qs: '문항', mins: '분',
+    part: { W: '필기', R: '실기' }, qs: '문항', tks: '과제', mins: '분',
     pStart: '시험 시작', pResume: '이어서 풀기', pLeft: function (m) { return '남은 시간 약 ' + m + '분'; },
     pOpenAt: '2026년 12월 19일 10:00(한국 시각)부터 시작할 수 있습니다.', pNotReady: '실기 시험 화면은 준비 중입니다. 12월 19일 응시 개시 전에 엽니다.',
     pVoid: '끊긴 시간이 시험 시간의 20%를 넘어 앞 시험지는 무효가 되었습니다. 추가 비용 없이 다시 볼 수 있습니다.',
@@ -86,7 +86,7 @@
       if (!r.parts || !(r.status === 'paid' || r.status === 'started' || r.status === 'done' || r.status === 'expired')) { wrap.hidden = true; return; }
       r.parts.forEach(function (p) {
         var c = el('div', 'part'); c.id = 'part' + p.k;
-        c.appendChild(el('h3', null, T.part[p.k] + (p.n ? ' · ' + p.n + T.qs : '') + ' · ' + p.min + T.mins));
+        c.appendChild(el('h3', null, T.part[p.k] + (p.n ? ' · ' + p.n + T.qs : '') + (p.tasks ? ' · ' + p.tasks + T.tks : '') + ' · ' + p.min + T.mins));
         if (p.voids && p.state === 'todo') c.appendChild(el('p', 'muted', T.pVoid));
         if (p.state === 'todo') {
           if (p.can_start) { var a = el('a', 'btn', T.pStart); a.href = 'sit.html?p=' + p.k; a.id = 'start' + p.k; c.appendChild(a); }
