@@ -23,6 +23,17 @@
     resFail: function (m) { return 'Provisional: below the pass mark (' + m + ' or more, and at least 40% in each subject).'; },
     resOfficial: function (p) { return 'Official result: ' + (p ? 'Pass' : 'Fail'); }, resNote: 'The official result will be posted on your exam page and emailed to you within 5 working days of the exam.',
     thS: 'Subject', thP: 'Points', thR: 'Correct', back: 'Back to my exam',
+    insH: 'Principles to take from each subject', insWeak: ' (look here first)',
+    ins: { D1: 'Sounding certain and being right are separate things. For work that must not be wrong, such as current facts, legal judgements and exact counts, treat the AI answer as a starting point and close it with an independent original source.',
+      D2: 'A good prompt shrinks the blanks the model would fill by guessing. Fix the audience, length, permitted values and output format and results become repeatable; keep the material separate from the instructions and hidden instructions inside documents lose their hold.',
+      D3: 'AI summaries and conversions go wrong where they look tidy. First check that totals, duplicates, date formats and states such as “not decided yet” match the original.',
+      D6: 'Decide as if pasting means the data has left the company. Put only material that is already public or made up into outside tools, and send everything else through approved tools and approval steps.',
+      '업무 자동화': 'Automation turns a repeated judgement into a rule. Write the rule down first and set the point where a person sees the exceptions, and it stays under control as it scales.',
+      '산출물 검증': 'Verification means comparison more than re-reading. Match numbers to the source data, claims to the supporting documents and format to the requirements, one by one, and treat any sentence with nothing to match as unsupported.',
+      '업무 자동화 설계': 'Design around the flow more than the tool. Decide where inputs come from, where a person checks and where a failure goes back to, and the results hold even when you swap the AI.',
+      '산출물 검증 체계 운영': 'A system that leaves the same check every time beats one careful check. Fix the check items and criteria, and feed every missed error back into the items.',
+      '인공지능 위험 관리': 'Split risks by likelihood and by size of harm. Handle frequent small mistakes with checks, and rare large incidents with prior approval and blocking.',
+      '성과 측정과 개선': 'Improvement starts from a measurable baseline. Record before-and-after comparisons in the same unit, including the time spent checking, and you can decide whether to continue, fix or stop.' },
     whatR: function (g, p, n, m) { return g + ' ' + p + ' · ' + n + ' tasks · ' + m + ' minutes'; },
     ruleR: 'At the end of the paper, fill in the AI use record: the tools you used, your main prompts, and for each sub-question whether you used AI (Examination Terms Article 14(2)). It is not used for marking.',
     task: function (i, n, title) { return 'Task ' + i + ' of ' + n + (title ? ' — ' + title : ''); },
@@ -50,6 +61,17 @@
     resFail: function (m) { return '잠정 판정: 합격 기준(' + m + '점 이상, 과목마다 40% 이상)에 못 미쳤습니다.'; },
     resOfficial: function (p) { return '공식 성적: ' + (p ? '합격' : '불합격'); }, resNote: '공식 성적은 응시일부터 5영업일 안에 「내 응시」 화면에 게시하고 메일로도 알려 드립니다.',
     thS: '과목', thP: '득점', thR: '맞힌 문항', back: '「내 응시」로',
+    insH: '과목별로 가져갈 원리', insWeak: ' (먼저 볼 곳)',
+    ins: { D1: 'AI가 확신 있게 말하는 것과 맞는 것은 별개입니다. 최신 사실·법적 판단·정확한 셈처럼 틀리면 안 되는 일은 AI의 답을 출발점으로만 쓰고, 독립된 원출처로 닫습니다.',
+      D2: '좋은 지시문은 모델이 짐작으로 채울 빈칸을 줄입니다. 대상·분량·써도 되는 값·출력 형식을 정해 두면 결과가 재현되고, 처리할 자료와 지시를 나눠 두면 문서 속 숨은 지시에 휘둘리지 않습니다.',
+      D3: 'AI가 만든 요약과 변환은 깔끔해 보이는 곳에서 틀립니다. 합계 행·중복·날짜 형식, 그리고 「아직 미정」 같은 상태가 원문과 같은지부터 맞춰 봅니다.',
+      D6: '붙여 넣는 순간 회사 밖으로 나간다고 보고 판단합니다. 이미 공개됐거나 처음부터 가짜인 자료만 외부 도구에 넣고, 나머지는 승인된 도구와 승인 절차를 거칩니다.',
+      '업무 자동화': '자동화는 반복되는 판단을 규칙으로 바꾸는 일입니다. 규칙을 먼저 글로 적고, 예외를 사람이 받아 보는 지점을 정해 두어야 규모가 커져도 통제됩니다.',
+      '산출물 검증': '검증은 다시 읽기보다 대조에 가깝습니다. 숫자는 원자료로, 주장은 근거 문서로, 형식은 요구 조건으로 하나씩 맞춰 보고, 맞춰 볼 짝이 없는 문장은 근거 없음으로 처리합니다.',
+      '업무 자동화 설계': '설계의 단위는 도구보다 흐름입니다. 입력이 어디서 오고, 어디서 사람이 확인하고, 실패하면 어디로 돌아가는지 정한 흐름이어야 AI를 바꿔 끼워도 결과가 유지됩니다.',
+      '산출물 검증 체계 운영': '한 번의 꼼꼼한 확인보다 매번 같은 확인이 남는 체계가 강합니다. 확인 항목과 기준을 고정하고, 놓친 오류는 항목으로 되돌려 체계를 고칩니다.',
+      '인공지능 위험 관리': '위험은 일어날 가능성과 피해의 크기로 나눠 봅니다. 자주 일어나는 작은 실수는 점검으로, 드물지만 큰 사고는 사전 승인과 차단으로 다룹니다.',
+      '성과 측정과 개선': '개선은 측정할 수 있는 기준선에서 시작합니다. 확인 시간까지 넣은 전후 비교를 같은 단위로 적어 두어야 계속할지, 고칠지, 멈출지를 판단할 수 있습니다.' },
     whatR: function (g, p, n, m) { return g + ' ' + p + ' · ' + n + '과제 · ' + m + '분'; },
     ruleR: '시험지 끝의 사용 기록 칸에 쓴 도구, 주요 프롬프트, 소문항마다 AI를 썼는지를 적어 냅니다(응시 약관 제14조 제2항). 채점에는 반영하지 않습니다.',
     task: function (i, n, title) { return '과제 ' + i + '/' + n + (title ? ' — ' + title : ''); },
@@ -301,6 +323,9 @@
     var tb = $('resTable'); tb.textContent = '';
     var hr = el('tr'); (R ? [T.thS, T.thP] : [T.thS, T.thP, T.thR]).forEach(function (x) { hr.appendChild(el('th', null, x)); }); tb.appendChild(hr);
     (r.subs || []).forEach(function (x) { var tr = el('tr'); tr.appendChild(el('td', null, (sit.names || {})[x.s] || x.s)); tr.appendChild(el('td', 'v', x.got + ' / ' + x.max)); if (!R) tr.appendChild(el('td', null, x.right + ' / ' + x.n)); tb.appendChild(tr); });
+    var box = $('resIns'); if (!box) { box = el('div'); box.id = 'resIns'; tb.parentNode.insertBefore(box, tb.nextSibling); } box.textContent = '';
+    var insl = (r.subs || []).filter(function (x) { return T.ins[x.s]; });  // 과목마다 일에 옮길 원리 한 줄(문항 내용은 담지 않음), 60% 아래 과목은 먼저 볼 곳으로 표시
+    if (insl.length) { box.appendChild(el('h3', null, T.insH)); insl.forEach(function (x) { var weak = x.max && x.got / x.max < 0.6, p = el('p', weak ? 'ins weak' : 'ins'); p.appendChild(el('b', null, ((sit.names || {})[x.s] || x.s) + (weak ? T.insWeak : '') + ': ')); p.appendChild(document.createTextNode(T.ins[x.s])); box.appendChild(p); }); }
     $('resNote').textContent = r.official ? '' : T.resNote; $('backLink').hidden = false;
     show('result', true);
   }
