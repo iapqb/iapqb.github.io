@@ -22,7 +22,16 @@
     resTitle: function (s) { return 'Automatic score: ' + s + ' / 100'; }, resPass: function (m) { return 'Provisional: above the pass mark (' + m + ' or more, and at least 40% in each subject).'; },
     resFail: function (m) { return 'Provisional: below the pass mark (' + m + ' or more, and at least 40% in each subject).'; },
     resOfficial: function (p) { return 'Official result: ' + (p ? 'Pass' : 'Fail'); }, resNote: 'The official result will be posted on your exam page and emailed to you within 5 working days of the exam.',
-    thS: 'Subject', thP: 'Points', thR: 'Correct', back: 'Back to my exam', voidNow: 'This paper was cancelled because the time you were disconnected passed 20% of the exam time. You can take the exam again at no extra cost from your exam page.'
+    thS: 'Subject', thP: 'Points', thR: 'Correct', back: 'Back to my exam',
+    whatR: function (g, p, n, m) { return g + ' ' + p + ' · ' + n + ' tasks · ' + m + ' minutes'; },
+    ruleR: 'At the end of the paper, fill in the AI use record: the tools you used, your main prompts, and for each sub-question whether you used AI (Examination Terms Article 14(2)). It is not used for marking.',
+    task: function (i, n, title) { return 'Task ' + i + ' of ' + n + (title ? ' — ' + title : ''); },
+    one: 'Choose one', pickN: function (k) { return 'Choose exactly ' + k; }, spotsN: function (k) { return k ? 'There are ' + k + ' error spots' : 'Choose every error spot'; }, nth: function (i) { return 'Step ' + i; }, num: 'Number', blank: '—',
+    flag: 'AI use for this question', flags: { none: 'I did not use AI', asis: 'I used the AI answer as it was', edit: 'I changed the AI answer' },
+    logH: 'AI use record (Examination Terms Article 14(2))', logP: 'Write down what you used. This record is kept encrypted, is used only to look into misconduct, and is not used for marking. Do not include anyone’s personal data or your employer’s confidential information.',
+    tools: 'Tools used', toolNames: { chatgpt: 'ChatGPT', gemini: 'Gemini', claude: 'Claude', copilot: 'Microsoft Copilot', perplexity: 'Perplexity', clova: 'CLOVA X', other: 'Other' }, otherPh: 'Other tool name', noAi: 'I did not use any AI tool',
+    ver: 'Model or version (e.g. GPT-5, Gemini 2.5 Pro)', prompts: 'Main prompts (up to 6,000 characters)',
+    confirmR: function (u, l) { return (u ? u + ' sub-question(s) are unanswered. ' : '') + (l ? '' : 'Your AI use record is empty — leaving it out can be treated as misconduct (Notice, section 10). ') + 'Submit your answers now? You cannot change them afterwards.'; }, voidNow: 'This paper was cancelled because the time you were disconnected passed 20% of the exam time. You can take the exam again at no extra cost from your exam page.'
   } : {
     part: { W: '필기', R: '실기' }, grade: { F: 'Foundation', A: 'Associate', P: 'Professional' },
     none: '이 기기에 저장된 접수가 없습니다. 먼저 메일의 「내 응시」 링크를 여세요.', auth: '이 링크는 더 쓸 수 없습니다. 접수 화면에서 새 「내 응시」 링크를 받으세요.',
@@ -40,7 +49,16 @@
     resTitle: function (s) { return '자동 채점 점수: ' + s + '점 / 100점'; }, resPass: function (m) { return '잠정 판정: 합격 기준(' + m + '점 이상, 과목마다 40% 이상)을 넘었습니다.'; },
     resFail: function (m) { return '잠정 판정: 합격 기준(' + m + '점 이상, 과목마다 40% 이상)에 못 미쳤습니다.'; },
     resOfficial: function (p) { return '공식 성적: ' + (p ? '합격' : '불합격'); }, resNote: '공식 성적은 응시일부터 5영업일 안에 「내 응시」 화면에 게시하고 메일로도 알려 드립니다.',
-    thS: '과목', thP: '득점', thR: '맞힌 문항', back: '「내 응시」로', voidNow: '끊긴 시간이 시험 시간의 20%를 넘어 이 시험지는 무효가 되었습니다. 「내 응시」 화면에서 추가 비용 없이 다시 볼 수 있습니다.'
+    thS: '과목', thP: '득점', thR: '맞힌 문항', back: '「내 응시」로',
+    whatR: function (g, p, n, m) { return g + ' ' + p + ' · ' + n + '과제 · ' + m + '분'; },
+    ruleR: '시험지 끝의 사용 기록 칸에 쓴 도구, 주요 프롬프트, 소문항마다 AI를 썼는지를 적어 냅니다(응시 약관 제14조 제2항). 채점에는 반영하지 않습니다.',
+    task: function (i, n, title) { return '과제 ' + i + '/' + n + (title ? ' — ' + title : ''); },
+    one: '하나를 고르시오', pickN: function (k) { return '정확히 ' + k + '개를 고르시오'; }, spotsN: function (k) { return k ? '오류 지점은 ' + k + '개입니다' : '오류 지점을 모두 고르시오'; }, nth: function (i) { return i + '번째'; }, num: '숫자', blank: '—',
+    flag: '이 소문항의 AI 사용', flags: { none: 'AI 안 씀', asis: 'AI 답을 그대로 씀', edit: 'AI 답을 고쳐 씀' },
+    logH: '사용 기록(응시 약관 제14조 제2항)', logP: '쓴 것을 그대로 적어 주세요. 이 기록은 암호화해 보관하고 부정행위 조사에만 쓰며, 채점에는 반영하지 않습니다. 다른 사람의 개인정보나 회사 기밀은 넣지 마세요.',
+    tools: '쓴 도구', toolNames: { chatgpt: 'ChatGPT', gemini: 'Gemini', claude: 'Claude', copilot: 'Microsoft Copilot', perplexity: 'Perplexity', clova: 'CLOVA X', other: '기타' }, otherPh: '기타 도구 이름', noAi: 'AI 도구를 쓰지 않았습니다',
+    ver: '모델·버전(예: GPT-5, Gemini 2.5 Pro)', prompts: '주요 프롬프트(6,000자까지)',
+    confirmR: function (u, l) { return (u ? '답하지 않은 소문항이 ' + u + '개 있습니다. ' : '') + (l ? '' : '사용 기록이 비어 있습니다 — 내지 않으면 부정행위로 볼 수 있습니다(공고 10.). ') + '지금 제출할까요? 제출하면 답을 바꿀 수 없습니다.'; }, voidNow: '끊긴 시간이 시험 시간의 20%를 넘어 이 시험지는 무효가 되었습니다. 「내 응시」 화면에서 추가 비용 없이 다시 볼 수 있습니다.'
   };
   function $(id) { return document.getElementById(id); }
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
@@ -55,7 +73,9 @@
   function kst(ms) { return new Date(ms + 9 * 3600000).toISOString().replace('T', ' ').slice(0, 19); }
   var sess = load('iapqb_exam'), qp = new URLSearchParams(location.search), part = (qp.get('p') || 'W').toUpperCase();
   if (part !== 'W' && part !== 'R') part = 'W';
-  var st = { sit: null, ans: {}, seq: 0, off: 0, dirty: false, saving: false, last: 0, done: false, tick: null, ping: null, retry: null };
+  var st = { sit: null, ans: {}, log: null, seq: 0, off: 0, dirty: false, saving: false, last: 0, done: false, tick: null, ping: null, retry: null };
+  var R = part === 'R';
+  function blankLog() { return { tools: [], none: false, other: '', ver: '', prompts: '', flags: {} }; }
   function lkey() { return 'iapqb_sit_' + (sess || '').slice(0, 12) + '_' + part + '_' + (st.sit ? st.sit.n : 0); }
 
   function init() {
@@ -71,9 +91,10 @@
     }).catch(function () { msg(T.waiting, true); setTimeout(init, 5000); });
   }
   function pre(r, p) {
-    $('preWhat').textContent = T.what(T.grade[r.grade] || r.grade, T.part[part], p.n, p.min);
+    $('preWhat').textContent = R ? T.whatR(T.grade[r.grade] || r.grade, T.part[part], p.tasks, p.min) : T.what(T.grade[r.grade] || r.grade, T.part[part], p.n, p.min);
     var ul = $('preRules'); ul.textContent = '';
     T.rules.forEach(function (x) { ul.appendChild(el('li', null, typeof x === 'function' ? x(Math.round(p.min * 0.2)) : x)); });
+    if (R) ul.appendChild(el('li', null, T.ruleR));
     if (p.voids) msg(T.voided);
     $('startAgreeTxt').textContent = T.agree;
     var ag = $('startAgree'), b = $('startBtn'); b.textContent = T.start;
@@ -97,7 +118,8 @@
   function begin(sit) {
     st.sit = sit; st.off = sit.now - Date.now();
     var loc = null; try { loc = JSON.parse(load(lkey()) || 'null'); } catch (e) { loc = null; }
-    if (loc && loc.seq > (sit.seq || 0)) { st.ans = loc.ans || {}; st.seq = loc.seq; st.dirty = true; } else { st.ans = sit.answers || {}; st.seq = sit.seq || 0; }
+    if (loc && loc.seq > (sit.seq || 0)) { st.ans = loc.ans || {}; st.log = loc.log || null; st.seq = loc.seq; st.dirty = true; } else { st.ans = sit.answers || {}; st.log = sit.ulog || null; st.seq = sit.seq || 0; }
+    if (R) { st.log = st.log || blankLog(); st.log.flags = st.log.flags || {}; }
     $('startedAt').textContent = T.startedAt(kst(sit.started));
     draw(); show('exam', true); tick(); $('saveState').textContent = st.dirty ? T.saving : T.saved;
     st.tick = setInterval(tick, 1000); st.ping = setInterval(function () { save(true); }, 20000);
@@ -105,6 +127,7 @@
     if (st.dirty) save(false);
   }
   function draw() {
+    if (R) return drawR();
     var sit = st.sit, qs = $('qs'), nav = $('nav'), bp = sit.bp || [], pts = {}, cnt = {}; qs.textContent = ''; nav.textContent = '';
     bp.forEach(function (x) { pts[x[0]] = x[2]; cnt[x[0]] = x[1]; });
     var lastS = null, secN = 0;
@@ -126,7 +149,100 @@
     });
     marks();
   }
+  // ── 실기: 과제지(본원 문제은행에서 만든 HTML) + 소문항 형식별 입력 + 소문항별 AI 사용 + 사용 기록 ──
+  function opt(v, text) { var o = document.createElement('option'); o.value = v; o.textContent = text; return o; }
+  function sel(list, cur, first) { var s = document.createElement('select'); s.appendChild(opt('', first || T.blank)); list.forEach(function (x) { var o = opt(x, x); if (x === cur) o.selected = true; s.appendChild(o); }); return s; }
+  function checks(list, cur, onc) {
+    var w = el('div', 'chk'); list.forEach(function (x) {
+      var lab = el('label', 'opt in'), c = document.createElement('input'); c.type = 'checkbox'; c.value = x; c.checked = (cur || []).indexOf(x) >= 0;
+      c.addEventListener('change', function () { var v = []; w.querySelectorAll('input:checked').forEach(function (y) { v.push(y.value); }); onc(v); });
+      lab.appendChild(c); lab.appendChild(el('span', null, x)); w.appendChild(lab);
+    }); return w;
+  }
+  function widget(sp) {
+    var w = el('div', 'wid'), cur = st.ans[sp.id], set = function (v) { pick(sp.id, v); };
+    if (sp.format === '선택형') {
+      w.appendChild(el('p', 'muted', T.one));
+      for (var k = 1; k <= (sp.n || 4); k++) (function (k) {
+        var lab = el('label', 'opt in'), r = document.createElement('input'); r.type = 'radio'; r.name = 'r_' + sp.id; r.value = String(k); r.checked = Number(cur) === k;
+        r.addEventListener('change', function () { set(k); }); lab.appendChild(r); lab.appendChild(el('span', null, String(k))); w.appendChild(lab);
+      })(k);
+    } else if (sp.format === '복수선택형') { w.appendChild(el('p', 'muted', T.pickN(sp.k))); w.appendChild(checks(sp.options || [], cur, set)); }
+    else if (sp.format === '오류식별형') { w.appendChild(el('p', 'muted', T.spotsN(sp.k))); w.appendChild(checks(sp.spots || [], cur, set)); }
+    else if (sp.format === '순서배열형') {
+      var arr = Array.isArray(cur) ? cur.slice() : [], row = el('div', 'ord');
+      (sp.elements || []).forEach(function (_, i) {
+        var lab = el('label', 'ordi'); lab.appendChild(el('span', null, T.nth(i + 1)));
+        var s = sel(sp.elements, arr[i]); s.addEventListener('change', function () { arr[i] = s.value; var v = (sp.elements || []).map(function (_, j) { return arr[j] || ''; }); set(v); });
+        lab.appendChild(s); row.appendChild(lab);
+      }); w.appendChild(row);
+    } else if (sp.format === '수치입력형') {
+      var lab = el('label', 'numi'), inp = document.createElement('input'); inp.type = 'text'; inp.inputMode = 'decimal'; inp.maxLength = 40; inp.value = cur != null ? String(cur) : ''; inp.setAttribute('aria-label', T.num);
+      inp.addEventListener('input', function () { set(inp.value.trim()); }); lab.appendChild(inp); if (sp.unit) lab.appendChild(el('span', null, ' ' + sp.unit)); w.appendChild(lab);
+    } else if (sp.format === '매칭형') {
+      var o = cur && typeof cur === 'object' ? Object.assign({}, cur) : {}, g = el('div', 'pairs');
+      (sp.pairs || []).forEach(function (k) {
+        var lab = el('label', 'pair'); lab.appendChild(el('span', null, k + ' '));
+        var s = sel(sp.choices || [], o[k]); s.addEventListener('change', function () { if (s.value) o[k] = s.value; else delete o[k]; set(Object.assign({}, o)); });
+        lab.appendChild(s); g.appendChild(lab);
+      }); w.appendChild(g);
+    }
+    return w;
+  }
+  function flagSel(sp) {
+    var lab = el('label', 'flag'); lab.appendChild(el('span', null, T.flag + ' '));
+    var s = document.createElement('select'); s.appendChild(opt('', T.blank)); ['none', 'asis', 'edit'].forEach(function (k) { var o = opt(k, T.flags[k]); if (st.log.flags[sp.id] === k) o.selected = true; s.appendChild(o); });
+    s.addEventListener('change', function () { if (s.value) st.log.flags[sp.id] = s.value; else delete st.log.flags[sp.id]; logChanged(); });
+    lab.appendChild(s); return lab;
+  }
+  function logBox() {
+    var L = st.log, f = el('fieldset', 'logbox'); f.id = 'logBox'; f.appendChild(el('legend', null, T.logH)); f.appendChild(el('p', 'muted', T.logP));
+    f.appendChild(el('p', 'lh', T.tools));
+    var tw = el('div', 'chk'); ['chatgpt', 'gemini', 'claude', 'copilot', 'perplexity', 'clova', 'other'].forEach(function (k) {
+      var lab = el('label', 'opt in'), c = document.createElement('input'); c.type = 'checkbox'; c.value = k; c.checked = L.tools.indexOf(k) >= 0;
+      c.addEventListener('change', function () { L.tools = []; tw.querySelectorAll('input:checked').forEach(function (y) { L.tools.push(y.value); }); if (L.tools.length) { L.none = false; no.checked = false; } logChanged(); });
+      lab.appendChild(c); lab.appendChild(el('span', null, T.toolNames[k])); tw.appendChild(lab);
+    }); f.appendChild(tw);
+    var other = document.createElement('input'); other.type = 'text'; other.maxLength = 80; other.placeholder = T.otherPh; other.value = L.other || ''; other.addEventListener('input', function () { L.other = other.value; logChanged(1500); }); f.appendChild(other);
+    var nl = el('label', 'opt'), no = document.createElement('input'); no.type = 'checkbox'; no.checked = !!L.none;
+    no.addEventListener('change', function () { L.none = no.checked; if (no.checked) { L.tools = []; tw.querySelectorAll('input').forEach(function (y) { y.checked = false; }); } logChanged(); });
+    nl.appendChild(no); nl.appendChild(el('span', null, T.noAi)); f.appendChild(nl);
+    f.appendChild(el('label', null, T.ver)); var ver = document.createElement('input'); ver.type = 'text'; ver.maxLength = 160; ver.value = L.ver || ''; ver.addEventListener('input', function () { L.ver = ver.value; logChanged(1500); }); f.appendChild(ver);
+    f.appendChild(el('label', null, T.prompts)); var ta = document.createElement('textarea'); ta.maxLength = 6000; ta.value = L.prompts || ''; ta.addEventListener('input', function () { L.prompts = ta.value; logChanged(1500); }); f.appendChild(ta);
+    return f;
+  }
+  function drawR() {
+    var sit = st.sit, qs = $('qs'), nav = $('nav'); qs.textContent = ''; nav.textContent = '';
+    sit.tasks.forEach(function (t, ti) {
+      var sec = el('section', 'task'); sec.id = 't' + ti;
+      sec.appendChild(el('h2', 'sec', T.task(ti + 1, sit.tasks.length, t.title)));
+      var body = el('div', 'tbody'); body.innerHTML = t.html;  // 본원 문제은행 과제지(가져올 때 태그를 걸러 저장). 응시자가 낸 글은 여기에 넣지 않는다.
+      body.querySelectorAll('table').forEach(function (tb) { var w = el('div', 'tw'); tb.parentNode.insertBefore(w, tb); w.appendChild(tb); });
+      sec.appendChild(body); qs.appendChild(sec);
+      t.spec.forEach(function (sp, k) {
+        var slot = null; body.querySelectorAll('.ans').forEach(function (x) { if (x.getAttribute('data-item') === sp.id) slot = x; });
+        if (!slot) { slot = el('div', 'ans'); body.appendChild(slot); }
+        slot.id = 'q_' + sp.id; slot.appendChild(widget(sp)); slot.appendChild(flagSel(sp));
+        var nb = el('button', 'nb', (ti + 1) + '-' + (k + 1)); nb.type = 'button'; nb.id = 'nb_' + sp.id; nb.setAttribute('aria-label', sp.id);
+        nb.addEventListener('click', function () { var x = $('q_' + sp.id); if (x) x.scrollIntoView({ block: 'center' }); }); nav.appendChild(nb);
+      });
+    });
+    qs.appendChild(logBox());
+    marks();
+  }
+  function filled(v) { if (v == null || v === '') return false; if (Array.isArray(v)) return v.some(function (x) { return x; }); if (typeof v === 'object') return Object.keys(v).length > 0; return true; }
+  function logFilled() { var L = st.log || {}; return !!(L.none || (L.tools || []).length); }
+  function logChanged(wait) {
+    if (st.done) return; st.seq++; st.dirty = true;
+    store(lkey(), JSON.stringify({ seq: st.seq, ans: st.ans, log: st.log })); $('saveState').textContent = T.saving;
+    clearTimeout(st.retry); st.retry = setTimeout(function () { save(false); }, wait || 600);
+  }
   function marks() {
+    if (R) {
+      var all = [], a = 0; st.sit.tasks.forEach(function (t) { t.spec.forEach(function (sp) { all.push(sp.id); }); });
+      all.forEach(function (id) { var on = filled(st.ans[id]); if (on) a++; var nb = $('nb_' + id); if (nb) nb.className = 'nb' + (on ? ' on' : ''); });
+      $('progress').textContent = T.answered(a, all.length); return all.length - a;
+    }
     var n = st.sit.items.length, a = 0;
     st.sit.items.forEach(function (it) { var on = !!st.ans[it.i]; if (on) a++; var nb = $('nb' + it.i); if (nb) nb.className = 'nb' + (on ? ' on' : ''); });
     $('progress').textContent = T.answered(a, n);
@@ -134,15 +250,16 @@
   }
   function pick(i, a) {
     if (st.done) return;
-    st.ans[i] = a; st.seq++; st.dirty = true;
-    store(lkey(), JSON.stringify({ seq: st.seq, ans: st.ans })); marks(); $('saveState').textContent = T.saving;
+    if (R && !filled(a)) delete st.ans[i]; else st.ans[i] = a;
+    st.seq++; st.dirty = true;
+    store(lkey(), JSON.stringify({ seq: st.seq, ans: st.ans, log: st.log })); marks(); $('saveState').textContent = T.saving;
     clearTimeout(st.retry); st.retry = setTimeout(function () { save(false); }, 600);
   }
   function save(isPing) {
     if (st.done || st.saving) return;
     if (isPing && !st.dirty && Date.now() - st.last < 15000) return;
     st.saving = true; var seq = st.seq, body = { part: part };
-    if (st.dirty) { body.q = seq; body.answers = st.ans; }
+    if (st.dirty) { body.q = seq; body.answers = st.ans; if (R) body.ulog = st.log; }
     call('/api/sit/save', body).then(function (j) {
       st.saving = false; st.last = Date.now();
       if (j.ok) {
@@ -168,7 +285,8 @@
     if (st.sending) return; st.sending = true; stop(); $('submitBtn').disabled = true; show('confirmBox', false);
     if (!$('sitMsg').textContent) msg(T.submitting);
     var go = function () {
-      call('/api/sit/finish', { part: part, q: st.seq + 1, answers: st.ans }).then(function (j) {
+      var fb = { part: part, q: st.seq + 1, answers: st.ans }; if (R) fb.ulog = st.log;
+      call('/api/sit/finish', fb).then(function (j) {
         if (j.ok && j.sit && j.sit.state === 'done') { store(lkey(), null); result(j.sit); }
         else if (j.sit && j.sit.state === 'void') { show('exam', false); msg(T.voidNow, true); $('backLink').hidden = false; }
         else setTimeout(go, 5000);
@@ -181,13 +299,13 @@
     $('resTitle').textContent = T.resTitle(r.score);
     $('resJudge').textContent = r.official ? T.resOfficial(r.pass) : (r.pass ? T.resPass(r.mark) : T.resFail(r.mark));
     var tb = $('resTable'); tb.textContent = '';
-    var hr = el('tr'); [T.thS, T.thP, T.thR].forEach(function (x) { hr.appendChild(el('th', null, x)); }); tb.appendChild(hr);
-    (r.subs || []).forEach(function (x) { var tr = el('tr'); tr.appendChild(el('td', null, (sit.names || {})[x.s] || x.s)); tr.appendChild(el('td', 'v', x.got + ' / ' + x.max)); tr.appendChild(el('td', null, x.right + ' / ' + x.n)); tb.appendChild(tr); });
+    var hr = el('tr'); (R ? [T.thS, T.thP] : [T.thS, T.thP, T.thR]).forEach(function (x) { hr.appendChild(el('th', null, x)); }); tb.appendChild(hr);
+    (r.subs || []).forEach(function (x) { var tr = el('tr'); tr.appendChild(el('td', null, (sit.names || {})[x.s] || x.s)); tr.appendChild(el('td', 'v', x.got + ' / ' + x.max)); if (!R) tr.appendChild(el('td', null, x.right + ' / ' + x.n)); tb.appendChild(tr); });
     $('resNote').textContent = r.official ? '' : T.resNote; $('backLink').hidden = false;
     show('result', true);
   }
   $('submitBtn').textContent = T.submit; $('confirmYes').textContent = T.yes; $('confirmNo').textContent = T.no; $('backLink').textContent = T.back;
-  $('submitBtn').addEventListener('click', function () { $('confirmText').textContent = T.confirm(marks()); show('confirmBox', true); $('confirmBox').scrollIntoView({ block: 'center' }); });
+  $('submitBtn').addEventListener('click', function () { $('confirmText').textContent = R ? T.confirmR(marks(), logFilled()) : T.confirm(marks()); show('confirmBox', true); $('confirmBox').scrollIntoView({ block: 'center' }); });
   $('confirmNo').addEventListener('click', function () { show('confirmBox', false); });
   $('confirmYes').addEventListener('click', function () { finish(); });
   init();
