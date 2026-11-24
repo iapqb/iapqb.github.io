@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How to check what an AI produced: a practical guide for AI training, QA and editing work · IAPQB</title>
+<meta name="description" content="Six checks that catch most errors in AI answers, how to write them up, worked examples, and how to show the skill. For AI training and rating work, QA, and editing AI drafts. Not tied to any AI company or work platform.">
+<link rel="canonical" href="https://iapqb.org/en/guide/checking-ai-output.html">
+<meta property="og:title" content="How to check what an AI produced · IAPQB">
+<meta property="og:description" content="Six checks that catch most errors in AI answers, how to write them up, worked examples, and how to show the skill. For AI training and rating work, QA, and editing AI drafts. Not tied to any AI company or work platform.">
+<meta property="og:url" content="https://iapqb.org/en/guide/checking-ai-output.html">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://iapqb.org/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--ink:#1c1512;--line:#e9e3dc;--line2:#d8ccc0;--accent:#c9530f;--accent2:#f37021;--bg:#fdfbf9;--steel:#5a4a3f;--muted:#8a7f74;}
+:where(a,button,summary,[tabindex]):focus-visible{outline:2px solid var(--accent2);outline-offset:2px;border-radius:2px}
+*{box-sizing:border-box}
+body{margin:0;border-top:4px solid var(--accent2);background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans KR",system-ui,sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:28px 22px 80px}
+a{color:var(--accent)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:14px}
+.brand{font-weight:700;text-decoration:none;color:var(--ink)}
+.lang a,.lang b{margin-left:10px}
+h1{font-size:30px;line-height:1.3;margin:28px 0 8px;letter-spacing:-.4px}
+.sub{color:var(--steel);font-size:15px;margin:0 0 4px}
+.updated{color:var(--muted);font-size:13px;margin:0 0 26px}
+h2{font-size:20px;margin:42px 0 12px;padding-bottom:8px;border-bottom:2px solid var(--line)}
+p{margin:12px 0}
+ul{padding-left:20px}li{margin:7px 0}
+.key{background:#fff;border:1px solid var(--accent2);border-left:4px solid var(--accent2);padding:14px 18px;margin:20px 0}
+.key p{margin:5px 0}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:16px 0}
+th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:#faf5ee;border-bottom:2px solid var(--line2);font-weight:700;font-size:13.5px}
+td.num,th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.num b{color:var(--accent2)}
+.tw{overflow-x:auto}
+.legal{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12.8px;line-height:1.75}
+@media(max-width:640px){.wrap{padding:22px 16px 60px}h1{font-size:24px}h2{font-size:18px}table{font-size:12.5px}th,td{padding:7px 5px}td.num,th.num{white-space:normal}.top{flex-wrap:wrap}}
+.faq details{border-bottom:1px solid var(--line);padding:11px 0}
+.faq summary{cursor:pointer;font-weight:600;list-style:none;position:relative;padding-left:1.4em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"+";position:absolute;left:0;color:var(--accent2);font-weight:700}
+.faq details[open]>summary::before{content:"\2212"}
+.faq .a{margin:8px 0 2px 1.4em}
+.steps{counter-reset:s;list-style:none;padding:0}.steps li{counter-increment:s;position:relative;padding-left:2.2em;margin:12px 0}
+.steps li::before{content:counter(s);position:absolute;left:0;top:.1em;width:1.6em;height:1.6em;border-radius:50%;background:var(--accent2);color:#fff;font-weight:700;font-size:.85em;display:flex;align-items:center;justify-content:center}
+.cta{display:inline-block;background:var(--accent2);color:#fff;text-decoration:none;font-weight:700;padding:11px 18px;border-radius:6px;margin:6px 8px 6px 0}
+.cta.ghost{background:#fff;color:var(--accent);border:1px solid var(--accent2)}
+.src{color:var(--muted);font-size:13px}
+h3{font-size:17px;margin:24px 0 4px}code{font-size:.92em;background:#f4eee8;padding:1px 4px;border-radius:3px}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to check what an AI produced: a practical guide for AI training, QA and editing work", "description": "Six checks that catch most errors in AI answers, how to write them up, worked examples, and how to show the skill. For AI training and rating work, QA, and editing AI drafts. Not tied to any AI company or work platform.", "url": "https://iapqb.org/en/guide/checking-ai-output.html", "inLanguage": "en", "datePublished": "2026-11-24", "dateModified": "2026-11-24", "author": {"@type": "Organization", "@id": "https://iapqb.org/#org", "name": "IAPQB"}, "publisher": {"@type": "Organization", "@id": "https://iapqb.org/#org", "name": "IAPQB", "url": "https://iapqb.org"}}</script>
+</head>
+<body>
+<div class="wrap">
+<div class="top"><a class="brand" href="/en/">IAPQB</a><nav class="lang" aria-label="Site"><a href="/en/practice/">Free practice</a><a href="/research/">Research</a></nav></div>
+<main>
+<h1>How to check what an AI produced</h1>
+<p class="sub">A practical guide for people who review AI answers at work, or want to: AI training and rating work, quality assurance, and editing AI drafts for clients.</p>
+<p class="updated">IAPQB · 24 November 2026 · Free to use and share</p>
+<div class="key"><p>This guide is not tied to any AI company or work platform, and following it does not guarantee you work. Be careful with anyone who asks you to pay for access to AI training jobs or promises placement.</p></div>
+
+<h2>What the work asks for</h2>
+<p>Postings we reviewed in November 2026 for AI training, rating and data-quality roles, in several languages, describe the same core task: compare an AI answer with a source or a rule, mark what is wrong, name the kind of error, and give a short reason. Editing AI drafts for a client is the same skill with a deadline. The people who do it well are not the ones who avoid AI. They are the ones who check it quickly and say exactly what is wrong.</p>
+
+<h2>Six checks that catch most errors</h2>
+<ol class="steps">
+<li><b>Did it do what was asked?</b> Check the format, length, audience, language and scope against the instruction, line by line. An answer can be true and still fail the task.</li>
+<li><b>Are the facts right?</b> Check names, dates, numbers and quotations against a source you can open. If you cannot find one, treat the claim as unconfirmed, not as true.</li>
+<li><b>Are the sources real?</b> AI tools can produce references, case names and links that look right but do not exist. Open every link and search the exact title.</li>
+<li><b>Do the numbers add up?</b> Redo totals, percentages, averages and unit conversions yourself. Small slips are common and easy to miss.</li>
+<li><b>Does the code run, and does it do the job?</b> Run it on a small example, then try the edges: empty input, very large values, unusual characters.</li>
+<li><b>Is anything unsafe or off-limits?</b> Look for personal data, advice stated with more certainty than the facts allow, and anything that breaks a rule you were given.</li>
+</ol>
+
+<h2>How to write it up</h2>
+<p>For each problem, give four things: where it is (quote the words), what kind of error it is (instruction, fact, source, number, code or safety), what the correct version is, and how you know (the source or the calculation). Short and specific beats long and general. "Wrong date" is weak. "Says 2019; the cited ruling is dated 12 March 2021 (page 1)" is useful.</p>
+
+<h2>Four short examples</h2>
+<h3>A number</h3>
+<p><b>AI answer:</b> "A 15% discount on 80 dollars brings the price to 65 dollars."<br><b>Check:</b> 80 × 0.85 = 68. <b>Type:</b> number. <b>Fix:</b> "…brings the price to 68 dollars."</p>
+<h3>A source</h3>
+<p><b>AI answer:</b> "As shown by Smith and Lee (2021) in the <i>Journal of Applied Work Studies</i>…" (names invented for this example).<br><b>Check:</b> search the exact title and the journal. If you cannot find them, the reference may be invented. <b>Type:</b> source. <b>Fix:</b> remove the claim, or replace it with a source that exists and says the same thing.</p>
+<h3>An instruction</h3>
+<p><b>Task:</b> "Summarise this in three bullet points, in plain English, for a customer."<br><b>AI answer:</b> five bullet points full of technical terms.<br><b>Type:</b> instruction (count and audience). <b>Fix:</b> three bullet points, everyday words.</p>
+<h3>Code</h3>
+<p><b>AI answer:</b> <code>def average(xs): return sum(xs) / len(xs)</code><br><b>Check:</b> <code>average([])</code> raises ZeroDivisionError. <b>Type:</b> code (edge case). <b>Fix:</b> handle the empty list, for example return None or raise a clear error, as the task requires.</p>
+
+<h2>How to show the skill</h2>
+<ul>
+<li><b>Keep a short portfolio.</b> Three to five before-and-after corrections with your notes. Use public or invented material. Never use a client's or employer's confidential work, and never share assessment questions you were asked to keep private.</li>
+<li><b>Practise with AI switched on, against the clock.</b> The skill is checking fast and accurately, not working without AI.</li>
+<li><b>Use proof that others can check.</b> A credential is only worth something if someone else can confirm it. IAPQBCertifiedAppliedAI is taken online with AI allowed, and each certificate carries a number that can be checked on our site. It is a private qualification registered in Korea (No. 2026-008253), not a government qualification, and it is not connected with any AI company or work platform.</li>
+</ul>
+<p><a class="cta" href="/en/practice/">Try the free 10-question practice</a><a class="cta ghost" href="/en/">How the exam works</a></p>
+
+<h2>Honest limits</h2>
+<ul>
+<li>No credential, ours included, guarantees work. Platforms and employers run their own tests and decide for themselves.</li>
+<li>Checking confirms what a source says. It does not make a weak source strong. When the stakes are high, find a second source.</li>
+</ul>
+<p class="src">How we make our own reports with AI and check them: <a href="/research/method.html">How these reports are made</a>.</p>
+
+<div class="legal" id="legal">
+<b>IAPQBCertifiedAppliedAI is a private qualification registered under the Framework Act on Qualifications of the Republic of Korea (registration No. 2026-008253). It is not a national qualification or a government-accredited private qualification.</b> IAPQB is not a government body, a national examination board or a university.<br>
+Qualification: IAPQBCertifiedAppliedAI (Foundation · Associate · Professional · Strategist) · Type: registered private qualification · Registration No. 2026-008253 · Total cost: the fee of the grade you sit, certificate included, no other charges · Fees and refunds: <a href="/en/exam/">registration page</a> and <a href="/en/notice/2026-1.html">Notice No. 2026-1</a>.<br>
+Trade name: 국제AI실무자격검정원 (International AI Practice Qualification Board) · Representative: Lee Seung-won · Business registration No. 743-22-02693 · Address: Cheongju-si, Chungcheongbuk-do, Republic of Korea · Phone +82-10-8107-8254 · Email contact@iapqb.org · Hosting: GitHub, Inc. (site), Cloudflare, Inc. (notification server)<br>
+Grievance officer: Lee Seung-won (Representative), contact@iapqb.org. We acknowledge every complaint within 48 hours and resolve it within one month.<br>
+Web analytics: Cloudflare Web Analytics, without cookies or individual tracking. English pages are translations; if a translation differs from the Korean original, the Korean original prevails. © 2026 IAPQB.
+</div>
+</main>
+</div>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "26d625bc684c48c39fdc482134c9a3e3"}'></script>
+</body></html>
