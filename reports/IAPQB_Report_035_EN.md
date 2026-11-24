@@ -1,0 +1,121 @@
+# Labels and watermarks for AI-made content
+
+**What China, Korea and the EU require, and where the marks fail in practice**
+
+IAPQB Report No. 35 · Practice report · Published 24 November 2026
+International AI Practice Qualification Board (IAPQB)
+
+## In one minute
+
+- Rules in China (from September 2025), Korea (from January 2026) and the EU (from August 2026) require AI-made content to carry labels that people can see, marks that software can read, or both [1, 2, 3, 4].
+- Labels have failed both ways: Meta's 2024 "Made with AI" label appeared on content with only minor AI retouching [5], and China's regulator has targeted missing labels and label-removal tools [6].
+- NIST reports that most current watermarking schemes have been found vulnerable to removal, and that shared files often lose their metadata [7].
+- The EU's code of practice asks for two hidden marks at once [8]. Cameras, platforms and some newsrooms use C2PA Content Credentials, though Norway's newsrooms will miss their 2026 target [9, 10, 11, 12].
+
+## 1. A familiar situation
+
+A social media editor at a news website illustrates a story with an image generator. The tool adds a small visible mark and hidden data to the file. She crops the picture, cutting off the mark, and posts it on three platforms. One shows an "AI" tag; two show nothing. A reader asks why there was no label, and nobody is sure whose job it was.
+
+## 2. Why labels get lost or go wrong
+
+A label is information attached to content, and each copy, edit or upload can lose it. Metadata, the data stored inside a file, is often stripped when files are shared online, and it generally cannot follow plain text copied between documents [7]. Many watermarks are spread through the content and usually survive common edits, yet NIST reports that "most current watermarking schemes have been consistently found vulnerable to removal", and that watermarks can be forged onto other content [7]. The authors of SynthID-Text, used in Gemini, write that such watermarks "do not offer a complete solution" and are weakened by paraphrasing [13]. OpenAI said translation or rewording by another model can defeat its text watermark [14]. Labels can also say too little about how much AI was used [5].
+
+> **IAPQB view.** In the cases below, labels failed at hand-overs: when an editing tool's signal reached a platform, when content moved between services, and when people removed labels on purpose. China's rules now give duties to providers, platforms and users, and the EU code asks providers for two hidden marks at once [1, 8].
+
+## 3. Three cases
+
+### 3.1 Menlo Park, 2024: an AI label on lightly edited content
+
+In April 2024, Meta said it would label AI-made video, audio and images "Made with AI" from May, based on "industry-shared signals" in files or on users' own disclosure. On 1 July 2024 it wrote that some content with minor AI changes, "such as retouching tools", had carried such signals and been labelled "Made with AI"; it renamed the label "AI info". In September 2024 it said the label would move to the post's menu for content only edited with AI, and stay in view for content detected as AI-generated [5].
+
+### 3.2 Beijing, 2026: the regulator lists how labels fail
+
+China's Measures for Labelling AI-Generated Synthetic Content, issued by the Cyberspace Administration of China (CAC) and three other agencies, took effect on 1 September 2025. Where Article 17(1) of earlier "deep synthesis" rules applies, providers must put visible labels on text, audio, images and video, including downloaded files. Providers must also write hidden labels into the metadata of AI-made files. Platforms must check the metadata and show a notice; where only a user's declaration or other signs point to AI, the notice says the content may be, or is suspected to be, AI-made. Maliciously removing or forging labels, or supplying tools to do so, is banned [1].
+
+On 30 April 2026, the CAC announced a four-month campaign whose targets included missing labels, labels of non-standard size, position or transparency, failure to recognise other platforms' hidden labels, weak detection by platforms, and tutorials and tools for removing labels [6]. On 2 September it said AI services such as Doubao and Qianwen had strengthened labelling [15].
+
+### 3.3 Brussels, 2026: two hidden marks, because one can fail
+
+Since 2 August 2026 [4], Article 50 of the EU AI Act has required providers of generative AI systems to mark the output "in a machine-readable format and detectable as artificially generated or manipulated" [3]. Deployers must disclose deep fakes, and AI-generated text published to inform the public on matters of public interest unless it has had human review or editorial control under someone's editorial responsibility [3]. The Digital Omnibus on AI, in force since 27 July 2026, gave systems on the market before 2 August 2026 until 2 December 2026 to mark their output [16, 17].
+
+The Code of Practice on Transparency of AI-Generated Content of 10 June 2026 says that as long as no single technique can meet the legal requirements alone, signatories will apply at least two layers: digitally signed metadata and an imperceptible watermark. Fingerprinting or logging alone is not enough. Free-form text cannot carry metadata, so a watermark alone is accepted for it [8]. The Commission found it adequate on 8 July 2026; about 190 organisations had signed by the end of July [18, 19].
+
+## 4. How practitioners handle it now
+
+**Hidden marks come with a notice people can see or hear.** Korea's AI Basic Act requires generative AI providers to label output as AI-made, with a clear notice for sound, images or video hard to tell from real ones [2]. Its decree accepts a label people can perceive, or a machine-readable one plus a text or voice notice [20]. For content shared outside a service, the Ministry of Science and ICT asks for a visible or audible label, or metadata after a notice, and calls watermarks "a minimum safeguard" [21]. It says the duty does not cover users, such as a film company using AI video tools [21].
+
+**Content is signed where it is made.** C2PA Content Credentials are signed records of a file's origin and edits. Changing the file breaks the signature, though the record can be stripped off [22]. Leica's M11-P (2023) was the first camera with them built in [9], and Google's Pixel 10 phone and Sony's PXW-Z300 video camera followed in 2025 [23]. The C2PA's list of conforming products now includes Google's Pixel Camera and services of the BBC and CBC/Radio-Canada [11]. A Norwegian project aimed for 80% adoption across the news industry by the end of 2026; in October its lead said no Norwegian news company yet showed the credentials to readers [12].
+
+**Platforms read the marks and ask uploaders to declare.** The C2PA reports that TikTok has labelled more than 3 billion items as AI-generated, using Content Credentials, invisible watermarks, creator education and labelling tools [10]. Chinese platforms must check metadata and remind users to declare AI content [1].
+
+**Public text is labelled, or fact-checked under named editorial responsibility.** For the EU text exception, fact-checking is "a minimum requirement"; spell-checks, automated review and "cursory editorial approval" do not count, substantive AI changes after sign-off cancel the exception, and whoever holds editorial responsibility should be named publicly [4].
+
+**Minor edits are kept apart from AI-made content.** Under the EU marking duty, a tool that only removes dust spots need not mark its output, while one that replaces a face must [4]. Meta announced a similar split for its labels in 2024 [5].
+
+## 5. What to take from this
+
+**For people who use AI at work.** Keep the tool's label and file data through editing and export; edits, copying and pasting, and uploads can remove them [7, 22]. In the EU, staff who publish deep fakes for an employer fall under the employer's duty to disclose [4]. In China, users who post AI content must declare it [1].
+
+**For managers and editors.** Check whether the publishing system and each platform keep metadata and credentials [7]. Publicly name who holds editorial responsibility for AI-assisted public text, and have a person fact-check it [4].
+
+**For schools, training providers and employers.** Teach both kinds of error: lightly edited content labelled as AI-made [5], and marks removed from AI content or forged onto other content [7, 13].
+
+## 6. Limits of this report
+
+Only Chinese, Korean and EU rules are covered; IAPQB translated the Chinese texts and the Korean decree. The EU duties are new, and Korea has promised at least a year from 22 January 2026 before transparency investigations and fines; this report describes no enforcement decision under either [4, 21]. Most adoption facts come from the C2PA and the Content Authenticity Initiative, which promote the standard; TikTok's figure was not independently checked [10]. NIST calls the deterrent effect of the effort needed to remove watermarks an open question [7].
+
+## References
+
+[1] Cyberspace Administration of China, Ministry of Industry and Information Technology, Ministry of Public Security and National Radio and Television Administration (signed 7 March 2025, published 14 March 2025). 关于印发《人工智能生成合成内容标识办法》的通知 [Notice on issuing the Measures for Labelling AI-Generated Synthetic Content], 国信办通字〔2025〕2号, Articles 3 to 6, 10 and 14. Office of the Central Cyberspace Affairs Commission. https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm
+
+[2] Korea Legislation Research Institute (English translation of Act No. 20676, 21 January 2025, as amended by Act No. 21311, 20 January 2026). FRAMEWORK ACT ON THE DEVELOPMENT OF ARTIFICIAL INTELLIGENCE AND THE CREATION OF A FOUNDATION FOR TRUST, Article 31 and Addenda. Statutes of the Republic of Korea. https://elaw.klri.re.kr/eng_service/lawViewContent.do?hseq=73499 (accessed 16 November 2026)
+
+[3] AI Act Service Desk. Article 50: Transparency obligations for providers and deployers of certain AI systems. European Commission. https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50 (accessed 16 November 2026; text based on the EUR-Lex consolidated version as at 27 July 2026)
+
+[4] European Commission (5 November 2026). Guidelines on the implementation of the transparency obligations for certain AI systems under Article 50 of Regulation (EU) 2024/1689 (the ‘AI Act’). Communication from the Commission, C(2026) 7702 final, paras 19, 92, 133 to 138 and 153. https://ec.europa.eu/newsroom/dae/redirection/document/131215 (these paragraphs read the same in the version approved on 20 July 2026, C(2026) 5054 final, Annex: https://ai-act-service-desk.ec.europa.eu/sites/default/files/2026-07/guidelines_on_the_implementation_of_the_transparency_obligations_for_certain_ai_systems_under_article_50_of_the_ai_act_bzptwqhk0ikg1dtlddap41psfy_131215.pdf)
+
+[5] Bickert, M. (5 April 2024; updated 10 May, 1 July and 12 September 2024; page last updated 23 October 2025). Our Approach to Labeling AI-Generated Content and Manipulated Media. Meta. https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/
+
+[6] Office of the Central Cyberspace Affairs Commission (30 April 2026). 中央网信办部署开展“清朗·整治AI应用乱象”专项行动 [The Office of the Central Cyberspace Affairs Commission launches the special campaign "Qinglang: tackling disorder in AI applications"]. https://www.cac.gov.cn/2026-04/30/c_1779289298718765.htm
+
+[7] National Institute of Standards and Technology (November 2024). Reducing Risks Posed by Synthetic Content: An Overview of Technical Approaches to Digital Content Transparency (NIST AI 100-4), sections 3.1.1.3 and 3.1.2. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-4.pdf
+
+[8] Bontcheva, K., Bechmann, A., et al. (chairs and vice-chairs of the drafting working groups) (10 June 2026). Code of Practice on Transparency of AI-Generated Content, Section 1, Measure 1.1. European Commission. https://ec.europa.eu/newsroom/dae/redirection/document/129555
+
+[9] Lyon, S. (26 October 2023). Leica Launches World’s First Camera with Content Credentials. Content Authenticity Initiative. https://contentauthenticity.org/blog/leica-launches-worlds-first-camera-with-content-credentials
+
+[10] Coalition for Content Provenance and Authenticity (posted 28 July 2026; release dated 27 July 2026). C2PA Welcomes TikTok to Steering Committee, Advancing the Adoption of Content Credentials at a Global Scale. https://c2pa.org/c2pa-welcomes-tiktok-to-steering-committee/
+
+[11] Coalition for Content Provenance and Authenticity. C2PA - Conformance [page linking the Official C2PA Conforming Products List (JSON-formatted)]. https://c2pa.org/conformance/ (accessed 16 November 2026); list read at https://raw.githubusercontent.com/c2pa-org/conformance-public/main/conforming-products/conforming-products-list.json (342 entries, latest change dated 13 November 2026)
+
+[12] Tse, J. (21 October 2026). Inside Norway’s plan to be the first to scale Content Credentials in its news ecosystem. Content Authenticity Initiative. https://contentauthenticity.org/blog/inside-norways-plan-to-be-the-first-to-scale-content-credentials-in-its-news-ecosystem
+
+[13] Dathathri, S., See, A., Ghaisas, S., et al. (23 October 2024). Scalable watermarking for identifying large language model outputs. Nature, 634, 818-823. https://doi.org/10.1038/s41586-024-08025-4
+
+[14] OpenAI (7 May 2024; updated 4 August 2024). Understanding the source of what we see and hear online. https://openai.com/index/understanding-the-source-of-what-we-see-and-hear-online/
+
+[15] Office of the Central Cyberspace Affairs Commission (2 September 2026). 中央网信办深入开展“清朗·整治AI应用乱象”专项行动第二阶段工作 [The Office of the Central Cyberspace Affairs Commission carries out the second stage of the "Qinglang: tackling disorder in AI applications" campaign]. https://www.cac.gov.cn/2026-09/02/c_1790099041364574.htm
+
+[16] AI Act Service Desk. Article 111: AI systems already placed on the market or put into service and general-purpose AI models already placed on the marked. European Commission. https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-111 (accessed 16 November 2026)
+
+[17] European Commission (27 July 2026). AI Omnibus enters into force. Shaping Europe’s digital future. https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force
+
+[18] European Commission (9 July 2026). Commission opinion on the assessment of the Code of Practice on Transparency of AI-generated Content. Shaping Europe’s digital future. https://digital-strategy.ec.europa.eu/en/library/commission-opinion-assessment-code-practice-transparency-ai-generated-content
+
+[19] European Commission. Code of Practice on Transparency of AI-generated Content. Shaping Europe’s digital future. https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content (accessed 16 November 2026; page last updated 19 October 2026)
+
+[20] Ministry of Government Legislation, National Law Information Center (Presidential Decree No. 36053, 21 January 2026, as last amended by Presidential Decree No. 36580, 18 August 2026). 인공지능 발전과 신뢰 기반 조성 등에 관한 기본법 시행령 ( 약칭: 인공지능기본법 시행령 ) [시행 2026. 8. 20.] [대통령령 제36580호, 2026. 8. 18., 타법개정] [Enforcement Decree of the AI Basic Act, version in force from 20 August 2026], Article 23. https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=288781&efYd=20260820&chrClsCd=010202&ancYnChk=0 (accessed 16 November 2026)
+
+[21] Ministry of Science and ICT (English page dated 25 February 2026, on guidelines released 22 January 2026). MSIT Releases Guidelines on Ensuring AI Transparency. https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&mId=4&bbsSeqNo=42&nttSeqNo=1215
+
+[22] Coalition for Content Provenance and Authenticity. C2PA FAQ. https://c2pa.org/faqs/ (accessed 16 November 2026)
+
+[23] Parsons, A. (18 January 2026). The State of Content Authenticity in 2026. Content Authenticity Initiative. https://contentauthenticity.org/blog/the-state-of-content-authenticity-in-2026
+
+## How to cite
+
+IAPQB (2026). Labels and watermarks for AI-made content: what China, Korea and the EU require, and where the marks fail in practice. IAPQB Report No. 35. International AI Practice Qualification Board. https://iapqb.org/research/035-ai-content-labels-watermarks.html
+
+## About this report
+
+Prepared by IAPQB. Each fact comes from the sources listed, and each source was opened and checked on 16 November 2026; anything that could not be checked was left out. AI tools were used to search and to draft, and IAPQB checked every claim against its source and is responsible for the text. IAPQB runs an AI work qualification; this report does not promote it. Corrections: contact@iapqb.org or an issue at github.com/iapqb/iapqb.github.io. Licence: CC BY 4.0.

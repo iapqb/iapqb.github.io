@@ -1,0 +1,123 @@
+# India's data protection rules and AI tools at work
+
+**What the DPDP Act and Rules mean when staff put personal data into AI tools**
+
+IAPQB Report No. 31 · Rule explainer · Published 24 November 2026
+International AI Practice Qualification Board (IAPQB)
+
+## In one minute
+
+- India's Digital Personal Data Protection Act 2023 and its Rules apply in stages from 13 November 2025, with the main duties from May 2027. The Data Protection Board exists in law but was not yet functional in October 2026 [1, 2, 3, 4].
+- The organisation that decides why and how personal data is used answers for it, including processing by an outside AI service on its behalf. A breach includes "any unauthorised processing" and must be reported [2, 5].
+- In 2024 the Dutch data protection authority treated staff pastes of patient and customer data into chatbots as breaches [6, 7]. In 2025 Kerala's High Court told district courts to avoid unapproved cloud AI tools [8].
+- Regulators and courts ask for approved tools under contract, identifiers removed before input, breach plans that cover a wrong paste, and a record of each use [2, 6, 8, 9].
+
+## 1. A familiar situation
+
+A team leader at an insurer in Pune has sixty customer complaints to sort before a meeting. Her company has approved no AI tool, but a free chatbot on her phone can group them in a minute. The emails hold names, phone numbers and details of illnesses. Whether pasting them could break Indian law is far from her mind.
+
+## 2. Why a paste falls under the Act
+
+Most of this applies from May 2027 (see 3.1). The organisation that "determines the purpose and means of processing" is the Data Fiduciary. Processing includes "disclosure by transmission", so a paste into a chatbot is processing, and the Data Fiduciary answers for processing "by it or on its behalf by a Data Processor" [5, sections 2 and 8].
+
+Processing needs consent or a legitimate use, such as employment purposes. Consent covers a "specified purpose" and only the data needed for it, and the notice must list both [5, sections 4 to 7; 2, rule 3].
+
+An outside AI service that processes data for the organisation is a Data Processor, allowed "only under a valid contract" with security terms [5, section 8; 2, rule 6]. A free account opened by one employee gives the employer no such contract.
+
+A personal data breach is "any unauthorised processing of personal data or accidental disclosure" that compromises its confidentiality, integrity or availability [5, section 2]. The organisation must tell each affected person and the Board without delay, with a detailed report to the Board "within seventy-two hours", or longer if the Board allows [2, rule 7]. This applies "regardless of the impact or materiality" [10]. Penalties can reach ₹250 crore (one crore is ten million rupees) for failing to take reasonable security safeguards and ₹200 crore for failing to report a breach [5, Schedule].
+
+> **IAPQB view.** In both workplace cases below (3.2 and 3.3), the risk lay in one choice: which data goes into which tool. The Dutch regulator treated such pastes as breaches after the event [6]; the Kerala High Court named the data to keep out in advance [8]. Because the Act puts the duties to protect data and report breaches on the organisation [5], the organisation needs to make that choice for its staff.
+
+## 3. Four cases
+
+### 3.1 New Delhi, 2025: the law starts in three stages
+
+Gazette notifications of the Ministry of Electronics and Information Technology (MeitY), dated 13 November 2025, set the Act's start dates, established the Data Protection Board and made the Rules [1, 2, 3]. The provisions that set up the Board applied at once, the rules on consent managers after one year, and the duties on consent, security and breaches after eighteen months [1, 2]. A government backgrounder says the Rules were notified on 14 November [11], and law firms date the last stage 12 May 2027 [12] or 14 May 2027 [10]. A MeitY proposal reported in January 2026, to cut the wait for certain provisions to twelve months for significant data fiduciaries [13], had not changed the dates by November 2026, when a government press release gave 13 May 2027 for the main duties [14, 15, 16].
+
+### 3.2 The Netherlands, 2024: chatbot pastes reported as data breaches
+
+In August 2024 the Dutch data protection authority (AP) said it had received "a number of notifications of data breaches caused by employees sharing personal data" with AI chatbots [6, 7]. A GP practice employee had entered patients' medical data "contrary to the agreements", and a telecom employee a file that included customer addresses. Most chatbot companies store all data entered, the AP said. It counts a paste made against the employer's agreements as a breach, and says notifying the AP and the people affected "is mandatory in many cases" [6].
+
+### 3.3 Kochi, 2025: a court restricts cloud AI tools
+
+On 19 July 2025 the High Court of Kerala issued an AI policy for district courts: judicial officers, their staff, interns and law clerks, on any device [8, 17]. It says providers of popular cloud-based AI tools may use what users enter. Submitting "facts of the case, personal identifiers, or privileged communications" may cause "serious violations of confidentiality", so cloud-based services should be avoided except tools approved by the High Court or Supreme Court. Courts must keep an audit record of each use, judges and staff must attend training, and breaking the policy may lead to disciplinary action [8].
+
+### 3.4 Kochi, 2026: a court asks for a working Board
+
+On 6 May 2026 MeitY invited applications for the Board's Chairperson and four Members [18]. On 7 October 2026, in a petition about passenger data in airport systems such as Digi Yatra [19], the government told the Kerala High Court that the Board "has been constituted" but "has yet to be made functional", and the court expected it to be made functional within eight weeks [4]. On 16 November 2026 MediaNama could find no public notification appointing its chairperson or members [15].
+
+## 4. How practitioners handle it now
+
+**Staff use approved tools under contract.** In March 2025 India's computer emergency response team, CERT-In, advised "only to use AI tools approved and verified by your organization", and to avoid online generative AI tools for sensitive work [9]. The AP asks employers to agree with staff whether chatbots may be used and with which data, and says they could arrange with the provider not to store what is entered [6].
+
+**Identifiers come out first.** The Rules name masking, obfuscation and virtual tokens among the minimum safeguards [2]. CERT-In advises users who must enter sensitive information to "anonymize it by removing or replacing identifying details" [9].
+
+**A wrong paste is part of the breach plan.** The AP treats an unauthorised paste as a breach [6]. Under 2022 directions, companies and government bodies must already report data breaches and data leaks to CERT-In within six hours of noticing them [20]. The DPDP Rules add notice to each affected person and the Board from May 2027 [2].
+
+**Each use leaves a record.** The Kerala policy requires an audit of every AI use, with the tool and the human check [8]. From May 2027 the DPDP Rules require monitored access logs, kept for one year [2].
+
+## 5. What to take from this
+
+**For people who use AI at work in India.** Use the approved tool and remove names and other identifiers before pasting [8, 9]. If personal data has gone into another tool, tell whoever handles breaches the same day. CERT-In requires reports within six hours, and from May 2027 the Board must be told without delay [2, 20].
+
+**For managers.** Put the rule on tools and data in writing. A Dutch GP employee acted contrary to the agreements [6], and the Kerala High Court paired its rule with approved tools, training and an audit [8].
+
+**For compliance and IT teams.** Check provider contracts for security and storage terms, keep logs that show what went to which tool, and plan for the Gazette dates [1, 2, 6, 8].
+
+## 6. Limits of this report
+
+Because the Board was not yet functional, no Board decision shows how it reads the Act [4, 15]. This report found no published Indian decision on whether a paste into an AI tool is a breach under the Act or a data leak under the CERT-In directions. The Dutch cases arose under EU law. The Kerala policy covers one state's district courts and was read in a scanned copy, checked against a PTI report [8, 17]. Petitions against parts of the Act are pending in the Supreme Court, which refused a stay in February 2026 [21, 22]. The absence of Board appointments rests on news reports [14, 15]. This report is not legal advice.
+
+## References
+
+[1] Ministry of Electronics and Information Technology (13 November 2025). [Notification appointing the dates on which provisions of the Digital Personal Data Protection Act, 2023 come into force], G.S.R. 843(E). The Gazette of India, Extraordinary, Part II, Section 3(i), No. 757. https://www.meity.gov.in/static/uploads/2025/11/c56ceae6c383460ca69577428d36828b.pdf
+
+[2] Ministry of Electronics and Information Technology (13 November 2025). Digital Personal Data Protection Rules, 2025, G.S.R. 846(E). The Gazette of India, Extraordinary, Part II, Section 3(i), No. 760. https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf
+
+[3] Ministry of Electronics and Information Technology (13 November 2025). [Notification establishing the Data Protection Board of India], G.S.R. 844(E). The Gazette of India, Extraordinary, Part II, Section 3(i), No. 758. https://www.meity.gov.in/static/uploads/2025/11/cc217843dc3bcb37b2b05bcc3b4e031f.pdf
+
+[4] High Court of Kerala (7 October 2026). WP(PIL) No. 15 of 2026 [public interest petition against the Union of India and others], judgment, 2026:KER:77409. Copy published by LiveLaw. https://www.livelaw.in/pdf_upload/2026/10/10/wppil-no-15-of-2026-705595.pdf
+
+[5] Government of India (11 August 2023). The Digital Personal Data Protection Act, 2023 (No. 22 of 2023). The Gazette of India, Extraordinary, Part II, Section 1; copy published by the Ministry of Electronics and Information Technology. https://www.meity.gov.in/static/uploads/2024/06/2bf1f0e9f04e6fb4f8fef35e82c42aa5.pdf
+
+[6] Autoriteit Persoonsgegevens (Dutch Data Protection Authority) (6 August 2024). Caution: use of AI chatbot may lead to data breaches. https://www.autoriteitpersoonsgegevens.nl/en/current/caution-use-of-ai-chatbot-may-lead-to-data-breaches
+
+[7] NOS (7 August 2024). Privacywaakhond: pas op met gebruik AI-chatbots, ging mis bij huisarts [Privacy watchdog: be careful with AI chatbots, it went wrong at a GP practice]. https://nos.nl/artikel/2532234-privacywaakhond-pas-op-met-gebruik-ai-chatbots-ging-mis-bij-huisarts
+
+[8] High Court of Kerala (19 July 2025). Policy Regarding Use of Artificial Intelligence Tools in District Judiciary, issued with Official Memorandum HCKL/7490/2025-DI-3-HC. Scanned copy published by The Leaflet. https://images.assettype.com/theleaflet/2025-07-22/mt4bw6n7/Kerala_HC_AI_Guidelines.pdf
+
+[9] Indian Computer Emergency Response Team (CERT-In) (26 March 2025). Best Practices against vulnerabilities while using Generative AI solutions. Advisory CIAD-2025-0013. https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2025-0013
+
+[10] Chatterji, S., & Mahapatra, K. (21 November 2025). Enforcement of the DPDP Act and notification of the DPDP rules. Shardul Amarchand Mangaldas & Co. https://www.amsshardul.com/insight/enforcement-of-the-dpdp-act-and-notification-of-the-dpdp-rules/
+
+[11] Press Information Bureau, Government of India (17 November 2025). DPDP Rules, 2025 Notified: A Citizen-Centric Framework for Privacy Protection and Responsible Data Use [backgrounder]. https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251117695301.pdf
+
+[12] AZB & Partners (14 November 2025). India's Digital Personal Data Protection Act: Phased Rollout and Key Compliance Milestones. https://www.azbpartners.com/bank/indias-digital-personal-data-protection-act-phased-rollout-and-key-compliance-milestones/
+
+[13] Aryan, A. (22 January 2026). Meity may cut compliance timeline for key DPDP rules to 12 months. Business Standard. https://www.business-standard.com/technology/tech-news/meity-may-cut-compliance-timeline-for-key-dpdp-rules-to-12-months-126012201293_1.html
+
+[14] Rijo, L. (12 November 2026). A year after India fixed its data board at 4 members, none are appointed. PPC Land. https://ppc.land/a-year-after-india-fixed-its-data-board-at-4-members-none-are-appointed/
+
+[15] Bansal, A. (16 November 2026). Companies can now apply to become consent managers under the DPDP Act. Who will approve them? MediaNama. https://www.medianama.com/2026/11/223-companies-consent-managers-dpdp-act/
+
+[16] Press Information Bureau, Government of India (14 November 2026). Consent Manager Registration Framework Comes into Effect; MeitY Secretary Launches Online Registration Portal. https://www.pib.gov.in/PressReleasePage.aspx?PRID=2336151
+
+[17] Press Trust of India (20 July 2025). Kerala HC bars district courts from using AI for legal reasoning, decisions. Business Standard. https://www.business-standard.com/india-news/kerala-hc-bars-district-courts-from-using-ai-for-legal-reasoning-decisions-125072000216_1.html
+
+[18] Ministry of Electronics and Information Technology (6 May 2026). Appointment to the post of Chairperson and Other Members in the Data Protection Board of India (DPBI) [circular F. No. 2(1)/2026-Pers.I]. https://www.meity.gov.in/static/uploads/2026/05/cd481c027470b420b4cb85fb40a91c53.pdf
+
+[19] K. Salma Jennath (10 October 2026). 'Make Data Protection Board Functional In 8 Weeks': Kerala High Court In PIL Raising Privacy Concerns In 'Digi Yatra'. LiveLaw. https://www.livelaw.in/high-court/kerala-high-court/kerala-high-court-digi-yatra-data-protection-board-553994
+
+[20] Indian Computer Emergency Response Team (CERT-In), Ministry of Electronics and Information Technology (28 April 2022). Directions under sub-section (6) of section 70B of the Information Technology Act, 2000 relating to information security practices, procedure, prevention, response and reporting of cyber incidents for Safe & Trusted Internet, No. 20(3)/2022-CERT-In. https://www.cert-in.org.in/PDF/CERT-In_Directions_70B_28.04.2022.pdf
+
+[21] Jain, D. (16 February 2026). 'Some Creases To Be Ironed Out,' Supreme Court Refers Pleas Challenging DPDP Act Amendment To RTI Act To Larger Bench. LiveLaw. https://www.livelaw.in/top-stories/supreme-court-refers-pleas-challenging-dpdp-act-amendment-to-rti-act-to-larger-bench-523266
+
+[22] Supreme Court Observer. Constitutionality of the Digital Personal Data Protection Act, 2023 [case page for W.P. (C) No. 177/2026]. https://www.scobserver.in/cases/constitutionality-of-the-digital-personal-data-protection-act-2023/ (accessed 16 November 2026; page last updated 28 October 2026)
+
+## How to cite
+
+IAPQB (2026). India's data protection rules and AI tools at work: what the DPDP Act and Rules mean when staff put personal data into AI tools. IAPQB Report No. 31. International AI Practice Qualification Board. https://iapqb.org/research/031-india-dpdp-ai-tools.html
+
+## About this report
+
+Prepared by IAPQB. Each fact comes from the sources listed, and each source was opened and checked on 16 November 2026; anything that could not be checked was left out. AI tools were used to search and to draft, and IAPQB checked every claim against its source and is responsible for the text. IAPQB runs an AI work qualification; this report does not promote it. Corrections: contact@iapqb.org or an issue at github.com/iapqb/iapqb.github.io. Licence: CC BY 4.0.
