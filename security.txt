@@ -1,0 +1,7 @@
+Contact: mailto:contact@iapqb.org
+Expires: 2027-06-30T14:59:00.000Z
+Preferred-Languages: en, ko
+Policy: https://iapqb.org/en/security/
+Acknowledgments: https://iapqb.org/en/security/#thanks
+Canonical: https://iapqb.org/.well-known/security.txt
+Canonical: https://iapqb.org/security.txt
