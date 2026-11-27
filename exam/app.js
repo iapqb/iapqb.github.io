@@ -1,4 +1,4 @@
-// IAPQB 응시 화면(접수 · 내 응시) — 2026-11-20 · 2026-11-21 시험별 상태·환불 기준 확인. 서버가 모든 것을 판정한다. 이 파일은 보여 주기만 한다.
+// IAPQB 응시 화면(접수 · 내 응시) — 2026-11-20 · 2026-11-21 시험별 상태·환불 기준 확인. 2026-11-27 자격증 칸·링크드인 추가·자격 확인 창구. 서버가 모든 것을 판정한다. 이 파일은 보여 주기만 한다.
 (function () {
   'use strict';
   var API = 'https://exam.iapqb.workers.dev';
@@ -45,6 +45,41 @@
   function load(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
   var q = new URLSearchParams(location.search);
+  // ── 자격증(2026-11-27): 「내 응시」 자격증 칸 · 링크드인 추가 · 자격 확인 창구가 같이 쓴다 ──
+  var SITE = 'https://iapqb.org';
+  var V = EN ? {
+    st: { valid: 'Valid', expired: 'Expired', revoked: 'Revoked' },
+    why: { fraud: 'misconduct', 'false': 'obtained by false or improper means', 'void': 'the exam it was based on was invalidated', other: 'other reasons' },
+    test: 'This is a test record made to check the system. It is not a real qualification.', checking: 'Checking…',
+    found: 'Verified — IAPQB issued this certificate and it is valid.', expired: 'IAPQB issued this certificate, but it has expired.', revoked: 'This certificate has been revoked.',
+    none: 'Not verified. Check that you entered the certificate number and the issue date exactly as printed. If it still does not match, email contact@iapqb.org.',
+    bad: 'Please enter the certificate number (for example CF2612-ABCDEF) and the issue date.', rate: 'Too many requests. Please try again in a minute.', err: 'We could not check this right now. Please try again.',
+    rows: { status: 'Status', qual: 'Qualification', name: 'Name', id: 'Certificate No.', issued: 'Issued', expires: 'Valid until', lang: 'Exam language', revoked: 'Revoked on', why: 'Reason' },
+    langs: { ko: 'Korean', en: 'English' }, until: '', copied: 'Copied', org: 'International AI Practice Qualification Board (IAPQB)',
+    line: function (c, u) { return 'IAPQBCertifiedAppliedAI ' + c.grade_name + ' — IAPQB (registered private qualification, Republic of Korea, No. 2026-008253) · Certificate No. ' + c.id + ' · issued ' + c.issued + ' · verify: ' + u; }
+  } : {
+    st: { valid: '유효', expired: '만료', revoked: '취소됨' },
+    why: { fraud: '부정행위', 'false': '거짓 또는 부정한 방법으로 취득', 'void': '근거가 된 시험의 무효', other: '그 밖의 사유' },
+    test: '시스템 점검용으로 만든 기록이며 실제 자격이 아닙니다.', checking: '확인하는 중…',
+    found: '확인되었습니다 — 본원이 발급한 자격증이며 지금 유효합니다.', expired: '본원이 발급한 자격증이지만 유효기간이 지났습니다.', revoked: '취소된 자격증입니다.',
+    none: '확인되지 않았습니다. 자격증에 적힌 번호와 발급일을 그대로 넣었는지 확인해 주세요. 그래도 맞지 않으면 contact@iapqb.org로 문의해 주세요.',
+    bad: '자격번호(예: CF2612-ABCDEF)와 발급일을 넣어 주세요.', rate: '요청이 많습니다. 1분 뒤 다시 해 주세요.', err: '지금 확인하지 못했습니다. 다시 해 주세요.',
+    rows: { status: '상태', qual: '자격', name: '성명', id: '자격번호', issued: '발급일', expires: '유효기간', lang: '시험 언어', revoked: '취소일', why: '취소 사유' },
+    langs: { ko: '한국어', en: '영어' }, until: '까지', copied: '복사했습니다', org: '국제AI실무자격검정원(IAPQB)',
+    line: function (c, u) { return 'IAPQBCertifiedAppliedAI ' + c.grade_name + ' (등록민간자격 2026-008253, 국제AI실무자격검정원) · 자격번호 ' + c.id + ' · ' + c.issued + ' 발급 · 확인 ' + u; }
+  };
+  function verifyUrl(c) { return SITE + (EN ? '/en/verify/' : '/verify/') + '?id=' + encodeURIComponent(c.id) + '&d=' + encodeURIComponent(c.issued); }
+  function liUrl(c, u) {  // 링크드인 Add to Profile(자격증): 회사 페이지가 없으므로 organizationName
+    var p = [['startTask', 'CERTIFICATION_NAME'], ['name', 'IAPQBCertifiedAppliedAI ' + c.grade_name], ['organizationName', V.org],
+      ['issueYear', c.issued.slice(0, 4)], ['issueMonth', String(Number(c.issued.slice(5, 7)))], ['expirationYear', c.expires.slice(0, 4)], ['expirationMonth', String(Number(c.expires.slice(5, 7)))],
+      ['certUrl', u], ['certId', c.id]];
+    return 'https://www.linkedin.com/profile/add?' + p.map(function (x) { return x[0] + '=' + encodeURIComponent(x[1]); }).join('&');
+  }
+  function copyText(text, btn) {
+    var o = btn.textContent, done = function () { btn.textContent = V.copied; setTimeout(function () { btn.textContent = o; }, 1500); };
+    var old = function () { var ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'absolute'; ta.style.left = '-9999px'; document.body.appendChild(ta); ta.select(); try { if (document.execCommand('copy')) done(); } catch (e) { /* 직접 복사 */ } document.body.removeChild(ta); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, old); else old();
+  }
 
   // ── 접수 화면 ──
   var form = $('regForm');
@@ -105,6 +140,17 @@
       });
       wrap.hidden = false;
     };
+    var renderCert = function (c) {  // 공식 성적이 확정된 합격자에게만 서버가 cert를 준다
+      var cb = $('certBox'); if (!cb) return;
+      if (!c) { cb.hidden = true; return; }
+      $('certId').textContent = c.id; $('certName').textContent = c.name || '—'; $('certIssued').textContent = c.issued || '—';
+      $('certExpires').textContent = c.expires ? c.expires + V.until : '—';
+      $('certStatus').textContent = (V.st[c.status] || c.status) + (c.status === 'revoked' && c.revoked ? ' (' + c.revoked + ')' : '');
+      $('certTest').hidden = !c.test; $('certTest').textContent = c.test ? V.test : '';
+      var live = c.status === 'valid'; $('certShare').hidden = !live;
+      if (live) { var u = verifyUrl(c); $('certLi').href = liUrl(c, u); $('certUrl').href = u; $('certUrl').textContent = u; $('certLine').textContent = V.line(c, u); }
+      cb.hidden = false;
+    };
     var render = function (r) {
       $('myId').textContent = r.id; $('myGrade').textContent = ({ F: 'Foundation', A: 'Associate', P: 'Professional' })[r.grade] || r.grade;
       $('myStatus').textContent = T.st[r.status] || r.status;
@@ -114,6 +160,7 @@
       $('prepNote').hidden = !r.not_ready; $('prepNote').textContent = r.not_ready ? T.err.not_ready : '';
       $('extBtn').hidden = !r.can_extend; $('startNote').hidden = !(r.status === 'paid' || r.status === 'started');
       renderParts(r);
+      renderCert(r.cert);
       $('cancelBox').hidden = !r.can_cancel; $('cancelConfirm').hidden = true;
       $('cancelBtn').textContent = r.status === 'paid' ? T.cBtnPaid : T.cBtnReady; $('cancelText').textContent = r.status === 'paid' ? T.cAskPaid : T.cAskReady;
       box.hidden = false;
@@ -149,6 +196,8 @@
         store('iapqb_exam', v); sess = v; m.hidden = true; render(j.reg); showLook(false);
       });
     });
+    $('certUrlCopy').addEventListener('click', function () { copyText($('certUrl').textContent, this); });
+    $('certLineCopy').addEventListener('click', function () { copyText($('certLine').textContent, this); });
     $('cancelYes').textContent = T.cYes; $('cancelNo').textContent = T.cNo;
     $('cancelBtn').addEventListener('click', function () { $('cancelConfirm').hidden = false; });
     $('cancelNo').addEventListener('click', function () { $('cancelConfirm').hidden = true; });
@@ -156,5 +205,39 @@
       var b = this; b.disabled = true;
       call('/api/cancel', { agree: true }, sess).then(function (j) { b.disabled = false; if (j.ok) { render(j.reg); msg(m, T.cDone); } else msg(m, errText(j), true); });
     });
+  }
+
+  // ── 자격 확인 창구(GOV-002 제21조②): 번호 + 발급일이 둘 다 맞아야 답한다(D-143) ──
+  var vf = $('verifyForm');
+  if (vf) {
+    var vId = $('vId'), vDate = $('vDate'), vMsg = $('vMsg'), vOut = $('vOut'), vT = $('vTable');
+    var row = function (k, v) { var tr = el('tr'); tr.appendChild(el('th', null, V.rows[k])); tr.appendChild(el('td', 'v', v)); vT.appendChild(tr); };
+    var check = function () {
+      var id = (vId.value || '').replace(/\s+/g, '').toUpperCase(), d = vDate.value || '';
+      vOut.hidden = true; vT.textContent = '';
+      if (!/^C[FAP]\d{4}-[A-Z2-9]{6}$/.test(id) || !/^\d{4}-\d{2}-\d{2}$/.test(d)) { msg(vMsg, V.bad, true); return; }
+      vId.value = id;
+      try { history.replaceState(null, '', location.pathname + '?id=' + encodeURIComponent(id) + '&d=' + encodeURIComponent(d)); } catch (e) { /* 주소만 못 바꿈 */ }
+      msg(vMsg, V.checking);
+      fetch(API + '/api/cert?id=' + encodeURIComponent(id) + '&d=' + encodeURIComponent(d)).then(function (r) { return r.json(); }).then(function (j) {
+        if (!j.ok) { msg(vMsg, j.error === 'rate' ? V.rate : V.bad, true); return; }
+        if (!j.found) { msg(vMsg, V.none, true); return; }
+        var c = j.cert, qual = 'IAPQBCertifiedAppliedAI ' + c.grade_name;
+        if (c.status === 'revoked') {
+          msg(vMsg, (c.test ? V.test + ' ' : '') + V.revoked, true);
+          row('status', V.st.revoked); row('qual', qual); row('id', c.id); if (c.revoked) row('revoked', c.revoked); row('why', V.why[c.why] || V.why.other);
+        } else {
+          msg(vMsg, (c.test ? V.test + ' ' : '') + (c.status === 'valid' ? V.found : V.expired), c.status !== 'valid' || !!c.test);
+          row('status', V.st[c.status] || c.status); row('qual', qual); row('name', c.name || '—'); row('id', c.id);
+          row('issued', c.issued); row('expires', c.expires + V.until); row('lang', V.langs[c.lang] || c.lang);
+        }
+        vOut.hidden = false;
+      }).catch(function () { msg(vMsg, V.err, true); });
+    };
+    vf.addEventListener('submit', function (e) { e.preventDefault(); check(); });
+    var qi = q.get('id'), qd = q.get('d');
+    if (qi) vId.value = qi;
+    if (qd) vDate.value = qd;
+    if (qi && qd) check();
   }
 })();

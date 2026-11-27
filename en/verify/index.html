@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://exam.iapqb.workers.dev https://cloudflareinsights.com; form-action 'self'; frame-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f37021">
+<meta name="color-scheme" content="light">
+<title>Verify a certificate | IAPQB</title>
+<meta name="description" content="Verify an IAPQBCertifiedAppliedAI certificate with its certificate number and issue date.">
+<link rel="canonical" href="https://iapqb.org/en/verify/">
+<link rel="alternate" hreflang="ko" href="https://iapqb.org/verify/">
+<link rel="alternate" hreflang="en" href="https://iapqb.org/en/verify/">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="23" fill="%23f37021"/><path d="M44.5 25 L55.5 25 L73.5 58 L68 68 L32 68 L26.5 58 Z" fill="none" stroke="%23ffffff" stroke-width="7.6" stroke-linejoin="round"/><path d="M47.4 42.5 L52.6 42.5 L61.2 57.5 L58.6 62 L41.4 62 L38.8 57.5 Z" fill="%23ffffff"/></svg>'>
+<style>
+:root{--ink:#1c1512;--line:#e9e3dc;--line2:#d8ccc0;--accent:#c9530f;--accent2:#f37021;--bg:#fdfbf9;--steel:#5a4a3f;--muted:#8a7f74;}
+:where(a,button,summary,[tabindex]):focus-visible{outline:2px solid var(--accent2);outline-offset:2px;border-radius:2px}
+*{box-sizing:border-box}
+body{margin:0;border-top:4px solid var(--accent2);background:var(--bg);color:var(--ink);font:16px/1.75 "Noto Sans KR","Apple SD Gothic Neo",system-ui,sans-serif}
+body{word-break:keep-all;overflow-wrap:anywhere}
+.wrap{max-width:860px;margin:0 auto;padding:40px 22px 80px}
+a{color:var(--accent)}
+.back{font-size:13.5px;text-decoration:none;color:var(--accent)}
+h1{font-family:"Noto Serif KR",serif;font-size:29px;line-height:1.35;margin:20px 0 10px;letter-spacing:-.5px}
+.sub{color:var(--steel);font-size:15px;margin:0 0 6px}
+.updated{color:var(--muted);font-size:13px;margin:0 0 30px}
+h2{font-size:20px;margin:44px 0 12px;padding-bottom:8px;border-bottom:2px solid var(--line);letter-spacing:-.3px}
+p{margin:12px 0}
+ul{padding-left:20px}li{margin:8px 0}
+.key{background:#fff;border:1px solid var(--accent2);border-left:4px solid var(--accent2);padding:16px 20px;margin:20px 0}
+.key p{margin:6px 0}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:16px 0}
+th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:#faf5ee;border-bottom:2px solid var(--line2);font-weight:700;font-size:13.5px}
+td.num,th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.num{color:var(--accent2);font-weight:700}
+.foot{margin-top:52px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;line-height:1.7}
+@media(max-width:640px){.wrap{padding:28px 16px 60px}h1{font-size:23px}h2{font-size:18px}table{font-size:12.5px}th,td{padding:7px 6px}}
+.sq{background:#fff;border:1px solid var(--line,#ddd);padding:12px 16px;margin:12px 0}.sqh{margin:0 0 6px;font-size:14px}.sqs{margin:0 0 6px;line-height:1.6}.sqo{list-style:none;padding:0;margin:0 0 6px}.sqo li{margin:4px 0}.sql{display:inline-block;min-width:1.6em;font-weight:700}.sqb{color:var(--muted,#666);font-size:13px}details summary{cursor:pointer;font-weight:600}
+form{margin:18px 0}fieldset{border:1px solid var(--line);padding:12px 16px;margin:14px 0;background:#fff}legend{font-weight:700;font-size:14px;padding:0 6px}
+label{display:block;margin:12px 0 4px;font-size:14px;font-weight:600}.opt{font-weight:400;display:flex;gap:8px;align-items:flex-start;margin:8px 0}
+input[type=text],input[type=email],input[type=tel],input[type=date]{width:100%;padding:10px 12px;border:1px solid var(--line2);border-radius:6px;font:inherit;background:#fff}
+button{background:var(--accent2);color:#fff;border:0;border-radius:6px;padding:11px 20px;font:inherit;font-weight:700;cursor:pointer}button:disabled{opacity:.55;cursor:default}
+button.ghost{background:none;color:var(--accent);border:1px solid var(--line2);font-weight:400}
+.msg{background:#fff;border-left:4px solid var(--accent2);padding:12px 16px;margin:16px 0}.msg.bad{border-left-color:#b3261e;color:#7a1a14}
+.muted{color:var(--muted);font-size:13.5px}td.v{font-weight:700}
+a.btn{display:inline-block;background:var(--accent2);color:#fff;border-radius:6px;padding:11px 20px;font-weight:700;text-decoration:none}
+.part{border:1px solid var(--line);background:#fff;padding:12px 16px;margin:12px 0}.part h3{margin:0 0 8px;font-size:16px}p.v{font-weight:700}
+.bar{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);padding:10px 0;font-weight:700;font-size:15px}.bar.warn #timer{color:#b3261e}
+#nav{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.nb{background:#fff;color:var(--accent);border:1px solid var(--line2);border-radius:4px;padding:4px 0;width:38px;font-weight:600;font-size:13px}.nb.on{background:var(--accent2);color:#fff;border-color:var(--accent2)}
+h2.sec{font-size:17px;margin:26px 0 8px;padding-top:8px;border-top:2px solid var(--line)}.q{background:#fff;border:1px solid var(--line);padding:12px 16px;margin:12px 0;scroll-margin-top:56px}.q h3{margin:0 0 6px;font-size:15px}
+#resIns h3{font-size:15px;margin:18px 0 6px}#resIns p{margin:8px 0;padding-left:10px;border-left:3px solid var(--line2);line-height:1.6;font-size:14.5px}#resIns p.weak{border-left-color:var(--accent2)}
+.stem{white-space:pre-wrap;margin:0 0 8px;line-height:1.6}.task .tbody{line-height:1.65;font-size:15px}.task .tbody h1{font-size:18px;margin:6px 0 10px}.task .tbody h2{font-size:16px;margin:18px 0 6px}.task .tbody h3{font-size:15px;margin:18px 0 6px}.tw{overflow-x:auto;max-width:100%;margin:8px 0}.task table{border-collapse:collapse;font-size:13.5px;background:#fff}.task td,.task th{border:1px solid var(--line);padding:4px 7px;vertical-align:top;text-align:left}.task blockquote{border-left:3px solid var(--line2);margin:8px 0;padding:4px 12px;background:#fff}.ans{border:1px solid var(--accent2);border-left-width:4px;background:#fff;padding:10px 14px;margin:10px 0 20px;scroll-margin-top:60px}.opt.in{display:inline-flex;margin:4px 14px 4px 0}.ord,.pairs{display:flex;flex-wrap:wrap;gap:8px 14px}.ordi,.pair,.numi{display:inline-flex;align-items:center;gap:4px;font-weight:400;margin:0}.ans select,.logbox input[type=text],.numi input{padding:6px 8px;border:1px solid var(--line2);border-radius:6px;font:inherit;background:#fff}.numi input{width:12em;max-width:60vw}.flag{display:block;margin:10px 0 0;font-weight:400;font-size:13.5px;color:var(--muted)}.logbox textarea{width:100%;min-height:150px;padding:10px;border:1px solid var(--line2);border-radius:6px;font:inherit}.logbox input[type=text]{width:100%;margin:4px 0}.lh{font-weight:600;font-size:14px;margin:10px 0 2px}#resTable{width:100%;border-collapse:collapse}#resTable td,#resTable th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left}
+.tbwrap{overflow-x:auto;max-width:100%}.tbwrap.wide table{min-width:560px}.tbwrap.wide td:first-child{white-space:nowrap}.cline{background:#fff;border:1px dashed var(--line2);padding:8px 12px;margin:4px 0;font-size:13.5px;word-break:break-all}#certBox table,#vOut table{margin:8px 0}
+</style>
+</head>
+<body><div class="wrap">
+<a class="back" href="../../en/">← IAPQB</a>
+<h1>Verify a certificate</h1>
+<p class="sub">IAPQBCertifiedAppliedAI · Registered private qualification No. 2026-008253 (Republic of Korea)</p>
+<div class="key"><p>Enter the <b>certificate number</b> and the <b>issue date</b> printed on the certificate to check that IAPQB issued it and whether it is valid now. The number alone does not return a result.</p><p>If it is found, you will see the name, grade, issue date and expiry date on the certificate. The name is exactly as the candidate entered it when registering. For a revoked certificate, only the revocation is shown, without the name.</p></div>
+<form id="verifyForm" novalidate><label for="vId">Certificate No.</label><input type="text" id="vId" maxlength="20" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="CF2612-ABCDEF"><label for="vDate">Issue date</label><input type="date" id="vDate" min="2026-12-01"><p><button type="submit" id="vBtn">Verify</button></p></form>
+<p id="vMsg" class="msg" hidden role="status"></p>
+<div id="vOut" hidden><table id="vTable"></table></div>
+<h2>Grades and exam methods</h2>
+<div class="tbwrap wide"><table class="cmp"><tr><th>Grade</th><th>Method</th><th>Subjects</th><th>Questions · time</th></tr><tr><td>Foundation</td><td>Written (online CBT, 4-option multiple choice)</td><td>AI literacy · Prompt writing · Compliance basics</td><td>30 questions, 50 min</td></tr><tr><td>Associate</td><td>Written</td><td>AI literacy · Prompt design · Understanding data · Compliance</td><td>40 questions, 60 min</td></tr><tr><td>Associate</td><td>Practical (task-based)</td><td>Work automation · Output verification</td><td>2 tasks, 90 min</td></tr><tr><td>Professional</td><td>Practical</td><td>Designing work automation · Running output verification · AI risk management · Measuring and improving results</td><td>3 tasks, 120 min</td></tr></table></div>
+<p>Certificates are issued to candidates who pass, once the official result is confirmed, and are valid for 3 years from the issue date (GOV-002 Articles 21 and 23). Full details are in <a href="../../en/notice/2026-1.html">Notice No. 2026-1</a>.</p>
+<h2>Qualification details</h2>
+<div class="tbwrap"><table class="cmp"><tr><th>Item</th><th>Details</th></tr><tr><td>Qualification and grades</td><td>IAPQBCertifiedAppliedAI — Foundation · Associate · Professional · Strategist</td></tr><tr><td>Type</td><td>Registered private qualification (Republic of Korea)</td></tr><tr><td>Registration No.</td><td>2026-008253</td></tr><tr><td>Managing body</td><td>국제AI실무자격검정원 (International AI Practice Qualification Board) · Representative: Lee Seung-won · Address: Cheongju-si, Chungcheongbuk-do, Republic of Korea · Phone +82-10-8107-8254 · Email contact@iapqb.org</td></tr><tr><td>Total cost</td><td>The exam fee for the grade you take. The certificate fee is included in the exam fee, and there are no other charges (<a href="../../en/notice/2026-1.html">Notice No. 2026-1</a>, section 6).</td></tr><tr><td>Refunds</td><td><a href="../../en/notice/2026-1.html">Notice No. 2026-1</a>, section 6 (Refunds)</td></tr></table></div>
+<p><b>This qualification is a private qualification registered under the Framework Act on Qualifications of the Republic of Korea. It is not a qualification accredited by the State.</b></p>
+<div class="foot">IAPQBCertifiedAppliedAI is a private qualification registered under the Framework Act on Qualifications of the Republic of Korea (registration No. 2026-008253). It is not a qualification accredited by the State. 국제AI실무자격검정원 (International AI Practice Qualification Board, IAPQB) · contact@iapqb.org · <a href="../../en/docs/IAPQB-POL-002.html">Examination Terms</a> · <a href="../../en/docs/IAPQB-POL-001.html">Privacy Policy</a> · <a href="../../en/notice/2026-1.html">Notice No. 2026-1</a></div>
+</div>
+<script src="../../exam/app.js?v=ea7ce8f58c" defer></script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "26d625bc684c48c39fdc482134c9a3e3"}'></script>
+</body></html>
